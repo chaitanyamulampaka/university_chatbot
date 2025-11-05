@@ -1,0 +1,38 @@
+# Python Virtual Environments
+venv/
+*.venv/
+env/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment Variables
+.env
+.env.*
+
+# ChromaDB Persistent Storage
+# Ignored to avoid committing large vector databases
+chroma_db_by_dept/
+admissions_chroma_db/
+
+# IDE & Editor Configuration
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS & Windows System Files
+.DS_Store
+Thumbs.db
+
+# Build & Distribution Artifacts
+build/
+dist/
+*.egg-info/
+
+# Log Files
+*.log

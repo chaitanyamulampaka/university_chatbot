@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAHE UNIVERSITY BOT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* --- CSS Variables for Theming --- */
+        :root {
+            /* Light Theme (Default) */
+            --bg-gradient: linear-gradient(to bottom right, #fdf6f8, #f8f8f8);
+            --container-bg: #F4F6F8;
+            --card-bg: #FFFFFF;
+            --text-primary: #333;
+            --text-secondary: #555;
+            --shadow-color: rgba(0, 0, 0, 0.08);
+            --input-bg: #EFEFEF;
+
+            /* Main Header */
+            --header-gradient-start: #8E2DE2;
+            --header-gradient-end: #4A00E0;
+
+            /* Category Colors */
+            --admission-bg: #ebf5ff; --admission-border: #b3d4ff; --admission-icon: #007bff;
+            --course-bg: #eaf7f0; --course-border: #a3d9b8; --course-icon: #28a745;
+            --website-bg: #f9f2ff; --website-border: #d9b8ff; --website-icon: #6f42c1;
+            /* New Placements Color */
+            --placements-bg: #fffbe6; --placements-border: #ffe58f; --placements-icon: #faad14;
+            
+            /* Scrollbar */
+            --scrollbar-track-bg: #f1f1ff1;
+            --scrollbar-thumb-bg: #ccc;
+            --scrollbar-thumb-hover-bg: #aaa;
+
+            /* Quick Reply */
+            --quick-reply-bg: #ebf5ff;
+            --quick-reply-border: #b3d4ff;
+            
+            /* Course Theme Specifics */
+            --course-theme-button-bg: #11998e;
+            --course-theme-header-start: #38ef7d; 
+            --course-theme-header-end: #11998e;
+            --course-theme-quick-reply-bg: #eaf7f0;
+            --course-theme-quick-reply-border: #a3d9b8;
+            --course-theme-quick-reply-text: #28a745;
+        }
+        .category-item:last-child {
+            margin-bottom: 0;
+        }
+
+        body.dark-theme {
+            /* Dark Theme */
+            --bg-gradient: linear-gradient(to bottom right, #1a1c2c, #202234);
+            --container-bg: #1e1e1e;
+            --card-bg: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #b0b0b0;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --input-bg: #3a3a3a;
+            
+            /* Main Header */
+            --header-gradient-start: #531e8a;
+            --header-gradient-end: #2c007a;
+
+            /* Dark Category Colors */
+            --admission-bg: #2c3a5e; --admission-border: #007bff;
+            --course-bg: #2a4b3d; --course-border: #28a745;
+            --website-bg: #4a2c5e; --website-border: #6f42c1;
+            --placements-bg: #5c4b1f; --placements-border: #faad14;
+            
+            /* Dark Scrollbar */
+            --scrollbar-track-bg: #2c2c2c;
+            --scrollbar-thumb-bg: #555;
+            --scrollbar-thumb-hover-bg: #777;
+
+            /* Quick Reply */
+            --quick-reply-bg: #2c3a5e;
+            --quick-reply-border: #007bff;
+            
+            /* Course Theme Specifics */
+            --course-theme-button-bg: #1a7431;
+            --course-theme-header-start: #1a7431;
+            --course-theme-header-end: #004d40;
+            --course-theme-quick-reply-bg: #2a4b3d;
+            --course-theme-quick-reply-border: #28a745;
+            --course-theme-quick-reply-text: #89d4a4;
+        }
+
+        /* --- General Styling --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-gradient);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: var(--text-primary);
+            transition: background 0.3s, color 0.3s;
+            padding: 1rem;
+        }
+        .logo-and-title-container {
+            display: flex;
+            align-items: center;
+            gap: 10px; 
+        }
+        .logo-placeholder {
+            width: 50px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem; 
+            flex-shrink: 0; 
+        }
+        .hidden { display: none !important; }
+
+        /* --- Main Selector Screen --- */
+        .selector-container {
+            width: 100%;
+            max-width: 420px;
+            height: 750px;
+            max-height: 90vh;
+            background-color: var(--container-bg);
+            border-radius: 30px;
+            box-shadow: 0 15px 40px var(--shadow-color);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: background-color 0.3s;
+        }
+        
+        /* --- MODIFIED STYLES --- */
+        .selector-header {
+            background: linear-gradient(to bottom, var(--header-gradient-start), var(--header-gradient-end));
+            color: white;
+            padding: 25px;
+            height: 210px; /* Reduced from 230px */
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+        .selector-header-content {
+            display: flex; justify-content: space-between; align-items: center; margin-top: 0px;
+        }
+        .selector-header-content h2 { font-size: 1.2rem; font-weight: 600; }
+        .theme-toggle {
+            background-color: rgba(255, 255, 255, 0.2); color: white; width: 40px; height: 40px;
+            border-radius: 50%; display: flex; justify-content: center; align-items: center;
+            font-size: 1.2rem; cursor: pointer; transition: background-color 0.3s;
+        }
+        .theme-toggle:hover { background-color: rgba(255, 255, 255, 0.3); }
+
+        .selector-greeting { color: white; font-size: 1.5rem; font-weight: 700; margin-top: 15px;  } /* Reduced font and margin */
+        .selector-body { flex-grow: 1; padding: 0 25px; margin-top: -70px; position: relative; z-index: 10; } /* Reduced from -80px */
+        .selector-card { background: var(--card-bg); border-radius: 20px; padding: 20px; box-shadow: 0 10px 30px var(--shadow-color); transition: background-color 0.3s; height: 100%; overflow-y: auto; } /* Reduced padding */
+        .category-selector h3 { font-size: 1rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 20px; text-align: center;} /* Reduced margin */
+        .category-item {
+            display: flex; align-items: center; padding: 12px; border-radius: 15px; margin-bottom: 12px; /* Reduced padding and margin */
+            border: 1px solid transparent; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .category-item:hover { transform: translateY(-3px); box-shadow: 0 4px 15px var(--shadow-color); }
+        .category-item .icon {
+            font-size: 1.3rem; width: 45px; height: 45px; display: flex; justify-content: center; /* Reduced size */
+            align-items: center; border-radius: 12px; margin-right: 15px; flex-shrink: 0; color: white;
+        }
+        .category-item .text h4 { font-size: 1.0rem; font-weight: 600; margin-bottom: 2px; color: var(--text-primary); } /* Reduced font */
+        .category-item .text p { font-size: 0.8rem; color: var(--text-secondary); } /* Reduced font */
+        /* --- END OF MODIFIED STYLES --- */
+
+        .category-item--admission { background-color: var(--admission-bg); border-color: var(--admission-border); }
+        .category-item--admission .icon { background-color: var(--admission-icon); }
+        .category-item--course { background-color: var(--course-bg); border-color: var(--course-border); }
+        .category-item--course .icon { background-color: var(--course-icon); }
+        .category-item--website { background-color: var(--website-bg); border-color: var(--website-border); }
+        .category-item--website .icon { background-color: var(--website-icon); }
+        .category-item--placements { background-color: var(--placements-bg); border-color: var(--placements-border); }
+        .category-item--placements .icon { background-color: var(--placements-icon); }
+
+
+        /* --- Generic Chat Interface Styles --- */
+        .chat-view-container {
+            width: 100%; max-width: 420px; height: 750px; max-height: 90vh; background-color: var(--container-bg);
+            border-radius: 30px; box-shadow: 0 15px 40px var(--shadow-color); overflow: hidden;
+            display: flex; flex-direction: column; transition: background-color 0.3s;
+        }
+        .chat-view-header {
+            color: white; padding: 25px; height: 180px; flex-shrink: 0;
+            border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+            transition: none;
+        }
+        .chat-view-header.can-scroll {
+            transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+        }
+        .chat-view-header.scrolled { height: 70px; padding-top: 15px; padding-bottom: 15px; }
+        .chat-view-header-content { display: flex; align-items: center; margin-top: 5px; width: 100%; gap: 10px; transition: none; }
+        .chat-view-header.can-scroll .chat-view-header-content { transition: margin-top 0.3s ease-in-out; }
+        .chat-view-header.scrolled .chat-view-header-content { margin-top: 0; }
+        .chat-view-title-section { flex-grow: 1; display: flex; align-items: center; gap: 15px; }
+        .chat-view-title-section h2 { font-size: 1.2rem; font-weight: 600; }
+        .back-button, .header-btn {
+            background-color: rgba(255, 255, 255, 0.2); color: white; width: 40px; height: 40px;
+            border-radius: 50%; display: flex; justify-content: center; align-items: center;
+            font-size: 1.2rem; cursor: pointer; transition: background-color 0.3s; flex-shrink: 0;
+        }
+        .back-button:hover, .header-btn:hover { background-color: rgba(255, 255, 255, 0.3); }
+        .chat-view-greeting {
+            color: white; font-size: 1.3rem; font-weight: 700; margin-top: 20px;
+            transition: none;
+        }
+        .chat-view-header.can-scroll .chat-view-greeting {
+            transition: opacity 0.2s ease, transform 0.3s ease, margin-top 0.3s ease;
+        }
+        .chat-view-greeting p { font-size: 0.85rem; font-weight: 400; opacity: 0.8; margin-top: 5px; }
+        .chat-view-header.scrolled .chat-view-greeting { opacity: 0; transform: translateY(-20px); pointer-events: none; margin-top: 0; height: 0; overflow: hidden; }
+        
+        .chat-view-body { flex-grow: 1; padding: 15px 20px; overflow-y: auto; display: flex; flex-direction: column; }
+        .chat-view-body::-webkit-scrollbar { width: 8px; }
+        .chat-view-body::-webkit-scrollbar-track { background: var(--scrollbar-track-bg); border-radius: 10px; }
+        .chat-view-body::-webkit-scrollbar-thumb { background-color: var(--scrollbar-thumb-bg); border-radius: 10px; border: 2px solid var(--scrollbar-track-bg); }
+        .chat-view-body::-webkit-scrollbar-thumb:hover { background-color: var(--scrollbar-thumb-hover-bg); }
+        
+        .message { display: flex; margin-bottom: 15px; max-width: 90%; align-self: flex-start; align-items: flex-start; }
+        .message.user-message { align-self: flex-end; }
+        .message .icon {
+            font-size: 1.3rem; width: 40px; height: 40px; display: none; justify-content: center;
+            align-items: center; border-radius: 12px; margin-right: 10px; flex-shrink: 0; color: white;
+        }
+        .message-content {
+            background: var(--card-bg); padding: 12px 15px; border-radius: 15px;
+            box-shadow: 0 2px 8px var(--shadow-color); word-wrap: break-word;
+            white-space: pre-wrap; /* Added for placements bot */
+        }
+        .message.bot-message .message-content { border-top-left-radius: 5px; }
+        .message.user-message .message-content { border-top-right-radius: 5px; background-color: var(--user-message-bg); color: white; }
+        .message-content p { font-size: 0.9rem; line-height: 1.5; color: var(--text-primary); }
+        .message.user-message .message-content p { color: white; }
+        .message-content .sender-name { font-weight: 600; margin-bottom: 4px; font-size: 0.9rem; }
+        .message-content a { font-weight: 600; text-decoration: underline; }
+
+        #admissions-suggestion-buttons {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 8px;
+            margin-top: 15px;
+            overflow-x: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            padding-bottom: 5px;
+        }
+        #admissions-suggestion-buttons::-webkit-scrollbar { display: none; }
+        #admissions-suggestion-buttons button {
+            background: var(--quick-reply-bg); border: 1px solid var(--quick-reply-border); color: var(--admission-icon);
+            padding: 8px 14px; border-radius: 16px; cursor: pointer; font-weight: 500; font-size: 0.8rem;
+            transition: background-color 0.2s, transform 0.2s;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        #admissions-suggestion-buttons button:hover { transform: scale(1.02); filter: brightness(95%); }
+        
+        .chat-view-footer {
+            padding: 12px 20px; background-color: var(--container-bg); display: flex;
+            align-items: center; gap: 10px; flex-shrink: 0; border-top: 1px solid rgba(0,0,0,0.05);
+        }
+        body.dark-theme .chat-view-footer { border-top: 1px solid rgba(255,255,255,0.08); }
+        .chat-view-footer input {
+            flex-grow: 1; padding: 12px 20px; border: none; background-color: var(--input-bg);
+            border-radius: 22px; font-family: 'Poppins', sans-serif; font-size: 0.95rem;
+            color: var(--text-primary); outline: none;
+        }
+        .send-button {
+            width: 45px; height: 45px; border-radius: 50%; border: none; color: white;
+            font-size: 1.1rem; cursor: pointer; transition: background-color 0.3s, transform 0.2s;
+            flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+        }
+        .send-button:hover { filter: brightness(110%); transform: scale(1.05); }
+        .send-button:disabled { cursor: not-allowed; filter: grayscale(50%); }
+
+        /* --- Theme Specifics for Chat Views --- */
+        /* Admissions Theme */
+        #admissions-interface .chat-view-header { background: linear-gradient(to bottom, #8E2DE2, #4A00E0); }
+        #admissions-interface .message .icon { background-color: var(--admission-icon); }
+        #admissions-interface .message.user-message .message-content { --user-message-bg: #4A00E0; }
+        #admissions-interface .send-button { background-color: #8E2DE2; }
+        #admissions-interface .message-content .sender-name { color: var(--admission-icon); }
+        #admissions-interface .message-content a { color: var(--admission-icon); }
+        body.dark-theme #admissions-interface .chat-view-header { background: linear-gradient(to bottom, #531e8a, #2c007a); }
+        body.dark-theme #admissions-interface .message.user-message .message-content { --user-message-bg: #531e8a; }
+        body.dark-theme #admissions-suggestion-buttons button { color: #87bfff; }
+
+        /* Course Theme */
+        #course-interface .chat-view-header { background: linear-gradient(to bottom, var(--course-theme-header-start), var(--course-theme-header-end)); }
+        #course-interface .message .icon { background-color: var(--course-icon); }
+        #course-interface .message.user-message .message-content { background-color: var(--course-theme-button-bg); color: white; }
+        #course-interface .send-button { background-color: var(--course-theme-button-bg); }
+        #course-interface .message-content .sender-name { color: var(--course-icon); }
+        #course-quick-replies { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 20px 15px 20px; }
+        .reply-item {
+            background: var(--course-theme-quick-reply-bg);
+            border: 1px solid var(--course-theme-quick-reply-border);
+            color: var(--course-theme-quick-reply-text);
+            padding: 8px 14px;
+            border-radius: 16px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.8rem;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+        .reply-item:hover { transform: scale(1.02); filter: brightness(95%); }
+
+
+        /* Navigation Theme */
+        #navigation-interface .chat-view-header { background: linear-gradient(to bottom, #6d198e, #ad81e2); }
+        #navigation-interface .message .icon { background-color: var(--website-icon); }
+        #navigation-interface .message.user-message .message-content { --user-message-bg: #9b59b6; }
+        #navigation-interface .send-button { background-color: #9b59b6; }
+        #navigation-interface .message-content .sender-name { color: var(--website-icon); }
+        #navigation-interface .message-content a { color: var(--website-icon); }
+        body.dark-theme #navigation-interface .chat-view-header { background: linear-gradient(to bottom, #673ab7, #512da8); }
+        body.dark-theme #navigation-interface .message.user-message .message-content { --user-message-bg: #7e57c2; }
+        #navigation-suggestions-box {
+            position: absolute; bottom: 100%; width: 100%; margin-bottom: 8px; background: var(--card-bg);
+            border: 1px solid rgba(0,0,0,0.1); border-radius: 15px; box-shadow: 0 -4px 20px var(--shadow-color);
+            z-index: 10; max-h: 180px; overflow-y: auto;
+        }
+        body.dark-theme #navigation-suggestions-box { border-color: rgba(255,255,255,0.15); }
+        .suggestion-item {
+            padding: 12px 15px; cursor: pointer; border-bottom: 1px solid rgba(0,0,0,0.05); color: var(--text-primary);
+        }
+        .suggestion-item:last-child { border-bottom: none; }
+        .suggestion-item:hover { background-color: var(--input-bg); }
+        body.dark-theme .suggestion-item { border-bottom-color: rgba(255,255,255,0.1); }
+
+
+        /* Placements Theme */
+        #placements-interface .chat-view-header { background: linear-gradient(to bottom, #6c4603, #f0ac3f); }
+        #placements-interface .message .icon { background-color: var(--placements-icon); }
+        #placements-interface .message.user-message .message-content { --user-message-bg: #faad14; }
+        #placements-interface .send-button { background-color: #6b4804; }
+        #placements-interface .message-content .sender-name { color: var(--placements-icon); }
+        #placements-interface .message-content a { color: var(--placements-icon); }
+        body.dark-theme #placements-interface .chat-view-header { background: linear-gradient(to bottom, #ad8b00, #876c00); }
+        body.dark-theme #placements-interface .message.user-message .message-content { --user-message-bg: #ad8b00; }
+
+
+        /* Spinner for loading states */
+        .animate-spin-fast { animation: spin 0.8s linear infinite; }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+        /* Typing Indicator Animation */
+        .typing-indicator {
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+        }
+        .typing-indicator span {
+            height: 8px;
+            width: 8px;
+            background-color: #9E9E9E;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 3px;
+            animation: bounce 1.4s infinite ease-in-out both;
+        }
+        body.dark-theme .typing-indicator span { background-color: #777; }
+        .typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
+        .typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
+        @keyframes bounce {
+            0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1.0); }
+        }
+        .logo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 35%;
+        }
+
+    </style>
+</head>
+<body class="light-theme">
+
+    <div class="selector-container">
+        <header class="selector-header">
+            <div class="selector-header-content">
+                <div class="logo-and-title-container">
+                    <div class="logo-placeholder">
+                        <img src="static/logo.png" alt="University Logo" class="logo-image">
+                    </div>
+                    <h2>SAHE UNIVERSITY BOT</h2>
+                </div>
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </div>
+            <p class="selector-greeting">Hi there! 👋</p>
+        </header>
+        <main class="selector-body">
+            <div class="selector-card">
+                <div class="category-selector">
+                    <h3>Select a category to get started:</h3>
+                    <div class="category-item category-item--admission" onclick="selectMode('admissions')">
+                        <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="text"><h4>Admission Queries</h4><p>Application process, deadlines...</p></div>
+                    </div>
+                    <div class="category-item category-item--course" onclick="selectMode('course')">
+                        <div class="icon"><i class="fa-solid fa-book-open"></i></div>
+                        <div class="text"><h4>Course & Curriculum</h4><p>Programs, schedules, info...</p></div>
+                    </div>
+                    <div class="category-item category-item--website" onclick="selectMode('navigation')">
+                        <div class="icon"><i class="fa-solid fa-compass"></i></div>
+                        <div class="text"><h4>Website Navigation</h4><p>Find your way around our site</p></div>
+                    </div>
+                    <div class="category-item category-item--placements" onclick="selectMode('placements')">
+                        <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="text"><h4>Placements</h4><p>Companies, packages, stats...</p></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="admissions-interface" class="chat-view-container hidden">
+        <header class="chat-view-header">
+            <div class="chat-view-header-content">
+                <div class="chat-view-title-section">
+                    <div class="back-button" onclick="resetMode()"><i class="fa-solid fa-arrow-left"></i></div>
+                    <h2>Admissions</h2>
+                </div>
+                <div class="theme-toggle" id="admissions-theme-toggle">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </div>
+            <div class="chat-view-greeting">
+                <p>Welcome! How can I assist?</p>
+                <p>Ask a question about admissions.</p>
+            </div>
+        </header>
+        <main class="chat-view-body" id="admissions-chat-container"></main>
+        <div id="admissions-suggestions" class="px-5 pb-3 bg-transparent"></div>
+        <footer class="chat-view-footer">
+            <input type="text" id="admissions-input" placeholder="Type your question...">
+            <button class="send-button" id="admissions-send-btn">
+                <span id="admissions-send-text"><i class="fa-solid fa-paper-plane"></i></span>
+                <svg id="admissions-spinner" class="animate-spin-fast h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+            </button>
+        </footer>
+    </div>
+
+    <div id="course-interface" class="chat-view-container hidden">
+        <header class="chat-view-header">
+            <div class="chat-view-header-content">
+                <div class="chat-view-title-section">
+                    <div class="back-button" onclick="resetMode()"><i class="fa-solid fa-arrow-left"></i></div>
+                    <h2>Courses & Curriculum</h2>
+                </div>
+                <div class="header-btn" id="course-settings-btn" onclick="startCourseSelection()">
+                    <i class="fa-solid fa-cog"></i>
+                </div>
+                <div class="theme-toggle" id="course-theme-toggle">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </div>
+            <div class="chat-view-greeting">
+                <p>Welcome! How can I assist?</p>
+                <p>First, please select your department.</p>
+            </div>
+        </header>
+        <main class="chat-view-body" id="course-chat-container"></main>
+        <div id="course-quick-replies"></div>
+        <footer class="chat-view-footer">
+            <input type="text" id="course-input" placeholder="Select options above..." disabled>
+            <button class="send-button" id="course-send-btn" disabled>
+                 <span id="course-send-text"><i class="fa-solid fa-paper-plane"></i></span>
+                 <svg id="course-spinner" class="animate-spin-fast h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+            </button>
+        </footer>
+    </div>
+    
+    <div id="navigation-interface" class="chat-view-container hidden">
+         <header class="chat-view-header">
+            <div class="chat-view-header-content">
+                <div class="chat-view-title-section">
+                    <div class="back-button" onclick="resetMode()"><i class="fa-solid fa-arrow-left"></i></div>
+                    <h2>Navigation</h2>
+                </div>
+                <div class="theme-toggle" id="navigation-theme-toggle">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </div>
+            <div class="chat-view-greeting">
+                <p>Lost?</p>
+                <p>Tell me what page you're looking for.</p>
+            </div>
+        </header>
+        <main class="chat-view-body" id="navigation-chat-container"></main>
+        <footer class="chat-view-footer">
+            <div class="relative w-full">
+                <div id="navigation-suggestions-box" class="hidden"></div>
+                <div class="flex items-center gap-2.5">
+                    <input type="text" id="navigation-input" placeholder="e.g., 'library' or 'contact us'" class="flex-grow">
+                    <button class="send-button" id="navigation-send-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+
+
+    <script>
+        /**
+         * FINAL, ROBUST FUNCTION: Converts simple Markdown to HTML.
+         */
+        function markdownToHtml(text) {
+            let processedText = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            processedText = processedText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+            const lines = processedText.split('\n');
+            let html = '';
+            let inList = false;
+
+            for (const line of lines) {
+                if (line.trim().startsWith('* ')) {
+                    if (!inList) {
+                        html += '<ul>';
+                        inList = true;
+                    }
+                    html += `<li>${line.trim().substring(2)}</li>`;
+                } else {
+                    if (inList) {
+                        html += '</ul>';
+                        inList = false;
+                    }
+                    if (line.trim().length > 0) {
+                        html += `<p>${line}</p>`;
+                    }
+                }
+            }
+            if (inList) {
+                html += '</ul>';
+            }
+            return html;
+        }
+
+        // --- Utility Functions ---
+        function updateHeaderScrollState(bodyEl) {
+            if (!bodyEl) return;
+            const header = bodyEl.previousElementSibling;
+            if (header && header.classList.contains('chat-view-header')) {
+                const isOverflowing = bodyEl.scrollHeight > bodyEl.clientHeight;
+                
+                if (isOverflowing) {
+                    header.classList.add('can-scroll');
+                    const shouldBeScrolled = bodyEl.scrollTop > 10;
+                    
+                    if (shouldBeScrolled && !header.classList.contains('scrolled')) {
+                        header.classList.add('scrolled');
+                    } else if (!shouldBeScrolled && header.classList.contains('scrolled')) {
+                        header.classList.remove('scrolled');
+                    }
+                } else {
+                    header.classList.remove('can-scroll', 'scrolled');
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Unified Theme Toggling Logic ---
+            const themeToggles = document.querySelectorAll('.theme-toggle');
+            const body = document.body;
+
+            const setTheme = (theme) => {
+                body.className = theme;
+                themeToggles.forEach(toggle => {
+                    const icon = toggle.querySelector('i');
+                    icon.className = theme === 'dark-theme' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+                });
+            };
+
+            const savedTheme = 'light-theme';
+            setTheme(savedTheme);
+
+            themeToggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const newTheme = body.classList.contains('light-theme') ? 'dark-theme' : 'light-theme';
+                    setTheme(newTheme);
+                });
+            });
+            
+            // --- Header Scroll Effect for all chat UIs ---
+            document.querySelectorAll('.chat-view-body').forEach(bodyEl => {
+                let scrollTimeout;
+                bodyEl.addEventListener('scroll', () => {
+                    if (scrollTimeout) clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(() => {
+                        updateHeaderScrollState(bodyEl);
+                    }, 50);
+                }, { passive: true });
+            });
+            
+            // Initial welcome messages for all 4 bots
+            appendAdmissionsMessage('bot', "Hello! I'm here to help with your admission questions. What information are you looking for today?");
+            appendNavigationMessage('bot', "Hello! How can I help you navigate the university website? Ask for pages like 'admissions', 'library', or 'CSE department'.");
+            appendPlacementsMessage('bot', "Hello! I can answer questions about company placements, packages, and statistics. Ask me something like 'how many students at TCS?' or 'who got the highest package?'.");
+        });
+
+        // --- Core Chat Logic ---
+        const API_BASE_URL = 'http://127.0.0.1:8000';
+        let currentMode = null;
+        let departmentsData = {};
+        let admissionsChatHistory = [];
+        let courseState = { department: null, regulation: null, isSelectionComplete: false, awaitingInput: null };
+
+        // --- Restored Website Navigation Data ---
+        const siddharthaData = {
+          "website": "https://siddhartha.edu.in",
+          "categories": [
+            { "category": "Home", "urls": [ { "name": "Home Page", "url": "https://siddhartha.edu.in/", "description": "Main landing page with latest updates, events, and announcements", "keywords": ["home", "main page", "landing", "homepage"] } ] },
+            { "category": "About", "urls": [ { "name": "About Us", "url": "https://siddhartha.edu.in/about-us/", "description": "Information about Siddhartha Academy of Higher Education", "keywords": ["about", "about us", "information", "history"] }, { "name": "Vision and Mission", "url": "https://siddhartha.edu.in/vision-and-mission/", "description": "University vision and mission statements", "keywords": ["vision", "mission", "goals", "objectives"] }, { "name": "Institutional Development Plan", "url": "https://siddhartha.edu.in/institutional-development-plan/", "description": "Strategic development plan for the institution", "keywords": ["development", "plan", "strategy", "institutional plan"] }, { "name": "Governing Body", "url": "https://siddhartha.edu.in/governing-body/", "description": "Information about the governing body members", "keywords": ["governing body", "administration", "board", "leadership"] }, { "name": "Academic Council", "url": "https://siddhartha.edu.in/academic-council/", "description": "Details about the academic council", "keywords": ["academic council", "council", "academics"] }, { "name": "NIRF Ranking", "url": "https://siddhartha.edu.in/nirf-ranking/", "description": "Details about the college's NIRF ranking", "keywords": ["nirf", "ranking", "awards", "recognition"] }, { "name": "Schools", "url": "https://siddhartha.edu.in/schools/", "description": "Information about various schools within the university", "keywords": ["schools", "faculties", "academic units", "departments"] } ] },
+            { "category": "Academics", "urls": [ { "name": "Academic Programs", "url": "https://siddhartha.edu.in/academic-programs/", "description": "List of all academic programs offered", "keywords": ["programs", "courses", "degrees", "academic programs"] }, { "name": "Ph.D. Programmes", "url": "https://siddhartha.edu.in/phd-programmes/", "description": "Doctoral research programs information", "keywords": ["phd", "doctorate", "research programs", "doctoral"] }, { "name": "Curriculum and Syllabus", "url": "https://siddhartha.edu.in/curriculum-and-syllabus/", "description": "Course curriculum and syllabus details", "keywords": ["curriculum", "syllabus", "course content", "subjects"] }, { "name": "Academic Calendar", "url": "https://siddhartha.edu.in/academic-calendar/", "description": "Academic year calendar and important dates", "keywords": ["calendar", "academic calendar", "dates", "schedule"] } ] },
+            { "category": "Departments", "urls": [ { "name": "Civil Engineering", "url": "https://siddhartha.edu.in/departments/ce/", "description": "Department of Civil Engineering", "keywords": ["civil", "civil engineering", "ce department"] }, { "name": "Computer Science & Engineering", "url": "https://siddhartha.edu.in/departments/cse/", "description": "Department of Computer Science & Engineering", "keywords": ["cse", "computer science", "cs", "computer engineering"] }, { "name": "Electronics & Communication Engineering", "url": "https://siddhartha.edu.in/departments/ece/", "description": "Department of Electronics & Communication Engineering", "keywords": ["ece", "electronics", "communication", "ece department"] }, { "name": "Electrical and Electronics Engineering", "url": "https://siddhartha.edu.in/departments/eee/", "description": "Department of Electrical and Electronics Engineering", "keywords": ["eee", "electrical", "electrical engineering"] }, { "name": "Electronics and Instrumentation Engineering", "url": "https://siddhartha.edu.in/departments/eie/", "description": "Department of Electronics and Instrumentation Engineering", "keywords": ["eie", "instrumentation", "electronics instrumentation"] }, { "name": "Information Technology", "url": "https://siddhartha.edu.in/departments/it/", "description": "Department of Information Technology", "keywords": ["it", "information technology", "it department"] }, { "name": "Mechanical Engineering", "url": "https://siddhartha.edu.in/departments/me/", "description": "Department of Mechanical Engineering", "keywords": ["mechanical", "mechanical engineering", "me department"] } ] },
+            { "category": "Admissions", "urls": [ { "name": "Admissions", "url": "https://siddhartha.edu.in/admissions/", "description": "Admission information and procedures", "keywords": ["admissions", "admission", "apply", "enrollment"] }, { "name": "SEEE Results", "url": "https://results.siddhartha.edu.in/", "description": "Siddhartha Engineering Entrance Examination Results", "keywords": ["seee", "entrance exam", "results", "exam results"] } ] },
+            { "category": "Placements", "urls": [ { "name": "Placements", "url": "https://siddhartha.edu.in/placements/", "description": "Career services and placement information", "keywords": ["placements", "jobs", "career", "recruitment", "companies"] }, { "name": "Placement Statistics", "url": "https://siddhartha.edu.in/placement-statistics/", "description": "Placement statistics and records", "keywords": ["placement stats", "statistics", "placement records"] } ] },
+            { "category": "Research", "urls": [ { "name": "Research", "url": "https://siddhartha.edu.in/research/", "description": "Research and development activities", "keywords": ["research", "r&d", "research projects", "innovation"] } ] },
+            { "category": "Student Life", "urls": [ { "name": "Sports", "url": "https://siddhartha.edu.in/sports/", "description": "Sports activities and facilities", "keywords": ["sports", "athletics", "games", "physical education"] }, { "name": "NCC", "url": "https://siddhartha.edu.in/ncc/", "description": "National Cadet Corps information", "keywords": ["ncc", "national cadet corps", "cadets"] }, { "name": "NSS", "url": "https://siddhartha.edu.in/nss/", "description": "Information about the National Service Scheme activities", "keywords": ["nss", "national service scheme", "social service"] }, { "name": "Student Grievance Redressal Committee", "url": "https://siddhartha.edu.in/student-grievance-redressal-committee/", "description": "Committee for student grievances", "keywords": ["grievance", "complaints", "student committee"] }, { "name": "Internal Complaint Committee", "url": "https://siddhartha.edu.in/internal-complaint-committee/", "description": "Internal complaints committee information", "keywords": ["icc", "complaints", "internal committee"] }, { "name": "Anti-Ragging Committee", "url": "https://siddhartha.edu.in/anti-ragging-committee/", "description": "Information about the anti-ragging committee and policies", "keywords": ["anti-ragging", "ragging", "discipline", "committee"] }, { "name": "Gallery", "url": "https://siddhartha.edu.in/gallery/", "description": "Photo and video gallery of college events and campus life", "keywords": ["gallery", "photos", "videos", "campus life"] }, { "name": "Hostels", "url": "https://siddhartha.edu.in/hostels/", "description": "Information about student hostel facilities", "keywords": ["hostel", "accommodation", "residence", "student housing"] } ] },
+            { "category": "Alumni", "urls": [ { "name": "Alumni", "url": "https://siddhartha.edu.in/alumni/", "description": "Alumni network and information", "keywords": ["alumni", "graduates", "alumni network"] }, { "name": "Alumni 2024", "url": "https://siddhartha.edu.in/alumni2024/", "description": "2024 Alumni batch information", "keywords": ["alumni 2024", "2024 batch", "recent alumni"] } ] },
+            { "category": "Resources", "urls": [ { "name": "SAHE LMS", "url": "https://siddhartha.edu.in/lms/", "description": "Learning Management System", "keywords": ["lms", "learning", "online learning", "portal"] }, { "name": "Library", "url": "https://siddhartha.edu.in/library/", "description": "Library resources and services", "keywords": ["library", "books", "digital library", "resources"] } ] },
+            { "category": "Contact & Information", "urls": [ { "name": "Contact Us", "url": "https://siddhartha.edu.in/contact-us/", "description": "Contact information and location details", "keywords": ["contact", "contact us", "address", "phone", "email"] }, { "name": "Public Self Disclosure", "url": "https://siddhartha.edu.in/public-self-disclosure/", "description": "Public disclosure information", "keywords": ["disclosure", "public information", "transparency"] }, { "name": "Press Coverage", "url": "https://siddhartha.edu.in/press-coverage/", "description": "Media coverage and press releases", "keywords": ["press", "media", "news", "press releases"] } ] },
+            { "category": "Events", "urls": [ { "name": "Events", "url": "https://siddhartha.edu.in/events/", "description": "Upcoming events and activities", "keywords": ["events", "activities", "workshops", "seminars"] } ] },
+            { "category": "Policies & Documents", "urls": [ { "name": "Document Retention Policy", "url": "https://siddhartha.edu.in/document-retention-policy/", "description": "Document retention and management policy", "keywords": ["document policy", "retention", "policy"] }, { "name": "Scale of Punishment for Malpractice", "url": "https://siddhartha.edu.in/scale-of-punishment/", "description": "Disciplinary rules and punishments", "keywords": ["punishment", "discipline", "malpractice", "rules"] } ] },
+            { "category": "Department Categories", "urls": [ { "name": "CE Department Category", "url": "https://siddhartha.edu.in/category/ce-dept/", "description": "Civil Engineering department blog posts and updates", "keywords": ["civil engineering posts", "ce updates", "department news"] } ] }
+          ]
+        };
+
+
+        function selectMode(mode) {
+            currentMode = mode;
+            document.querySelector('.selector-container').classList.add('hidden');
+            document.getElementById('admissions-interface').classList.add('hidden');
+            document.getElementById('course-interface').classList.add('hidden');
+            document.getElementById('navigation-interface').classList.add('hidden');
+            document.getElementById('placements-interface').classList.add('hidden');
+            
+            if (mode === 'admissions') {
+                document.getElementById('admissions-interface').classList.remove('hidden');
+                initializeAdmissions();
+            } else if (mode === 'course') {
+                document.getElementById('course-interface').classList.remove('hidden');
+                initializeCourse();
+            } else if (mode === 'navigation') {
+                document.getElementById('navigation-interface').classList.remove('hidden');
+                initializeNavigation();
+            } else if (mode === 'placements') {
+                document.getElementById('placements-interface').classList.remove('hidden');
+                initializePlacements();
+            }
+        }
+
+        function resetMode() {
+            currentMode = null;
+            document.querySelector('.selector-container').classList.remove('hidden');
+            document.getElementById('admissions-interface').classList.add('hidden');
+            document.getElementById('course-interface').classList.add('hidden');
+            document.getElementById('navigation-interface').classList.add('hidden');
+            document.getElementById('placements-interface').classList.add('hidden');
+            
+            admissionsChatHistory = [];
+            document.getElementById('admissions-chat-container').innerHTML = '';
+            document.getElementById('admissions-suggestions').innerHTML = '';
+            appendAdmissionsMessage('bot', "Hello! I'm here to help with your admission questions. What information are you looking for today?");
+            
+            document.getElementById('course-chat-container').innerHTML = '';
+
+            document.getElementById('navigation-chat-container').innerHTML = '';
+            appendNavigationMessage('bot', "Hello! How can I help you navigate the university website? Ask for pages like 'admissions', 'library', or 'CSE department'.");
+
+            document.getElementById('placements-chat-container').innerHTML = '';
+            appendPlacementsMessage('bot', "Hello! I can answer questions about company placements, packages, and statistics. Ask me something like 'how many students at TCS?' or 'who got the highest package?'.");
+        }
+
+        // --- Admissions Functions (Unchanged) ---
+        async function initializeAdmissions() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/admissions/status`);
+                const data = await response.json();
+                if (data.is_initialized) { 
+                    loadDefaultSuggestions(); 
+                } else { 
+                    appendAdmissionsMessage('bot', 'Sorry, the admissions knowledge base is not initialized. Please contact support.'); 
+                }
+            } catch (error) {
+                console.error('Error initializing admissions:', error);
+                appendAdmissionsMessage('bot', 'Error connecting to admissions service. Please ensure the backend is running.');
+            }
+        }
+
+        function loadDefaultSuggestions() {
+            const defaultQuestions = ['What courses are offered in Engineering?', 'What is the fee for an MBA?', 'What are the eligibility criteria for B.Tech?', 'Tell me about the scholarship policy'];
+            displaySuggestions(defaultQuestions);
+        }
+
+        function displaySuggestions(questions) {
+            const parent = document.getElementById('admissions-suggestions');
+            if(!questions || questions.length === 0) {
+                parent.innerHTML = '';
+                return;
+            }
+            parent.innerHTML = '<div id="admissions-suggestion-buttons"></div>';
+            const buttonsContainer = document.getElementById('admissions-suggestion-buttons');
+            questions.forEach(q => {
+                const btn = document.createElement('button');
+                btn.textContent = q;
+                btn.onclick = () => {
+                    document.getElementById('admissions-input').value = q;
+                    handleAdmissionsSend();
+                };
+                buttonsContainer.appendChild(btn);
+            });
+        }
+        
+        function showAdmissionsTypingIndicator() {
+            const container = document.getElementById('admissions-chat-container');
+            if (document.getElementById('admissions-typing-indicator')) return;
+            const messageDiv = document.createElement('div');
+            messageDiv.id = 'admissions-typing-indicator';
+            messageDiv.classList.add('message', 'bot-message');
+            const icon = document.createElement('div');
+            icon.classList.add('icon');
+            icon.innerHTML = '<i class="fa-solid fa-graduation-cap"></i>';
+            const bubble = document.createElement('div');
+            bubble.classList.add('message-content');
+            bubble.innerHTML = `<div class="typing-indicator"><span></span><span></span><span></span></div>`;
+            messageDiv.appendChild(icon);
+            messageDiv.appendChild(bubble);
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function hideAdmissionsTypingIndicator() {
+            const indicator = document.getElementById('admissions-typing-indicator');
+            if (indicator) indicator.remove();
+        }
+
+        function appendAdmissionsMessage(sender, text) {
+            const container = document.getElementById('admissions-chat-container');
+            const messageDiv = document.createElement('div');
+            const bubble = document.createElement('div');
+            messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'bot-message');
+            bubble.classList.add('message-content');
+            
+            if (sender === 'user') {
+                const cleanText = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                bubble.innerHTML = `<p>${cleanText}</p>`;
+            } else {
+                const formattedText = markdownToHtml(text);
+                bubble.innerHTML = `<p class="sender-name">Admissions Bot</p>${formattedText}`;
+                const icon = document.createElement('div');
+                icon.classList.add('icon');
+                icon.innerHTML = '<i class="fa-solid fa-graduation-cap"></i>';
+                messageDiv.appendChild(icon);
+            }
+            
+            messageDiv.appendChild(bubble);
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+        
+
+        function toggleAdmissionsLoading(isLoading) {
+            const sendBtn = document.getElementById('admissions-send-btn');
+            const sendText = document.getElementById('admissions-send-text');
+            const spinner = document.getElementById('admissions-spinner');
+            const input = document.getElementById('admissions-input');
+            if (isLoading) {
+                sendText.classList.add('hidden');
+                spinner.classList.remove('hidden');
+                sendBtn.disabled = true;
+                input.disabled = true;
+            } else {
+                sendText.classList.remove('hidden');
+                spinner.classList.add('hidden');
+                sendBtn.disabled = false;
+                input.disabled = false;
+                input.focus();
+            }
+        }
+
+        async function handleAdmissionsSend() {
+            const input = document.getElementById('admissions-input');
+            const query = input.value.trim();
+            if (!query) return;
+
+            appendAdmissionsMessage('user', query);
+            input.value = '';
+            toggleAdmissionsLoading(true);
+            displaySuggestions([]);
+            showAdmissionsTypingIndicator();
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/admissions/ask`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ question: query, chat_history: admissionsChatHistory })
+                });
+                if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+                const data = await response.json();
+                hideAdmissionsTypingIndicator();
+                appendAdmissionsMessage('bot', data.answer);
+                admissionsChatHistory.push({ type: 'user', message: query }, { type: 'ai', message: data.answer });
+                displaySuggestions(data.suggested_questions);
+            } catch (error) {
+                console.error('Admissions chat error:', error);
+                hideAdmissionsTypingIndicator();
+                appendAdmissionsMessage('bot', `Sorry, something went wrong. ${error.message}`);
+            } finally {
+                toggleAdmissionsLoading(false);
+            }
+        }
+
+        // --- Course Functions (Unchanged) ---
+        async function initializeCourse() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/course/departments`);
+                if (!response.ok) throw new Error('Failed to fetch departments.');
+                const data = await response.json();
+                departmentsData = data.departments;
+                startCourseSelection();
+            } catch (error) {
+                console.error('Course initialization error:', error);
+                appendCourseMessage('bot', 'Sorry, I could not load the department data. Please try again later.');
+            }
+        }
+        
+        function startCourseSelection() {
+            const chatContainer = document.getElementById('course-chat-container');
+            chatContainer.innerHTML = '';
+            document.getElementById('course-quick-replies').innerHTML = '';
+
+            courseState = { department: null, regulation: null, isSelectionComplete: false, awaitingInput: null };
+            
+            const input = document.getElementById('course-input');
+            const sendBtn = document.getElementById('course-send-btn');
+            input.disabled = true;
+            sendBtn.disabled = true;
+            input.placeholder = 'Select options above...';
+
+            appendCourseMessage('bot', 'Hello! To get started, please select your department.');
+            promptForDepartment();
+        }
+
+        function promptForDepartment() {
+            courseState.awaitingInput = 'department';
+            const repliesContainer = document.getElementById('course-quick-replies');
+            repliesContainer.innerHTML = '';
+
+            const depts = Object.keys(departmentsData).sort();
+            depts.forEach(dept => {
+                const btn = document.createElement('button');
+                btn.textContent = dept.toUpperCase();
+                btn.className = 'reply-item';
+                btn.onclick = () => handleCourseSelection(dept);
+                repliesContainer.appendChild(btn);
+            });
+        }
+
+        function handleCourseSelection(value) {
+            const repliesContainer = document.getElementById('course-quick-replies');
+            repliesContainer.innerHTML = '';
+
+            if (courseState.awaitingInput === 'department') {
+                appendCourseMessage('user', value.toUpperCase());
+                courseState.department = value;
+                const regulations = departmentsData[value];
+                if (regulations && regulations.length > 0) {
+                    promptForRegulation(value);
+                } else {
+                    finalizeCourseSelection();
+                }
+            } else if (courseState.awaitingInput === 'regulation') {
+                appendCourseMessage('user', value.toUpperCase());
+                courseState.regulation = value;
+                finalizeCourseSelection();
+            }
+        }
+
+        function promptForRegulation(dept) {
+            courseState.awaitingInput = 'regulation';
+            appendCourseMessage('bot', 'Got it. Now, please select the regulation.');
+            const repliesContainer = document.getElementById('course-quick-replies');
+            repliesContainer.innerHTML = '';
+
+            const regulations = departmentsData[dept].sort();
+            regulations.forEach(reg => {
+                const btn = document.createElement('button');
+                btn.textContent = reg.toUpperCase();
+                btn.className = 'reply-item';
+                btn.onclick = () => handleCourseSelection(reg);
+                repliesContainer.appendChild(btn);
+            });
+        }
+
+        function finalizeCourseSelection() {
+            courseState.isSelectionComplete = true;
+            courseState.awaitingInput = null;
+
+            let confirmation = `Great! You've selected ${courseState.department.toUpperCase()}`;
+            if (courseState.regulation) {
+                confirmation += ` with regulation ${courseState.regulation.toUpperCase()}`;
+            }
+            confirmation += '. How can I help you?';
+            appendCourseMessage('bot', confirmation);
+
+            const input = document.getElementById('course-input');
+            const sendBtn = document.getElementById('course-send-btn');
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.placeholder = 'Ask about the syllabus...';
+            input.focus();
+        }
+        
+        function showCourseTypingIndicator() {
+            const container = document.getElementById('course-chat-container');
+            if (document.getElementById('course-typing-indicator')) return;
+            const messageDiv = document.createElement('div');
+            messageDiv.id = 'course-typing-indicator';
+            messageDiv.classList.add('message', 'bot-message');
+            const icon = document.createElement('div');
+            icon.classList.add('icon');
+            icon.innerHTML = '<i class="fa-solid fa-book-open"></i>';
+            const bubble = document.createElement('div');
+            bubble.classList.add('message-content');
+            bubble.innerHTML = `<div class="typing-indicator"><span></span><span></span><span></span></div>`;
+            messageDiv.appendChild(icon);
+            messageDiv.appendChild(bubble);
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function hideCourseTypingIndicator() {
+            const indicator = document.getElementById('course-typing-indicator');
+            if (indicator) indicator.remove();
+        }
+
+        function appendCourseMessage(sender, text) {
+            const container = document.getElementById('course-chat-container');
+            const messageDiv = document.createElement('div');
+            const bubble = document.createElement('div');
+            messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'bot-message');
+            bubble.classList.add('message-content');
+            
+            if (sender === 'user') {
+                const cleanText = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                bubble.innerHTML = `<p>${cleanText}</p>`;
+            } else {
+                const formattedText = markdownToHtml(text);
+                bubble.innerHTML = `<p class="sender-name">Curriculum Bot</p>${formattedText}`;
+                const icon = document.createElement('div');
+                icon.classList.add('icon');
+                icon.innerHTML = '<i class="fa-solid fa-book-open"></i>';
+                messageDiv.appendChild(icon);
+            }
+            
+            messageDiv.appendChild(bubble);
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function toggleCourseLoading(isLoading) {
+            const sendBtn = document.getElementById('course-send-btn');
+            const sendText = document.getElementById('course-send-text');
+            const spinner = document.getElementById('course-spinner');
+            const input = document.getElementById('course-input');
+            if (isLoading) {
+                sendText.classList.add('hidden'); 
+                spinner.classList.remove('hidden');
+                sendBtn.disabled = true; 
+                input.disabled = true;
+            } else {
+                sendText.classList.remove('hidden'); 
+                spinner.classList.add('hidden');
+                sendBtn.disabled = false; 
+                input.disabled = false; 
+                input.focus();
+            }
+        }
+
+        async function handleCourseSend() {
+            const input = document.getElementById('course-input');
+            const query = input.value.trim();
+            if (!query) return;
+            if (!courseState.isSelectionComplete) {
+                appendCourseMessage('bot', 'Please finish selecting your department and regulation first.');
+                return;
+            }
+
+            appendCourseMessage('user', query);
+            input.value = '';
+            toggleCourseLoading(true);
+            showCourseTypingIndicator();
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/course/chat`, {
+                    method: 'POST', 
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        query, 
+                        department: courseState.department, 
+                        regulation: courseState.regulation 
+                    })
+                });
+                if (!response.ok) { 
+                    const errorData = await response.json(); 
+                    throw new Error(errorData.detail || `HTTP error! Status: ${response.status}`); 
+                }
+                const data = await response.json();
+                hideCourseTypingIndicator();
+                appendCourseMessage('bot', data.answer);
+            } catch (error) {
+                console.error('Course chat error:', error);
+                hideCourseTypingIndicator();
+                appendCourseMessage('bot', `Sorry, something went wrong. ${error.message}`);
+            } finally {
+                toggleCourseLoading(false);
+            }
+        }
+        
+        // --- Restored Navigation Functions ---
+        function initializeNavigation() { 
+            document.getElementById('navigation-input').focus(); 
+        }
+
+        function levenshteinDistance(a, b) {
+            if (a.length === 0) return b.length; 
+            if (b.length === 0) return a.length;
+            const matrix = Array(b.length + 1).fill(null).map(() => Array(a.length + 1).fill(null));
+            for (let i = 0; i <= a.length; i += 1) { matrix[0][i] = i; }
+            for (let j = 0; j <= b.length; j += 1) { matrix[j][0] = j; }
+            for (let j = 1; j <= b.length; j += 1) {
+                for (let i = 1; i <= a.length; i += 1) {
+                    const indicator = a[i - 1] === b[j - 1] ? 0 : 1;
+                    matrix[j][i] = Math.min(matrix[j][i - 1] + 1, matrix[j - 1][i] + 1, matrix[j - 1][i - 1] + indicator);
+                }
+            }
+            return matrix[b.length][a.length];
+        }
+
+        function findLink(query) {
+            const lowerCaseQuery = query.toLowerCase().trim();
+            if (!lowerCaseQuery) return null;
+            let bestMatch = null, minScore = Infinity;
+            const allUrls = siddharthaData.categories.flatMap(c => c.urls);
+            allUrls.forEach(item => {
+                const targets = [item.name.toLowerCase(), ...item.keywords.map(k => k.toLowerCase())];
+                targets.forEach(target => {
+                    let score = target.includes(lowerCaseQuery) ? (target === lowerCaseQuery ? -2 : -1) : (levenshteinDistance(lowerCaseQuery, target) / target.length);
+                    if (score < minScore) { minScore = score; bestMatch = item; }
+                });
+            });
+            return minScore <= 0.4 ? bestMatch : null;
+        }
+
+        function showNavigationTypingIndicator() {
+            const container = document.getElementById('navigation-chat-container');
+            if (document.getElementById('navigation-typing-indicator')) return;
+            const messageDiv = document.createElement('div');
+            messageDiv.id = 'navigation-typing-indicator';
+            messageDiv.classList.add('message', 'bot-message');
+            const icon = document.createElement('div');
+            icon.classList.add('icon');
+            icon.innerHTML = '<i class="fa-solid fa-compass"></i>';
+            const bubble = document.createElement('div');
+            bubble.classList.add('message-content');
+            bubble.innerHTML = `<div class="typing-indicator"><span></span><span></span><span></span></div>`;
+            messageDiv.appendChild(icon);
+            messageDiv.appendChild(bubble);
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function hideNavigationTypingIndicator() {
+            const indicator = document.getElementById('navigation-typing-indicator');
+            if (indicator) indicator.remove();
+        }
+
+        function appendNavigationMessage(sender, text) {
+            const container = document.getElementById('navigation-chat-container');
+            const messageDiv = document.createElement('div');
+            const bubble = document.createElement('div');
+            messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'bot-message');
+            bubble.classList.add('message-content');
+            
+            if (sender === 'user') {
+                const cleanText = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                bubble.innerHTML = `<p>${cleanText}</p>`;
+            } else {
+                bubble.innerHTML = `<p class="sender-name">Navigation Bot</p><p>${text}</p>`;
+                const icon = document.createElement('div');
+                icon.classList.add('icon');
+                icon.innerHTML = '<i class="fa-solid fa-compass"></i>';
+                messageDiv.appendChild(icon);
+            }
+            messageDiv.appendChild(bubble);
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function handleNavigationSend() {
+            const input = document.getElementById('navigation-input');
+            const query = input.value.trim(); 
+            if (!query) return;
+            appendNavigationMessage('user', query);
+            input.value = '';
+            document.getElementById('navigation-suggestions-box').classList.add('hidden');
+            showNavigationTypingIndicator();
+
+            setTimeout(() => {
+                hideNavigationTypingIndicator();
+                const result = findLink(query);
+                let botResponse = result ? `Sure! Here is the link for "${result.name}": <a href="${result.url}" target="_blank">${result.url}</a>`
+                                       : "I'm sorry, I couldn't find a link for that. Could you please try asking in a different way?";
+                appendNavigationMessage('bot', botResponse);
+            }, 800);
+        }
+
+        function showNavigationSuggestions() {
+            const input = document.getElementById('navigation-input');
+            const suggestionsBox = document.getElementById('navigation-suggestions-box');
+            const query = input.value;
+            suggestionsBox.innerHTML = '';
+            if (query.length < 2) { 
+                suggestionsBox.classList.add('hidden'); 
+                return; 
+            }
+            const lowerCaseQuery = query.toLowerCase();
+            const allUrls = siddharthaData.categories.flatMap(c => c.urls);
+            const matches = allUrls.map(item => ({ 
+                item, 
+                score: Math.min(...[item.name.toLowerCase(), ...item.keywords].map(k => k.includes(lowerCaseQuery) ? k.indexOf(lowerCaseQuery) : levenshteinDistance(lowerCaseQuery, k) + 1000)) 
+            }))
+                .filter(match => match.score < 1003)
+                .sort((a, b) => a.score - b.score)
+                .slice(0, 5)
+                .map(match => match.item);
+            if (matches.length > 0) {
+                matches.forEach(match => {
+                    const item = document.createElement('div');
+                    item.className = 'suggestion-item';
+                    item.textContent = match.name;
+                    item.addEventListener('mousedown', (e) => {
+                        e.preventDefault(); 
+                        input.value = match.name;
+                        suggestionsBox.classList.add('hidden'); 
+                        handleNavigationSend();
+                    });
+                    suggestionsBox.appendChild(item);
+                });
+                suggestionsBox.classList.remove('hidden');
+            } else { 
+                suggestionsBox.classList.add('hidden'); 
+            }
+        }
+
+
+        // --- New Placements Functions ---
+        function initializePlacements() { 
+            document.getElementById('placements-input').focus(); 
+        }
+
+        function showPlacementsTypingIndicator() {
+            const container = document.getElementById('placements-chat-container');
+            if (document.getElementById('placements-typing-indicator')) return;
+            const messageDiv = document.createElement('div');
+            messageDiv.id = 'placements-typing-indicator';
+            messageDiv.classList.add('message', 'bot-message');
+            const icon = document.createElement('div');
+            icon.classList.add('icon');
+            icon.innerHTML = '<i class="fa-solid fa-briefcase"></i>';
+            const bubble = document.createElement('div');
+            bubble.classList.add('message-content');
+            bubble.innerHTML = `<div class="typing-indicator"><span></span><span></span><span></span></div>`;
+            messageDiv.appendChild(icon);
+            messageDiv.appendChild(bubble);
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function hidePlacementsTypingIndicator() {
+            const indicator = document.getElementById('placements-typing-indicator');
+            if (indicator) indicator.remove();
+        }
+
+        function appendPlacementsMessage(sender, text) {
+            const container = document.getElementById('placements-chat-container');
+            const messageDiv = document.createElement('div');
+            const bubble = document.createElement('div');
+            messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'bot-message');
+            bubble.classList.add('message-content');
+            
+            const formattedText = markdownToHtml(text);
+
+            if (sender === 'user') {
+                bubble.innerHTML = `<p>${formattedText}</p>`;
+            } else {
+                bubble.innerHTML = `<p class="sender-name">Placements Bot</p>${formattedText}`;
+                const icon = document.createElement('div');
+                icon.classList.add('icon');
+                icon.innerHTML = '<i class="fa-solid fa-briefcase"></i>';
+                messageDiv.appendChild(icon);
+            }
+            messageDiv.appendChild(bubble);
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function togglePlacementsLoading(isLoading) {
+            const sendBtn = document.getElementById('placements-send-btn');
+            const sendText = document.getElementById('placements-send-text');
+            const spinner = document.getElementById('placements-spinner');
+            const input = document.getElementById('placements-input');
+            if (isLoading) {
+                sendText.classList.add('hidden'); 
+                spinner.classList.remove('hidden');
+                sendBtn.disabled = true; 
+                input.disabled = true;
+            } else {
+                sendText.classList.remove('hidden'); 
+                spinner.classList.add('hidden');
+                sendBtn.disabled = false; 
+                input.disabled = false; 
+                input.focus();
+            }
+        }
+
+        async function handlePlacementsSend() {
+            const input = document.getElementById('placements-input');
+            const query = input.value.trim(); 
+            if (!query) return;
+
+            appendPlacementsMessage('user', query);
+            input.value = '';
+            togglePlacementsLoading(true);
+            showPlacementsTypingIndicator();
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/placements/ask`, {
+                    method: 'POST', 
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query })
+                });
+                
+                hidePlacementsTypingIndicator();
+                if (!response.ok) { 
+                    const errorData = await response.json(); 
+                    throw new Error(errorData.detail || `HTTP error! Status: ${response.status}`); 
+                }
+                
+                const data = await response.json();
+                appendPlacementsMessage('bot', data.answer);
+
+            } catch (error) {
+                console.error('Placements chat error:', error);
+                hidePlacementsTypingIndicator();
+                appendPlacementsMessage('bot', `Sorry, something went wrong. ${error.message}`);
+            } finally {
+                togglePlacementsLoading(false);
+            }
+        }
+
+
+        // --- Event Listeners (Updated for 4 Bots) ---
+        document.getElementById('admissions-send-btn').addEventListener('click', handleAdmissionsSend);
+        document.getElementById('admissions-input').addEventListener('keypress', (e) => { 
+            if (e.key === 'Enter') handleAdmissionsSend(); 
+        });
+
+        document.getElementById('course-send-btn').addEventListener('click', handleCourseSend);
+        document.getElementById('course-input').addEventListener('keypress', (e) => { 
+            if (e.key === 'Enter') handleCourseSend(); 
+        });
+
+        document.getElementById('navigation-send-btn').addEventListener('click', handleNavigationSend);
+        const navInput = document.getElementById('navigation-input');
+        navInput.addEventListener('keypress', (e) => { 
+            if (e.key === 'Enter') handleNavigationSend(); 
+        });
+        navInput.addEventListener('input', showNavigationSuggestions);
+        navInput.addEventListener('focus', showNavigationSuggestions);
+        navInput.addEventListener('blur', () => { 
+            setTimeout(() => { 
+                document.getElementById('navigation-suggestions-box').classList.add('hidden'); 
+            }, 150); 
+        });
+
+        document.getElementById('placements-send-btn').addEventListener('click', handlePlacementsSend);
+        document.getElementById('placements-input').addEventListener('keypress', (e) => { 
+            if (e.key === 'Enter') handlePlacementsSend(); 
+        });
+
+    </script>
+</body>
+</html>

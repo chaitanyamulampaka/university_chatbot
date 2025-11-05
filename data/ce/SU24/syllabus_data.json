@@ -1,0 +1,565 @@
+[
+  {
+    "metadata": {
+      "course_code": "24MA201",
+      "course_name": "Probability and Statistics for Engineers",
+      "semester": "3",
+      "category": "Basic Science",
+      "credits": 4,
+      "prerequisites": "Mathematics",
+      "Continuous Evaluation": "40",
+      "Semester end Evaluation": "60",
+      "Total Marks": "100",
+      "course_outcomes": [
+        "CO 1: Apply Bayes' theorem to calculate conditional probabilities and use discrete random variables to determine probability distributions like Binomial and Poisson for decision-making [K3].",
+        "CO 2: Apply continuous random variables to the normal distribution, approximate the binomial distribution using the normal distribution, and utilize other probability densities [K3].",
+        "CO 3: Apply sampling distribution to statistical parameter mean of σ known and unknown cases and sampling distribution of variance.[K3]",
+        "CO 4: Implement point and interval estimation methods and testing the hypotheses concerning the one and two means [K3].",
+        "CO 5: Apply control chart limits to analyze statistical control and utilize the regression analysis and assessing correlation between the variables [K3]."
+      ]
+    },
+    "Course Description": "An overview of the Multiplication rule of probability, conditional probability, discrete & continuous probability distributions, sampling distribution, Inference concerning one and two means and statistical control, regression and correlation and their applications in solving engineering problems.",
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Probability Distributions",
+        "topics": "Probability: Conditional probability, Multiplication rule of probability, Bayes’ theorem. Probability Distributions: Discrete Random Variable, Binomial distribution, Poisson approximation to the Binomial distribution, Poisson Process.",
+        "Course Description": "This unit introduces students to the concept of conditional probability, discrete random variable and discrete probability distributions Binomial and Poisson for decision making.",
+        "Learning Outcomes": [
+          "Able to find the conditional probability and determine mean and variance of discrete random variables.",
+          "Able to find the probability with respect to binomial and Poisson distributions."
+        ],
+        "Specific Resources: (web)": "https://www.youtube.com/watch?v=UftY0e2ilM4"
+      },
+      {
+        "unit_number": "2",
+        "title": "Probability Densities",
+        "topics": "Probability Densities: Continuous Random Variable, Normal distribution, Normal approximation to the Binomial distribution. Other probability densities: Uniform distribution, Log normal distribution, Gamma distribution, Beta distribution, Weibull distribution.",
+        "Course Description": "This unit covers normal probability distribution and other probability distribution like Uniform, Log normal, Beta, Gamma and Weibull.",
+        "Learning Outcomes": [
+          "Able to find statistical parameters mean, variance and standard deviation in case of continuous random variables.",
+          "Able to determine distribution function using density function and vice versa and find, probability of outcome using continuous probability distributions."
+        ],
+        "Specific Resources: (web)": "http://acl.digimat.in/nptel/courses/video/106105239/L12.html"
+      },
+      {
+        "unit_number": "3",
+        "title": "Sampling Distributions",
+        "topics": "Sampling Distributions: Introduction, Populations and Samples, Sampling distribution of mean (σ known), Sampling distribution of mean (σ unknown), Sampling distribution of the variance.",
+        "Course Description": "This unit focuses on the concepts of sample, population and sampling distribution of mean σ known and unknown cases and Sampling distribution of the variance.",
+        "Learning Outcomes": [
+          "Able to find the Sampling distribution of mean (large and small sample).",
+          "Able to find Sampling distribution of the variance."
+        ],
+        "Specific Resources: (web)": "https://youtu.be/7S7j75d3GM4?si=EZl77-PnfPi6QEI7"
+      },
+      {
+        "unit_number": "4",
+        "title": "Inferences concerning mean",
+        "topics": "Inferences concerning mean: Point Estimation, Interval Estimation, Test of Hypothesis, Hypothesis Concerning one mean, Relation between Tests and Confidence intervals, Comparisons two treatments (large and small samples).",
+        "Course Description": "This unit focuses on the concepts of estimation of population mean and testing the hypothesis concerning one and two means of population.",
+        "Learning Outcomes": [
+          "Able to find the confidence interval, maximum error.",
+          "Able to apply the testing of hypothesis concerning mean to take decision regarding Estimated population mean."
+        ],
+        "Specific Resources: (web)": "https://www.youtube.com/watch?v=IEP3swFeauE"
+      },
+      {
+        "unit_number": "5",
+        "title": "Regression Analysis and Quality Control",
+        "topics": "Regression Analysis: The method of least squares, Multiple Regression, Correlation. The Statistical Content of Quality Improvement Programs: Quality Control, Control Charts for Measurements, Control Charts for Attributes.",
+        "Course Description": "This unit covers statistical control charts and using the regression analysis and assessing correlation between the variables.",
+        "Learning Outcomes": [
+          "Able to construct control charts to take decisions about production process.",
+          "Able to determine correlation and regression between the variables."
+        ],
+        "Specific Resources: (web)": "https://www.youtube.com/watch?v=qb3mvJ1gb9g"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "course_code": "24CE201",
+      "course_name": "Mechanics of Solids",
+      "semester": "3",
+      "category": "Engineering Science",
+      "credits": 4,
+      "prerequisites": "Engineering Mechanics",
+      "Continuous Evaluation": "40",
+      "Semester end Evaluation": "60",
+      "Total Marks": "100",
+      "course_outcomes": [
+        "CO 1: Explain the fundamental concepts of stress, strain, and material behaviour under different loading conditions.",
+        "CO 2: Construct shear force and bending moment diagrams for beams subjected to various loading conditions.",
+        "CO 3: Calculate flexural stresses, shear stresses, and torsional effects in structural elements.",
+        "CO 4: Apply strain energy concepts to determine deflections and energy storage in solid structures.",
+        "CO 5: Determine the compound stress conditions and assess the stability of columns under axial loads."
+      ]
+    },
+    "Course Description": "This course provides a fundamental understanding of the behavior of solid materials under various loading conditions. It covers the principles of stress and strain, their relationships, and applications in engineering structures. Key topics include axial stresses and strains, shear force and bending moment diagrams, flexural and shear stresses in beams, torsion of circular shafts, and strain energy concepts. Additionally, the course explores compound stresses, theories of failure, and the stability analysis of columns. Through analytical and problem-solving approaches, students will develop the skills necessary to design and analyze structural and mechanical components effectively.",
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "STRESSES AND STRAINS",
+        "topics": "Stress and strain concepts, Hooke’s law, Tension, compression, and shear, Lateral strain, Poisson’s ratio, and volumetric strain, Elastic moduli and their relationships, Bars of varying sections and composite bars, Temperature stresses and related problems, Concept of principal stresses and strains",
+        "Course Description": "This unit covers fundamental concepts of stress and strain, including Hooke’s law and different types of stresses (tensile, compressive, and shear). It introduces lateral strain, Poisson’s ratio, and volumetric strain, along with elastic moduli and their interrelationships. It also explores bars with varying sections, composite bars, and the impact of temperature stresses on materials.",
+        "Learning Outcomes": [
+          "Understand the fundamental concepts of stress and strain.",
+          "Apply Hooke’s law to solve simple problems.",
+          "Compute elastic moduli and relate them to material properties.",
+          "Analyze the effects of temperature variations on structural components.",
+          "Identify principal stresses and strains in materials."
+        ],
+        "Specific Resources: (web)": "http://nptel.ac.in/courses/105105108/"
+      },
+      {
+        "unit_number": "2",
+        "title": "SHEAR FORCE AND BENDING MOMENT",
+        "topics": "Definitions and sign conventions, Types of supports, beams, and loads, Shear Force and Bending Moment (SF & BM) diagrams for statically determinate beams",
+        "Course Description": "This unit introduces shear force and bending moment concepts and their significance in analyzing beam structures. It explains different types of supports, loads, and beams, along with how to construct SFBM diagrams for statically determinate beams.",
+        "Learning Outcomes": [
+          "Understand shear force and bending moment concepts.",
+          "Identify different types of supports and loads.",
+          "Construct SF & BM diagrams for statically determinate beams.",
+          "Analyze and interpret beam loading conditions."
+        ],
+        "Specific Resources: (web)": "http://nptel.ac.in/courses/105105108/"
+      },
+      {
+        "unit_number": "3",
+        "title": "FLEXURAL STRESSES & SLOPE AND DEFLECTION",
+        "topics": "Theory of simple bending and assumptions, Bending equation and neutral axis, Bending stresses and section modulus, Relationship between moment, slope, and deflection, Macaulay’s method and Moment area method, Castigliano’s theorem and its applications",
+        "Course Description": "This unit explains the theory of simple bending and the derivation of the bending equation. It introduces the concept of the neutral axis, bending stresses, and section modulus. Methods such as Macaulay’s, Moment area, and Castigliano’s theorem are used to determine slope and deflection in beams.",
+        "Learning Outcomes": [
+          "Derive and apply the bending equation.",
+          "Determine the neutral axis and bending stresses in different beam sections.",
+          "Use various methods to compute slope and deflection in beams."
+        ],
+        "Specific Resources: (web)": "http://nptel.ac.in/courses/105105108/"
+      },
+      {
+        "unit_number": "4",
+        "title": "SHEAR STRESSES, TORSION, AND STRAIN ENERGY",
+        "topics": "Derivation of shear stress formula, Shear stress distribution across beam sections, Torsion equation and its assumptions, Application of torsion equation to solid and hollow shafts, Torsional rigidity, Strain energy in uniaxial stress, pure bending, shear stress, and torsion",
+        "Course Description": "This unit covers shear stress distribution across different beam sections, the torsion equation for circular shafts, and its practical applications. It also introduces the concept of strain energy and its derivation under different loading conditions.",
+        "Learning Outcomes": [
+          "Understand shear stress distribution in different beam sections.",
+          "Apply the torsion equation to practical engineering problems.",
+          "Compute strain energy under various loading conditions."
+        ],
+        "Specific Resources: (web)": "http://nptel.ac.in/courses/105105108/"
+      },
+      {
+        "unit_number": "5",
+        "title": "COMPOUND STRESSES AND COLUMNS",
+        "topics": "Principle of superposition and limitations, Stress distribution due to eccentric, loading, Middle third rule and core of a section, Stability of equilibrium and Euler’s formula for columns, Limitations of Euler’s formula and generalized buckling formulas,",
+        "Course Description": "This unit discusses the combined effects of different types of stresses in a single component. It covers stress distribution in eccentrically loaded sections, the middle third rule, and the concept of core. The unit also introduces Euler’s formula for column stability, its limitations, and generalized buckling load formulas.",
+        "Learning Outcomes": [
+          "Understand the core of a section and its significance in stability analysis",
+          "Analyze compound stresses in structural columns.",
+          "Understand and apply Euler’s formula to analyze column stability.",
+          "Evaluate stress distribution due to eccentric loading."
+        ],
+        "Specific Resources: (web)": "http://nptel.ac.in/courses/105105108/"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "course_code": "24CE202",
+      "course_name": "Surveying & Geomatics",
+      "semester": "3",
+      "category": "Programme Core",
+      "credits": 3,
+      "prerequisites": "Mathematics",
+      "Continuous Evaluation": "40",
+      "Semester end Evaluation": "60",
+      "Total Marks": "100",
+      "course_outcomes": [
+        "CO 1: understand the fundamentals of surveying and various methods of linear measurements.",
+        "CO 2: apply the concept of levelling to prepare sections and contours.",
+        "CO 3: apply the concept of angular measurements to set out curves.",
+        "CO 4: evaluate the areas and volumes in engineering projects.",
+        "CO 5: understand the functioning and application of advanced survey equipment."
+      ]
+    },
+    "Course Description": "Surveying is the specialization within the field of civil engineering that focuses on measurements. It involves the use of specialized tools and techniques to determine distances, angles, and elevations, and it is crucial for creating accurate maps and plans. Surveying is commonly used in construction, engineering, land development, and environmental studies. Overall, surveying provides the foundational knowledge necessary for measurement and setting out of various elements in structures, roads, bridges and other systems in various fields of engineering, including civil, mechanical and aerospace.",
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Fundamentals & linear measurements",
+        "topics": "Surveying: Definition, Primary divisions, Classification, Principles, Plan and map, Scales used for maps and plans, Accuracy, Precision, Sources of errors, Types of errors; Chain surveying: Principles, Instruments, ranging out, Chaining a line on a flat ground; Chaining on an uneven or a sloping ground; Chain & Tape corrections.",
+        "Course Description": "A unit on fundamentals of surveying and chain survey focuses on the basic mechanism involved in doing linear measurements in the field.",
+        "Learning Outcomes": [
+          "Identify suitable methods required to perform survey.",
+          "Evaluate and resolve the errors in chain and tape survey.",
+          "Recognize various methods to measure linear distances in case of obstacles."
+        ],
+        "Specific Resources: (web)": "https://archive.nptel.ac.in/courses/105/104/105104101/"
+      },
+      {
+        "unit_number": "2",
+        "title": "Levelling",
+        "topics": "Basic definitions, Benchmarks, Classification of direct levelling methods, Terms used in Levelling, Theory of differential Levelling, Height of Instrument and rise and fall method, Profile levelling, Cross – sectioning, Contouring, Contour interval, Characteristics of contours, Methods of locating contours, Interpolation and Sketching of contours, Uses of contour maps.",
+        "Course Description": "A unit on levelling focuses on the difference between the vertical distance (elevation) of various points and contours plotted using the elevations are used to figure out the shape of the terrain.",
+        "Learning Outcomes": [
+          "Evaluate the elevation difference between various points.",
+          "Draw profile and cross section of various sections.",
+          "Understand and draw contours of any terrain."
+        ],
+        "Specific Resources: (web)": "https://archive.nptel.ac.in/courses/105/104/105104101/"
+      },
+      {
+        "unit_number": "3",
+        "title": "Angular measurements",
+        "topics": "Main parts of a Vernier Theodolite; Basic definitions; Fundamental lines; Temporary adjustments; Measurement of a horizontal angle by repetition and reiteration. Measurement of vertical angle; Errors in Theodolite surveying, Curves: Types, Designation of a curve; Relationship between radius and degree of curve, Elements of simple curves, setting out of simple curve (linear methods only).",
+        "Course Description": "A unit on theodolite survey focuses on angular measurements required to evaluate the remote object elevations and set out curves in roads and railways.",
+        "Learning Outcomes": [
+          "Understand the procedure to measure horizontal angles with theodolite using suitable method.",
+          "Understand the procedure to measure vertical angles with theodolite.",
+          "Evaluate various parameters required to set out a curve in the field."
+        ],
+        "Specific Resources: (web)": "https://archive.nptel.ac.in/courses/105/104/105104101/"
+      },
+      {
+        "unit_number": "4",
+        "title": "Areas and Volumes",
+        "topics": "Introduction, Area of a tract with straight irregular boundaries, Boundaries with offsets at irregular intervals, Planimeter: working only, Volume of a prismoid: Trapezoidal rule, Prismoidal formula, Capacity of a reservoir.",
+        "Course Description": "A unit on areas and volumes focusses on various methods adopted in each case to evaluate the areas and volumes to calculate the quantities in the field.",
+        "Learning Outcomes": [
+          "Evaluate the area of given tract of land using appropriate method.",
+          "Evaluate the area of one level section.",
+          "Evaluate the volumes and capacity of reservoirs."
+        ],
+        "Specific Resources: (web)": "https://archive.nptel.ac.in/courses/105/104/105104101/"
+      },
+      {
+        "unit_number": "5",
+        "title": "Modern Field Survey Systems",
+        "topics": "EDM: Principle, Types of EDM instruments; Total Station: Fundamental parameters, Field equipment, Setup, Uses; GPS: Functioning, Applications in Civil Engineering.",
+        "Course Description": "A unit on modern field survey systems focusses on the functioning and application of advanced survey equipment like EDM, Total Station and GPS.",
+        "Learning Outcomes": [
+          "Understand the working mechanism and applications of EDM.",
+          "Understand the working mechanism and applications of Total Station.",
+          "Understand the working mechanism and applications of GPS."
+        ],
+        "Specific Resources: (web)": "https://archive.nptel.ac.in/courses/105/104/105104101/"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "course_code": "24CE203",
+      "course_name": "Fluid Mechanics",
+      "semester": "3",
+      "category": "Programme Core",
+      "credits": 3,
+      "prerequisites": "Engineering Mechanics",
+      "Continuous Evaluation": "40",
+      "Semester end Evaluation": "60",
+      "Total Marks": "100",
+      "course_outcomes": [
+        "CO 1: Understand and apply fundamental fluid properties and hydrostatic principles to analyse forces on submerged surfaces and floating bodies.",
+        "CO 2: Analyse fluid motion using kinematic and dynamic principles, including buoyancy, streamlines, and Bernoulli's equation, to evaluate flow behaviour.",
+        "CO3: Apply fluid dynamic principles to measure and analyze flow rates through pipes, orifices, notches, and weirs, using appropriate devices and discharge coefficients.",
+        "CO4: Evaluate energy losses in pipeline systems and analyze laminar flow characteristics using relevant equations and principles."
+      ]
+    },
+    "Course Description": "Fluid Mechanics is a fundamental branch of engineering that deals with the behaviour of fluids (liquids and gases) in motion and at rest. The course covers fluid properties, fluid statics, kinematics, dynamics, and fundamental governing equations. The principles of continuity, momentum, and energy conservation are applied to various engineering applications. This course is essential for multiple disciplines, including civil, mechanical, aerospace, and chemical engineering. Overall fluid Mechanics provides the foundational knowledge necessary for analyzing and designing systems involving fluids and helps engineers of various disciplines to understand fluid behavior, optimize flow systems, design efficient pumps and turbines, and solve challenges related to aerodynamics, hydrodynamics, and fluid-structure interactions.",
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "PROPERTIES OF FLUIDS AND FLUID STATICS",
+        "topics": "PROPERTIES OF FLUIDS: Introduction; Properties of Fluid; Units of measurement; Fluid Continuum; Newtonian and Non - Newtonian fluids; Vapour pressure FLUID STATICS: Variation of static pressure; Pressure the same in all directions — Pascal's Law; Atmospheric, Absolute and gauge pressure; Hydrostatic pressure on horizontal, vertical and inclined plane surfaces.",
+        "Course Description": "This unit provides a fundamental understanding of the behavior of fluids at rest and the forces acting on them. It introduces essential fluid properties, pressure measurement concepts, and principles governing fluid statics. The topics covered in this unit are crucial for analyzing real-world engineering applications such as hydraulic systems, fluid storage, and pressure distribution in different environments.",
+        "Learning Outcomes": [
+          "Define fundamental properties of fluids.",
+          "Calculate hydrostatic pressure and forces on surfaces."
+        ],
+        "Specific Resources: (web)": "https://archive.nptel.ac.in/courses/112/104/112104118/"
+      },
+      {
+        "unit_number": "2",
+        "title": "BUOYANCY, FLOTATION AND KINEMATICS OF FLUID FLOW",
+        "topics": "BUOYANCY AND FLOTATION: Buoyancy; Buoyant force and Centre of Buoyancy; Stability of submerged bodies and floating bodes; Metacenter and metacentric height; Determination of Metacentric Height by experimental method. KINEMATICS OF FLUID FLOW: Methods of describing fluid motion; Classification of flow; Steady, unsteady, uniform and non-uniform flows; Laminar and turbulent flows; Three-, two- and one-dimensional flows; Irrotational and rotational flows; Stream line; Path line; Streak line; Continuity equation; Velocity potential and stream function.",
+        "Course Description": "This unit explores fluid behavior in motion and at rest, focusing on buoyancy, stability, and fluid kinematics. It covers buoyant force, center of buoyancy, and metacentric height, along with methods for classifying flows. Additionally, it introduces streamlines, path lines, the continuity equation, velocity potential, and stream function for fluid flow analysis.",
+        "Learning Outcomes": [
+          "Understand and apply buoyancy and flotation principles, covering calculations of buoyant forces, centers of buoyancy, and metacentric height, with experimental measurement skills.",
+          "Analyze fluid kinematics by classifying flow regimes and applying concepts like streamlines path lines, streak lines, and equations such as continuity, velocity potential, and stream function for fluid motion analysis."
+        ],
+        "Specific Resources: (web)": "https://nptel.ac.in/courses/105101082"
+      },
+      {
+        "unit_number": "3",
+        "title": "DYNAMICS OF FLUID FLOW AND MEASUREMENT OF FLOW THROUGH PIPES",
+        "topics": "DYNAMICS OF FLUID FLOW: Euler’s equation of motion; Bernoulli’s equation; Momentum principle; Application of Momentum equation; Force exerted on a pipe bend. MEASUREMENT OF FLOW THROUGH PIPES: Measurement of flow through Pipes – methods and various devices; Discharge through Venturi meter; Discharge through orifice meter; Measurement of velocity by Pitot tube.",
+        "Course Description": "This unit covers fundamental fluid dynamics principles and flow measurement in pipe systems. It explores Euler’s and Bernoulli’s equations, the momentum principle, and their role in analyzing forces on pipe bends. Additionally, it examines flow measurement techniques using Venturi meters, orifice meters, and Pitot tubes, emphasizing their industrial and laboratory applications.",
+        "Learning Outcomes": [
+          "Apply fluid dynamic principles such as Euler’s equation, Bernoulli’s equation, and the momentum principle to analyze and solve fluid flow problems, including calculating forces on pipe bends.",
+          "Utilize various flow measurement techniques and devices (Venturi meter, orifice meter, and Pitot tube) to accurately determine discharge and velocity in pipe systems."
+        ],
+        "Specific Resources: (web)": "https://nptel.ac.in/courses/105103095"
+      },
+      {
+        "unit_number": "4",
+        "title": "MEASUREMENT OF FLOW THROUGH ORIFICES AND FLOW OVER NOTCHES AND WEIRS",
+        "topics": "MEASUREMENT OF FLOW THROUGH ORIFICES: Flow through orifices; Determination of coefficients for an orifice; Flow through small orifice and large rectangular orifice. FLOW OVER NOTCHES AND WEIRS: Introduction; Classification of notches and weirs; flow over a rectangular sharp-crested weir or notch; ventilation of weirs; flow over a triangular weir or triangular notch; flow over a trapezoidal notch or weir; End Contractions; Velocity of approach.",
+        "Course Description": "This unit explores flow measurement using orifices, notches, and weirs. It covers orifice flow dynamics, discharge coefficients, and various notch and weir types, including rectangular, triangular, and trapezoidal designs. Key topics include end contractions, velocity of approach, and practical measurement methods for hydraulic engineering applications.",
+        "Learning Outcomes": [
+          "Calculate flow rates through orifices by determining appropriate discharge coefficients and distinguish between flow behaviors in small versus large orifice configurations.",
+          "Analyse flow over various notches and weirs, including rectangular sharp crested, triangular, and trapezoidal types, by considering end contractions and velocity of approach, and apply these concepts to design and measurement applications."
+        ],
+        "Specific Resources: (web)": "https://archive.nptel.ac.in/courses/112/104/112104118/"
+      },
+      {
+        "unit_number": "5",
+        "title": "ANALYSIS OF FLOW THROUGH PIPES AND LAMINAR FLOW",
+        "topics": "ANALYSIS OF FLOW THROUGH PIPES: Energy losses in pipelines; Darcy – Weishbach equation; Minor losses in pipelines; Pipes in series and parallel. LAMINAR FLOW: Relation between shear and Pressure Gradients in Laminar Flow; Reynold’s experiment; Critical velocity; Steady laminar flow through a circular pipe – Hagen Poiseuille’s Law; Laminar Flow between Parallel Plates – Both plates at rest.",
+        "Course Description": "This unit explores fluid flow in pipelines and laminar flow characteristics. It covers energy dissipation, frictional and minor losses using the Darcy–Weisbach equation, and pipeline arrangements. The laminar flow section examines shear stress, pressure gradients, Reynolds’ experiments, and applies Hagen–Poiseuille’s Law to circular pipes and parallel plates.",
+        "Learning Outcomes": [
+          "Analyze and compute energy losses in pipeline systems using the Darcy–Weisbach equation, account for minor losses, and evaluate the performance of pipes arranged in series and parallel.",
+          "Explain the principles of laminar flow, including the relationship between shear stress and pressure gradients, interpret Reynolds’ experiment to determine critical velocity, and apply Hagen–Poiseuille’s Law to predict steady flow behavior in circular pipes and between parallel plates."
+        ],
+        "Specific Resources: (web)": "https://nptel.ac.in/courses/105101082"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "course_code": "24CE204",
+      "course_name": "Building Materials & Construction Technology",
+      "semester": "3",
+      "category": "Programme Core",
+      "credits": 3,
+      "prerequisites": "---",
+      "Continuous Evaluation": "40",
+      "Semester end Evaluation": "60",
+      "Total Marks": "100",
+      "course_outcomes": [
+        "CO 1: understand the manufacturing process and properties of construction materials.",
+        "CO 2: understand the properties and uses of various protective coats.",
+        "CO 3: understand various building elements and their construction methods.",
+        "CO 4: Understand the methodology involved in damp-proofing a building."
+      ]
+    },
+    "Course Description": "Building Materials & Construction technology are part of Civil engineering that deals with different types of construction materials used in construction industry and various construction procedures adopted for construction of structural/non-structural elements. Building materials are the essential components used in construction to create structures like homes, offices, bridges, and roads. They come in various forms, each offering different properties and advantages depending on the project's needs. Construction technology refers to the innovations and advancements in tools, machinery, techniques, and methods used to build infrastructure and buildings more efficiently, safely, and sustainably. The field of construction technology has evolved significantly, with new trends reshaping how buildings are designed, constructed, and maintained. Overall, Building Materials & Construction technology provides the foundational knowledge necessary for identify suitable construction materials and construction techniques in the field of civil engineering.",
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Stones and Building Blocks",
+        "topics": "Stones: Qualities of a good building stone; Stone quarrying; Tools for blasting; Materials for blasting; Process of blasting; Precautions in blasting; Common building stones of India. Bricks: General; Composition of good brick earth; Manufacture of bricks; Comparison between clamp burning and kiln burning; Qualities of good bricks; Tests for bricks; Classification of bricks; AAC blocks, Fly ash bricks, Fire bricks.",
+        "Course Description": "A unit on stones and building blocks focusses on a wide variety of stones and bricks used for construction of buildings in India.",
+        "Learning Outcomes": [
+          "Understand the process stone quarrying.",
+          "Understand the process of manufacturing the bricks.",
+          "Identify suitable stones/bricks for construction of non-structural elements in a building."
+        ],
+        "Specific Resources: (web)": "https://archive.nptel.ac.in/courses/105/106/105106206/"
+      },
+      {
+        "unit_number": "2",
+        "title": "Timber",
+        "topics": "Timber: Definition; Structure of a tree; Defects in timber; Qualities of good timber; Decay of timber; Preservation of timber; Fire resistance of timber; Seasoning of timber; Storage of timber, Indian timber trees",
+        "Course Description": "A unit on timber focusses on structure, qualities and various steps involved in the process of utilization of timber as construction material.",
+        "Learning Outcomes": [
+          "Understand the properties of timber.",
+          "Understand the seasoning, preserving and storage of timber.",
+          "Identify the defects in timber."
+        ],
+        "Specific Resources: (web)": "https://archive.nptel.ac.in/courses/105/106/105106206/"
+      },
+      {
+        "unit_number": "3",
+        "title": "Steel and Paints",
+        "topics": "Steel: General; Manufacture of steel; Uses of steel; Market forms of steel; Properties of mild steel; Properties of hard steel; Paints, Varnishes And Distempers: General; Painting; characteristics of ideal paint, Types; Varnishing; Characteristics of an ideal varnish, Types; Distempering; Wall paper; White washing; Colour washing; Emulsion Paints.",
+        "Course Description": "A unit on steel focusses on manufacturing and market forms of steel in India. This units also focusses on various types of protective coatings required for building such as paints and distempers.",
+        "Learning Outcomes": [
+          "Understand the manufacturing process steel.",
+          "Understand the properties and market forms of steel.",
+          "Understand the ingredients and application mechanism of various protective coats.",
+          "Identify the suitable protective coat for required material."
+        ],
+        "Specific Resources: (web)": "https://archive.nptel.ac.in/courses/105/106/105106206/"
+      },
+      {
+        "unit_number": "4",
+        "title": "Masonry",
+        "topics": "Brick Masonry: Technical terms; types of bonds in brickwork- stretcher, header, English, Flemish. Stone Masonry: Technical terms; classification of stone masonry. Walls and Lintels: classification of walls, classification of lintels- timber, stone, brick, steel, reinforced concrete lintels.",
+        "Course Description": "A unit on timber focusses on various types of masonry works involved in building construction.",
+        "Learning Outcomes": [
+          "Understand the various types of bonds used in brick masonry.",
+          "Understand the types of stone masonry used in construction.",
+          "Identify the various types of walls and lintels."
+        ],
+        "Specific Resources: (web)": "https://archive.nptel.ac.in/courses/105/106/105106206/"
+      },
+      {
+        "unit_number": "5",
+        "title": "Floors, Roofs and Damp proofing",
+        "topics": "Floors: Technical terms; Types of flooring materials. Roofs: Technical terms; Types of roofs; Trusses- king post, queen post, combination of king post & queen post trusses, mansard roof truss; Steel sloping roofs; Roof covering materials; Types of flat roofs. Dampness And Damp Proofing: Causes of dampness; Methods of preventing dampness; Damp proofing materials and their classification;",
+        "Course Description": "A unit on floors, roofs focusses on wide variety of floor systems and roof constructions adopted in the construction industry.",
+        "Learning Outcomes": [
+          "Understand various types of roofs and roofing materials.",
+          "Understand various types of floors and flooring materials.",
+          "Understand the dampness prevention methods."
+        ],
+        "Specific Resources: (web)": "https://archive.nptel.ac.in/courses/105/106/105106206/"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "course_code": "24CE281",
+      "course_name": "Strength of Materials Laboratory",
+      "semester": "3",
+      "category": "Programme Core Lab",
+      "credits": 1,
+      "prerequisites": "Engineering Mechanics",
+      "Continuous Evaluation": "60",
+      "Semester end Evaluation": "40",
+      "Total Marks": "100",
+      "course_outcomes": [
+        "CO1: Understand and Analyse Material Behaviour Under Stress and Strain [K2, K3]",
+        "CO2: Evaluate Mechanical Properties of Materials Through Various Tests.",
+        "CO3: Determine Elastic Properties of Materials Using Bending and Torsion Tests [K3]",
+        "CO4: Analyse Structural Behaviour and Material Testing with Practical Applications [K2,K3]"
+      ]
+    },
+    "Course Description": "The Strength of Materials Lab provides practical applications of the principles of solid mechanics and material behavior under various loads and conditions. The lab emphasizes experimental techniques used to test material properties such as modulus of elasticity, Hardness, ductility, tensile strength, shear strength, torsional and impact resistance. In this course, students will conduct a variety of experiments using different materials (Steel, wood, aluminum and brass, etc.) and loading conditions. These experiments aim to validate the theoretical principles of stress, strain, and deformation learned in the Strength of Materials lecture course.",
+    "syllabus": {
+      "list_of_experiments": [
+        "Plot the Stress-Strain Characteristics of Mild Steel/Tor Steel and assess the stress, strain behaviour as per IS codal provisions.",
+        "Evaluate the shear strength of mild steel in single and double shear conditions, as per IS codal revisions.",
+        "Assess the hardness of a materials (steel, Brass, Aluminium) by brinnel and Rockwell test apparatus as per IS codal provisions.",
+        "Determine the elastic modulus (Young’s Modulus) of various materials (steel, wood, copper) by conducting bending test on a simply supported beams.",
+        "Determine the Young’s Modulus of the Given Material by Conducting a Bending Test on a Cantilever Beam and Propped Cantilever",
+        "Analyze the impact strength and toughness of materials by Conducting Charpy test under different loading conditions.",
+        "Measure the material’s resistance to twisting (shear modulus) by applying torsional loads to a solid circular shaft as per IS codal provisions.",
+        "Evaluate the modulus of rigidity of the spring",
+        "Assess the ductility of a steel wire by measuring its elongation under tensile loading, helping to understand its ability to deform before fracture as per IS codal provisions.",
+        "Investigate the mechanical properties of timber for use in construction",
+        "Study the deflection behaviour of a continuous beam under load and determine the effect of different boundary conditions on beam performance.",
+        "Use strain gauges to measure strain and evaluate stress in materials, providing a practical approach to material testing and analysis. (demo)",
+        "Demonstrate shear force distribution along a beam under loading, helping to verify theoretical shear force calculations. (demo)",
+        "Demonstrate bending moments at various points along a beam, and verify theoretical bending moment calculations for different loading conditions. (demo)",
+        "Study the deflection characteristics of beams under various loading conditions and verify the relationship between load and deformation using Young's modulus and Maxwell's Reciprocal Law."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24CE282",
+      "course_name": "Surveying Laboratory",
+      "semester": "3",
+      "category": "Programme Core Lab",
+      "credits": 1,
+      "prerequisites": "Mathematics",
+      "Continuous Evaluation": "60",
+      "Semester end Evaluation": "40",
+      "Total Marks": "100",
+      "course_outcomes": [
+        "CO1: Evaluate distances and areas using chain surveying.",
+        "CO2: Apply the principles of compass surveying to plot a traverse and determine bearings.",
+        "CO3: Evaluate horizontal and vertical angles using theodolite surveying.",
+        "CO4: Apply levelling methods to determine elevations and plot contours."
+      ]
+    },
+    "Course Description": "Surveying is a fundamental aspect of civil engineering that involves the measurement and mapping of the Earth's surface. It is crucial for planning and executing construction projects, determining land boundaries, and understanding terrain characteristics. This lab provides hands-on training in fundamental surveying techniques using different instruments such as chains, prismatic compasses, theodolites, and levels. Students will learn how to measure distances, angles, elevations, and areas efficiently, applying different surveying methods for real-world applications in civil engineering.",
+    "syllabus": {
+      "list_of_experiments": [
+        "Determine the area of a given parcel of land by using cross staff and chain survey.",
+        "Determine the distance between two points with obstacles in between.",
+        "Measurement of bearings of an open traverse with prismatic compass and computation of area correct included angles.",
+        "Measurement of bearings of a closed traverse with prismatic compass and computation of area.",
+        "Measurement of horizontal angle by using Repetition method.",
+        "Measurement of horizontal angles by using Reiteration method.",
+        "Measurement of vertical angles using a Vernier theodolite.",
+        "Determination of elevations of various points remote from each other (differential leveling).",
+        "Survey and plot the longitudinal and cross-sections of a given embankment.",
+        "Prepare a contour map of existing ground using an auto level."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24UC201",
+      "course_name": "Universal Human Values II",
+      "semester": "3",
+      "category": "Humanities and Social Sciences",
+      "credits": 3,
+      "prerequisites": "None. Universal Human Values 1 desirable.",
+      "Continuous Evaluation": "40",
+      "Semester end Evaluation": "60",
+      "Total Marks": "100",
+      "course_outcomes": [
+        "CO 1: Apply the right understanding of the concepts of value education and basic human aspirations through self-exploration for the fulfillment of human aspirations [K3].",
+        "CO 2: Analyse various aspects of the human being as the combination of Self and Body for attaining harmony at the level of human being (individual) [K4].",
+        "CO 3: Apply the knowledge of nine universal values in human-human relationship for harmony at the level of family, and appreciate all the essential factors that help in attaining harmony at the level of society [K3].",
+        "CO 4: Differentiate the characteristics and activities of various orders of Nature and study the mutual fulfillment among them, and also identify the existence as co-existence at all levels [K4].",
+        "CO 5: Present sustainable solutions to various challenges in society and Nature, and identify that the solutions are practicable [K3]."
+      ]
+    },
+    "Course Description": "The course is mandated by AICTE for all B.Tech. students of all branches, preferably in the second year. It is intended to facilitate the development of a holistic and humane world vision. This course employs an innovative and effective methodology of self-exploration, self-verification on one’s own right. It is presented as a systematic set of universal, rational and verifiable proposals about human reality, about the inherent harmony in the human being, the family, society, the entire nature and existence. It draws out the value or role of human being in the harmony at all these levels, which is essentially the scope of ethical human conduct. It further helps to find resolution of present-day challenges. The issues in professional ethics are analysed in the context of the understanding of harmony. While handling the course, the teacher is also a co-explorer along with the students.",
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Course introduction, need, basic guidelines, content and process for value education",
+        "topics": "Purpose and motivation for the course, recapitulation from UHV-I, Self-exploration: what is it?, its content and process, ‘Natural acceptance’ and experimental validation – as the process for self-exploration, Continuous happiness and prosperity – a look at basic human aspirations. Right understanding, relationship and physical facility – the basic requirements for fulfillment of aspirations of every human being with their correct priority, understanding happiness and prosperity correctly – a critical appraisal of the current scenario, method to fulfill the above human aspirations: understanding and living in harmony at various levels.",
+        "Course Description": "This unit deals with the correct meaning of right understanding, relationship and physical facility, value education, self-exploration, and introduces the two basic aspirations of human being and methods to fulfill them.",
+        "Learning Outcomes": [
+          "Explore students themselves, and start appreciating the need and relevance for the course.",
+          "Identify that lack of understanding of human values is the root cause of most of the present-day challenges.",
+          "Understand that verification on the basis of natural acceptance and experiential validation through living is the only way to verify right and wrong."
+        ]
+      },
+      {
+        "unit_number": "2",
+        "title": "Understanding Harmony in the Human Being – Harmony in Myself",
+        "topics": "Understanding human being as a co-existence of the sentient ‘I’ and the material ‘Body’. Understanding the needs of Self (‘I’) and ‘Body’ – happiness and physical facility, Understanding the Body as an instrument of ‘I’ (I being the doer, seer and enjoyer). Understanding the characteristics and activities of ‘I’ and harmony in ‘I’. Understanding the harmony of I with the Body: Sanyam and Health; correct appraisal of Physical needs, meaning of Prosperity in detail, Programs to ensure Sanyam and Health.",
+        "Course Description": "This unit explores human being as a combination of two entities namely Self and Body. It proposes that the needs and functions of both Self and Body are different, and body as an instrument of the Self. It provides the aspects related to harmony within.",
+        "Learning Outcomes": [
+          "Distinguish the desires, needs and functions of the body and self.",
+          "Aware of the activities of the Self and the sources of the desires of the Self.",
+          "Apply the daily routine for maintaining the health of the body."
+        ]
+      },
+      {
+        "unit_number": "3",
+        "title": "Understanding Harmony in the Family and Society – Harmony in Human-Human Relationship",
+        "topics": "Understanding values in human-human relationship; meaning of Justice (nine universal values in relationships) and program for its fulfillment to ensure mutual happiness; Trust and Respect as the foundational values of relationship, Understanding the meaning of Trust; Difference between intention and competence, Understanding the meaning of Respect, Difference between respect and differentiation; the other salient values in relationship. Understanding the harmony in the society (society being an extension of family); Resolution, Prosperity, fearlessness (trust) and co-existence as comprehensive Human Goals, Visualizing a universal harmonious order in society–Undivided Society, Universal Order–from family to world family.",
+        "Course Description": "This unit explores the values in human-human relationship which are essential for maintaining harmony in family. It also explores the aspects for brining harmony in society.",
+        "Learning Outcomes": [
+          "Identify the correct meaning of respect, trust and other values in human-human relationship.",
+          "Understand the real cause of various societal challenges and solutions for addressing them.",
+          "Develop an outline of holistic model for social science and compare it with the existing model."
+        ]
+      },
+      {
+        "unit_number": "4",
+        "title": "Understanding Harmony in Nature & Existence – Whole existence as Coexistence",
+        "topics": "Understanding the harmony in the Nature, Inter-connectedness and mutual fulfillment among the four orders of Nature – recyclability and self-regulation in nature, Understanding Existence as Co-existence of mutually interacting units in all-pervasive space, Holistic perception of harmony at all levels of existence.",
+        "Course Description": "This unit explores the four orders existing in Nature and their interconnectedness. It clarifies that the existence is co-existence of mutually interacting units. It proposes the desirable holistic perception of harmony at all levels of existence.",
+        "Learning Outcomes": [
+          "Differentiate between the characteristics and activities of different orders and study the mutual fulfillment among them.",
+          "Identify the need of taking appropriate steps to ensure right participation in Nature.",
+          "Realize the mutually fulfilling mechanisms and interconnectedness existing in Nature."
+        ]
+      },
+      {
+        "unit_number": "5",
+        "title": "Implications of the above Holistic Understanding of Harmony on Professional Ethics",
+        "topics": "Natural acceptance of human values, Definitiveness of ethical human conduct, Basis for humanistic education, humanistic constitution and humanistic universal order, Competence in professional ethics: a) ability to utilize the professional competence for augmenting universal human order, b) ability to identify the scope and characteristics of people-friendly and eco-friendly production systems, c) ability to identify and develop appropriate technologies and management patterns for above production systems, Case studies of typical holistic technologies, management models and production systems, Strategy for transition from the present state to Universal Human Order: a) at the level of individual: as socially and ecologically responsible engineers, technologists and managers, b) at the level of society: as mutually enriching institutions and organizations.",
+        "Course Description": "This unit deals with the definitiveness of ethical human conduct and basis for humanistic education and competence in professional ethics. It provides case studies of typical holistic technologies, management models and production systems.",
+        "Learning Outcomes": [
+          "Present sustainable solutions to the problems in society and nature, and see that those solutions are practicable and draw roadmaps to achieve them.",
+          "Appreciate the right utilization of their knowledge in their stream of Engineering."
+        ]
+      }
+    ],
+    "Specific Resources: (web)": [
+      "https://dokumen.pub/a-foundation-course-in-human-values-and-professional-ethicsfirstnbsped-9788174467812.html",
+      "https://www.youtube.com/channel/UCo8MpJB_aaVwB4LWLAx6AhQ",
+      "https://fdp-si.aicte-india.org/download.php#1"
+    ]
+  }
+]

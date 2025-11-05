@@ -1,0 +1,523 @@
+[
+  {
+    "metadata": {
+      "course_code": "24MA203",
+      "course_name": "Probability and Statistics",
+      "semester": "3",
+      "category": "Basic Sciences (BS)",
+      "credits": 4,
+      "L-T-P": "4-0-0",
+      "course_type": "Theory",
+      "prerequisites": "Linear Algebra, Series, and Calculus"
+    },
+    "course_description": "This course provides a comprehensive understanding of probability and statistics, focusing on theoretical foundations and practical applications. Students will explore fundamental concepts such as probability distributions, statistical inference, hypothesis testing, and data analysis techniques. Key topics include discrete and continuous probability distributions (Binomial, Poisson, Normal), joint distributions, and the Central Limit Theorem. The course emphasizes developing problem-solving skills to analyze data, model uncertainties, and make informed decisions based on statistical reasoning.",
+    "course_outcomes": [
+      "Explain probability distributions, joint distributions, and the Central Limit Theorem.",
+      "Interpret confidence intervals and hypothesis testing for statistical inference.",
+      "Apply probability and statistical methods to real-world problems.",
+      "Analyze datasets to estimate parameters and test hypotheses.",
+      "Evaluate probabilistic models using computational tools for decision-making."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Probability Distributions and Random Variables",
+        "topics": "Random Variables, Binomial distribution, Hypergeometric Distribution, Poisson approximation to the Binomial distribution, Poisson process."
+      },
+      {
+        "unit_number": "2",
+        "title": "Probability Densities and Joint Distributions",
+        "topics": "Continuous random variables, Normal distribution, Normal approximation to the Binomial distribution. Joint Distributions-Discrete and Continuous."
+      },
+      {
+        "unit_number": "3",
+        "title": "Statistical Inference",
+        "topics": "Inferences Concerning a Mean: Point Estimation, Interval Estimation, Tests of Hypotheses, Hypotheses concerning one mean, Relation between tests and confidence intervals, Comparisons of two independent large and small samples."
+      },
+      {
+        "unit_number": "4",
+        "title": "Variances and Proportions",
+        "topics": "Inferences Concerning Variances: Estimation of variances, Hypotheses concerning one and two variances. Inferences Concerning Proportions: Estimation of Proportions, Hypotheses concerning one and several Proportions, The analysis of r x c tables."
+      },
+      {
+        "unit_number": "5",
+        "title": "Non-Parametric Statistical Tests",
+        "topics": "Introduction, The Sign Test, Rank-Sum tests, Correlation based on ranks, Tests of Randomness."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "R. A. Johnson, Probability and Statistics for Engineers, 8th Edition, Prentice Hall India Learning Private Limited, 2011."
+      ],
+      "reference_books": [
+        "R. E. Walpole, R. H. Myers, S. L. Myers, and K. Ye, Probability and Statistics for Engineers and Scientists, 5th Edition, Macmillan, New York, 1993.",
+        "P. C. Biswal, Probability and Statistics, Prentice Hall India Learning Private Limited, 2007.",
+        "T. K. V. Iyengar, B. K. Gandhi, S. Ranganadham, and M. V. S. S. N. Prasad, Probability and Statistics, S. Chand Publishing, 2008."
+      ],
+      "web_resources": [
+        "https://nptel.ac.in/courses/111105090",
+        "https://nptel.ac.in/courses/111102112",
+        "https://nptel.ac.in/courses/111105042"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24CS201",
+      "course_name": "Digital Logic Design",
+      "semester": "3",
+      "category": "Engineering Sciences (ES)",
+      "credits": 3,
+      "L-T-P": "3-0-0",
+      "course_type": "Theory",
+      "prerequisites": "Not specified"
+    },
+    "course_description": "This course provides an in-depth introduction to the principles and techniques used in the design and analysis of digital systems, covering the fundamentals of digital logic and their applications in hardware design. It emphasizes both combinational and sequential logic circuits, number systems, Boolean algebra, and the design of digital circuits of medium complexity using SSIs, MSIs, and programmable logic devices.",
+    "course_outcomes": [
+      "Understand Number systems and Boolean algebra.",
+      "Apply simplification techniques to minimize Boolean functions.",
+      "Apply combinational logic concepts to design and implement MSI and LSI circuits.",
+      "Apply sequential logic principles to design clocked sequential circuits using flip-flops.",
+      "Apply sequential logic techniques to design Counters, Registers and Memory elements."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Number Systems, Boolean Algebra, and Logic Gates",
+        "topics": "Binary Systems: Digital computers, number systems, conversions, complements, and binary codes. Boolean Algebra and Logic Gates: Axiomatic definition, theorems, properties, Boolean functions, canonical and standard forms, and digital logic gates."
+      },
+      {
+        "unit_number": "2",
+        "title": "Boolean Function Simplification and Combinational Logic Design",
+        "topics": "Simplification of Boolean Functions using The Map Method and The Tabulation Method. Combinational Logic: Design Procedure, Adders, Subtractors, Code Conversion, Exclusive-or Gates, and Parity Generators."
+      },
+      {
+        "unit_number": "3",
+        "title": "Combinational Circuits and Programmable Logic Devices",
+        "topics": "Combinational Logic with MSI and LSI: Binary Parallel Adder, Decimal Adder, Magnitude Comparator, Decoders, encoders, and Multiplexers. Programmable Logic Devices (PLD), PROM, PLA, PAL, and an introduction to FPGA."
+      },
+      {
+        "unit_number": "4",
+        "title": "Sequential Logic and State Machine Design",
+        "topics": "Sequential circuits, Latches, Flip Flops, Triggering, Master-slave flip-flop, and Excitation tables. Analysis of Clocked Sequential Circuits including state table, state diagram, state reduction, and design of counters."
+      },
+      {
+        "unit_number": "5",
+        "title": "Registers, Counters, and Memory Units",
+        "topics": "Registers, Shift Registers, Asynchronous and Synchronous Counters, Ring Counter, and Johnson Counter. Memory Units: Block diagram, design, and classification of ROM and RAM."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "M.Morris Mano, Digital Logic & Computer Design, 1st edition reprint, Pearson education, 2016.",
+        "M.Morris Mano, Michael D Ciletti, Digital Design with an Introduction to Verilog HDL, 5th edition, Pearson education, 2013."
+      ],
+      "reference_books": [
+        "A. Anand Kumar, Switching Theory and Logic Design, 2nd Edition, PHI, 2013.",
+        "Charles H.Roth, Fundamentals of Logic Design, 6th edition, Cengage learning, 2010.",
+        "William Stallings, Computer Architecture and Organization Designing for Performance, Ninth edition, Pearson Education series, 2014."
+      ],
+      "web_resources": [
+        "https://nptel.ac.in/courses/108/106/108106177/",
+        "https://nptel.ac.in/courses/106/108/106108099/"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24CS202",
+      "course_name": "Object Oriented Programming Through Java",
+      "semester": "3",
+      "category": "Program Core (PC)",
+      "credits": 3,
+      "L-T-P": "3-0-0",
+      "course_type": "Theory",
+      "prerequisites": "Programming using 'C'"
+    },
+    "course_description": "This course offers a comprehensive introduction to Java, covering its fundamental constructs, object-oriented principles, and advanced features. It covers the evolution of Java, syntax, data types, control structures, classes, objects, inheritance, string handling, packages, interfaces, exception handling, and I/O operations. Advanced topics include multithreading, lambda expressions, the Java Collections Framework, and the Stream API.",
+    "course_outcomes": [
+      "Understand Java's history, features, object-oriented concepts, control statements, and basic data types.",
+      "Apply concepts of classes, objects, inheritance, and string handling to develop Java applications.",
+      "Apply the concepts of packages, interfaces, exception handling, and I/O streams to develop efficient and modular Java programs.",
+      "Apply multithreading and lambda expressions in Java to develop efficient, concurrent, and functional programs.",
+      "Apply Java Collections Framework and Stream API for managing groups of objects and performing efficient operations on them."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Fundamental Java Programming Constructs",
+        "topics": "History and Evolution of Java, features, and OOP principles. Primitive Data Types, Variables, Arrays, and Operators."
+      },
+      {
+        "unit_number": "2",
+        "title": "Classes, Objects, Inheritance, and String Handling",
+        "topics": "Class Fundamentals, Declaring Objects, Methods, Constructors, 'this' keyword, static, and final. String Handling using String, StringBuffer, and StringTokenizer classes. Inheritance basics, 'super', method overriding, dynamic method dispatch, and abstract classes."
+      },
+      {
+        "unit_number": "3",
+        "title": "Packages, Interfaces, Exception Handling, and IO Streams",
+        "topics": "Packages and Interfaces. Exception Handling Fundamentals, using try/catch, throw, throws, finally, and creating custom exceptions. I/O streams including Byte Streams and Character Streams."
+      },
+      {
+        "unit_number": "4",
+        "title": "Multithreading and Lambda Expressions",
+        "topics": "The Java Thread Model, creating threads, thread priorities, and synchronization. Introduction to Lambda Expressions, generic functional interfaces, and method references."
+      },
+      {
+        "unit_number": "5",
+        "title": "Collections Framework and Stream API",
+        "topics": "Collections Overview, including List, Set, and Map Interfaces, and classes like ArrayList, HashSet, and HashMap. The Stream API, covering stream basics, reduction operations, parallel streams, and mapping."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Herbert Schildt, Danny Coward, \"Java: The Complete Reference\", Thirteenth Edition, McGrawHill, 2023."
+      ],
+      "reference_books": [
+        "Herbert Schildt, Dale Skrien, \"Java Fundamentals A Comprehension Introduction\", Special Indian Edition, McGraw-Hill Education India Pvt. Ltd, 2017.",
+        "E Balaguruswamy, \"Programming with Java\", Seventh Edition, Mc Graw Hill 2023.",
+        "Paul J. Dietel and Dr.Harvey M. Deitel, \"Java How to Program\", Eleventh Edition, Deitel & Associates, Inc.1, 2018.",
+        "Timothy Budd, \"Understanding Object Oriented Programming with Java\", Updated edition, Pearson Education, 2013.",
+        "Kathy Sierra & Bert Bates, \"Head First Java\", 2nd Edition, Oreilly."
+      ],
+      "web_resources": [
+        "https://archive.nptel.ac.in/courses/106/105/106105191/",
+        "https://onlinecourses.nptel.ac.in/noc24_cs96/preview",
+        "https://www.coursera.org/specializations/java-programming",
+        "https://www.coursera.org/specializations/hands-on-java"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24CS203",
+      "course_name": "Software Engineering",
+      "semester": "3",
+      "category": "Program Core (PC)",
+      "credits": 3,
+      "L-T-P": "3-0-0",
+      "course_type": "Theory",
+      "prerequisites": "Not specified"
+    },
+    "course_description": "This course provides an overview of the software engineering discipline, introducing fundamental principles and methods. It covers various methods and models for requirement gathering, analysis, and modeling, as well as design models and patterns for different domains. Methodologies like structured and object-oriented design are also covered. Students will also learn implementation and testing concepts.",
+    "course_outcomes": [
+      "Understand the basics of software engineering.",
+      "Understand the different software engineering process models.",
+      "Apply analysis model for any given application.",
+      "Apply design model for any given application.",
+      "Apply different testing techniques."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Process Models and Agile Development",
+        "topics": "The Nature and changing nature of Software, The Software Process, and Software Development Myths. Process models including Prescriptive, Specialized, and the Unified Process. Agile Development, Extreme Programming (XP), and other Agile Process Models."
+      },
+      {
+        "unit_number": "2",
+        "title": "Requirements Engineering",
+        "topics": "Understanding, Eliciting, and Validating Requirements. Requirements Modeling with Scenarios, Analysis Classes, including UML Models and Class-Responsibility-Collaborator Modeling."
+      },
+      {
+        "unit_number": "3",
+        "title": "Requirements Modeling & Design Concepts",
+        "topics": "Requirements Modeling for Flow and Behavior, including creating behavioral models and state representations. Design Concepts within the context of Software Engineering, including the design process and model."
+      },
+      {
+        "unit_number": "4",
+        "title": "Software Design",
+        "topics": "Architectural Design, including genres, styles, and decisions. Component-Level Design for class-based components, web apps, and mobile apps. User Interface Design, including the Golden Rules and interface analysis."
+      },
+      {
+        "unit_number": "5",
+        "title": "Software Testing",
+        "topics": "Software Testing Strategies for conventional and object-oriented software. Techniques for testing conventional applications, including White Box Testing (Basis Path, Control Structure) and Black-Box Testing."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Roger S. Pressman, Bruce R.Maxim, \"Software Engineering a practitioners approach\" 8th edition, McGraw-Hill Publication, 2019."
+      ],
+      "reference_books": [
+        "Ian Somerville, \"Software Engineering\", 9th ed, Pearson Education, 2011.",
+        "Carlo Ghezzi, Mehdi Jazayeri and Dino Mandrioli, \"Fundamentals of Software Engineering\", 2nd ed, PHI, 2009.",
+        "RajibMall, Fundamentals of Software Engineering, 3rd ed, PHI, 2009."
+      ],
+      "web_resources": [
+        "https://nptel.ac.in/courses/106101061/2",
+        "https://onlinecourses.swayam2.ac.in/cec20_cs07/preview",
+        "https://www.youtube.com/watch?v=sB2iQSvrcGO"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24CS204",
+      "course_name": "Operating Systems",
+      "semester": "3",
+      "category": "Program Core (PC)",
+      "credits": 4,
+      "L-T-P": "3-0-2",
+      "course_type": "Integrated Course",
+      "prerequisites": "Programming using 'C'"
+    },
+    "course_description": "This course provides a comprehensive introduction to the underlying principles, techniques, and approaches in operating systems. It will consider the inherent functionality and processing of program execution, with an emphasis on how the various elements of an OS interact to provide services for application software.",
+    "course_outcomes": [
+      "Identify the basic components of an Operating System.",
+      "Apply CPU Scheduling and disk scheduling algorithms to achieve specific criteria.",
+      "Apply analysis model for any given application.",
+      "Analyze the mechanisms used for process synchronization and handling deadlocks.",
+      "Analyze virtual memory techniques & File system Implementation techniques."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction and Operating System Structures",
+        "topics": "Operating Systems, Computer-System Organization, Architecture, and Operations. Operating-System Services, System Calls, and OS Design and Implementation."
+      },
+      {
+        "unit_number": "2",
+        "title": "Process Management",
+        "topics": "Processes and Threads: Process Concept, Scheduling, Interprocess Communication (IPC), and Multithreading Models. CPU Scheduling: Basic Concepts, Criteria, and Algorithms like FCFS, SJF, RR, and Priority."
+      },
+      {
+        "unit_number": "3",
+        "title": "Process Synchronization",
+        "topics": "Synchronization Tools: The Critical-Section Problem, Peterson's Solution, Mutex Locks, Semaphores, and Monitors. Deadlocks: System Model, Characterization, and methods for handling them including Prevention, Avoidance, and Detection."
+      },
+      {
+        "unit_number": "4",
+        "title": "Memory Management",
+        "topics": "Main Memory: Contiguous Memory Allocation, Paging, and Swapping. Virtual Memory: Demand Paging, Copy-on-Write, Page Replacement, and Thrashing."
+      },
+      {
+        "unit_number": "5",
+        "title": "Storage Management and File System",
+        "topics": "Mass-Storage Structure: HDD Scheduling (FCFS, SCAN, C-SCAN) and RAID Structure. File-System Interface and Implementation: File Concept, Access Methods, Directory Structure, and Allocation Methods."
+      },
+      {
+        "unit_number": "Lab",
+        "title": "Lab Tasks",
+        "topics": [
+          "Introduction to Linux Command Line Interface and Shell Utilities.",
+          "Practicing Essential Windows PowerShell Commands Using Batch Scripts.",
+          "Implementation of Fundamental UNIX System Calls for Process and File System Management.",
+          "Simulation of FCFS, SJF (Preemptive & Non-Preemptive), Round Robin Scheduling Algorithms.",
+          "Simulation of Priority Scheduling (Preemptive & Non-Preemptive).",
+          "Real-Time Scheduling EDF and Rate Monotonic Scheduling (RMS).",
+          "Simulating the Critical Section Problem & Implementing Peterson's Solution.",
+          "Implementing Producer-Consumer Problem using Semaphores.",
+          "Solving Readers-writers problem using synchronization tools.",
+          "Solving the Dining Philosophers Problem.",
+          "Simulate Banker's Algorithm for Deadlock Avoidance.",
+          "Simulate memory allocation strategies like First Fit, Best Fit, and Worst Fit.",
+          "Simulate logical to physical address translation using fixed-size pages and frames.",
+          "Implement and compare FIFO, LRU, and Optimal page replacement algorithms.",
+          "Simulate disk scheduling algorithms like FCFS, SSTF, SCAN, C-SCAN.",
+          "Simulate and compare File Allocation Methods including Contiguous, Linked & Indexed Allocation.",
+          "Implement free space tracking methods: Bit vector, Linked list & Grouping."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Abraham Silberschatz, Peter B. Galvin and Greg Gagne, \"Operating System Concepts\", 10th Edition, John Wiley & Sons Pvt. Ltd, 2018."
+      ],
+      "reference_books": [
+        "William Stallings, \"Operating System: Internals and Design Principles\", 6th Edition 2009.",
+        "Andrew S.Tanenbaum, \"Modern Operating Systems\", 3rd Edition, PHI, 2008."
+      ],
+      "web_resources": [
+        "https://nptel.ac.in/courses/106/105/106105214/",
+        "https://www.scs.stanford.edu/21wi-cs140/notes/",
+        "https://www.cse.iitb.ac.in/-mythili/os/"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24CS281",
+      "course_name": "Object Oriented Programming Through Java Lab",
+      "semester": "3",
+      "category": "Program Core (PC)",
+      "credits": 1.5,
+      "L-T-P": "0-0-3",
+      "course_type": "Practical",
+      "prerequisites": "Programming using 'C' Lab"
+    },
+    "course_description": "The course provides hands-on experience in developing applications using Java, focusing on core and advanced object-oriented programming concepts. It covers the installation of JDK, writing simple programs, control statements, data types, arrays, classes, objects, inheritance, exception handling, multithreading, lambda expressions, and the Java Collections Framework.",
+    "course_outcomes": [
+      "Apply the basic concepts of Java including installation, data types, control statements, and arrays.",
+      "Apply OOP principles, string handling and inheritance.",
+      "Apply the concepts of packages, interfaces, exception handling, and stream-based file input/output.",
+      "Apply the concepts of multithreading and lambda expressions.",
+      "Apply the concepts of Java collections framework and Stream API."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "List of Tasks",
+        "topics": [
+          "Task 1: Installation, Simple Program and Control Statements.",
+          "Task 2: Primitive Types, Type Conversions and Type Promotions.",
+          "Task 3: Arrays.",
+          "Task 4: Classes, Objects and Constructors.",
+          "Task 5: Method Overloading and String Handling.",
+          "Task 6: Inheritance, Method Overriding and Dynamic Method Dispatch.",
+          "Task 7: Packages, Interfaces and Exceptions.",
+          "Task 8: Byte Streams and Character Streams.",
+          "Task 9: Threads, Multiple Threads and Thread Priorities.",
+          "Task 10: Generic Functional Interfaces and Lambda Expressions.",
+          "Task 11: Collection Classes (ArrayList, LinkedList, HashSet, HashMap, TreeMap).",
+          "Task 12: The Stream API."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Herbert Schildt, Danny Coward, \"Java: The Complete Reference\", Thirteenth Edition, McGrawHill, 2023."
+      ],
+      "reference_books": [
+        "Herbert Schildt, Dale Skrien, \"Java Fundamentals A Comprehension Introduction\", Special Indian Edition, McGraw-Hill Education India Pvt. Ltd, 2017.",
+        "E Balaguruswamy, \"Programming with Java\", Seventh Edition, Mc Graw Hill 2023.",
+        "Paul J. Dietel and Dr.Harvey M. Deitel, \"Java How to Program\", Eleventh Edition, Deitel & Associates, Inc.1, 2018.",
+        "Timothy Budd, \"Understanding Object Oriented Programming with Java\", Updated edition, Pearson Education, 2013.",
+        "Kathy Sierra & Bert Bates, \"Head First Java\", 2nd Edition, Oreilly."
+      ],
+      "web_resources": [
+        "https://archive.nptel.ac.in/courses/106/105/106105191/",
+        "https://onlinecourses.nptel.ac.in/noc24_cs96/preview",
+        "https://www.coursera.org/specializations/java-programming",
+        "https://www.coursera.org/specializations/hands-on-java"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24CS282",
+      "course_name": "Digital Logic Design Lab",
+      "semester": "3",
+      "category": "Engineering Sciences (ES)",
+      "credits": 1.5,
+      "L-T-P": "0-0-3",
+      "course_type": "Practical",
+      "prerequisites": "Not specified"
+    },
+    "course_description": "This laboratory component helps students gain practical experience in implementing digital circuits and systems based on theory. The experiments cover topics from basic logic gates to complex combinational and sequential circuits, and introduce the use of FPGA for digital design.",
+    "course_outcomes": [
+      "Apply knowledge of logic gates and universal gates for circuit realization.",
+      "Apply combinational logic concepts to design arithmetic circuits, code converters, and comparators.",
+      "Analyze combinational circuits using MSIs such as multiplexers, decoders, and encoders.",
+      "Analyze various types of flip-flops, counters, and shift registers.",
+      "Analyze logic gate realization and combinational circuit design using FPGA platforms."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "List of Tasks",
+        "topics": [
+          "Task 1: Realization of All logic gates using universal gates.",
+          "Task 2: Design and Implementation of Arithmetic circuits.",
+          "Task 3: Design and implement different types of code converters.",
+          "Task 4: Design and implementation of magnitude comparators.",
+          "Task 5: Implementation of Decoders and encoders.",
+          "Task 6: Implementation of Multiplexer and De Multiplexer.",
+          "Task 7: Implementation of all types of FLIP-FLOPS using gates.",
+          "Task 8: Design of Synchronous counters.",
+          "Task 9: Design of Asynchronous counters.",
+          "Task 10: Design of Ring-counter and Johnson counter.",
+          "Task 11: Verification of Shift-Registers using flip flops.",
+          "Task 12: Logic Design with FPGA."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "M.Morris Mano, Digital Logic & Computer Design, 1st edition reprint, Pearson education, 2016.",
+        "M.Morris Mano, Michael D Ciletti, Digital Design with an Introduction to Verilog HDL, 5th edition, Pearson education, 2013."
+      ],
+      "reference_books": [
+        "A. Anand Kumar, Switching Theory and Logic Design, 2nd Edition, PHI, 2013.",
+        "Charles H.Roth, Fundamentals of Logic Design, 6th edition, Cengage learning, 2010.",
+        "William Stallings, Computer Architecture and Organization Designing for Performance, Ninth edition, Pearson Education series, 2014."
+      ],
+      "web_resources": [
+        "https://nptel.ac.in/courses/108/106/108106177/",
+        "https://nptel.ac.in/courses/106/108/106108099/"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24UC201",
+      "course_name": "Universal Human Values-II: Understanding Harmony",
+      "semester": "3",
+      "category": "Mandatory Course (MC)",
+      "credits": 3,
+      "L-T-P": "2-1-0",
+      "course_type": "Theory",
+      "prerequisites": "UHV-I (Student Induction Programme)"
+    },
+    "course_description": "Mandated by AICTE, this course aims to help students develop a holistic and humane world vision through a methodology of self-exploration. It presents universal proposals about human reality and the inherent harmony in the human being, family, society, nature, and existence. It also addresses professional ethics within this context of harmony.",
+    "course_outcomes": [
+      "Apply the right understanding of the concepts of value education and basic human aspirations through self-exploration for the fulfillment of human aspirations.",
+      "Analyse various aspects of the human being as the combination of Self and Body for attaining harmony at the level of human being (individual).",
+      "Apply the knowledge of nine universal values in human-human relationship for harmony at the level of family, and appreciate all the essential factors that help in attaining harmony at the level of society.",
+      "Differentiate the characteristics and activities of various orders of Nature and study the mutual fulfillment among them, and also identify the existence as co-existence at all levels.",
+      "Present sustainable solutions to various challenges in society and Nature, and identify that the solutions are practicable."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction, Need, and Basic Guidelines",
+        "topics": "Recapitulation from UHV-I, self-exploration, 'Natural acceptance,' and experimental validation are covered as processes for self-exploration. Basic human aspirations like continuous happiness and prosperity are examined, along with the requirements of right understanding, relationships, and physical facilities."
+      },
+      {
+        "unit_number": "2",
+        "title": "Understanding Harmony in the Human Being - Harmony in Myself",
+        "topics": "This unit explores the human being as a co-existence of the sentient 'I' and the material 'Body,' examining their respective needs. It also covers the harmony of 'I' with the Body, including concepts of Sanyam (self-regulation) and Health."
+      },
+      {
+        "unit_number": "3",
+        "title": "Understanding Harmony in the Family and Society - Harmony in Human-Human Relationship",
+        "topics": "The unit covers values in human-human relationships, the meaning of Justice (nine universal values), and the foundational values of Trust and Respect. It extends these concepts to society, discussing comprehensive Human Goals like Resolution, Prosperity, and fearlessness."
+      },
+      {
+        "unit_number": "4",
+        "title": "Understanding Harmony in Nature & Existence - Whole existence as Coexistence",
+        "topics": "This unit focuses on the harmony in Nature, the interconnectedness and mutual fulfillment among its four orders, and the concepts of recyclability and self-regulation."
+      },
+      {
+        "unit_number": "5",
+        "title": "Implications of the above Holistic Understanding of Harmony on Professional Ethics",
+        "topics": "This unit discusses the natural acceptance of human values, the definitiveness of ethical human conduct, and the basis for humanistic education. It also covers competence in professional ethics, including the ability to develop people-friendly and eco-friendly production systems."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "R.R. Gaur, R. Sangal, G.P. Bagaria, A Foundation Course in Human Values and Professional Ethics, Excel Books Private Limited, New Delhi, 2010.",
+        "R.R. Gaur, R. Asthana, G.P. Bagaria, A Foundation Course in Human Values and Professional Ethics (2nd revised ed.), Excel Books Private Limited, New Delhi, 2019."
+      ],
+      "reference_books": [
+        "A. Nagaraj, Jeevan Vidya: Ek Parichaya, Jeevan Vidya Prakashan, Amarkantak, 1999.",
+        "A.N. Tripathi, Human Values, New Age International Publishers, New Delhi, 2004.",
+        "Annie Leonard, The Story of Stuff: The Impact of Overconsumption on the Planet, Our Communities, and Our Health and How We Can Make It Better, Free Press, New York, 2010.",
+        "Mohandas Karamchand Gandhi, The Story of My Experiments with Truth: Mahatma Gandhi Autobiography, B.N. Publishing, 2008.",
+        "E.F. Schumacher, Small is Beautiful: A Study of Economics as if People Mattered, Vintage Books, London, 1993.",
+        "Cecile Andrews, Slow is Beautiful: New Visions of Community, New Society Publishers, Canada, 2006.",
+        "J.C. Kumarappa, Economy of Permanence, Sarva-Seva-Sangh Prakashan, Varanasi, 2017.",
+        "Pandit Sunderlal, Bharat Mein Angreji Raj, Prabhath Prakashan, Delhi, 2018.",
+        "Dharampal, Rediscovering India, Society for Integrated Development of Himalayas, 2003.",
+        "M.K. Gandhi, Hind Swaraj or Indian Home Rule, Navajivan Publishing House, Ahmedabad, 1909.",
+        "Maulana Abul Kalam Azad, India Wins Freedom: The Complete Version, Orient Blackswan, 1988.",
+        "Romain Rolland, The Life of Vivekananda and the Universal Gospel, Advaita Ashrama, India, 2010.",
+        "Romain Rolland, Mahatma Gandhi: The Man Who Became One with the Universal Being, Srishti Publishers & Distributors, New Delhi, 2002."
+      ],
+      "web_resources": [
+        "https://dokumen.pub/a-foundation-course-in-human-values-and-professional-ethics-firstnbsped-9788174467812.html",
+        "https://www.youtube.com/channel/UCo8MpJB_aaVwB4LWLAx6AhQ",
+        "https://fdp-si.aicte-india.org/download.php#1"
+      ]
+    }
+  }
+]

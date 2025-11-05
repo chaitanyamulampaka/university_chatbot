@@ -1,0 +1,3028 @@
+[
+  {
+    "metadata": {
+      "course_code": "23BS1101",
+      "course_name": "Linear Algebra & Calculus",
+      "semester": "1",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "10+2 level Mathematics",
+      "course_outcomes": [
+        "Solve the system of homogeneous and non-homogeneous linear equations",
+        "Examine the nature of a quadratic form by transforming into a canonical form",
+        "Determine maxima and minima of multivariable functions",
+        "Evaluate areas and volumes using double, triple integrals"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Matrices",
+        "topics": "Rank of a matrix by Echelon form, Normal form, Cauchy–Binet formulae (without proof), Inverse of Non- singular matrices by Gauss-Jordan method, System of linear equations: Solving system of Homogeneous and Non-Homogeneous equations by Gauss elimination method, Jacobi and Gauss-Seidel Iteration Methods."
+      },
+      {
+        "unit_number": "2",
+        "title": "Eigenvalues, Eigenvectors and Orthogonal Transformation",
+        "topics": "Eigenvalues, Eigenvectors and their properties, Diagonalization of a matrix, Cayley Hamilton Theorem (without proof), Finding inverse and power of a matrix by Cayley Hamilton Theorem, Quadratic forms and Nature of the Quadratic forms, Reduction of Quadratic form to Canonical forms by Orthogonal Transformation."
+      },
+      {
+        "unit_number": "3",
+        "title": "Differential Calculus",
+        "topics": "Mean Value Theorems: Rolle's theorem, Lagrange's mean value theorem with their geometrical interpretation, Cauchy's mean value theorem, Taylor's and Maclaurin's theorems with remainders (without proof), Problems and applications on the above theorems. Functions of Several Variables: Continuity and Differentiability, Partial derivatives, Total derivatives, Chain rule, Directional derivative, Taylor's and Maclaurin's series expansion of functions of two variables, Jacobians, Functional dependence, Maxima and Minima of functions of two variables, Method of Lagrange multipliers."
+      },
+      {
+        "unit_number": "4",
+        "title": "Multiple Integrals (Multivariable Calculus)",
+        "topics": "Double integrals,Triple integrals, Change of order of integration, Change of variables to polar, cylindrical and spherical coordinates, Finding areas (by double integrals) and volumes (by double integrals and triple integrals)."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Higher Engineering Mathematics, B. S. Grewal, Khanna Publishers, 2017, 44th Edition"
+      ],
+      "reference_books": [
+        "Advanced Engineering Mathematics, Erwin Kreyszig, John Wiley Sons, 2018, 10th Edition.",
+        "Thomas Calculus, George B. Thomas, Maurice D. Weir and Joel Hass, Pearson Publishers, 2018,14th Edition",
+        "Advanced Engineering Mathematics, R. K. Jain and S. R. K. Iyengar, Alpha Science International Ltd., 2021 5th Edition(9th reprint)",
+        "Advanced Modern Engineering Mathematics, Glyn James, Pearson publishers, 2018, 5th Edition",
+        "Advanced Engineering Mathematics, Micheael Greenberg, , Pearson publishers, 9th Edition",
+        "Higher Engineering Mathematics, H. K Das, Er. Rajnish Verma, S. Chand Publications,2014, 3rd Edition (Reprint 2021)"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS1102",
+      "course_name": "Engineering Physics",
+      "semester": "1",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Elaborate different types of lasers, optical fibers and their applications",
+        "Familiarize with the basics of crystals and their structures",
+        "Summarize various types of polarization of dielectrics and classify the magnetic materials",
+        "Explain the basic concepts of Quantum Mechanics and types of semiconductors using Hall Effect."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Lasers and Fiber Optics",
+        "topics": "Lasers: Introduction, Characteristics of laser, Basic Principles of lasers (absorption, spontaneous emission and stimulated emission), Requirements of lasers (pumping, population inversion and cavity resonance), Einstein’s coefficients, different types of lasers: solid-state lasers (Ruby), gas lasers, (He-Ne), Semiconductor laser, applications of lasers in science, engineering and medicine. Fibre Optics: Introduction, Fundamentals of optic fibre, Propagation of light through optical fiber, Types of optical fibers, Numerical aperture, Fractional Refractive Index change, Fiber optics in communication and its advantages."
+      },
+      {
+        "unit_number": "2",
+        "title": "Crystallography and X-ray diffraction",
+        "topics": "Crystallography: Space lattice, Basis, Unit Cell and lattice parameters– Bravais Lattices– crystal systems (3D)– coordination number- packing fraction of SC, BCC FCC- Miller indices– separation between successive (hkl) planes. X-ray diffraction: Bragg’s law- X-ray Diffractometer– crystal structure determination by Laue’s and powder methods."
+      },
+      {
+        "unit_number": "3",
+        "title": "Dielectric and Magnetic Materials",
+        "topics": "Dielectric Materials: Introduction- Dielectric polarization- Dielectric polarizability, Susceptibility, Dielectric constant and Displacement Vector– Relation between the electric vectors- Types of polarizations- Electronic (Quantitative), Ionic (Quantitative) and Orientation polarizations (Qualitative)- Lorentz internal field- Clausius Mossotti equation- Frequency dependence of polarization– complex dielectric constant (Qualitative)– dielectric loss (Qualitative). Magnetic Materials: Introduction- Magnetic dipole moment- Magnetization Magnetic susceptibility and permeability– Atomic origin of magnetism- Classification of magnetic materials: Dia, Para and Ferro magnetic materials- Domain concept for Ferromagnetism Domain walls (Qualitative)- Hysteresis- soft and hard magnetic materials."
+      },
+      {
+        "unit_number": "4",
+        "title": "Quantum Mechanics and Semiconductors",
+        "topics": "Quantum Mechanics: Dual nature of light, Matter waves,Properties and Debroglie’s hypothesis, G.P.Thomson experiment,Heisenberg’s Uncertainty Principle and its applications (Non existence of electron in nucleus) and properties of wave function– Schrodinger’s time independent and dependent wave equations– Particle in a one-dimensional infinite potential well. Semiconductors: Formation of energy bands– classification of crystalline solids- Intrinsic semiconductors- Fermi level-Extrinsic semiconductors-Fermi level- Drift and diffusion currents– Einstein’s equation– Hall effect and its applications, Photodiode,Light Emitting Diode,Solar cell and its applications."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "A Text book of Engineering Physics, M. N. Avadhanulu, P.G.Kshirsagar TVS Arun Murthy, S. Chand Publications, 11th Edition 2019.",
+        "Engineering Physics- D.K.Bhattacharya and Poonam Tandon, Oxford press (2015)"
+      ],
+      "reference_books": [
+        "Engineering Physics- B.K. Pandey and S. Chaturvedi, Cengage Learning 2021",
+        "Engineering Physics- Shatendra Sharma, Jyotsna Sharma, Pearson Education, 2018.",
+        "Engineering Physics- Sanjay D. Jain, D. Sahasrabudhe and Girish, University Press. 2010",
+        "Engineering Physics- M.R. Srinivasan, New Age international publishers (2009)"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1103A",
+      "course_name": "Basic Civil and Mechanical Engineering",
+      "semester": "1",
+      "category": "Engineering Science",
+      "credits": 3,
+      "prerequisites": "10+2",
+      "course_outcomes": [
+        "Understand various Civil Engineering sub-divisions thereby appreciate their role in ensuring a better society and understand the basic building components along with attaining knowledge of Civil Engineering Materials and prefabricated technology",
+        "Know the basic concepts, uses and classification of surveying and realize the importance of Transportation in the nation’s economy and the engineering measures related to Transportation and understand the importance of Water Storage and Conveyance Structures so that the social responsibilities of water conservation will be appreciated",
+        "Understand the scope of Mechanical Engineering in different sectors and industries and know about different manufacturing processes",
+        "Explain the basics of thermal engineering, Power plants , power transmission and robotics"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Basics of Civil Engineering",
+        "topics": "Role of Civil Engineers in Society- Various Disciplines of Civil Engineering- Structural Engineering- Geo-technical Engineering- Transportation Engineering- Hydraulics and Water Resources Engineering- Environmental Engineering-Scope of each discipline- Building Construction and Planning- Construction Materials-Cement- Aggregate- Bricks- Cement concrete- Steel-Introduction to Prefabricated Construction Techniques."
+      },
+      {
+        "unit_number": "2",
+        "title": "Surveying, Transportation, Water Resources and Environmental Engineering",
+        "topics": "Surveying and Transportation Engineering: Objectives of Surveying- Principles of Surveying-Classification based on function and instruments, Importance of Transportation in Nation’s Economic Development- Basics components of Road Classification of Highways. Water Resources and Environmental Engineering: Introduction, Sources of water- Quality of water- Specifications- Simple introduction to Dams and Reservoirs."
+      },
+      {
+        "unit_number": "3",
+        "title": "Introduction to Mechanical Engineering",
+        "topics": "Role of Mechanical Engineering in Industries and Society- Technologies in different sectors such as Energy, Manufacturing, Automotive, Aerospace, and Marine sectors. Engineering Materials- Metals Ferrous and Non-ferrous, Ceramics, Composites, Smart materials. Manufacturing Processes: Principles of Casting, joining processes, Machining, Introduction to CNC machines, 3D printing, and Smart manufacturing."
+      },
+      {
+        "unit_number": "4",
+        "title": "Thermal Engineering and Mechanical Power Transmission",
+        "topics": "Thermal Engineering: IC engines, 2-Stroke and 4-Stroke engines, SI/CI Engines, Otto cycle,Diesel cycle,Components of Electric and Hybrid Vehicles., Refrigeration and air conditioning Working principle of Boilers: classification of Boilers Power plants– Working principle of Steam, Nuclear power plants. Mechanical Power Transmission- Belt and Gear Drives, Introduction to Robotics."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Basic Civil Engineering, M.S.Palanisamy, , Tata Mcgraw Hill publications (India) Pvt. Ltd. Fourth Edition. (UNITS 1 & 2)",
+        "Introduction to Civil Engineering, S.S. Bhavikatti, New Age International Publishers. 2022. First Edition (UNITS 1 & 2)",
+        "Basic Civil Engineering, Satheesh Gopi, Pearson Publications, 2009, First Edition (UNITS 1 & 2)",
+        "Internal Combustion Engines by V.Ganesan, By Tata McGraw Hill publications (India) Pvt. Ltd. (UNITS 3 & 4)",
+        "A text book of Theory of Machines by S.S. Rattan, Tata McGraw Hill Publications, (India) Pvt. Ltd. (UNITS 3 & 4)",
+        "An introduction to Mechanical Engg by Jonathan Wicker and Kemper Lewis, Cengage learning India Pvt. Ltd. (UNITS 3 & 4)"
+      ],
+      "reference_books": [
+        "Surveying, Vol- 1 and Vol-2, S.K. Duggal, Tata McGraw Hill Publishers 2019. Fifth Edition. (UNITS 1 & 2)",
+        "Hydrology and Water Resources Engineering, Santosh Kumar Garg, Khanna Publishers, Delhi. 2016. (UNITS 1 & 2)",
+        "Irrigation Engineering and Hydraulic Structures- Santosh Kumar Garg, Khanna Publishers, Delhi 2023. 38th Edition. (UNITS 1 & 2)",
+        "Highway Engineering, S.K.Khanna, C.E.G. Justo and Veeraraghavan, Nemchand and Brothers Publications 2019. 10th Edition. (UNITS 1 & 2)",
+        "Indian Standard DRINKING WATER — SPECIFICATION IS 10500-2012 (UNITS 1 & 2)",
+        "Advances in Civil Engineering (Volume- 5), S. Sathish, AkiNik Publications,2021. (UNITS 1 & 2)",
+        "G. Shanmugam and M.S.Palanisamy, Basic Civil and the Mechanical Engineering, Tata McGraw Hill publications (India) Pvt. Ltd. (UNITS 3 & 4)",
+        "Thermal Engineering by Mahesh M Rathore Tata McGraw Hill publications (India) Pvt. Ltd. (UNITS 3 & 4)",
+        "3D printing & Additive Manufacturing Technology- L. Jyothish Kumar, Pulak MPandey, Springer publications. (UNITS 3 & 4)",
+        "Appuu Kuttan KK, Robotics, I.K. International Publishing House Pvt. Ltd. Volume-1. (UNITS 3 & 4)"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1104",
+      "course_name": "Introduction to Programming",
+      "semester": "1",
+      "category": "Engineering Science",
+      "credits": 3,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "To introduce students to the fundamentals of computer programming",
+        "Toprovide hands-on experience with coding and debugging on control structures and arrays",
+        "To foster logical thinking and problem-solving skills on strings and ponters",
+        "To familiarize students with programming concepts such as functions, structures and files"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction to Programming and Problem Solving",
+        "topics": "History of Computers, Basic organization of a computer: ALU, input-output units, memory, program counter, Introduction to Programming Languages, Basics of a Computer Program- Algorithms, flowcharts (Using Dia Tool), pseudo code. Introduction to Compilation and Execution, Primitive Data Types, Variables, and Constants, Basic Input and Output, Operations, Type Conversion, and Casting. Problem solving techniques: Algorithmic approach, characteristics of algorithm, Problem solving strategies: Top-down approach, Bottom-up approach, Time and space complexities of algorithms."
+      },
+      {
+        "unit_number": "2",
+        "title": "Control Structures and Arrays",
+        "topics": "Simple sequential programs Conditional Statements (if, if-else, switch), Loops (for, while, do- while) Break and Continue, Arrays indexing, memory model, programs with array of integers, two dimensional arrays."
+      },
+      {
+        "unit_number": "3",
+        "title": "Strings and pointers",
+        "topics": "Introduction to Strings. Pointers, dereferencing and address operators, pointer and address arithmetic, array manipulation using pointers."
+      },
+      {
+        "unit_number": "4",
+        "title": "Functions, User Defined Data types and File Handling",
+        "topics": "Introduction to Functions, Function Declaration and Definition, Function call Return Types and Arguments, modifying parameters inside functions using pointers, arrays as parameters. Scope and Lifetime of Variables, User-defined data types-Structures and Unions, Basics of File Handling"
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "The C Programming Language, Brian W. Kernighan and Dennis M. Ritchie, Prentice- Hall, 1988",
+        "Schaum’s Outline of Programming with C, Byron S Gottfried, McGraw-Hill Education, 1996."
+      ],
+      "reference_books": [
+        "Computing fundamentals and C Programming, Balagurusamy, E., McGraw-Hill Education, 2008.",
+        "Programming in C, Rema Theraja, Oxford, 2016, 2nd edition.",
+        "C Programming,A Problem Solving Approach,Forouzan,Gilberg,Prasad, CENGAGE, 3rd edition."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23HS1105",
+      "course_name": "Communicative English",
+      "semester": "1",
+      "category": "Humanities and Social Sciences",
+      "credits": 2,
+      "prerequisites": "Basic understanding of the language skills viz Listening, Speaking, Reading and Writing, including Sentence construction abilities",
+      "course_outcomes": [
+        "Understand the context, topic, and pieces of specific information from social or Transactional dialogues",
+        "Apply grammatical structures to formulate sentences and correct word forms",
+        "Analyze discourse markers to speak clearly on a specific topic in informal discussions",
+        "Evaluate reading texts / listening to write summaries based on global comprehension and create a coherent paragraph, essay and resume"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Human Values",
+        "topics": "Lesson: HUMAN VALUES: Gift of Magi (Short Story). Listening: Identifying the topic, the context and specific pieces of information by listening to short audio texts and answering a series of questions. Speaking: Asking and answering general questions on familiar topics such as home, family, work, studies and interests; introducing oneself and others. Reading: Skimming to get the main idea of a text; scanning to look for specific pieces of information. Writing: Mechanics of Writing-Capitalization, Spellings, Punctuation-Parts of Sentences. Grammar: Parts of Speech, Basic Sentence Structures-forming questions. Vocabulary: Synonyms, Antonyms, Affixes (Prefixes/Suffixes), Root words."
+      },
+      {
+        "unit_number": "2",
+        "title": "Nature",
+        "topics": "Lesson: NATURE: The Brook by Alfred Tennyson (Poem). Listening: Answering a series of questions about main ideas and supporting ideas after listening to audio texts. Speaking: Discussion in pairs/small groups on specific topics followed by short structure talks. Reading: Identifying sequence of ideas; recognizing verbal techniques that help to link the ideas in a paragraph together. Writing: Structure of a paragraph- Paragraph writing (specific topics). Grammar: Cohesive devices- linkers, use of articles and zero article; prepositions. Vocabulary: Homonyms, Homophones, Homographs."
+      },
+      {
+        "unit_number": "3",
+        "title": "Biography",
+        "topics": "Lesson: BIOGRAPHY: Elon Musk. Listening: Listening for global comprehension and summarizing what is listened to. Speaking: Discussing specific topics in pairs or small groups and reporting what is discussed. Reading: Reading a text in detail by making basic inferences-recognizing and interpreting specific context clues; strategies to use text clues for comprehension. Writing: Summarizing, Note-making, paraphrasing, Essay Writing, (The Power of Intrapersonal Communication). Grammar: Verbs- tenses; subject-verb agreement; Compound words, Collocations. Vocabulary: Compound words, Collocations."
+      },
+      {
+        "unit_number": "4",
+        "title": "Inspiration",
+        "topics": "Lesson: INSPIRATION: The Toys of Peace by Saki. Listening: Making predictions while listening to conversations/ transactional dialogues without video; listening with video. Speaking: Role plays for practice of conversational English in academic contexts (formal and informal)- asking for and giving information/directions. Reading: Studying the use of graphic elements in texts to convey information, reveal trends/patterns/relationships, communicate processes or display complicated data. Writing: Letter Writing: Official Letters, Resumes & Report Writing. Grammar: Reporting verbs, Direct & Indirect speech, Active & Passive Voice. Vocabulary: Words often confused, Jargons & Technical Jargons."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Pathfinder: Communicative English for Undergraduate Students, 1st Edition, Orient Black Swan, 2023 (Units 1,2 & 3)",
+        "Empowering with Language by Cengage Publications, 2023 (Units 4 & 5).",
+        "English: Language, Context and Culture, 1st Edition, Orient Black Swan, 2023 (Units5)"
+      ],
+      "reference_books": [
+        "Dubey, Sham Ji & Co. English for Engineers, Vikas Publishers, 2020.",
+        "Bailey, Stephen. Academic writing: A Handbook for International Students. Routledge, 2014.",
+        "Murphy, Raymond. English Grammar in Use, Fourth Edition, Cambridge University Press, 2019.",
+        "Lewis, Norman. Word Power Made Easy- The Complete Handbook for Building a Superior Vocabulary. Anchor, 2014."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS1151",
+      "course_name": "Engineering Physics Lab",
+      "semester": "1",
+      "category": "Basic Sciences",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Test optical components using principles of interference and diffraction of light",
+        "Use spectrometer, travelling microscope and function generator in various experiments",
+        "Determine the V-I characteristics of photo cells and appreciate the accuracy in measurements"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "Determination of radius of curvature of a given Plano-convex lens by Newton’s rings.",
+          "Study the variation of B versus H by magnetizing the magnetic material (B-H curve).",
+          "Determination of wavelength of Laser light using diffraction grating",
+          "Estimation of stopping potential and work function of a photo material using photoelectric effect.",
+          "Magnetic field along the axis of a current carrying circular coil by Stewart Gee’s Method.",
+          "Determination of Hall voltage and Hall coefficient of a given semiconductor using Hall Effect.",
+          "Determination of Acceleration due to Gravity and radius of Gyration by using a compound pendulum.",
+          "Sonometer: Verification of laws of stretched string.",
+          "Determination of Dielectric constant of different solid materials.",
+          "Determination of Numerical Aperture of a given optical fiber.",
+          "Determination of Frequency of electrically maintained tuning fork by Melde’s experiment.",
+          "Determination of Rigidity Modulus of the material of the given wire using Torsional pendulum.",
+          "Determination of wavelengths of different spectral lines in mercury spectrum using diffraction grating in normal incidence configuration.",
+          "Determination of Energy Gap of a semiconductor using p-n junction diode.",
+          "Determination of thickness of a thin foil by Wedge Method.",
+          "Estimation of Fill Factor of a given Solar Cell.",
+          "Study the frequency response and determination of resonating frequency of LCR Circuit.",
+          "Determination of Figure of merit of a Galvanometer."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "MadhusudhanRao, “EngineeringPhysicsLabManual”, Isted.,ScitechPublications,2015.",
+        "RamaraoSri,ChoudaryNityanandandPrasadDaruka,”LabManualofEngineeringPhysics”.,Vthed.,ExcellBooks,2010."
+      ],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1152",
+      "course_name": "Computer Programming Lab",
+      "semester": "1",
+      "category": "Engineering Science",
+      "credits": 1.5,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Read, understand, and trace the execution of programs written in C language",
+        "Select the right control structure for solving the problem",
+        "Develop C programs which utilize memory efficiently using programming constructs like pointers",
+        "Develop, Debug and Execute programs to demonstrate the applications of arrays, functions, basic concepts of pointers in C"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction and Basic Operations",
+        "topics": "Week 1: Familiarization with programming environment (Linux, Vi, gcc), simple printf/scanf programs. Week 2: Problem-solving using Algorithms and Flow charts, converting them to C code (e.g., sum, average, temp conversion). Week 3: Variable types, type conversions, and simple computational problems using arithmetic expressions (e.g., square root, compound interest)."
+      },
+      {
+        "unit_number": "2",
+        "title": "Operators and Control Structures",
+        "topics": "Week 4: Operators, precedence, and associativity with computational problems. Week 5: Branching and logical expressions using if-then-else structures (e.g., max/min, electricity bill, quadratic roots). Week 6: Iterative problems using loops (while, for), including sum of series, factorial, prime check, and palindrome."
+      },
+      {
+        "unit_number": "3",
+        "title": "Arrays and Strings",
+        "topics": "Week 7: 1D Array manipulation and linear search (min/max, reverse, 2's complement). Week 8: 2D arrays (matrix problems), string operations, and bubble sort."
+      },
+      {
+        "unit_number": "4",
+        "title": "Pointers, Structures, and Dynamic Memory",
+        "topics": "Week 9: Pointers, structures, and dynamic memory allocation (malloc, calloc, realloc, free). Week 10: Bitfields, self-referential structures, and linked lists."
+      },
+      {
+        "unit_number": "5",
+        "title": "Functions, Recursion, and File Handling",
+        "topics": "Week 11: Simple functions using call by value. Week 12: Recursive functions (Fibonacci, factorial). Week 13: Functions using call by reference. Week 14: File operations (text and binary files)."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Ajay Mittal, Programming in C: A practical approach, Pearson.",
+        "Byron Gottfried, Schaum's Outline of Programming with C, McGraw Hill."
+      ],
+      "reference_books": [
+        "Brian W. Kernighan and Dennis M. Ritchie, The C Programming Language, Prentice- Hall of India",
+        "C Programming, A Problem-Solving Approach, Forouzan, Gilberg, Prasad, CENGAGE"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23HS1153",
+      "course_name": "Communicative English Lab",
+      "semester": "1",
+      "category": "Humanities and Social Sciences",
+      "credits": 1,
+      "prerequisites": "Basic understanding of the language skills viz Listening, Speaking, Reading and Writing, including Sentence construction abilities.",
+      "course_outcomes": [
+        "Understand the different aspects of the English language proficiency with emphasis on LSRW skills",
+        "Apply communication skills through various language learning activities",
+        "Analyze the English speech sounds, stress, rhythm, intonation and syllable division for better listening and speaking comprehension",
+        "Evaluate and exhibit professionalism in participating in debates and group discussions"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Topics",
+        "topics": [
+          "Vowels and Consonants",
+          "Neutralization/Accent Rules",
+          "Communication Skills & JAM",
+          "Role Play or Conversational Practice",
+          "E-mail Writing",
+          "Resume Writing, Cover Letter, SOP",
+          "Group Discussions-methods & practice",
+          "Debates– Methods & Practice",
+          "PPT Presentations/Poster Presentations",
+          "Interview Skills"
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1154",
+      "course_name": "Engineering Workshop",
+      "semester": "1",
+      "category": "Engineering Sciences",
+      "credits": 1.5,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand the basic joints using wood and familiarize with various fundamental aspects of house wiring, fitting and foundry.",
+        "Prepare basic models using sheet metal and practice joining of metals using various types of welding.",
+        "Familiarize with various advanced manufacturing processes such as injection moulding and 3D printing.",
+        "Understand the preparation of PCB and simple IOT applications using Arduino."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "PART-A",
+        "title": "Core Trades",
+        "topics": [
+          "Demonstration: Safety practices and precautions.",
+          "Wood Working: Make Half–Lap joint and Bridle joint.",
+          "Sheet Metal Working: Develop a Tapered tray and Conical funnel.",
+          "Fitting: Perform V-fit, Semi-circular fit, and bicycle/two-wheeler tire maintenance.",
+          "Electrical Wiring: Make parallel, series, two-way switch, godown lighting, and tube light connections.",
+          "Foundry Trade: Prepare Green Sand moulds for given Patterns.",
+          "Welding Shop: Prepare Lap joint and Butt joint using Arc and Gas welding.",
+          "Advanced manufacturing processes: Demonstration of injection moulding and 3D printing.",
+          "Electronic Circuits: Preparation of a simple electronic circuit (PCB) and testing.",
+          "Basic IOT: Use Arduino to measure Temperature & Humidity and Distance."
+        ]
+      },
+      {
+        "unit_number": "PART-B",
+        "title": "Group Activity",
+        "topics": "Students must prepare a Working model / Assembly using the knowledge gained from the above trades."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Basic Workshop Technology: Manufacturing Process, Felix W.; Independently Published,2019. Workshop Processes, Practices and Materials; Bruce J. Black, Routledge publishers, 5th Edn. 2015.",
+        "A Course in Workshop Technology Vol 1. & 2, B.S. Raghuwanshi, DhanpathRai & Co., 2015 & 2017."
+      ],
+      "reference_books": [
+        "Elements of Workshop Technology, Vol. 1 by S. K. Hajra Choudhury & Others, Media Promoters and Publishers, Mumbai. 2007, 14th edition.",
+        "Workshop Practice by H. S. Bawa, Tata-McGraw Hill, 2004.",
+        "Wiring Estimating, Costing and Contracting; Soni P.M. & Upadhyay P.A.; Atul Prakashan, 2021-22."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1155",
+      "course_name": "IT Workshop",
+      "semester": "1",
+      "category": "Engineering Sciences",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Perform Hardware troubleshooting",
+        "Understand Hardware components and inter dependencies",
+        "Safeguard computer systems from viruses/worms",
+        "Document/ Presentation preparation",
+        "Perform calculations using spreadsheets"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Module 1",
+        "title": "PC Hardware and OS Installation",
+        "topics": "Task 1: Identify peripherals and CPU components. Task 2: Disassemble and assemble a PC. Task 3: Install MS Windows. Task 4: Install Linux as a dual boot system. Task 5: Install BOSS as a dual boot system."
+      },
+      {
+        "unit_number": "Module 2",
+        "title": "Internet and World Wide Web",
+        "topics": "Task 1: Configure TCP/IP settings to connect to the Internet. Task 2: Customize web browsers with proxy settings and plug-ins. Task 3: Use search engines effectively. Task 4: Configure computer for cyber hygiene to avoid viruses and worms."
+      },
+      {
+        "unit_number": "Module 3",
+        "title": "Productivity Tools (LaTeX, Word, Excel, PowerPoint)",
+        "topics": "LaTeX and WORD: Create project certificates, abstracts, and newsletters covering formatting, tables, headers/footers, and mail merge. EXCEL: Create schedulers and calculate GPA using formulas, charts, cell referencing, and conditional formatting. POWER POINT: Create presentations covering slide layouts, inserting objects, master layouts, and design templates."
+      },
+      {
+        "unit_number": "Module 4",
+        "title": "AI Tools – ChatGPT",
+        "topics": "Task 1: Experiment with different types of prompts (Prompt Engineering). Task 2: Use the model as a creative writing assistant. Task 3: Experiment with language translation tasks."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "Comdex Information Technology course tool kit, Vikas Gupta, WILEY Dream tech, 2003.",
+        "The Complete Computer upgrade and repair book, Cheryl A Schmidt, WILEY Dream tech, 2013, 3rd edition",
+        "Introduction to Information Technology, ITL Education Solutions limited, Pearson Education, 2012, 2nd edition.",
+        "PC Hardware- A Handbook, Kate J. Chase, PHI (Microsoft)",
+        "LaTeX Companion, Leslie Lamport, PHI/Pearson.",
+        "IT Essentials PC Hardware and Software Companion Guide, David Anfins on and Ken Quamme.– CISCO Press, Pearson Education, 3rd edition",
+        "ITEssentials PC Hardware and Software Labs and Study Guide, Patrick Regan CISCO Press, Pearson Education, 3rd edition"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS1156",
+      "course_name": "NSS/NCC/Community Service",
+      "semester": "1",
+      "category": "Basic Science",
+      "credits": 0.5,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course is not provided in the supplied document."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23MC1106",
+      "course_name": "Induction Program",
+      "semester": "1",
+      "category": "Mandatory Course",
+      "credits": 0,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course is not provided in the supplied document."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS2101",
+      "course_name": "Differential Equations & Vector Calculus",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "23BS1101 Linear Algebra & Calculus",
+      "course_outcomes": [
+        "Solve first order linear differential equations",
+        "Solve higher order linear differential equations with constant coefficients",
+        "Solve Partial differential equations",
+        "Evaluate the work done against field, circulation and flux using vector calculus"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Differential equations of first order and first degree",
+        "topics": "Linear differential equations– Bernoulli’s equations- Exact equations and equations reducible to exact form, Applications: Newton’s Law of cooling– Law of natural growth and decay- Electrical circuits."
+      },
+      {
+        "unit_number": "2",
+        "title": "Linear differential equations of higher order (Constant Coefficients)",
+        "topics": "Definitions,homogenous and non-homogenous, complimentary function, general solution, particular integral, Wronskian, Method of variation of parameters, Simultaneous linear equations, Applications to L-C-R Circuit problems and Simple Harmonic motion."
+      },
+      {
+        "unit_number": "3",
+        "title": "Partial Differential Equations",
+        "topics": "Introduction and formation of Partial Differential Equations by elimination of arbitrary constants and arbitrary functions, solutions of first order linear equations using Lagrange’s method, Homogeneous Linear Partial differential equations with constant coefficients."
+      },
+      {
+        "unit_number": "4",
+        "title": "Vector Calculus",
+        "topics": "Scalar and vector point functions, vector operator Del, Del applies to scalar point functions- Gradient, Directional derivative, del applied to vector point functions Divergence and Curl, vector identities. Line integral-circulation-work done, surface integral-flux, Green’s theorem in the plane (without proof), Stoke’s theorem (without proof), volume integral, Divergence theorem (without proof) and related problems."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Higher Engineering Mathematics, B. S. Grewal, Khanna Publishers, 2017, 44th Edition"
+      ],
+      "reference_books": [
+        "Advanced Engineering Mathematics, Erwin Kreyszig, John Wiley Sons, 2018, 10th Edition.",
+        "Thomas Calculus, George B. Thomas, Maurice D. Weir and Joel Hass, Pearson Publishers, 2018,14th Edition",
+        "Advanced Engineering Mathematics, R. K. Jain and S. R. K. Iyengar, Alpha Science International Ltd., 2021 5th Edition(9th reprint)",
+        "Advanced Modern Engineering Mathematics, Glyn James, Pearson publishers, 2018, 5th Edition",
+        "Advanced Engineering Mathematics, Micheael Greenberg, , Pearson publishers, 9th Edition",
+        "Higher Engineering Mathematics, H. K Das, Er. Rajnish Verma, S. Chand Publications,2014, 3rd Edition (Reprint 2021)"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS2102B",
+      "course_name": "Chemistry",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "10 + 2 level Chemistry",
+      "course_outcomes": [
+        "Apply the principles of quantum mechanics for determining structure and bonding of molecules",
+        "Apply the principles electrochemistry for its applications in chemical analysis, electrodes, electrochemical sensors and energy sources",
+        "Explain the mechanistic aspects of polymerisation and conduction, types, preparation, properties and applications of polymers",
+        "Compare different spectroscopic and chromatographic techniques for their application in qualitative and quantitative analysis",
+        "Choose engineering materials including nanomaterials based on their properties for their applications in various industrial fields"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Structure and Bonding Models & Engineering Materials",
+        "topics": "Fundamentals of Quantum mechanics, Schrodinger wave equation, significance of Ψ and Ψ2, particle in one dimensional box, Molecular orbital theory, bonding in homo and heteronuclear diatomic molecules, energy level diagrams of O2,N2, NOand CO,calculation of bond order,- molecular orbitals of butadiene and benzene. Engineering Materials: Semiconductors- Introduction, basic concept, applications, Superconductors- Introduction, basic concept, applications, Supercapacitors- Introduction, basic concept, classification, applications."
+      },
+      {
+        "unit_number": "2",
+        "title": "Electrochemistry & Electrochemical Energy Systems",
+        "topics": "Electrochemical cell, Nernst equation, potential and emfcalculations and numerical problems, potentiometry– potentiometric titrations (redox titrations), concept of conductivity, conductivity cell, cell constant and specific conductance, conductometric titrations (acid-base titrations), Electrochemical sensors– potentiometric sensors and amperometric sensors-principle with examples. Electrochemical Energy Systems: Types of electrochemical energy systems- Primary cells– Zinc-air battery, Secondary cells– lithium-ion batteries– working of the batteries including cell reactions, Fuel cells– hydrogen–oxygen fuel cell- working of the cells, Polymer Electrolyte Membrane fuel cells(PEMFC)."
+      },
+      {
+        "unit_number": "3",
+        "title": "Polymer Chemistry",
+        "topics": "Introduction to polymers, functionality of monomers, addition and condensation polymerization, mechanism of chain growth and step growth polymerization, coordination polymerization with specific examples.Plastics– Thermo and thermosetting plastics, preparation, properties and applications of PVC, Teflon, Bakelite, Nylon 6,6.Elastomers– Buna-S, Buna-N–Preparation, properties and applications. Conducting Polymers– Principle and examples, mechanism of conduction in undoped, doped polyacetylene and applications, Biodegradable polymers– polyglycolic acid (PGA), Polylacticacid(PLA)."
+      },
+      {
+        "unit_number": "4",
+        "title": "Instrumental Methods of Analysis & Nano materials",
+        "topics": "Electromagnetic spectrum, Interaction of radiation with matter, UV Visible Spectroscopy principle, electronic transitions, Lambert-Beer’s law, Instrumentation, applications,IR spectroscopy-principle, types of vibrations, selection rule, Instrumentation, Chromatography- basic principle and classification. Nano materials: Introduction, classification of nanomaterials. Properties and applications of fullerenes, carbon nanotubes, graphene and nanoparticles."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Engineering Chemistry, Jain and Jain, 17th Edition, DhanpatRai, 2018.",
+        "Engineering Chemistry, PrasanthaRath S. ArunaKumari, Cengage Publishers, 2023."
+      ],
+      "reference_books": [
+        "Peter Atkins, Julio de Paula and James Keeler, Atkins’ Physical Chemistry, 10/e, Oxford University Press, 2010.",
+        "Skoog and West, Principles of Instrumental Analysis, 6/e, Thomson, 2007.",
+        "J.D.Lee, Concise Inorganic Chemistry, 5th Edition, Wiley Publications, Feb 2008",
+        "Textbook of polymer Science,Fred W.BillmayerJr, 3rd Edition."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES2103B",
+      "course_name": "Basic Electrical and Electronics Engineering",
+      "semester": "2",
+      "category": "Engineering Science",
+      "credits": 3,
+      "prerequisites": "10 + 2 physics",
+      "course_outcomes": [
+        "Apply different techniques to solve DC circuits",
+        "Understand the magnetic circuit concepts",
+        "Analyze the steady-state response, series, parallel AC circuits, mesh & nodal analysis, and resonance",
+        "Apply network theorems for AC & DC circuits",
+        "Demonstrate the working principles of basic Electronic devices, circuits and instrumentation System",
+        "Implementation of simple Combinational and Sequential circuits using Logic gates"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "DC & AC Circuits",
+        "topics": "DC Circuits: Electrical circuit elements (R, L and C), Ohm’s Law and its limitations, KCL & KVL, series, parallel, series-parallel circuits, Super Position theorem, Simple numerical problems. AC Circuits: A.C. Fundamentals: Equation of AC Voltage and current, waveform, time period, frequency, amplitude, phase, phase difference, average value, RMS value, form factor, peak factor, Voltage and current relationship with phasor diagrams in R, L, and C circuits, Concept of Impedance, Active power, reactive power and apparent power, Concept of power factor (Simple Numerical problems). Equipment Safety Measures: Working principle of Fuse and Miniature circuit breaker (MCB), merits and demerits. Personal safety measures: Electric Shock, Earthing phenomenon, Safety Precautions to avoid shock."
+      },
+      {
+        "unit_number": "2",
+        "title": "Machines and Measuring Instruments",
+        "topics": "Machines: Construction, principle and operation of (i) DC Motor, (ii) DC Generator, (iii) Single Phase Transformer, (iv) Three Phase Induction Motor and (v) Alternator, Applications of electrical machines. Measuring Instruments: Construction and working principle of Voltage, Current, temperature sensors, basic block diagram of multimeter. Electricity bill: Power rating of household appliances including air conditioners, PCs, Laptops, Printers, etc. Definition of “unit” used for consumption of electrical energy, calculation of electricity bill for domestic consumers."
+      },
+      {
+        "unit_number": "3",
+        "title": "Semiconductor Devices",
+        "topics": "Introduction: Evolution of electronics, Vacuum tubes to nano electronics, Characteristics of PN Junction Diode, Zener Effect — Zener Diode and its Characteristics. Bipolar Junction Transistor, CB, CE, CC Configurations and Characteristics, Elementary Treatment of Small Signal CE Amplifier. Rectifiers and power supplies: Block diagram description of a dc power supply, working of a full wave bridge rectifier, capacitor filter (no analysis), working of simple zener voltage regulator. Amplifiers: Block diagram of Public Address system, Circuit diagram. Electronic Instrumentation: Block diagram of an electronic instrumentation system."
+      },
+      {
+        "unit_number": "4",
+        "title": "Digital Electronics",
+        "topics": "Overview of Number Systems, Logic gates including Universal Gates, BCD codes, Excess-3 code, Gray code, Hamming code. Boolean Algebra, Basic Theorems and properties of Boolean Algebra, Truth Tables and Functionality of Logic Gates– NOT, OR, AND, NOR,NAND, XOR and XNOR. Simple combinational circuits–Half and Full Adders. Introduction to Flip flops, Registers and counters (Elementary Treatment only)."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Basic Electrical Engineering, D. P. Kothari and I. J. Nagrath, Mc Graw Hill, 2019, Fourth Edition.",
+        "Principles of Power Systems, V.K. Mehtha, S.Chand Technical Publishers, 2020.",
+        "Basic Electrical Engineering, T. K. Nagsarkar and M. S. Sukhija, Oxford University Press, 2017.",
+        "Basic Electrical and Electronics Engineering, S. K. Bhatacharya, Person Publications, 2018, Second Edition.",
+        "R.L.Boylestad & Louis Nashlesky,Electronic Devices & Circuit Theory, Pearson Education,2021.",
+        "P. Jain,ModernDigitalElectronics, 4thEdition,TataMcGrawHill, 2009."
+      ],
+      "reference_books": [
+        "R.S.Sedha,ATextbookofElectronicDevicesandCircuits,S.Chand&Co, 2010.",
+        "SantiramKal,BasicElectronics-Devices,CircuitsandITFundamentals,PrenticeHall, India,2002.",
+        "R.T.Paynter,IntroductoryElectronicDevices&Circuits–ConventionalFlow Version,PearsonEducation,2009"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23PC2104A",
+      "course_name": "Data Structures",
+      "semester": "2",
+      "category": "Professional Core",
+      "credits": 3,
+      "prerequisites": "23ES1104 Introduction to Programming",
+      "course_outcomes": [
+        "Demonstrate the role of data structures in organizing and accessing data efficiently",
+        "Understand various techniques for searching, sorting and hashing algorithms used to solve complex problems",
+        "Demonstrate the operations on linear data structures like stack, queue and linked list",
+        "Analyze various operations on nonlinear data structures– binary tree, and binary search tree"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Basic Concepts, Searching and Sorting",
+        "topics": "Basic Concepts: Overview: System life cycle. Algorithm Specification, Data Abstraction, Performance Analysis, the Abstract Data Type. Searching: Introduction to searching, Linear Search and Binary Search. Sorting: Bubble Sort, Insertion Sort, Selection Sort."
+      },
+      {
+        "unit_number": "2",
+        "title": "Linked Lists and Stacks",
+        "topics": "Linked Lists: Linked lists, programming details, doubly linked lists, circularly linked lists, Examples: polynomial addition. Stacks: Stack Model, Implementation of Stacks (arays), Linked Stacks Applications: balancing the symbols, postfix expressions, infix to postfix conversionr."
+      },
+      {
+        "unit_number": "3",
+        "title": "Queues and Trees",
+        "topics": "Queues: Queue Model, Array implementation of Queues, Applications of Queues: DFS, linked Queues, Types of Queues: Circular Queues, Dequeues. Trees: Introduction, Binary Trees, Binary Tree traversals, Binary Search Tree Definition, Search, Insertion, & Deletion."
+      },
+      {
+        "unit_number": "4",
+        "title": "Graphs and Hashing",
+        "topics": "Graphs: Graph Abstract Datatype, Elementary Graph Operations- DFS, BFS. Hashing: General idea, Hash Functions, separate chaining, open addressing, rehashing, extendable hashing."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "BMark Allen Weiss , “Data Structures and algorithm analysis in C”, Pearson, 2nd Edition, 2016.",
+        "Ellis Horowitz, Sartaj Sahni, Susan Anderson-Freed , “Fundamentals of data structures in C”, University Press, 2020"
+      ],
+      "reference_books": [
+        "Reema Thareja , “ Data Structures Using C ”, Second Edition, 2014, Oxford University Press.",
+        "Brad Miller and David Ranum , “Problem Solving with Algorithms and Data Structures” , 2013.",
+        "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein, “Introduction to Algorithms” , 3rd Edition, Mitpress.",
+        "YedidyahLangsam, Moshe J. Augenstein and Aaron M. Tenenbaum, “Data Structures using C and C++”, 2nd edition, Pearson Education, 1999.",
+        "Jean Paul Trembley and Paul G. Sorenson, “An Introduction to Data Structures with Applications”, 2nd edition, McGraw Hill, 2008."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES2105",
+      "course_name": "Engineering Graphics",
+      "semester": "2",
+      "category": "Engineering Science",
+      "credits": 3,
+      "prerequisites": "NIL",
+      "course_outcomes": [
+        "Understand the principles of engineering drawing, including engineering curves and scales",
+        "Draw and interpret orthographic projections of points, lines and planes in front, top and side views",
+        "Understand and draw projection of solids in various positions in first quadrant and Explain principles behind development of surfaces",
+        "Explain principles behind the Sections of solids, Prepare isometric views and conversion of simple solids"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction to Drawing, Curves and Scales",
+        "topics": "Introduction: Lines, Lettering and Dimensioning, Geometrical Constructions of regular polygons by general methods. Curves: Construction of ellipse, parabola and hyperbola by general method and Involutes. Draw normal and tangent to Curves. Scales: Plain scales and diagonal scales."
+      },
+      {
+        "unit_number": "2",
+        "title": "Orthographic Projections",
+        "topics": "Reference plane, importance of reference lines or Plane, Projections of a point situated in first quadrant only. Projections of Straight Lines: Projections of straight lines parallel to both reference planes, perpendicular to one reference plane and parallel to other reference plane, inclined to one reference plane and parallel to the other reference plane. Projections of Straight Line Inclined to both the reference planes. Projections of Planes: Regular planes Perpendicular to both reference planes, parallel to one reference plane and inclined to the other reference plane; plane inclined to both the reference planes."
+      },
+      {
+        "unit_number": "3",
+        "title": "Projections of Solids and Development of Surfaces",
+        "topics": "Projections of Solids: Projections of solids(Prisms and Pyramids only) in simple positions: Axis perpendicular to horizontal plane, Axis perpendicular to vertical plane and Projection of Solids with axis inclined to one reference plane and parallel to another plane. Development of Surfaces: Methods of Development: Parallel line development and radial line development. Development of a cube, prism, cylinder, pyramid and cone. Computer graphics: Creating 2D & 3D drawings of objects including PCB and Transformations using Auto CAD (Not for end examination)."
+      },
+      {
+        "unit_number": "4",
+        "title": "Sections of Solids and Isometric Views",
+        "topics": "Sections of Solids: Section planes perpendicular to VP and inclined to HP only, Sectional views (Front View and Top View only) and Sections of solids in simple position only. Isometric Views: Draw an Isometric views of Simple solids. Conversion of Views: Conversion of isometric views to orthographic views of Simple solids."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "N. D. Bhatt, Engineering Drawing, Charotar Publishing House, 2016."
+      ],
+      "reference_books": [
+        "Engineering Drawing, Basant Agrawal and C M Agrawal,Tata McGraw Hill, 2009.",
+        "Engineering Drawing, K.L. Narayana and P. Kannaiah, Tata McGraw Hill, 2013.",
+        "Engineering Drawing, M.B.Shah and B.C. Rana, Pearson Education Inc,2009.",
+        "Engineering Drawing with an Introduction to Auto CAD, Dhananjay Jolhe , Tata McGraw Hill, 2017."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS2151B",
+      "course_name": "Chemistry Lab",
+      "semester": "2",
+      "category": "Institutional Core",
+      "credits": 1,
+      "prerequisites": "Knowledge of chemistry practicals at Intermediate level",
+      "course_outcomes": [
+        "Analyze acids from batteries and metal ions in solutions based on volumetric method",
+        "Apply standard procedures for preparation of nanomaterials, polymers and blueprinting",
+        "Analyze different solutions by applying various instrumental methods like conductometry, potentiometry, colorimetry, and chromatography"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "Determination of strength of acid in Lead-acid battery",
+          "Determination of ferrous iron by dichrometry",
+          "Determination of ferrous iron by permanganometry",
+          "Conductometric titration of a strong acid vs. strong base",
+          "Verification of Lambert-Beer’s law",
+          "Potentiometric titration of a redox reaction",
+          "Chemistry of blueprinting",
+          "Conductometric titration of a weak acid vs. strong base",
+          "Determination of cell constant and conductance of solutions",
+          "Preparation of nanomaterials– Precipitation method",
+          "Preparation of urea-formaldehyde resin",
+          "Separation of ions by paper chromatography"
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "“Vogel’s quantitative chemical analysis”, 6th Edition, by J. Mendham, R.C. Denney, J.D. Barnes and B. Sivasankar, Pearson Publications."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23PC2152A",
+      "course_name": "Data Structures Lab",
+      "semester": "2",
+      "category": "Professional Core",
+      "credits": 1.5,
+      "prerequisites": "23ES1152 Computer Programming Lab",
+      "course_outcomes": [
+        "Analyze the role of linear data structures in organizing and accessing data efficiently in algorithms",
+        "Design, implement, and apply linked lists for dynamic data storage, demonstrating understanding of memory allocation",
+        "Develop programs using stacks to handle recursive algorithms, manage program states, and solve related problems",
+        "Apply queue-based algorithms for efficient task scheduling and breadth-first traversal in graphs and distinguish between deques and priority queues and apply them appropriately to solve data management challenges"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": {
+          "Week 1": "Programs on Searching operation (Linear & Binary Search, array reversal).",
+          "Week 2": "Sorting Techniques Implementation (Bubble sort, Selection sort, Insertion sort).",
+          "Week 3": "Linked List Implementation (insertion, deletion, traversal).",
+          "Week 4": "Linked List Applications (polynomial addition, duplicate removal).",
+          "Week 5": "Double Linked List and Circular Linked list Implementation.",
+          "Week 6": "Stack Operations (using arrays and linked lists).",
+          "Week 7": "Queue Operations (using arrays and linked lists).",
+          "Week 8": "Stack and Queue Applications (infix to postfix, palindrome check).",
+          "Week 9": "Binary Search Tree Implementation (create, insert, delete, traversal).",
+          "Week 10": "Programs on hashing (collision resolution, simple cache).",
+          "Week 11": "Programs on Graph data structures (Depth First Search, Breadth First Search)."
+        }
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Data Structures and algorithm analysis in C, Mark Allen Weiss, Pearson, 2nd Edition.",
+        "Fundamentals of data structures in C, Ellis Horowitz, Sartaj Sahni, Susan Anderson- Freed, Silicon Press, 2008."
+      ],
+      "reference_books": [
+        "Algorithms and Data Structures: The Basic Toolbox by Kurt Mehlhorn and Peter Sanders",
+        "C Data Structures and Algorithms by Alfred V. Aho, Jeffrey D. Ullman, and John E. Hopcroft",
+        "Problem Solving with Algorithms and Data Structures” by Brad Miller and David Ranum",
+        "Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein",
+        "Algorithms in C, Parts 1-5 (Bundle): Fundamentals, Data Structures, Sorting, Searching, and Graph Algorithms by Robert Sedgewick"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES2153",
+      "course_name": "Basic Electrical and Electronics Workshop",
+      "semester": "2",
+      "category": "Engineering Science",
+      "credits": 1.5,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course is not provided in the supplied document."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS2154B",
+      "course_name": "Health and wellness, Yoga and Sports",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 0.5,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand the importance of yoga and sports for Physical fitness and sound health",
+        "Demonstrate an understanding of health-related fitness components",
+        "Compare and contrast various activities that help enhance their health",
+        "Assess current personal fitness levels",
+        "Develop Positive Personality"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Health and Fitness Concepts",
+        "topics": "Concept of health and fitness, Nutrition and Balanced diet, basic concept of immunity, Relationship between diet and fitness, Globalization and its impact on health, Body Mass Index (BMI). Activities include organizing health awareness programmes and preparing health profiles/charts."
+      },
+      {
+        "unit_number": "2",
+        "title": "Yoga",
+        "topics": "Concept of yoga, need for and importance of yoga, origin and history of yoga, classification of yoga, Physiological effects of Asanas- Pranayama and meditation, stress management, Mental health and yoga practice. Activities include Yoga practices like Asana, Kriya, Mudra, Bandha, Dhyana, Surya Namaskar."
+      },
+      {
+        "unit_number": "3",
+        "title": "Sports and Fitness",
+        "topics": "Concept of Sports and fitness, importance, fitness components, history of sports, Ancient and Modern Olympics, Asian games and Commonwealth games. Activities include participation in major games and individual sports, practicing warm-ups, aerobics, and cardiorespiratory fitness tests."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "Gordon Edlin, Eric Golanty. Health and Wellness, 14th Edn. Jones & Bartlett Learning, 2022.",
+        "T.K.V.Desikachar. The Heart of Yoga: Developing a Personal Practice.",
+        "Archie J.Bahm. Yoga Sutras of Patanjali, Jain Publishing Company, 1993",
+        "Wiseman, John Lofty, SAS Survival Handbook: The Ultimate Guide to Surviving Anywhere Third Edition, William Morrow Paperbacks, 2014.",
+        "The Sports Rules Book/ Human Kinetics with Thomas Hanlon.– 3rd ed. Human Kinetics, Inc.2014."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23MC2106",
+      "course_name": "Design Thinking",
+      "semester": "2",
+      "category": "Mandatory Course",
+      "credits": 0,
+      "prerequisites": "10+2 or Intermediate",
+      "course_outcomes": [
+        "Understand the concepts of Design Thinking",
+        "Investigate a problem to determine its root cause",
+        "Able to develop design thinking skills and experiment with different solutions",
+        "Able to develop prototypes and can test"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction to Design Thinking",
+        "topics": "Design Thinking Overview, Defining Design Thinking, Features and principles of Design thinking, Applications of Design Thinking."
+      },
+      {
+        "unit_number": "2",
+        "title": "Modules of Design Thinking (Inspiration & Empathy)",
+        "topics": "Inspiration, methods & tools used in Explore and Empathize phases of Design Thinking, Case study-activity."
+      },
+      {
+        "unit_number": "3",
+        "title": "Modules of Design Thinking (Continued)",
+        "topics": "Inspiration, methods & tools used in Explore and Empathize phases of Design Thinking, Case study-activity."
+      },
+      {
+        "unit_number": "4",
+        "title": "Prototype and Test Techniques",
+        "topics": "Types of Prototypes, Exercise: Revise Franken Prototype to Refined Prototype, Forms of Testing in Design Thinking, Prepare and Test of the Prototype."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Design Thinking: A guide to creative problem solving for everyone, Andrew Pressman, Routledge Taylor and Francis group, 2019, 1st edition.",
+        "“Design Thinking for Entrepreneurs and Small Businesses” by Beverly Rudkin Ingle, Apress.",
+        "“Design Thinking- The Guide Book”– Facilitated by the Royal Civil Service Commission, Bhutan.",
+        "Idris Mootee, “Design Thinking for Strategic Innovation”, John Wiley & Sons (2013)."
+      ],
+      "reference_books": [
+        "KarmicDesign Thinking- A Buddhism-Inspired Method to Help Create Human Centered Products & Services, Dr Bala Ramadurai.",
+        "Design Thinking: A Beginners Perspective EB is written by Balagurusamy and published by Mc Graw-Hill Education India.",
+        "Design Thinking: A framework for applying Design Thinking in Problem Solving, Anujuna Agarwal Edition : 1st,2024."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23HS3101",
+      "course_name": "Engineering Economics and Management",
+      "semester": "3",
+      "category": "Humanities and Sciences",
+      "credits": 2,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand the principles of management and various forms of organizations.",
+        "Understand the various aspects of business economics.",
+        "Perceive the knowledge on Human resources and Marketing functions.",
+        "Evaluate various alternatives economically and methods of calculating depreciation."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Management and Business Organization",
+        "topics": "Introduction to Management, Functions of Management, Principles of Scientific Management, Modern Principles of Management. Forms of Business Organization: Salient Features of Sole Proprietorship, Partnership, Joint Stock Company, Co-operative Society and Public Sector."
+      },
+      {
+        "unit_number": "2",
+        "title": "Economics, Demand, and Supply Analysis",
+        "topics": "Introduction to Basic Economic Concepts, Utility Analysis: Marginal Utility and Total Utility, Law of Diminishing Marginal Utility, Law of Equi Marginal Utility. Demand Analysis: Theory of Demand, Factors Influencing Demand, Elasticity of Demand. Supply Analysis: Supply Schedule and Supply Curve, Factors Influencing Supply."
+      },
+      {
+        "unit_number": "3",
+        "title": "Human Resource and Marketing Management",
+        "topics": "Human Resource Management: Meaning and difference between Personnel Management and Human Resource Management, Functions of Human Resource Management. Marketing Management: Concept of Selling And Marketing– Differences, Functions of Marketing, Product Life Cycle, Concept of Advertising, Sales Promotion, Types of Distribution Channels, Marketing Research, Break-Even Analysis."
+      },
+      {
+        "unit_number": "4",
+        "title": "Financial Management and Economic Alternatives",
+        "topics": "Financial Management: Functions of Financial Management, Time value of money with cash flow diagrams, Concept of Simple and Compound Interest. Economic Alternatives: Methods of Evaluating Alternatives under Present worth method, Future worth method, Annual Equivalent method- Problems. Depreciation: Causes of depreciation, Factors influencing depreciation, common methods of Depreciation: Straight Line Method, Declining Balance Method, Sum of Year’s Digits Method–Problems."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "M. Mahajan, Industrial Engineering and Production Management, DhanpatRai Publications, 2nd Edition, 2015.",
+        "Martand Telsang, Industrial & Business Management, S.Chand publications, 1st Edition, 2001."
+      ],
+      "reference_books": [
+        "R.Paneerselvam, Production and Operations Management, PHI, 3rd Edition, 2012.",
+        "Philip Kotler & Gary Armstrong, Principles of Marketing, Pearson Prentice Hall, New Delhi, 17th Edition, 2012.",
+        "IM Pandey, Financial Management, Vikas Publications 11th Edition, 2011.",
+        "B.B Mahapatro, Human Resource Management, New Age , 1st Edition, 2011."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23HS3102",
+      "course_name": "Universal Human Values 2: Understanding Harmony",
+      "semester": "3",
+      "category": "Basic Sciences and Humanities",
+      "credits": 3,
+      "prerequisites": "Universal Human Values 1",
+      "course_outcomes": [
+        "Understand and aware of themselves and their surroundings(family, society and nature).",
+        "Handle problems with sustainable solutions, while keeping human relationships and human nature in mind.",
+        "Exhibit critical ability and become sensitive to their commitment towards their understanding of human values, human relationship and human society.",
+        "Apply what they have learnt to their own self in different day-to-day settings in real life."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Course Introduction and Basic Human Aspirations",
+        "topics": "Need, basic guidelines, content and process for value education. Self-exploration, 'Natural acceptance' and experiential validation. Continuous Happiness and Prosperity. Right understanding, Relationship and Physical Facility."
+      },
+      {
+        "unit_number": "2",
+        "title": "Understanding Harmony in the Human Being – Harmony in Myself",
+        "topics": "Understanding human being as a co-existence of the sentient ‘I’ and the material ‘Body’. Understanding the needs of Self (‘I’) and ‘Body’. Understanding the harmony of I with the Body: Sanyam and Health; correct appraisal of Physical needs, meaning of Prosperity."
+      },
+      {
+        "unit_number": "3",
+        "title": "Understanding Harmony in the Family and Society – Harmony in Human-Human Relationship",
+        "topics": "Understanding values in human-human relationship; meaning of Justice (nine universal values in relationships). Trust and Respect as the foundational values. Understanding the harmony in the society. Resolution, Prosperity, fearlessness (trust) and co-existence as comprehensive Human Goals."
+      },
+      {
+        "unit_number": "4",
+        "title": "Understanding Harmony in Nature & Existence – Whole existence as Coexistence",
+        "topics": "Understanding the harmony in the Nature, Inter-connectedness and mutual fulfillment. Understanding Existence as Co-existence. Definitiveness of ethical human conduct. Basis for humanistic education, humanistic constitution and humanistic universal order. Competence in professional ethics."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "R. R. Gaur, R. Asthana and G. P. Bagaria, A Foundation Course in Human Values and Professional Ethics, Excel Books Private Limited, New Delhi, 2nd Revised Edition, 2019.",
+        "R. R. Gaur, R. Sangal and G. P. Bagaria, A Foundation Course in Human Values and Professional Ethics, Excel Books Private Limited, New Delhi, 1st Edition, 2010"
+      ],
+      "reference_books": [
+        "Pandit Sunderlal, Prabhath Prakashan, Bharat Mein Angreji Raj, Delhi , 2018",
+        "J. C. Kumarappa, Sarva-Seva-Sangh Prakashan, Economy of Permanence, Varanasi, 2017.",
+        "Annie Leonard, The Story of Stuff: The impact of overconsumption on the planet, our communities, and our health and how we can make it better, Free Press, New York, 2010.",
+        "Romain Rolland, Advaitha Ashrama, The Life of Vivekananda and the Universal gospel, India, 2010.",
+        "Mohandas Karamchand Gandhi, The story of my experiments with truth: Mahatma Gandhi Autobiography, B. N. Publishing, 2008.",
+        "Cecile Andrews, Slow is beautiful: New Visions of Community, New Society Publishers, Canada, 2006.",
+        "A. N. Tripathi, Human Values, New Age International Publishers, New Delhi, 2004.",
+        "Dharampal, Rediscovering India, Society for Integrated Development of Himilaya, 2003.",
+        "Romain Rolland, Srishti Publishers & Distributors, Mahatma Gandhi: The Man who become one with the Universal Being, New Delhi, 2002.",
+        "A. Nagaraj, JeevanVidya Prakashan, Amarkantak, JeevanVidya: EkParichaya, 1999.",
+        "Maulana Abul Kalam Azad, Orient Blackswan, India Wins Freedom: The Complete Version, 1988.",
+        "E. F. Schumacher, Small is beautiful: A study of economics as if people mattered, Vintage Books, London, 1993"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES3103C",
+      "course_name": "Digital Logic & Computer Organisation",
+      "semester": "3",
+      "category": "Engineering Science",
+      "credits": 3,
+      "prerequisites": "23ES2103B Basic Electrical and Electronics Engineering",
+      "course_outcomes": [
+        "Understand digital logic principles and basic structure of a computer.",
+        "Apply concepts of combinational and sequential logic to design digital circuits.",
+        "Apply algorithms to perform arithmetic operations on fixed point and floating point data.",
+        "Understand Processor, Memory and I/O organization of basic computer."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Data Representation and Digital Logic Circuits-I",
+        "topics": "Data Representation: Binary Numbers, Fixed Point Representation, Floating Point Representation, Number base conversions, Octal and Hexadecimal Numbers, Complements, Signed binary numbers, Binary codes. Digital Logic Circuits-I: Basic Logic Functions, Logic gates, universal logic gates, Minimization of Logic Expressions. K-Map Simplification, Combinational Circuits, Decoders, Multiplexers"
+      },
+      {
+        "unit_number": "2",
+        "title": "Digital Logic Circuits-II and Basic Computer Structure",
+        "topics": "Digital Logic Circuits-II: Sequential Circuits, Flip-Flops, Binary counters, Registers, Shift Registers, Ripple counters. Basic Structure of Computers: Computer Types, Functional units, Basic operational concepts, Bus structures, Software, Performance, multiprocessors and multi computers, Computer Generations, VonNeumann Architecture."
+      },
+      {
+        "unit_number": "3",
+        "title": "Computer Arithmetic and Processor Organization",
+        "topics": "Computer Arithmetic : Addition and Subtraction of Signed Numbers, Design of Fast Adders, Multiplication of Positive Numbers, Signed-operand Multiplication, Fast Multiplication, Integer Division, Floating-Point Numbers and Operations. Processor Organization:Fundamental Concepts, Execution of a Complete Instruction, Multiple-Bus Organization, Hardwired Control and Multi programmed Control."
+      },
+      {
+        "unit_number": "4",
+        "title": "Memory and I/O Organization",
+        "topics": "The Memory Organization: Basic Concepts, Semiconductor RAM Memories, Read-Only Memories, Speed, Size and Cost, Cache Memories, Performance Considerations, Virtual Memories, Memory Management Requirements, Secondary Storage. Input/Output Organization: Accessing I/O Devices, Interrupts, Processor Examples, Direct Memory Access, Buses, Interface Circuits, Standard I/O Interface."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Morris Mano, Digital Logic and Computer Design, Pearson Education, 16th Impression, 2016.",
+        "Carl Hamacher, Zvonko Vranesic, Safwat Zaky, Computer Organization, McGraw Hill, 5th Edition, 2014.",
+        "William Stallings, Computer Organization and Architecture, Pearson Education, 11th Edition, 2012."
+      ],
+      "reference_books": [
+        "M.Moris Mano, Computer Systems Architecture, Pearson Education, 3rd Edition, 2009.",
+        "Design, David A. Paterson, John L. Hennessy, Elsevier, Computer Organization and 2nd Edition, 2010.",
+        "Roth, Fundamentals of Logic Design, Thomson, 5th Edition, 2014."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS3304",
+      "course_name": "Advanced Data Structures & Algorithms Analysis",
+      "semester": "3",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "23PC2104A Data Structures",
+      "course_outcomes": [
+        "Understand the functions of different nonlinear data structures- binary trees, search trees.",
+        "Apply graph-based algorithms, design technique- divide and conquer, and greedy methods for solving complex problems.",
+        "Apply dynamic programming and backtracking design techniques to solve complex problems.",
+        "Apply the concepts of Branch and Bound techniques to solve complex problems."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Algorithm Analysis and Advanced Trees",
+        "topics": "Introduction to Algorithm Analysis: Space and Time Complexity analysis, Asymptotic Notations. AVL Trees Creation, Insertion, Deletion operations and Applications. B-Trees Creation, Insertion, Deletion operations and Applications. Heap Trees (Priority Queues) Min and Max Heaps, Operations and Applications."
+      },
+      {
+        "unit_number": "2",
+        "title": "Graphs and Design Techniques",
+        "topics": "Graphs: Terminology, Representations, Basic Search and Traversals, Connected Components and Biconnected Components, applications. Divide and Conquer: The General Method, Quick Sort, Merge Sort, Stassen’s matrix multiplication, Convex Hull. Greedy Method: General Method, Job Sequencing with deadlines, Knapsack Problem, Minimum cost spanning trees, Single Source Shortest Paths."
+      },
+      {
+        "unit_number": "3",
+        "title": "Dynamic Programming and Backtracking",
+        "topics": "Dynamic Programming: General Method, All pairs shortest paths, Single Source Shortest Paths– General Weights (Bellman Ford Algorithm), Optimal Binary Search Trees, 0/1 Knapsack, String Editing, Travelling Salesperson problem. Backtracking: General Method, 8-Queens Problem, Sum of Subsets problem, Graph Coloring, 0/1 Knapsack Problem."
+      },
+      {
+        "unit_number": "4",
+        "title": "Branch & Bound and Complexity",
+        "topics": "Branch and Bound:The General Method,0/1Knapsack Problem, Travelling Salesperson problem. NP Hard and NP Complete Problems: Basic Concepts, Cook’s theorem. NP Hard Graph Problems:Clique Decision Problem (CDP), Chromatic Number Decision Problem (CNDP), Traveling Salesperson Decision Problem (TSP). NPHardScheduling Problems:SchedulingIdenticalProcessors, Job Shop Scheduling."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Reema Thareja, Data Structures using C, Oxford University Press, 2nd Edition, 2014. (Unit 1)",
+        "Ellis Horowitz, Satraj Sahni and Rajasekharan, Fundamentals of Computer Algorithms, Galgotia Publications Pvt. Ltd, 2nd Edition, 2008. (Unit 2, 3, and 4)."
+      ],
+      "reference_books": [
+        "Horowitz Sahni and Anderson-Freed, Fundamentals of Data Structures in C, Universities Press, 2nd Edition, 2008.",
+        "Richard F.Gilberg & B.A.Forouzan, Data Structures A Pseudo code Approach with C, Cengage Learning, 2nd Edition, 2007.",
+        "M.T.Goodrich and R.Tomassia, Algorithm Design: Foundations, Analysis and Internet examples, John Wiley and sons, 2nd Edition, 2006.",
+        "T.H.Cormen, C.E.Leiserson, R.L.Rivest and C.Stein, Introduction to Algorithms, Mit Press, 3rd Edition, 2009.",
+        "Allen Weiss, Data structures and Algorithm Analysis in C, Pearson Education, 2nd Edition, 2002."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS3305",
+      "course_name": "Object Oriented Programming Through Java",
+      "semester": "3",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "23ES1104 Introduction to Programming",
+      "course_outcomes": [
+        "Understand the basic concepts of object oriented programming.",
+        "Interpret multiple inheritances through interfaces for a given application.",
+        "Apply exceptions, thread capabilities and handling files on a given application.",
+        "Illustrate the use of functional programming and Collections framework for a given application."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Java Fundamentals and OOP",
+        "topics": "Java history and evolution, features, Byte Code, differences from C/C++. Object Oriented Programming principles. Data Types, Variables, Arrays, Operators. Introducing Classes and Objects: constructors, 'this' keyword, garbage collection, method overloading, static and final keywords, nested classes."
+      },
+      {
+        "unit_number": "2",
+        "title": "Inheritance, Interfaces, and Packages",
+        "topics": "String Handling: String Constructors, String Buffer, String Tokenizer. Inheritance: basics, 'super', multilevel hierarchy, method overriding, dynamic method dispatch, abstract classes, 'final'. Packages & Interfaces: Defining and importing packages, access protection, defining and implementing interfaces."
+      },
+      {
+        "unit_number": "3",
+        "title": "Exception Handling, I/O, and Multithreading",
+        "topics": "Exception handling fundamentals: try, catch, throw, throws, finally. I/O streams: Byte Streams (InputStream, OutputStream), Character Streams (Reader, Writer). Multithread Programming: Java Thread Model, creating threads (implementing Runnable, extending Thread), thread priorities, synchronization."
+      },
+      {
+        "unit_number": "4",
+        "title": "Functional Programming and Collections",
+        "topics": "Pragmatic Functional Programming using Lambdas: Functional Interfaces, Lambda Expressions, Method References. Collections Framework: overview, Collection interfaces (Collection, List, Set), Collection Classes (ArrayList, LinkedList, HashSet). Map Classes (HashMap, TreeMap). The Stream API: basics, reduction operations, parallel streams, mapping, collecting."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Herbert Schildt, Java The Complete Reference, Oracle Press, 11th Edition, 2019."
+      ],
+      "reference_books": [
+        "Herbert Schildt, Dale Skrien, Java Fundamentals: A Comprehension Introduction, McGraw-Hill Education India Pvt., Special Indian Edition, Ltd, 2017.",
+        "E Balaguruswamy, Programming with Java, Mc Graw Hill, 4th Edition, 2020.",
+        "Paul J. Dietel and Dr.Harvey M. Deitel, “Java How to Program”, Deitel & Associates, 11th Edition, 2018.",
+        "Timothy Budd, Understanding Object Oriented Programming with Java, Pearson Education, Updated edition, 2013.",
+        "Kathy Sierra & Bert Bates, Head First Java, Oreilly, 2nd Edition, 2023."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23TP3106",
+      "course_name": "Logic & Reasoning",
+      "semester": "3",
+      "category": "Soft Skill-1",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Think reason logically in any critical situation.",
+        "Analyze given information to find correct solution.",
+        "To reduce the mistakes in day to day activities in practical life.",
+        "Develop time management skills by approaching different shortcut methods.",
+        "Use mathematical based reasoning to make decisions.",
+        "Apply logical thinking to solve problems and puzzles in qualifying exams for companies and in other competitive exams."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Core Reasoning",
+        "topics": "Series Completion, Coding-Decoding, Blood Relation, Puzzles test."
+      },
+      {
+        "unit_number": "2",
+        "title": "Logical Operations",
+        "topics": "Direction sense test, Logical Venn diagrams, Number test, ranking test, Mathematical operations."
+      },
+      {
+        "unit_number": "3",
+        "title": "Advanced Reasoning",
+        "topics": "Arithmetical Reasoning, Inserting missing character, Syllogism, Binary logic, Data sufficiency."
+      },
+      {
+        "unit_number": "4",
+        "title": "Non-Verbal Reasoning",
+        "topics": "Water images, Mirror images, Paper folding, Paper cutting, Embedded Figures, Dot situation, Cubes & Dice."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "R. S. Aggarwal, Verbal and non-verbal reasoning, S Chand publication, Revised Edition, 2017, ISBN:81-219-0551-6,",
+        "Vikramjeeth, Reasoning Guru Verbal & Non-Verbal Reasoning, Multilingual Edition, 2023, ISBN :978-9358706000."
+      ],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS3651",
+      "course_name": "Python Programming Lab",
+      "semester": "3",
+      "category": "Skill Enhancement Course",
+      "credits": 1,
+      "prerequisites": "23ES1152 Computer Programming Lab",
+      "course_outcomes": [
+        "Introduce core programming concepts of Python programming language.",
+        "Demonstrate about Python data structures like Lists, Tuples, Sets and dictionaries",
+        "Implement Functions, Modules and Regular Expressions in Python Programming and to create practical and contemporary applications using these."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Python Basics and Control Flow",
+        "topics": "History, installation (Anaconda), Jupyter Notebook. Identifiers, Keywords, Variables, Operators, Data Types, Control Flow Statements (if, while, for, try-except)."
+      },
+      {
+        "unit_number": "2",
+        "title": "Functions, Strings, and Lists",
+        "topics": "Built-in and user-defined functions, arguments. String creation, operations, slicing, and methods. List creation, operations, indexing, methods."
+      },
+      {
+        "unit_number": "3",
+        "title": "Dictionaries, Tuples, and Sets",
+        "topics": "Dictionary creation, accessing/modifying key-value pairs, methods. Tuple creation, operations, indexing. Set creation and methods."
+      },
+      {
+        "unit_number": "4",
+        "title": "Files and Object-Oriented Programming",
+        "topics": "File handling (text, binary, CSV, pickle), os module. OOP concepts: Classes, Objects, Constructors, Encapsulation, Inheritance, Polymorphism."
+      },
+      {
+        "unit_number": "5",
+        "title": "Introduction to Data Science Libraries",
+        "topics": "Functional Programming, JSON and XML in Python, NumPy with Python, Pandas."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Anuradha A. Puntambekar, Programming and Problem Solving using Python (Fundamentals and Applications), Technical Publication, 1stEdition, 2020."
+      ],
+      "reference_books": [
+        "Gowri shankar S, Veena A, Introduction to Python Programming, CRC Press, Special Indian Edition, 2019.",
+        "S Sridhar, J Indumathi, V M Hariharan, Python Programming, Pearson Education, 2ndEdition, 2024",
+        "Daniel Liang, Introduction, to Programming Using Python, Y, Pearson Eduction, 1stEdition, 2023."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS3352",
+      "course_name": "Advanced Data Structures and Algorithms Lab",
+      "semester": "3",
+      "category": "Program Core",
+      "credits": 1.5,
+      "prerequisites": "23PC2152A Data Structures Lab",
+      "course_outcomes": [
+        "Implement AVLtrees, B-Trees,and Heap Trees, efficient binary trees, M-way search trees, graph traversal and shortest path algorithms.",
+        "Implement graph-based algorithms, design technique- divide and conquer, and greedy methods for solving complex problems.",
+        "Implement solutions for problems using dynamic programming and backtracking.",
+        "Apply Branch and Bound techniques to write programs for different problems."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "1. Construct an AVL tree and implement insert/delete operations.",
+          "2. Construct a B-Tree (order 5) and implement search, insert, delete operations.",
+          "3. Construct Min and Max Heaps and implement element deletion.",
+          "4. Implement BFT and DFT for a graph using both Adjacency Matrix and Adjacency Lists.",
+          "5. Find bi-connected components in a given graph.",
+          "6. Implement Quick sort and Merge sort and observe execution time for various input sizes.",
+          "7. Compare performance of Single Source Shortest Paths using Greedy method for different graph representations.",
+          "8. Implement Job sequencing with deadlines using Greedy strategy.",
+          "9. Solve 0/1 Knapsack problem Using Dynamic Programming.",
+          "10. Implement N-Queens Problem Using Backtracking.",
+          "11. Use Backtracking strategy to solve 0/1 Knapsack problem.",
+          "12. Implement Travelling Sales Person problem using Branch and Bound approach."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Reema Thareja, Data Structures using C, Oxford University Press, 2nd Edition, 2014.",
+        "Ellis Horowitz, Satraj Sahni and Rajasekharan, Fundamentals of Computer Algorithms, Galgotia Publications Pvt. Ltd, 2nd Edition, 2008."
+      ],
+      "reference_books": [
+        "Horowitz Sahni and Anderson-Freed, Fundamentals of Data Structures in C, Universities Press, 2nd Edition, 2008.",
+        "Richard F.Gilberg & B.A.Forouzan, Data Structures A Pseudo code Approach with C, Cengage Learning, 2nd Edition, 2007.",
+        "M.T.Goodrich and R.Tomassia, Algorithm Design: Foundations, Analysis and Internet examples, John Wiley and sons, 2nd Edition, 2006.",
+        "T.H.Cormen, C.E.Leiserson, R.L.Rivest and C.Stein, Introduction to Algorithms, Mit Press, 3rd Edition, 2009.",
+        "Allen Weiss, Data structures and Algorithm Analysis in C, Pearson Education, 2nd Edition, 2002."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS3353",
+      "course_name": "Object Oriented Programming through Java Lab",
+      "semester": "3",
+      "category": "Program Core",
+      "credits": 1.5,
+      "prerequisites": "23ES1152 Computer Programming Lab",
+      "course_outcomes": [
+        "Apply the basic concepts of object oriented programming.",
+        "Apply multiple inheritance through interfaces for a given application.",
+        "Apply exceptions, thread capabilities and handling files on a given application.",
+        "Apply functional programming and Collections framework for a given application."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Tasks",
+        "topics": [
+          "Task 1: Apply fundamentals of Java (Data types, Variables, Operators, Control Statements).",
+          "Task 2: Apply the concepts of Classes and Objects.",
+          "Task 3: Apply the concepts of Arrays.",
+          "Task 4: Apply Inheritance and its types.",
+          "Task 5: Use String and String Tokenizer classes.",
+          "Task 6: Use Interfaces.",
+          "Task 7: Create and access members of a package.",
+          "Task 8: Apply Method Overloading and Method Overriding.",
+          "Task 9: Apply Exception Handling.",
+          "Task 10: Copy content from one file to another using I/O Streams.",
+          "Task 11: Apply Threads and Multithreading.",
+          "Task12: Apply Lambda Expressions, Collections Framework and Stream API.",
+          "Lab Projects: Design and develop an automated ballot vote system or a banking application."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Herbert Schildt, Java The Complete Reference, Oracle Press, 11th Edition, 2019."
+      ],
+      "reference_books": [
+        "Herbert Schildt, Dale Skrien, Java Fundamentals: A Comprehension Introduction, McGraw-Hill Education India Pvt., Special Indian Edition, Ltd, 2017.",
+        "E Balaguruswamy, Programming with Java, Mc Graw Hill, 4th Edition, 2020.",
+        "Paul J. Dietel and Dr.Harvey M. Deitel, “Java How to Program”, Deitel & Associates Inc.l, 11th Edition, 2018.",
+        "Timothy Budd, Understanding Object Oriented Programming with Java, Pearson Education, Updated edition, 2013.",
+        "Kathy Sierra & Bert Bates, Head First Java, Oreilly, 2nd Edition, 2023."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS4101B",
+      "course_name": "Discrete Mathematics & Graph Theory",
+      "semester": "4",
+      "category": "Engineering Science",
+      "credits": 3,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Analyze of propositional calculus and first order logic.",
+        "Apply the basic and advanced counting techniques.",
+        "Analyze of relations and digraphs and their applications.",
+        "Analyze of graphs and their applications."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Propositional Calculus",
+        "topics": "Fundamentals of Logic: Propositions, Connectives, Propositional functions, Truth tables, Tautology, Contradiction, Logical equivalences, Normal forms, Logical inferences, Methods of proof of an implication. First Order Predicate Logic: Predicate, Quantifiers, Rules of inference for Quantified propositions."
+      },
+      {
+        "unit_number": "2",
+        "title": "Counting Techniques",
+        "topics": "Basics of Counting: Sum and product rules, Indirect counting, One to one correspondence, Combinations and permutations, Enumerating combinations and permutations with and without repetitions. Advanced Counting Techniques: Generating function of sequences, Recurrence relations, Solving recurrence relations– substitution- Generating functions-The method of characteristic roots, Solution of inhomogeneous recurrences relations."
+      },
+      {
+        "unit_number": "3",
+        "title": "Relations and Digraphs",
+        "topics": "Relations and basic graphs, Special properties of binary relations, Equivalence relation, Partially ordered sets, Hasse diagrams, Lattices, Operations on relations, Paths and closures, Directed graphs and Adjacency matrices, Transitive closure, Warshall’s algorithm."
+      },
+      {
+        "unit_number": "4",
+        "title": "Graph Theory",
+        "topics": "Introduction(graphs, sub graphs, circuits, trees) Sum of degrees theorem, Isomorphism and sub graphs, planar graphs, Euler’s formula, Multi graphs and Euler’s circuits, Hamiltonian graphs, Grin-berg’s theorem, Graph coloring, Chromatic numbers."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Joe L. Mott, Abraham Kandel, and Theodore P. Baker: Discrete Mathematics for Computer Scientists & Mathematicians, PHI, 2nd Edition."
+      ],
+      "reference_books": [
+        "J. P. Tremblay and R.Manohar: Discrete Mathematical structures with applications to computer science, MGHE.",
+        "K.H.Rosen: Discrete Mathematics and its Applications, Mc Graw Hill Companies, 7th Edition.",
+        "D. S. Malik and M. K. Sen: Discrete Mathematical Structures: Theory and applications"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS4102B",
+      "course_name": "Probability & Statistics",
+      "semester": "4",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "23BS1101 Linear Algebra",
+      "course_outcomes": [
+        "Examine probability distributions with random variables.",
+        "Apply random phenomena of sample to test the Hypothesis concerning means.",
+        "Analyze the Hypothesis concerning variance and proportions.",
+        "Estimate Correlation and Regression coefficients."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Probability Distributions",
+        "topics": "Random Variables (discrete and continuous), Expectation, Variance and Standard deviation of discrete random variable, Binomial distribution, Poisson distribution. Expectations, Variance and standard deviation of continuous random variables, Normal distribution, Normal approximation to the Binomial distribution. Joint distribution:Joint distributions-Discrete and Continuous."
+      },
+      {
+        "unit_number": "2",
+        "title": "Sampling Distributions and Inferences Concerning Mean",
+        "topics": "Introduction, Populations and Samples. Inferences Concerning Mean: Point Estimation- Interval Estimation. Test of Hypothesis– Null Hypothesis and Tests of Hypothesis– Hypothesis concerning one mean– Relation between tests and Confidence intervals–Operating characteristic curves- Inferences concerning two means."
+      },
+      {
+        "unit_number": "3",
+        "title": "Inferences Concerning Variances and Proportions",
+        "topics": "Inferences Concerning Variances: Estimation of variances- Hypothesis concerning one variance- Hypothesis concerning two variances. Inference Concerning Proportions: Estimation of Proportions- Hypothesis concerning one Proportion- Hypothesis concerning several Proportions– The Analysis of r x c Tables- Goodness of fit."
+      },
+      {
+        "unit_number": "4",
+        "title": "Correlation and Regression",
+        "topics": "Correlation: Types of Correlation, Scatter diagram, Karl Pearson’s coefficient of correlation, Rank Correlation. Regression Analysis: The method of least squares, Multiple Regression."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Johnson, R. A. (2011). Probability and statistics for engineers (8th ed.). Prentice Hall India Learning Private Limited."
+      ],
+      "reference_books": [
+        "Walpole, R. E., Myers, R. H., Myers, S. L., & Ye, K. (1993). Probability and statistics for engineers and scientists (Vol. 5). New York: Macmillan.",
+        "Biswal, P. C.(2007). Probability and statistics. Prentice Hall India Learning Private Limited.",
+        "Iyengar, T. K. V., Gandhi, B. K., Ranganadham, S., & Prasad, M. V. S. S. N, (2008). Probability and statistics. S. Chand Publishing."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS4303",
+      "course_name": "Operating Systems",
+      "semester": "4",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "23ES1104 Introduction to Programming",
+      "course_outcomes": [
+        "Understand the basic components of an Operating System.",
+        "Apply CPU Scheduling techniques and mechanisms used for process synchronization.",
+        "Analyse Memory management techniques and methods for handling deadlocks.",
+        "Analyse File system Implementation techniques and protection mechanisms."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "System Structures, Processes, and Threads",
+        "topics": "Operating System Services, User and Operating-System Interface, system calls, Types of System Calls, system programs, operating system Design and Implementation, operating system structure, Building and Booting an Operating System, Operating system debugging. Processes: Process Concept, Process scheduling, Operations on processes, Interprocess communication. Threads and Concurrency: Multithreading models, Thread libraries, threading issues."
+      },
+      {
+        "unit_number": "2",
+        "title": "CPU Scheduling and Synchronization",
+        "topics": "CPU Scheduling: Basic concepts, Scheduling criteria, Scheduling algorithms, multiple processor scheduling. Synchronization Tools: The Critical Section Problem, Peterson’s Solution, Mutex Locks, Semaphores, Monitors, Classic problems of Synchronization."
+      },
+      {
+        "unit_number": "3",
+        "title": "Deadlocks and Memory Management",
+        "topics": "Deadlocks: system Model, Deadlock characterization, Methods for handling Deadlocks, Deadlock prevention, Deadlock avoidance, Deadlock detection, Recovery from Deadlock. Memory-Management Strategies: Introduction, Contiguous memory allocation, Paging, Structure of the Page Table, Swapping. Virtual Memory Management: Introduction, Demand paging, Copy-on-write, Page replacement, Allocation of frames, Thrashing. Storage Management: Overview of Mass Storage Structure, HDD Scheduling."
+      },
+      {
+        "unit_number": "4",
+        "title": "File System and Protection",
+        "topics": "File System:File System Interface: File concept, Access methods, Directory Structure; File system Implementation: File-system structure, File-system Operations, Directory implementation, Allocation method. Free space management: File-System Internals: File-System Mounting, Partitions and Mounting, File Sharing. Protection:Goals of protection, Principles of protection, Protection Rings, Domain of protection, Access matrix."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Silberschatz A, Galvin P B, Gagne G, Operating System Concepts, Wiley, 10th Edition, 2018.",
+        "Tanenbaum A S, Modern Operating Systems, Galgotia Publications Pvt. Ltd, 4th Edition, 2016."
+      ],
+      "reference_books": [
+        "Stallings W, Operating Systems-Internals and Design Principles, Pearson, 9th Edition, 2018.",
+        "D.M Dhamdhere, Operating Systems: A Concept Based Approach, McGraw- Hill, 3rd Edition, 2013."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS4304",
+      "course_name": "Database Management Systems",
+      "semester": "4",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "23PC2104A: Data Structures, 23CS3304: Advanced Data Structures & Algorithms Analysis",
+      "course_outcomes": [
+        "Apply database management techniques using relational SQL database to real world applications.",
+        "Analyse the Entity-Relationship models, in turn develop the Relational models that leads to database design.",
+        "Apply various normalization techniques to relational models in order to improve database design quality.",
+        "Understand database transactions processing, protocols for Concurrency control and Recovery techniques in database."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction to DBMS and SQL",
+        "topics": "Database system vs File System, Database Users, Advantages, Data Models, Schema, Instance, Data Independence, System Structure. SQL: DDL, DML, DQL (SELECT, WHERE), functions, constraints, nested queries, subqueries, grouping, aggregation, joins, views, set operations."
+      },
+      {
+        "unit_number": "2",
+        "title": "ER and Relational Model",
+        "topics": "Entity Relationship Model: Entities, attributes, entity set, relationship, constraints, subclass, superclass, specialization, generalization using ER Diagrams. Relational Model: Domain, attribute, tuple, relation, null values, constraints (Domain, Key, Integrity). Relational Algebra. ER-to-Relational Mapping."
+      },
+      {
+        "unit_number": "3",
+        "title": "Schema Refinement (Normalization)",
+        "topics": "Purpose of Normalization, functional dependency, normal forms (1NF, 2NF, 3NF), Boyce-Codd normal form (BCNF), Multi-valued dependency (MVD), Fourth normal form (4NF), Fifth Normal Form (5NF)."
+      },
+      {
+        "unit_number": "4",
+        "title": "Transaction Management",
+        "topics": "Transaction Processing: ACID Properties, Schedules (Recoverability, Serializability). Concurrency Control: Two-Phase Locking Techniques. Recovery Concepts: NO-UNDO/REDO, Shadow Paging, ARIES Algorithm."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Raghurama Krishnan, Johannes Gehrke, TMH, Database Management Systems, 3rd Edition. (For Chapters 2, 3, 4)",
+        "Silberschatz, Korth, Sudarsan, TMH, Database System Concepts, 5th Edition, (For Chapter 1 and Chapter 5)"
+      ],
+      "reference_books": [
+        "C J Date, Introduction to Database Systems, Pearson, 8th Edition, Ltd,.",
+        "Ramez Elmasri, Shamkant ,B. Navathe, Database Management System, Mc Graw Hill, Pearson, 6th Edition.",
+        "Corlos Coronel, Steven Morris, Peter Robb, Database Principles Fundamentals of Design Implementation and Management, Cengage Learning."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS4305",
+      "course_name": "Software Engineering",
+      "semester": "4",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand the basic concepts of software engineering process models.",
+        "Apply the concepts of Estimation and Requirements for any given application.",
+        "Apply Design and Testing techniques for any given application.",
+        "Apply Software Development Life Cycle process using Case Tools."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction and Process Models",
+        "topics": "Evolution of Software Engineering, notable changes, computer system engineering. Software Life Cycle Models: Waterfall, RAD, Agile, Spiral models. Agility: Agile Process, Extreme Programming (XP)."
+      },
+      {
+        "unit_number": "2",
+        "title": "Project Management and Requirements",
+        "topics": "Software Project Management complexities, project manager responsibilities, metrics for project size estimation (LOC, FP), COCOMO, Halstead’s software science, risk management. Requirements Analysis and Specification: SRS, Formal system specification (Axiomatic, Algebraic, Executable)."
+      },
+      {
+        "unit_number": "3",
+        "title": "Software Design and Testing",
+        "topics": "Characterizing good software design, cohesion and coupling. Function-Oriented Design: SA/SD methodology, DFD model. User Interface Design: Concepts, types, GUI development. Coding and Testing: Code review, documentation, Black-box vs White-box testing, Debugging, Integration testing."
+      },
+      {
+        "unit_number": "4",
+        "title": "Quality Management, CASE, and Maintenance",
+        "topics": "Software reliability, statistical testing, quality management systems, ISO 9000, SEI CMM, Six Sigma. CASE: Scope, environment, tools. Software Maintenance: Reverse engineering, process models, cost estimation. Software Reuse: Basic issues and approaches."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Rajib Mall, Fundamentals of Software Engineering,-PHI Publication, 5th Edition.",
+        "Roger S. Pressman, Software Engineering A Practitioner’s Approach, Mc-Graw Hill International Edition, 9th Edition."
+      ],
+      "reference_books": [
+        "Ian Sommerville, Software Engineering, Pearson, 10th Edition, Ltd,.",
+        "Deepak Jain, Software Engineering, Principles and Practices, Oxford University Press."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23TP4106",
+      "course_name": "English For Professionals",
+      "semester": "4",
+      "category": "Soft Skill-2",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "How conversations are made",
+        "The usage of grammar",
+        "Apply speaking skills through activities",
+        "Apply Etiquettes and manners"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Conversational Skills",
+        "topics": "Beginners, Functional, Situational Conversations: Self Introduction, Introducing others, Seeking Permission, Asking for Directions, Making Requests. Just a minute (JAM) sessions."
+      },
+      {
+        "unit_number": "2",
+        "title": "Language Structure and Usage",
+        "topics": "Structuring and forming sentences. Errors in Usage: Common difficulties in word usage, pronunciation. Idioms and Phrases."
+      },
+      {
+        "unit_number": "3",
+        "title": "Public Speaking",
+        "topics": "Introduction to different ways of speaking: Elocution, Debate and Extempore, including principles and practice sessions."
+      },
+      {
+        "unit_number": "4",
+        "title": "Etiquette and Testing",
+        "topics": "Etiquette: Need for etiquette, Dining Etiquette, Social Etiquette in formal and informal conversations. Versant Test: Mode, aim, and practice sessions."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "Kamalesh Sadanand, “A Spoken English”, VOL 1&2; Orient BlackSwan, Second Edition,2014.",
+        "“Communicative English”; Pearson; 2010"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23MC4107",
+      "course_name": "Environmental Science",
+      "semester": "4",
+      "category": "Audit Course",
+      "credits": 0,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Identify various factors causing degradation of natural resource.",
+        "Identify various ecosystem and need for biodiversity.",
+        "Realize and explore the problems related to environmental pollution and its management.",
+        "Apply the information and technology to analyze social issues, use acts associated with environment."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Environmental Studies and Natural Resources",
+        "topics": "Definition, Scope and Importance, Need for Public Awareness. Natural Resources: Renewable and non-renewable resources (Forest, Water, Mineral, Food, Energy) - Use, over-exploitation, and conservation."
+      },
+      {
+        "unit_number": "2",
+        "title": "Ecosystems and Biodiversity",
+        "topics": "Ecosystems: Concept, structure, and function. Energy flow, food chains, food webs. Types of ecosystems. Biodiversity and Its Conservation: Genetic, species, and ecosystem diversity. Value, threats, and conservation of biodiversity."
+      },
+      {
+        "unit_number": "3",
+        "title": "Environmental Pollution and Disaster Management",
+        "topics": "Definition, causes, effects, and control measures of Air, Water, Soil, Marine, Noise, Thermal pollution, and Nuclear hazards. Solid Waste Management. Disaster management: floods, earthquake, cyclone and landslides."
+      },
+      {
+        "unit_number": "4",
+        "title": "Social Issues and the Environment",
+        "topics": "Sustainable development, Water conservation, Environmental ethics. Climate change, global warming, ozone layer depletion. Environment Protection Act. Human Population and the Environment. Field Work/Case Studies."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Erach Bharucha. 2004, Environmental Studies for undergraduate courses, University Grants Commission, New Delhi, Bharati Vidyapeeth Institute of Environment Education and Research.",
+        "Palaniswamy, Environmental Studies, Pearson education.",
+        "S.AzeemUnnisa,“Environmental Studies”Academic Publishing Company.",
+        "K.RaghavanNambiar,“Text book of Environmental Studies for Undergraduate Courses as per UGC model syllabus”, Scitech Publications (India), Pvt.Ltd."
+      ],
+      "reference_books": [
+        "AnjaneyuluY. Introduction to Environmental sciences, B S Publications PVT Ltd, Hyderabad",
+        "Anjireddy.M Environmental science & Technology, BS Publications PVT Ltd, Hyderabad.",
+        "Benny Joseph, 2005, Environmental Studies, The Tata McGraw- Hill publishing company limited, New Delhi.",
+        "Principles of Environmental Science. &Engg. P.Venu Gopala Rao, 2006, Prentice Hall of India Pvt. Ltd., New Delhi.",
+        "Ecological and Environmental Studies– Santosh Kumar Garg, Rajeswari Garg (or) Rajani Garg, 2006, Khanna Publishers, New Delhi.",
+        "Essentials of Environmental Studies, Kurian Joseph & R Nagendran, Pearson Education publishers, 2005.",
+        "A.K Dee– Environmental Chemistry, New Age India Publications.",
+        "BharuchaErach- Biodiversity of India, Mapin Publishing Pvt.Ltd.."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS4651",
+      "course_name": "Full Stack Development-I",
+      "semester": "4",
+      "category": "Skill Enhancement Course",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand the fundamentals of HTML elements, CSS Styles.",
+        "Apply HTML elements and their attributes for designing static web pages.",
+        "Create a web page by applying appropriate CSS styles and HTML elements.",
+        "Create dynamic web application and validate forms using JavaScript."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "1. HTML Lists, Links and Images.",
+          "2. HTML Tables, Forms and Frames.",
+          "3. HTML 5 and Cascading Style Sheets (inline, internal, external).",
+          "4. CSS Selector forms (Simple, Combinator, Pseudo-class, Pseudo-element, Attribute).",
+          "5. CSS with Color, Background, Font, Text and the CSS Box Model.",
+          "6. Applying JavaScript (internal/external), I/O, and Type Conversion.",
+          "7. JavaScript Pre-defined and User-defined Objects (document, window, array, math, string, regex, date).",
+          "8. JavaScript Conditional Statements and Loops.",
+          "9. Javascript Functions and Events for validation and calculations."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Programming the World Wide Web, 7th Edition, Robet W Sebesta, Pearson, 2013.",
+        "WebProgrammingwithHTML5, CSSandJavaScript, JohnDean, Jones&Bartlett Learning, 2019 (Chapters 1-11).",
+        "Pro MERNStack: Full Stack Web App Development with Mongo, Express, React, and Node, Vasan Subramanian, 7th, APress, O’Reilly."
+      ],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES4152",
+      "course_name": "Design Thinking & Innovation",
+      "semester": "4",
+      "category": "Engineering Science",
+      "credits": 2,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand the fundamentals of Design Thinking and innovation.",
+        "Apply the design thinking techniques for solving problems in various sectors.",
+        "Analyse to work in a multidisciplinary environment.",
+        "Analyse the value of creativity."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction to Design Thinking",
+        "topics": "Introduction to elements and principles of Design, design thinking process (empathize, analyze, idea & prototype), implementing the process in driving inventions, design thinking in social innovations. Tools of design thinking- person, costumer, journey map, brainstorming, product development."
+      },
+      {
+        "unit_number": "2",
+        "title": "Innovation",
+        "topics": "Art of innovation, Difference between innovation and creativity, role of creativity and innovation in organizations. Creativity to Innovation. Teams for innovation, Measuring the impact and value of creativity."
+      },
+      {
+        "unit_number": "3",
+        "title": "Product Design",
+        "topics": "Software reliability. Problem formation, introduction to product design, Product strategies, Product value, Product planning, product specifications. Innovation towards product design Case studies."
+      },
+      {
+        "unit_number": "4",
+        "title": "Design Thinking in Business Processes",
+        "topics": "Design Thinking applied in Business & Strategic Innovation, Design Thinking principles that redefine business– Business challenges. Design thinking to meet corporate needs. Design thinking for Startups. Defining and testing Business Models and Business Cases. Developing & testing prototypes."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Tim Brown, Change by design, 1/e, Harper Bollins, 2009.",
+        "Idris Mootee, Design Thinking for Strategic Innovation, 1/e, Adams Media, 2014."
+      ],
+      "reference_books": [
+        "David Lee, Design Thinking in the Classroom, Ulysses press, 2018.",
+        "Shrrutin N Shetty, Design the Future, 1/e, Norton Press, 2018.",
+        "William lidwell, Kritinaholden, &Jill butter, Universal principles of design, 2/e, Rockport Publishers, 2010.",
+        "Chesbrough.H, The era of open innovation, 2003."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS4353",
+      "course_name": "Operating Systems Lab",
+      "semester": "4",
+      "category": "Program Core",
+      "credits": 1.5,
+      "prerequisites": "23ES1104 Introduction to Programming",
+      "course_outcomes": [
+        "Implement UNIX concepts for creation of Shell Scripts",
+        "Apply CPU Scheduling algorithms, page replacement algorithms, thread implementation",
+        "Analyze Bankers Algorithm for Dead Lock avoidance and process Synchronization",
+        "Analyze the memory management techniques"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Tasks",
+        "topics": [
+          "Task 1: Practicing of Basic UNIX Commands.",
+          "Task 2: Programs using UNIX operating system calls (fork, exec, getpid, exit, wait, close, stat, opendir, readdir).",
+          "Task 3: Simulate UNIX commands like cp, ls, grep.",
+          "Task 4: Simulate CPU scheduling algorithms (FCFS, SJF, Priority, Round Robin).",
+          "Task 5: Control port access using Semaphores and Monitors.",
+          "Task 6: Illustrate concurrent execution of threads using pthreads library.",
+          "Task 7: Solve producer-consumer problem using Semaphores.",
+          "Task 8: Implement memory allocation methods (First fit, Worst fit, Best fit).",
+          "Task 9: Simulate page replacement algorithms (FIFO, LRU, LFU).",
+          "Task 10: Simulate Paging Technique of memory management.",
+          "Task 11: Implement Bankers Algorithm for Dead Lock avoidance and prevention.",
+          "Task 12: Simulate file allocation strategies (Sequential, Indexed, Linked).",
+          "Task 13: Download and install nachos operating system and experiment with it."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "Silberschatz A, Galvin P B, Gagne G, Operating System Concepts, Wiley, 10th Edition, 2018.",
+        "Tanenbaum A S, Modern Operating Systems, Galgotia Publications Pvt. Ltd, 4th Edition, 2016.",
+        "Stallings W, Operating Systems-Internals and Design Principles, Pearson, 9th Edition, 2018.",
+        "D.M Dhamdhere, Operating Systems: A Concept Based Approach, McGraw- Hill, 3rd Edition, 2013."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS4354",
+      "course_name": "Database Management Systems Lab",
+      "semester": "4",
+      "category": "Program Core",
+      "credits": 1.5,
+      "prerequisites": "23PC2104A Data Structures, 23CS3304 Advanced Data Structure & algorithms Analysis",
+      "course_outcomes": [
+        "Apply DDL, DML and DCL statements with integrity constraints",
+        "Design relational database and manipulate the same using simple and complex queries in SQL.",
+        "Develop Entity Relationship and the corresponding Relational models for the given real-world application.",
+        "Analyze database objects like Procedure, Functions, Triggers and Package using PL/SQL"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Tasks",
+        "topics": [
+          "Task 1: DDL commands (CREATE, ALTER, DROP) with constraints.",
+          "Task 2: Queries using conversion, string, and date functions.",
+          "Task 3: Subqueries using ANY, ALL, IN, EXISTS, and set operations (UNION, INTERSECT).",
+          "Task 4: Queries using Joins, Aggregate Functions, GROUP BY, HAVING, and Views.",
+          "Task 5: Draw an ER diagram for an application and perform ER-to-Relational mapping.",
+          "Task 6: Implement normalization (1NF, 2NF, 3NF, BCNF, 4NF).",
+          "Task 7: Basic PL/SQL blocks with exception handling, COMMIT, ROLLBACK, SAVEPOINT.",
+          "Task 8: PL/SQL with NESTED IF, CASE expressions.",
+          "Task 9: PL/SQL with loops (WHILE, FOR) and error handling.",
+          "Task 10: PL/SQL Procedures with IN and OUT parameters.",
+          "Task 11: PL/SQL Stored Functions.",
+          "Task 12: PL/SQL Cursors (FOR UPDATE, WHERE CURRENT OF).",
+          "Task 13: PL/SQL Triggers (BEFORE/AFTER, Row/Statement, INSTEAD OF).",
+          "Task 14: Real-time database application for file uploads (Image, Video)."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Oracle: The Complete Reference by Oracle Press",
+        "Nilesh Shah, Database Systems Using Oracle, PHI, 2007",
+        "Rick F Vander Lans, Introduction to SQL, Pearson, 4th Edition, 2007."
+      ],
+      "reference_books": [
+        "Gordon S Linoff, Data Analysis Using SQL and Excel, Wiley, 2nd Edition, 2016.",
+        "Joan Casteel, Oracle 12c:SQL, Cengage Learning, 2017.",
+        "J D Ullman, —Principles of database systems, Computer Science Press, 2001."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS5301",
+      "course_name": "Data Warehousing and Data Mining",
+      "semester": "5",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "23CS3304 Advanced Data Structures & Algorithms Analysis",
+      "course_outcomes": [
+        "Understand fundamental concepts of and techniques of data warehousing and data mining.",
+        "Apply various pre-processing techniques in Data mining.",
+        "Analyze classification and apriori algorithms to solve real life problems.",
+        "Analyze different types of clustering algorithms to solve real life problems."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction to Data Warehousing and Data Mining",
+        "topics": "Data Warehousing and Online Analytical Processing: Basic concepts, Data Warehouse Modeling: Data Cube and OLAP, Data Warehouse Design and Usage, Data Warehouse Implementation, Cloud Data Warehouse, Data Mining and Patten Mining, Technologies, Applications Major Issues in Data Mining. Getting to Know your data: Data Objects and Attribute Types, Basic Statistical Descriptions of Data, Data Visualization, Measuring Data Similarity and Dissimilarity."
+      },
+      {
+        "unit_number": "2",
+        "title": "Data Preprocessing",
+        "topics": "AnOverview; DataCleaning- Missing Values, Noisy data.Data Integration: Entity Identification problem, Redundancy and Correlation Analysis. Data Reduction: Overview of Data Reduction Strategies, Wavelet Transformation, Principal Components Analysis;Attribute Subset selection. Data Transformation and Data Discretization: Data Transformation Strategies Overview, Data Transformation by Normalization, Discretization by Binning."
+      },
+      {
+        "unit_number": "3",
+        "title": "Association Analysis and Classification",
+        "topics": "Association Analysis: Problem Definition, Frequent Itemset Generation, Rule Generation: Confident Based Pruning, Rule Generation in Apriori Algorithm, Compact Representation of frequent item sets, FP-Growth Algorithm. Classification: Basic Concepts, General Approach to solving a classification problem, Decision Tree Induction: Attribute Selection Measures, Tree Pruning, Scalability and Decision Tree Induction, Visual Mining for Decision Tree Induction."
+      },
+      {
+        "unit_number": "4",
+        "title": "Cluster Analysis",
+        "topics": "Overview, Basics and Importance of Cluster Analysis, Clustering techniques, Different Types of Clusters; K-means: The Basic K-means Algorithm, K-means Additional Issues, Bi-secting K Means, Agglomerative Hierarchical Clustering: Basic Agglomerative Hierarchical Clustering Algorithm DBSCAN: Traditional Density Center-Based Approach, DBSCAN Algorithm, Strengths and Weaknesses."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Jiawei Han, Michel Kamber, Data Mining concepts and Techniques, 3rd edition, Elsevier, 2011.",
+        "Pang-Ning Tan & Michael Steinbach, Vipin Kumar, Introduction to Data Mining, 2nd Edition, Pearson, 2012."
+      ],
+      "reference_books": [
+        "VikramPudi and P. Radha Krishna, Data Mining: 1st Edition, Oxford Publisher, 2009.",
+        "Arun K Pujari, Data Mining Techniques, 3rd edition, Universities Press, 2013."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS5302",
+      "course_name": "Computer Networks",
+      "semester": "5",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "23CS4303 Operating Systems",
+      "course_outcomes": [
+        "Understand the concepts related to network categories, topologies, and reference models.",
+        "Analyze error and flow control mechanisms in data link layer",
+        "Analyse subnetting and various routing protocols of network layer",
+        "Analyze transport layer and application layer protocols for specific applications."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction and Physical Layer",
+        "topics": "Network Types, LAN, MAN, WAN, Network Topologies Reference models- The OSI Reference Model- the TCP/IP Reference Model- A Comparison of the OSI and TCP/IP Reference Models, OSI Vs TCP/IP. Physical Layer:Introduction to Guided Media- Twisted-pair cable, Coaxial cable and Fiber optic cable and introduction about unguided media."
+      },
+      {
+        "unit_number": "2",
+        "title": "Data Link Layer",
+        "topics": "Design issues, Framing, flow control, error control, error detection and correction codes, CRC, Checksum. Elementary Data Link Layer protocols. Sliding window protocol: One bit, Go back N, Selective repeat-Stop and wait protocol, Data link layer in HDLC, Point to point protocol (PPP). Media Access Control: Random Access, Controlled Access, Channelization. Wired LANs: Ethernet Protocol, Standard, Fast, Gigabit, and 10 Gigabit Ethernet."
+      },
+      {
+        "unit_number": "3",
+        "title": "Network Layer",
+        "topics": "Network Layer Design Issues, Routing Algorithms (Optimality principle, Shortest path, Flooding, Distance vector, Link state, Hierarchical), Congestion Control algorithms. Internet Working: Tunneling, internetwork routing, Fragmentation. Network layer in the internet: IP protocols, IP Version 4 protocol, IPV4 Header Format, IP addresses, Class full Addressing, CIDR, Subnets, IP Version 6, Transition from IPV4 to IPV6."
+      },
+      {
+        "unit_number": "4",
+        "title": "Transport and Application Layers",
+        "topics": "The Transport Layer: Transport layer protocols: Introduction-services- port number-User data gram protocol-User datagram-UDP services-UDP applications. Transmission control protocol: TCP services- TCP features- Segment- A TCP connection windows in TCP- flow control-Error control, Congestion control in TCP. Application Layer: World Wide Web: HTTP, Electronic mail, TELENET, Domain Name System."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Andrew S Tanenbaum, David J Wetherall, Computer Networks, 5th Edition, Pearson Education, 2011.",
+        "Behrouz A.Fourozan, Data Communications and Networking. 4th Edition, TATA McGraw Hill, 2007."
+      ],
+      "reference_books": [
+        "J.F. Kurose and K. W. Ross, Computer Networking: A Top-Down Approach Featuring the Internet, 6th Edition, Pearson Education, 2012."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS5303",
+      "course_name": "Formal Languages and Automata Theory",
+      "semester": "5",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "23BS4101B Discrete Mathematics and Graph Theory",
+      "course_outcomes": [
+        "Understand the basic concepts of formal languages of finite automata techniques.",
+        "Apply regular expressions to various problems and minimize the finite automata.",
+        "Apply various languages to construct context free grammar, normal forms, PDA.",
+        "Analyze a Turing machine and Post’s Correspondence problems."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Finite Automata",
+        "topics": "Need of Automata theory, Central Concepts, Automation, Finite Automation, Transition Systems, DFA, Design of DFAs, NFA, Design of NFA, Equivalence of DFA and NFA, Conversion of NFA into DFA, Finite Automata with E-Transitions, Minimization of Finite Automata, Finite Automata with output-Mealy and Moore Machines."
+      },
+      {
+        "unit_number": "2",
+        "title": "Regular Expressions and Grammars",
+        "topics": "Regular Expressions, Regular Sets, Identity Rules, Equivalence of two RE, Manipulations of REs, Finite Automata and Regular Expressions, Inter Conversion, Pumping Lemma of Regular Sets, Closure Properties of Regular Sets, Grammars, Classification of Grammars, Chomsky Hierarchy Theorem, Right and Left Linear Regular Grammars, Equivalence between RG and FA."
+      },
+      {
+        "unit_number": "3",
+        "title": "Context-Free Grammars and Pushdown Automata",
+        "topics": "Formal Languages, Context Free Grammar, Leftmost and Rightmost Derivations, Parse Trees, Ambiguous Grammars, Simplification of Context Free Grammars (Elimination of Useless Symbols, E-Productions and Unit Productions), Normal Forms (Chomsky Normal Form and Greibach Normal Form), Pumping Lemma, Closure Properties. Pushdown Automata: Definition, Model, Graphical Notation, Language Acceptance, Design."
+      },
+      {
+        "unit_number": "4",
+        "title": "Advanced Automata Theory",
+        "topics": "Deterministic and Non– Deterministic Pushdown Automata, Equivalence of Pushdown Automata and Context Free Grammars, Two Stack Pushdown Automata. Turing Machine: Definition, Model, Representation, Language of a TM, Design of TMs, Types of TMs, Church’s Thesis, Universal and Restricted TM, Decidable and Un-decidable Problems, Halting Problem of TMs, Post’s Correspondence Problem."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "J. E. Hopcroft, R. Motwani and J. D. Ullman, Introduction to Automata Theory, Languages and Computation, 3rd Edition, Pearson, 2008.",
+        "K. L. P. Mishra and N. Chandrasekharan, Theory of Computer Science-Automata, Languages and Computation, 3rd Edition, PHI, 2007."
+      ],
+      "reference_books": [
+        "Lewis H.P., Papadimition C.H., Elements of Theory of Computation, Pearson, PHI, 2015.",
+        "V. Kulkarni, Theory of Computation, Oxford University Press, 2013.",
+        "Rajendrakumar, Theory of Automata, Languages and Computation, McGraw Hill, 2014."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS5404",
+      "course_name": "Program Elective-I",
+      "semester": "5",
+      "category": "Program Elective",
+      "credits": 3,
+      "options": [
+        "23CS5404A: Object Oriented Analysis and Design",
+        "23CS5404B: Artificial Intelligence",
+        "23CS5404C: Microprocessors & Microcontrollers",
+        "23CS5404D: Internet of Things (IoT)",
+        "12 week MOOCs Swayam/NPTEL course recommended by the BoS"
+      ]
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CS5205",
+      "course_name": "Open Elective-I",
+      "semester": "5",
+      "category": "Open Elective",
+      "credits": 3,
+      "options": [
+        "23CS5205A: Web Programming",
+        "23CS5205B: Internet of Things"
+      ]
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CS5351",
+      "course_name": "Data Mining Lab",
+      "semester": "5",
+      "category": "PC Lab-1",
+      "credits": 1,
+      "prerequisites": "23CS4304 Data Base Management Systems",
+      "course_outcomes": [
+        "Design techniques of data warehousing and data mining.",
+        "Apply various pre-processing techniques on datasets using Data mining techniques.",
+        "Analyze classification and apriori algorithms to solve real life problems.",
+        "Analyze different types of clustering algorithms to solve real life problems."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Tasks",
+        "topics": [
+          "Task 1: Creation of a Data Warehouse (Build DW/Data Mart, design schemas, write ETL scripts, perform OLAP operations).",
+          "Task 2: Explore machine learning tool 'WEKA' (Interface, options, arff file format, load datasets).",
+          "Task 3: Perform data preprocessing tasks and Demonstrate performing association rule mining on data sets.",
+          "Task 4: Demonstrate performing classification on data sets Weka/R.",
+          "Task 5: Demonstrate performing clustering of data sets.",
+          "Task 6: Demonstrate knowledge flow application on data sets into Weka/R.",
+          "Task 7-16: Implement various data mining and ML algorithms (ZeroR, Apriori, Naive Bayesian, k-means) and techniques (chi-square, dissimilarity matrix, visualization) using Java/Python/R."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Jiawei Han, Michel Kamber, Data Mining concepts and Techniques, 3rd edition, Elsevier, 2011.",
+        "Pang-Ning Tan & Michael Steinbach, Vipin Kumar, Introduction to Data Mining, 2nd edition, Pearson, 2012."
+      ],
+      "reference_books": [
+        "VikramPudi and P. Radha Krishna, Data Mining, 1st Edition, Oxford Publisher.",
+        "Arun K Pujari, Data Mining Techniques, 3rd edition, Universities Press, 2013."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS5352",
+      "course_name": "Computer Networks Lab",
+      "semester": "5",
+      "category": "PC Lab-2",
+      "credits": 1,
+      "prerequisites": "23CS4303 Operating Systems",
+      "course_outcomes": [
+        "Analyze working of Reference models in action.",
+        "Analyse protocols at Data Link Layer.",
+        "Apply IPv4 and IPv6 addressing schemes for the given network and troubleshoot issues.",
+        "Analyse the security measures implemented in networks."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Tasks",
+        "topics": [
+          "Task 1: Investigate OSI and TCP reference models in action.",
+          "Task 2: Implement data link layer framing methods (Character stuffing, bit stuffing).",
+          "Task 3: Implement data link layer error control methods (checksum, CRC).",
+          "Task 4: Implement Hamming Code for error detection and correction.",
+          "Task 5: Basic Switch and End Device Configuration.",
+          "Task 6: Implement Sliding window protocol for Goback N and for Selective repeat.",
+          "Task 7: IPv4 Addressing (Subnetting, VLSM).",
+          "Task 8: Implement Stop and Wait Protocol.",
+          "Task 9: Implement congestion control using leaky bucket algorithm.",
+          "Task 10: Implement Dijkstra‘s algorithm for Shortest path.",
+          "Task 11: Implement Distance vector routing algorithm.",
+          "Task 12: Implement Broadcast tree.",
+          "Task 13: Packet Capture Using Wireshark.",
+          "Task 14: Use Ping and Traceroute to Test Network Connectivity.",
+          "Task 15: Run Nmap scan and Operating System Detection.",
+          "Task 16: Configure Secure Passwords and SSH."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Andrew S Tanenbaum, David J Wetherall, Computer Networks, 5th Edition, Pearson Education, 2011.",
+        "Behrouz A.Fourozan, Data Communications and Networking. 4th Edition, TATA McGraw Hill, 2007."
+      ],
+      "reference_books": [
+        "J.F. Kurose and K. W. Ross, Computer Networking: A Top-Down Approach Featuring the Internet, 6th Edition, Pearson Education, 2012."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS5653",
+      "course_name": "Full Stack Development-II",
+      "semester": "5",
+      "category": "Skill Enhancement Course",
+      "credits": 1,
+      "prerequisites": "23CS3305 Object Oriented Programming Through Java",
+      "course_outcomes": [
+        "Implement router, template engine and authentication using sessions to develop application in ExpressJS.",
+        "Build a single page application using RESTful APIs in ExpressJS",
+        "Apply router and hooksin designing ReactJS application",
+        "Implement MongoDB queries to perform CRUD operations on document database"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "1. ExpressJS: Routing, HTTP Methods, Middleware.",
+          "2. ExpressJS: Templating, Form Data.",
+          "3. ExpressJS: Cookies, Sessions, Authentication.",
+          "4. ExpressJS: Database connection (MongoDB) and RESTful APIs.",
+          "5. ReactJS: Render HTML, JSX, Function & Class Components.",
+          "6. ReactJS: Props, States, Styles, and Event Handling.",
+          "7. ReactJS: Conditional Rendering, Rendering Lists, and React Forms.",
+          "8. ReactJS: React Router for page navigation.",
+          "9. ReactJS: Using Hooks and sharing data between components.",
+          "10. MongoDB: Installation, Configuration, and CRUD operations.",
+          "11. MongoDB: Working with Databases, Collections, and Records.",
+          "12. Augmented Programs: Design a to-do list app and a quiz app."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Vasan Subramanian, Pro MERN Stack: Full Stack Web App Development with Mongo, Express, React, and Node, 2nd edition, APress, O’Reilly.",
+        "Mike Cantelon, Mark Harter, T.J. Holowaychuk, Nathan Rajlich, Node.Js in Action, Manning Publications. (Chapters 1-11)",
+        "AzatMardan, React Quickly, Manning Publications, 2nd Edition, 2017."
+      ],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS5554",
+      "course_name": "Evaluation of Community Service Internship (EPICS)",
+      "semester": "5",
+      "category": "Project Work/Internship",
+      "credits": 2,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Identify the Societal problems.",
+        "Solve the problems.",
+        "Design of the problem/work plan.",
+        "Design of the prototype/model."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Project Description",
+        "topics": "Carried out during summer vacation for six weeks after Semester 4. Students will go to the society (Villages/ Hospitals/Towns, etc,.) to identify a problem, survey literature for a feasible solution, and are encouraged to solve real life problems leading to innovative model building. This can be done in a group of students or as an individual."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23HS5155",
+      "course_name": "Advanced Communication Skills Laboratory",
+      "semester": "5",
+      "category": "Humanities and Social Sciences",
+      "credits": 1,
+      "prerequisites": "20TP4106 English for Professionals",
+      "course_outcomes": [
+        "Execute rational pronunciation of speech sounds including accentuation.",
+        "Apply elements of listening comprehension in professional environments.",
+        "Develop the abilities of rational argumentation and skills of public speaking.",
+        "Demonstrate proficiency in the elements of professional communication including the competitive examination."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Spoken Expression and Listening Comprehension",
+        "topics": "Speech Mechanism, Articulation of vowels and consonants, Patterns of Accentuation, Types and processes of Listening comprehension."
+      },
+      {
+        "unit_number": "2",
+        "title": "Public Speaking",
+        "topics": "Group Discussion(Open and Monitored), Pyramid Discussion, PNI, Seminar Talk and Power Point Presentation."
+      },
+      {
+        "unit_number": "3",
+        "title": "Professional Communication",
+        "topics": "Self Affirmation Advanced Composition including Memo and e-mail, Resume Preparation, Corporate ethic of Non-Verbal Communication."
+      },
+      {
+        "unit_number": "4",
+        "title": "Life Skills and Vocabulary for Competitive Examinations",
+        "topics": "Select Life Skills(50), Select Logies, Isms, Phobias and Manias (25 each), Sentence Completion and Double Unit Verbal Analogies (50 items), Fundamentals of Syllogisms(Descriptive and Pictorial)."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "M. Cutts, Oxford Guide to Plain English, 7th impression, Oxford, UK: Oxford University Press, 2011.",
+        "Department of Phonetics and Spoken English, Exercises in Spoken English, 21st impression, Hyderabad, India: Central Institute of English and Foreign Languages (CIEFL), published by Oxford University Press, 2003."
+      ],
+      "reference_books": [
+        "S. R. Covey, The 7 Habits of Highly Effective People, 2nd edition, London, UK: Simon & Schuster UK Ltd (Pocket Books), 2004.",
+        "J. S. Brubacher, Eclectic Philosophy of Education: A Book of Readings, Englewood Cliffs, NJ, USA: Prentice-Hall, 1951."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES5156",
+      "course_name": "User Interface Design using Flutter",
+      "semester": "5",
+      "category": "Engineering Science",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Learns to Implement Flutter Widgets and Layouts",
+        "Understand Responsive UI Design and with Navigation in Flutter",
+        "Knowledge on Widges and customize widgets for specific UI elements, Themes",
+        "Understand to include animation apart from fetching data"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "1. Install Flutter and Dart SDK.",
+          "2. Explore Flutter widgets (Text, Image, Container) and implement layouts (Row, Column, Stack).",
+          "3. Design a responsive UI that adapts to different screen sizes using media queries.",
+          "4. Set up navigation between screens using Navigator and named routes.",
+          "5. Learn about stateful/stateless widgets and implement state management using setState and Provider.",
+          "6. Create custom widgets and apply styling using themes.",
+          "7. Design a form with various input fields and implement validation.",
+          "8. Add animations to UI elements.",
+          "9. Fetch data from a REST API and display it in the UI.",
+          "10. Write unit tests and use debugging tools."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "M. L. Napoli, Beginning Flutter: A Hands-on Guide to App Development, Hoboken, NJ, USA: John Wiley & Sons, 2020.",
+        "R. Payne, Beginning App Development with Flutter: Create Cross-Platform Mobile Apps, 1st edition, New York, NY, USA: Apress, 2021.",
+        "R. Rose, Flutter & Dart Cookbook: Developing Full-Stack Applications for the Cloud, Sebastopol, CA, USA: O’Reilly Media, 2022."
+      ],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23TP5106",
+      "course_name": "Personality Development",
+      "semester": "5",
+      "category": "Soft Skills-3",
+      "credits": 1,
+      "prerequisites": "20TP4106 English for Professionals",
+      "course_outcomes": [
+        "Understand the corporate etiquette.",
+        "Make presentations effectively with appropriate body language.",
+        "Be composed with positive attitude.",
+        "Understand the core competencies to succeed in professional and personal life."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Analytical Thinking and Communication Skills",
+        "topics": "Self-Introduction, Shaping Young Minds (Listening Activity), Self–Analysis, Developing Positive Attitude, Perception; Verbal Communication, Non Verbal Communication (Body Language)."
+      },
+      {
+        "unit_number": "2",
+        "title": "Self-Management Skills and Etiquette",
+        "topics": "Anger Management, Stress Management, Time Management, Six Thinking Hats, Team Building, Leadership Qualities; Social Etiquette, Business Etiquette, Telephone Etiquette, Dining Etiquette."
+      },
+      {
+        "unit_number": "3",
+        "title": "Standard Operation Methods and Verbal Ability",
+        "topics": "Note Making, Note Taking, Minutes Preparation, Email Letter Writing; Synonyms, Antonyms, One Word Substitutes, Correction of Sentences, Analogies, Spotting Errors, Sentence Completion, Course of Action, Reading Comprehension."
+      },
+      {
+        "unit_number": "4",
+        "title": "Career-Oriented Skills",
+        "topics": "Group Discussion, Mock Group Discussions, Resume Preparation, Interview Skills, Mock Interviews."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "Mitra, B. K., Personality development and soft skills (Vol. 156). Oxford University Press, 2011.",
+        "Dhanavel, S. P, English and Soft Skills. Orient Blackswan Pvt Limited, 2011.",
+        "Aggarwal, R. S., A Modern Approach to Verbal & Non Verbal Reasoning. S. Chand, 2018.",
+        "Meenakshi, R. & Sharma, S, Technical Communication Principles and Practice, Oxford University Press, 2011."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23MC5107A",
+      "course_name": "Technical Paper Writing and IPR",
+      "semester": "5",
+      "category": "Audit Course",
+      "credits": 0,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand the basics of writing technical reports, technical sentence formation, using transitions, and appropriate tenses for technical writing.",
+        "Understand the use of drafts, illustrations, grammar, spelling, readability, and writing in plain English for effective technical documentation.",
+        "Apply the use of word processor tools such as Table of Contents, citations, footnotes, comments, macros, and document protection.",
+        "Understand the nature of Intellectual Property and explain the process of patenting and international cooperation on Intellectual Property."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction to Technical Writing",
+        "topics": "An introduction to writing technical reports, technical sentences formation, using transitions, using tenses. Planning and Structuring: Planning the report, identifying reader(s), Voice, Formatting, Sections of a technical report, Minutes of meeting writing."
+      },
+      {
+        "unit_number": "2",
+        "title": "Drafting and Finalizing Reports",
+        "topics": "The use of drafts, Illustrations and graphics. Final edits: Grammar, spelling, readability and writing in plain English. Proofreading and summaries. Presenting final reports: Printed presentation, Verbal presentation skills, Introduction to proposals."
+      },
+      {
+        "unit_number": "3",
+        "title": "Using a Word Processor",
+        "topics": "Adding a Table of Contents, Indexing, Outlines, Comments, Tracking Changes, Footnotes and Endnotes, Inserting citations and Bibliography, Comparing/Combining Documents, Password protection, Using Macros."
+      },
+      {
+        "unit_number": "4",
+        "title": "Intellectual Property Rights (IPR)",
+        "topics": "Nature of Intellectual Property: Patents, Designs, Trade and Copyright. Process of Patenting and Development: Technological research, innovation, patenting. International Scenario: International cooperation on Intellectual Property."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Kompal Bansal & Parshit Bansal, “Fundamentals of IPR for Beginner’s”, 1st Ed., BS Publications, 2016.",
+        "William S. Pfeiffer and Kaye A. Adkins, “Technical Communication: A Practical Approach”, Pearson.",
+        "Ramappa,T., “Intellectual Property Rights Under WTO”, 2nd Ed., S Chand, 2015."
+      ],
+      "reference_books": [
+        "Adrian Wallwork , English for Writing Research Papers, Springer New York Dordrecht Heidelberg London, 2011.",
+        "Day R, How to Write and Publish a Scientific Paper, Cambridge University Press, 2006."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS6301",
+      "course_name": "Compiler Design",
+      "semester": "6",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "23CS5303 Formal Languages and Automata Theory",
+      "course_outcomes": [
+        "Understand the basic concepts of compiler phases.",
+        "Apply top-down and bottom-up parsing techniques for a given grammar.",
+        "Apply syntax directed translation and type checking for a given expression.",
+        "Analyze different code optimization techniques and code generation."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction to Compilers and Lexical Analysis",
+        "topics": "The structure of a compiler, a simple syntax-directed translator. Lexical Analysis: The role of the lexical analyzer, input buffering, specification of tokens, recognition of tokens, the lexical-analyzer generator Lex, finite automata, regular expressions to automata."
+      },
+      {
+        "unit_number": "2",
+        "title": "Syntax Analysis",
+        "topics": "The role of the parser, context-free grammars, writing a grammar, top-down parsing (recursive-descent, predictive), bottom-up parsing (shift-reduce, operator precedence), introduction to LR parsing (simple LR, more powerful LR parsers), using ambiguous grammars, the parser generator Yacc."
+      },
+      {
+        "unit_number": "3",
+        "title": "Syntax-Directed Translation and Type Checking",
+        "topics": "Syntax-directed definitions, evaluation orders for SDD's, applications of syntax-directed translation, syntax-directed translation schemes. Type Checking: Type systems, specification of a simple type checker, equivalence of type expressions, type conversions."
+      },
+      {
+        "unit_number": "4",
+        "title": "Intermediate-Code, Optimization, and Code Generation",
+        "topics": "Intermediate languages, declarations, assignment statements, Boolean expressions, case statements, back patching, procedure calls. Code Optimization: Introduction, the principal sources of optimization, optimization of basic blocks, loops in flow graphs. Code Generation: Issues in the design of a code generator, the target language, addresses in the target code, basic blocks and flow graphs."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ullman, Compilers: Principles, Techniques and Tools, 2nd Edition, Pearson, 2006."
+      ],
+      "reference_books": [
+        "Kenneth C. Louden, Thomson, Compiler Construction, 1st Edition, 1997.",
+        "Keith D Cooper and Linda Torczon, Engineering a Compiler, 2nd Edition, Morgan Kaufmann Publishers."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS6302",
+      "course_name": "Cloud Computing",
+      "semester": "6",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "23CS5302 Computer Networks",
+      "course_outcomes": [
+        "Understand the basic concepts of Cloud Computing.",
+        "Apply virtualization techniques for a given application.",
+        "Analyze Cloud services and service providers for a given application.",
+        "Analyze the concepts of Cloud security for any given application."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction to Cloud Computing",
+        "topics": "Cloud Computing definition, private, public and hybrid cloud. Cloud types; IaaS, PaaS, SaaS. Benefits and challenges of cloud computing, public vs private clouds, role of virtualization in enabling the cloud; Business Agility, Storing, Managing, and Accessing Data, Performance and Scalability."
+      },
+      {
+        "unit_number": "2",
+        "title": "Virtualization",
+        "topics": "Basics of Virtualization - Types of Virtualization - Implementation Levels of Virtualization - Virtualization Structures - Tools and Mechanisms - Virtualization of CPU, Memory, I/O Devices - Virtual Clusters and Resource management - Virtualization for Data-center Automation."
+      },
+      {
+        "unit_number": "3",
+        "title": "Cloud Services and Providers",
+        "topics": "Study of Eucalyptus, Open Nebula, Open Stack, and Amazon Web Services (AWS), Google App Engine, Microsoft Azure, Force.com, and Salesforce.com. Cloud storage providers: Amazon S3, Dropbox, Google Drive."
+      },
+      {
+        "unit_number": "4",
+        "title": "Cloud Security",
+        "topics": "Cloud Information security fundamentals, Cloud security services, Design principles, Secure Cloud Software Requirements, Policy Implementation, Cloud Computing Security Challenges, Virtualization security Management, Cloud Computing Security Architecture."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Rajkumar Buyya, Christian Vecchiola, S. ThamaraiSelvi, Mastering Cloud Computing, Tata Mcgraw Hill, 2013.",
+        "Gautam Shroff, Enterprise Cloud Computing, Cambridge University Press, 2010.",
+        "Barrie Sosinsky, Cloud Computing Bible, Wiley-India, 2010."
+      ],
+      "reference_books": [
+        "Ronald L. Krutz, Russell Dean Vines, Cloud Security: A Comprehensive Guide to Secure Cloud Computing, Wiley-India, 2010."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS6303",
+      "course_name": "Cryptography & Network Security",
+      "semester": "6",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "23CS5302 Computer Networks",
+      "course_outcomes": [
+        "Understand the fundamental concepts of cryptography, security, and number theory.",
+        "Apply symmetric and asymmetric encryption algorithms for data confidentiality.",
+        "Apply cryptographic hash functions and digital signatures for data integrity and authentication.",
+        "Analyze real-world network security protocols and standards."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction and Number Theory",
+        "topics": "Security Attacks, Services, and Mechanisms. A model for network security. Number Theory: Divisibility and the division algorithm, the Euclidean algorithm, modular arithmetic, groups, rings, fields, finite fields, prime numbers, Fermat’s and Euler’s theorems, testing for primality, the Chinese remainder theorem, discrete logarithms."
+      },
+      {
+        "unit_number": "2",
+        "title": "Symmetric and Asymmetric Cryptography",
+        "topics": "Symmetric Ciphers: Classical Encryption Techniques, block ciphers and the data encryption standard (DES), advanced encryption standard (AES). Asymmetric Ciphers: Public key cryptography, principles of public key cryptosystems, the RSA algorithm, Diffie-Hellman key exchange, Elgamal cryptographic system."
+      },
+      {
+        "unit_number": "3",
+        "title": "Cryptographic Hash Functions and Digital Signatures",
+        "topics": "Cryptographic Hash Functions: Applications of cryptographic hash functions, secure hash algorithm (SHA). Message Authentication Codes: Message authentication requirements, functions, and codes. Digital Signatures: Digital signatures, Elgamal digital signature scheme, digital signature standard (DSS)."
+      },
+      {
+        "unit_number": "4",
+        "title": "Network Security Protocols",
+        "topics": "Web Security: Web security considerations, secure socket layer (SSL) and transport layer security (TLS). Email Security: Pretty good privacy (PGP). IP Security: IP security overview, IP security policy, encapsulating security payload (ESP). System Security: Malicious software, viruses and related threats, virus countermeasures, firewalls."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "William Stallings, Cryptography and Network Security - Principles and Practice, 7th edition, Pearson Education, 2017.",
+        "Behrouz A. Forouzan, Cryptography and Network Security, 3rd edition, McGraw-Hill, 2015."
+      ],
+      "reference_books": [
+        "Atul Kahate, Cryptography and Network Security, 4th edition, McGraw-Hill, 2019.",
+        "Wenbo Mao, Modern Cryptography: Theory and Practice, 1st edition, Pearson Education, 2003."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS6404",
+      "course_name": "Program Elective-II",
+      "semester": "6",
+      "category": "Program Elective",
+      "credits": 3,
+      "options": [
+        "Software Testing Methodologies",
+        "Cyber Security",
+        "DevOps",
+        "Machine Learning",
+        "Any 12-Week SWAYAM/NPTEL Course suggested by the BoS"
+      ]
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CS6405",
+      "course_name": "Program Elective-III",
+      "semester": "6",
+      "category": "Program Elective",
+      "credits": 3,
+      "options": [
+        "Software Project Management",
+        "Mobile Adhoc Networks",
+        "Natural Language Processing",
+        "Distributed Operating System",
+        "Any 12-Week SWAYAM/NPTEL Course suggested by the BoS"
+      ]
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CS6206",
+      "course_name": "Principles of Database Management Systems (NPTEL)",
+      "semester": "6",
+      "category": "Open Elective-II",
+      "credits": 3,
+      "prerequisites": "Not specified"
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "This is a self-learning course via MOOCs. A detailed syllabus is not provided in the supplied document."
+      }
+    ],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CS6351",
+      "course_name": "Cloud Computing Lab",
+      "semester": "6",
+      "category": "PC Lab-I",
+      "credits": 1.5,
+      "prerequisites": "23CS5302 Computer Networks",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this lab is not provided in the supplied document."
+      }
+    ],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CS6352",
+      "course_name": "Cryptography & Network Security Lab",
+      "semester": "6",
+      "category": "PC Lab-II",
+      "credits": 1.5,
+      "prerequisites": "23CS5302 Computer Networks",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this lab is not provided in the supplied document."
+      }
+    ],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23TP6107",
+      "course_name": "Quantitative Aptitude",
+      "semester": "6",
+      "category": "Soft Skills-4",
+      "credits": 1,
+      "prerequisites": "Not specified"
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course is not provided in the supplied document."
+      }
+    ],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23MC6108A",
+      "course_name": "Humanities Elective",
+      "semester": "6",
+      "category": "Audit Course",
+      "credits": 0,
+      "prerequisites": "Not specified"
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course is not provided in the supplied document."
+      }
+    ],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CS7301",
+      "course_name": "Deep Learning",
+      "semester": "7",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "Not specified in the provided document.",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course is not provided in the supplied document."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS7403",
+      "course_name": "Program Elective-IV",
+      "semester": "7",
+      "category": "Program Elective",
+      "credits": 3,
+      "prerequisites": "Not specified in the provided document.",
+      "course_outcomes": [],
+      "options": [
+        "Software Architecture & Design Patterns",
+        "Blockchain Technology",
+        "Augmented Reality & Virtual Reality",
+        "Quantum Computing",
+        "12 week MOOCs Swayam/NPTEL course recommended by the BoS"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course and its options is not provided in the supplied document."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "20CS7404",
+      "course_name": "Program Elective-V",
+      "semester": "7",
+      "category": "Program Elective",
+      "credits": 3,
+      "prerequisites": "Not specified in the provided document.",
+      "course_outcomes": [],
+      "options": [
+        "Agile methodologies",
+        "Generative AI",
+        "Computer Vision",
+        "Cyber Physical Systems",
+        "12 week MOOCs Swayam/NPTEL course recommended by the BoS"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course and its options is not provided in the supplied document."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "20CS7205",
+      "course_name": "Object Oriented Programming Through Java",
+      "semester": "7",
+      "category": "Open Elective-III",
+      "credits": 3,
+      "prerequisites": "Not specified in the provided document.",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course is not provided in the supplied document."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "20CS7206",
+      "course_name": "Open Elective-IV",
+      "semester": "7",
+      "category": "Open Elective",
+      "credits": 3,
+      "prerequisites": "Not specified in the provided document.",
+      "course_outcomes": [],
+      "options": [
+        "Principles of Software Engineering",
+        "Computer Networks"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course and its options is not provided in the supplied document."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "PC-Lab",
+      "course_name": "Deep Learning Lab",
+      "semester": "7",
+      "category": "Program Core Lab",
+      "credits": 3,
+      "prerequisites": "Not specified in the provided document.",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course is not provided in the supplied document."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "SEC",
+      "course_name": "Prompt Engineering/SWAYAM Plus Certificate program in Prompt Engineering and ChatGPT",
+      "semester": "7",
+      "category": "Skill Enhancement Course",
+      "credits": 2,
+      "prerequisites": "Not specified in the provided document.",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course is not provided in the supplied document."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "AC",
+      "course_name": "Constitution of India",
+      "semester": "7",
+      "category": "Audit Course",
+      "credits": 0,
+      "prerequisites": "Not specified in the provided document.",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course is not provided in the supplied document."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "Internship",
+      "course_name": "Evaluation of Industry Internship/Mini Project",
+      "semester": "7",
+      "category": "Internship",
+      "credits": 2,
+      "prerequisites": "Not specified in the provided document.",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Internship Description",
+        "topics": "Mandatory six-week industrial/research internship during the summer vacation."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CS8551",
+      "course_name": "Full semester Internship and Project Work",
+      "semester": "8",
+      "category": "Internship & Project Work",
+      "credits": 12,
+      "prerequisites": "Not specified in the provided document.",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Project Description",
+        "topics": "The student should undergo internship and simultaneously he/she should work on a project with well-defined objectives. At the end of the semester the student should submit an internship completion certificate and a project report."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  }
+]

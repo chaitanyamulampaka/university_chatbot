@@ -1,0 +1,1921 @@
+[
+  {
+    "metadata": {
+      "course_code": "23BS1101",
+      "course_name": "Linear Algebra & Calculus",
+      "semester": "1",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "10+2 level Mathematics",
+      "course_outcomes": [
+        "Solve the system of homogeneous and non-homogeneous linear equations",
+        "Examine the nature of a quadratic form by transforming into a canonical form",
+        "Determine maxima and minima of multivariable functions",
+        "Evaluate areas and volumes using double, triple integrals"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Matrices",
+        "topics": "Rank of a matrix by Echelon form, Normal form, Cauchy–Binet formulae (without proof), Inverse of Non- singular matrices by Gauss-Jordan method, System of linear equations: Solving system of Homogeneous and Non-Homogeneous equations by Gauss elimination method, Jacobi and Gauss-Seidel Iteration Methods."
+      },
+      {
+        "unit_number": "2",
+        "title": "Eigenvalues, Eigenvectors and Orthogonal Transformation",
+        "topics": "Eigenvalues, Eigenvectors and their properties, Diagonalization of a matrix, Cayley-Hamilton Theorem (without proof), Finding inverse and power of a matrix by Cayley-Hamilton Theorem, Quadratic forms and Nature of the Quadratic forms, Reduction of Quadratic form to Canonical forms by Orthogonal Transformation."
+      },
+      {
+        "unit_number": "3",
+        "title": "Differential Calculus",
+        "topics": "Mean Value Theorems: Rolle’s theorem, Lagrange’s mean value theorem with their geometrical interpretation, Cauchy’s mean value theorem, Taylor’s and Maclaurin’s theorems with remainders (without proof), Problems and applications on the above theorems. Functions of Several Variables: Continuity and Differentiability, Partial derivatives, Total derivatives, Chain rule, Directional derivative, Taylor’s and Maclaurin’s series expansion of functions of two variables, Jacobians, Functional dependence, Maxima and Minima of functions of two variables, Method of Lagrange multipliers."
+      },
+      {
+        "unit_number": "4",
+        "title": "Multiple Integrals (Multivariable Calculus)",
+        "topics": "Double integrals,Triple integrals, Change of order of integration, Change of variables to polar, cylindrical and spherical coordinates, Finding areas (by double integrals) and volumes (by double integrals and triple integrals)."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Higher Engineering Mathematics, B. S. Grewal, Khanna Publishers, 2017, 44th Edition"
+      ],
+      "reference_books": [
+        "Advanced Engineering Mathematics, Erwin Kreyszig, John Wiley & Sons, 2018, 10th Edition",
+        "Thomas Calculus, George B. Thomas, Maurice D. Weir and Joel Hass, Pearson Publishers, 2018, 14th Edition",
+        "Advanced Engineering Mathematics, R. K. Jain and S. R. K. Iyengar, Alpha Science International Ltd., 2021 5th Edition(9th reprint)",
+        "Advanced Modern Engineering Mathematics, Glyn James, Pearson publishers, 2018, 5th Edition",
+        "Advanced Engineering Mathematics, Micheael Greenberg, , Pearson publishers, 9th Edition",
+        "Higher Engineering Mathematics, H. K Das, Er. Rajnish Verma, S. Chand Publications,2014, 3rd Edition (Reprint 2021)"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS1102A",
+      "course_name": "Engineering Chemistry",
+      "semester": "1",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "10 + 2 level Chemistry",
+      "course_outcomes": [
+        "Analyse various water treatment methods and boiler troubles.",
+        "Apply the knowledge of basic electrochemistry principles for electrochemical energy systems and corrosion.",
+        "Compare mechanistic aspects of polymerisation, and different polymers and conventional fuels for their effective utilisation.",
+        "Evaluate various modern engineering materials for their applications in engineering and other fields."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Water Technology",
+        "topics": "Domestic water treatment – sedimentation, coagulation, disinfection by chlorination – breakpoint chlorination, desalination of brackish water – electrodialysis and reverse osmosis (RO). Industrial water: Hardness of water, Estimation of hardness by EDTA Method, Boiler troubles – scales, caustic embrittlement, Industrial water treatment – Ion-exchange method."
+      },
+      {
+        "unit_number": "2",
+        "title": "Electrochemistry and Corrosion",
+        "topics": "Electrodes, electrochemical cell, Nernst equation, cell potential calculations, Primary cells – zinc-air battery, Secondary cells –lithium ion batteries; Fuel cells – hydrogen-oxygen fuel cell. Corrosion: Introduction, electrochemical corrosion, factors affecting corrosion, cathodic protection, copper electroplating and electroless plating."
+      },
+      {
+        "unit_number": "3",
+        "title": "Polymer and Fuel Chemistry",
+        "topics": "Polymer Chemistry: Introduction, functionality of monomers, mechanism of chain growth, step growth polymerization, thermoplastics and thermosetting plastics: Preparation, properties and applications of PVC, polystyrene, Nylon 6,6 and Bakelite. Elastomers – Buna S and Buna N. Fuel Chemistry: Fuels- classification, calorific value, analysis of coal (proximate and ultimate analysis), refining of petroleum, knocking, octane and cetane number, alternative fuels –biomass, biogas, biodiesel."
+      },
+      {
+        "unit_number": "4",
+        "title": "Modern Engineering Materials",
+        "topics": "Composites: classification – particle, fibre and layered reinforced composites, properties and engineering applications. Lubricants: classification, mechanisms, properties of lubricating oils. Building materials: Portland cement, constituents, setting and hardening of cement, refractories – classification and properties. Nanomaterials: classification, properties and applications."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Engineering Chemistry, Jain and Jain, 17th Edition, DhanpatRai, 2018.",
+        "Engineering Chemistry, PrasanthaRath& S. ArunaKumari, Cengage Publishers, 2023."
+      ],
+      "reference_books": [
+        "Peter Atkins, Julio de Paula and James Keeler, Atkins’ Physical Chemistry, 10/e, Oxford University Press, 2010.",
+        "H.F.W. Taylor, Cement Chemistry, 2/e, Thomas Telford Publications, 1997.",
+        "Textbook of polymer Science,Fred W.BillmayerJr, 3rd Edition."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1103B",
+      "course_name": "Basic Electrical and Electronics Engineering",
+      "semester": "1",
+      "category": "Engineering Science",
+      "credits": 3,
+      "prerequisites": "Basic Electrical and Electronics Engineering",
+      "course_outcomes": [
+        "Apply different techniques to solve DC circuits.",
+        "Understand the magnetic circuit concepts.",
+        "Analyze the steady-state response, series, parallel AC circuits, mesh & nodal analysis, and resonance.",
+        "Apply network theorems for AC & DC circuits.",
+        "Demonstrate the working principles of basic Electronic devices, circuits and instrumentation System .",
+        "Implementation of simple Combinational and Sequential circuits using Logic gates."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "DC & AC Circuits",
+        "topics": "DC Circuits: Electrical circuit elements (R, L and C), Ohm’s Law, KCL & KVL, series, parallel, series-parallel circuits, Super Position theorem. AC Circuits: A.C. Fundamentals, relationship with phasor diagrams in R, L, and C circuits, Concept of Impedance, Active power, reactive power and apparent power, Concept of power factor. Equipment Safety Measures: Fuse and Miniature circuit breaker (MCB). Personal safety measures: Electric Shock, Earthing."
+      },
+      {
+        "unit_number": "2",
+        "title": "Machines and Measuring Instruments",
+        "topics": "Machines: Construction, principle and operation of DC Motor, DC Generator, Single Phase Transformer, Three Phase Induction Motor and Alternator. Measuring Instruments: Construction and working principle of Voltage, Current, temperature sensors, multimeter. Electricity bill calculation."
+      },
+      {
+        "unit_number": "3",
+        "title": "Semiconductor Devices",
+        "topics": "Characteristics of PN Junction Diode, Zener Diode. Bipolar Junction Transistor, CB, CE, CC Configurations and Characteristics, Small Signal CE Amplifier. Rectifiers and power supplies: full wave bridge rectifier, capacitor filter, zener voltage regulator. Amplifiers: Block diagram of Public Address system. Electronic Instrumentation."
+      },
+      {
+        "unit_number": "4",
+        "title": "Digital Electronics",
+        "topics": "Overview of Number Systems, Logic gates including Universal Gates, BCD codes, Excess-3 code, Gray code, Hamming code. Boolean Algebra, Truth Tables. Simple combinational circuits–Half and Full Adders. Introduction to Flip flops, Registers and counters."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Basic Electrical Engineering, D. P. Kothari and I. J. Nagrath, Mc Graw Hill, 2019, Fourth Edition",
+        "Principles of Power Systems, V.K. Mehtha, S.Chand Technical Publishers, 2020",
+        "Basic Electrical Engineering, T. K. Nagsarkar and M. S. Sukhija, Oxford University Press, 2017",
+        "Basic Electrical and Electronics Engineering, S. K. Bhatacharya, Person Publications, 2018, Second Edition.",
+        "R. L. Boylestad & Louis Nashlesky, Electronic Devices & Circuit Theory, Pearson Education, 2021.",
+        "P. Jain, Modern Digital Electronics, 4th Edition, Tata Mc Graw Hill, 2009."
+      ],
+      "reference_books": [
+        "R. S. Sedha, A Textbook of Electronic Devices and Circuits, S. Chand & Co, 2010.",
+        "Santiram Kal, Basic Electronics- Devices, Circuits and IT Fundamentals, Prentice Hall, India, 2002.",
+        "R. T. Paynter, Introductory Electronic Devices & Circuits – Conventional Flow Version, Pearson Education, 2009."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1104",
+      "course_name": "Introduction to Programming",
+      "semester": "1",
+      "category": "Engineering Science",
+      "credits": 3,
+      "prerequisites": "--",
+      "course_outcomes": [
+        "To introduce students to the fundamentals of computer programming.",
+        "To provide hands-on experience with coding and debugging on control structures and arrays.",
+        "To foster logical thinking and problem-solving skills on strings and ponters.",
+        "To familiarize students with programming concepts such as functions, structures and files."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction to Programming and Problem Solving",
+        "topics": "History of Computers, Basic organization of a computer, Introduction to Programming Languages, Basics of a Computer Program- Algorithms, flowcharts, pseudo code. Introduction to Compilation and Execution, Primitive Data Types, Variables, and Constants, Basic Input and Output, Operations, Type Conversion, and Casting. Problem solving techniques: Algorithmic approach, characteristics of algorithm, Problem solving strategies: Top-down approach, Bottom-up approach, Time and space complexities of algorithms."
+      },
+      {
+        "unit_number": "2",
+        "title": "Control Structures and Arrays",
+        "topics": "Simple sequential programs Conditional Statements (if, if-else, switch), Loops (for, while, do- while) Break and Continue, Arrays indexing, memory model, programs with array of integers, two dimensional arrays"
+      },
+      {
+        "unit_number": "3",
+        "title": "Strings and pointers",
+        "topics": "Introduction to Strings. Pointers, dereferencing and address operators, pointer and address arithmetic, array manipulation using pointers."
+      },
+      {
+        "unit_number": "4",
+        "title": "Functions, User Defined Data types and File Handling",
+        "topics": "Introduction to Functions, Function Declaration and Definition, Function call Return Types and Arguments, modifying parameters inside functions using pointers, arrays as parameters. Scope and Lifetime of Variables, User-defined data types-Structures and Unions, Basics of File Handling"
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "\"The C Programming Language\", Brian W. Kernighan and Dennis M. Ritchie, Prentice- Hall, 1988.",
+        "Schaum’s Outline of Programming with C, Byron S Gottfried, McGraw-Hill Education, 1996"
+      ],
+      "reference_books": [
+        "Computing fundamentals and C Programming, Balagurusamy, E., McGraw-Hill Education, 2008.",
+        "Programming in C, Rema Theraja, Oxford, 2016, 2nd edition",
+        "C Programming,A Problem Solving Approach,Forouzan,Gilberg,Prasad, CENGAGE, 3rd edition."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1105",
+      "course_name": "Engineering Graphics",
+      "semester": "1",
+      "category": "Engineering Science",
+      "credits": 3,
+      "prerequisites": "NIL",
+      "course_outcomes": [
+        "Understand the principles of engineering drawing, including engineering curves and scales.",
+        "Draw and interpret orthographic projections of points, lines and planes in front, top and side views.",
+        "Understand and draw projection of solids in various positions in first quadrant and Explain principles behind development of surfaces.",
+        "Explain principles behind the Sections of solids, Prepare isometric views and conversion of simple solids."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction to Drawing, Curves, and Scales",
+        "topics": "Introduction: Lines, Lettering and Dimensioning, Geometrical Constructions of regular polygons by general methods. Curves: Construction of ellipse, parabola and hyperbola by general method and Involutes. Draw normal and tangent to Curves. Scales: Plain scales and diagonal scales."
+      },
+      {
+        "unit_number": "2",
+        "title": "Orthographic Projections",
+        "topics": "Reference plane, Projections of a point in first quadrant. Projections of Straight Lines parallel to both planes, perpendicular to one plane and parallel to other, inclined to one plane and parallel to the other. Projections of Straight Line Inclined to both the reference planes. Projections of Planes: Regular planes perpendicular to both reference planes, parallel to one and inclined to the other; plane inclined to both the reference planes."
+      },
+      {
+        "unit_number": "3",
+        "title": "Projections of Solids and Development of Surfaces",
+        "topics": "Projections of solids(Prisms and Pyramids only) in simple positions. Development of Surfaces: Methods of Development: Parallel line development and radial line development. Development of a cube, prism, cylinder, pyramid and cone. Computer graphics: Creating 2D & 3D drawings of objects using Auto CAD (Not for end examination)."
+      },
+      {
+        "unit_number": "4",
+        "title": "Sections of Solids, Isometric Views, and Conversion of Views",
+        "topics": "Sections of Solids: Section planes perpendicular to VP and inclined to HP only, Sectional views. Isometric Views: Draw an Isometric views of Simple solids. Conversion of Views: Conversion of isometric views to orthographic views of Simple solids."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "N. D. Bhatt, Engineering Drawing, Charotar Publishing House, 2016."
+      ],
+      "reference_books": [
+        "Engineering Drawing, Basant Agrawal and C M Agrawal,Tata McGraw Hill, 2009.",
+        "Engineering Drawing, K.L. Narayana and P. Kannaiah, Tata McGraw Hill, 2013.",
+        "Engineering Drawing, M.B.Shah and B.C. Rana, Pearson Education Inc,2009.",
+        "Engineering Drawing with an Introduction to Auto CAD, Dhananjay Jolhe , Tata McGraw Hill, 2017."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS1151A",
+      "course_name": "Engineering Chemistry Lab",
+      "semester": "1",
+      "category": "Basic Science",
+      "credits": 1,
+      "prerequisites": "Knowledge of chemistry practicals at Intermediate level",
+      "course_outcomes": [
+        "Analyze water samples and various commercial samples of acids, cement, coal, lubricants, etc. for their purity and quality.",
+        "Analyze samples of water and cement through various instrumental methods like colorimetry, and pH metry.",
+        "Apply standard procedures for preparation of nanomaterials, polymers and blueprinting, as well as study the adsorption process."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "Determination of hardness of a groundwater sample",
+          "Determination of strength of an acid in Lead-acid battery",
+          "Determination of calcium in Portland cement",
+          "Determination of strength of a base using pH metric titration",
+          "Determination of percentage of iron in cement sample by colorimetry",
+          "Chemistry of blueprinting",
+          "Preparation of a polymer – Urea-formaldehyde resin",
+          "Preparation of nanomaterials by precipitation method",
+          "Adsorption of acetic acid by charcoal",
+          "Determination of percentage moisture content in a coal sample",
+          "Determination of viscosity of lubricating oil by Redwood viscometer",
+          "Determination of calorific value of gases by Junker’s gas calorimeter"
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "“Vogel’s quantitative chemical analysis”, 6th Edition, by J. Mendham, R.C. Denney, J.D. Barnes and B. Sivasankar, Pearson Publications."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1152",
+      "course_name": "Computer Programming Lab",
+      "semester": "1",
+      "category": "Engineering Science",
+      "credits": 1.5,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Read, understand, and trace the execution of programs written in C language.",
+        "Select the right control structure for solving the problem.",
+        "Develop C programs which utilize memory efficiently using programming constructs like pointers.",
+        "Develop, Debug and Execute programs to demonstrate the applications of arrays, functions, basic concepts of pointers in C."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": "Familiarization with programming environment, Converting algorithms/flow charts into C Source code, Simple computational problems using arithmetic expressions, Problems involving if-then-else structures, Iterative problems, 1D Array manipulation, Matrix problems, String operations, Bubble sort, Pointers and structures, memory dereference, Bitfields, linked lists, Simple functions using call by value, Recursive functions, Call by reference, File operations."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Ajay Mittal, Programming in C: A practical approach, Pearson.",
+        "Byron Gottfried, Schaum's Outline of Programming with C, McGraw Hill"
+      ],
+      "reference_books": [
+        "Brian W. Kernighan and Dennis M. Ritchie, The C Programming Language, Prentice- Hall of India",
+        "C Programming, A Problem-Solving Approach, Forouzan, Gilberg, Prasad, CENGAGE"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1153",
+      "course_name": "Basic Electrical and Electronics Workshop",
+      "semester": "1",
+      "category": "Engineering Science",
+      "credits": 1.5,
+      "prerequisites": "Engineering Physics",
+      "course_outcomes": [
+        "Measure voltage, current and power in an electrical circuit",
+        "Measure of Resistance using Wheat stone bridge.",
+        "Discover critical field resistance and critical speed of DC shunt generators",
+        "Investigate the effect of reactive power and power factor in electrical loads",
+        "Identify & testing of various electronic components.",
+        "Understand the usage of electronic measuring instruments.",
+        "Plot and discuss the characteristics of various electron devices.",
+        "Explain the operation of a digital circuit."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": "Part A: Electrical Lab - Verification of KCL and KVL, Superposition theorem, Measurement of Resistance using Wheat stone bridge, Magnetization Characteristics of DC shunt Generator, Measurement of Power and Power factor, Measurement of Earth Resistance using Megger, Calculation of Electrical Energy. Part B: Electronics Lab - V-I characteristics of PN Junction & Zener Diode, Implementation of rectifiers, Input & Output characteristics of BJT, Frequency response of CE amplifier, Simulation of RC coupled amplifier, Verification of Truth Table of Logic gates, Verification of Truth Tables of flip flops."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "Basic Electrical Engineering, D. C. Kulshreshtha, Tata McGraw Hill, 2019, 1st edition",
+        "Power System Engineering, P.V. Gupta, M.L. Soni, U.S. Bhatnagar and A. Chakrabarti, Dhanpat Rai & Co, 2013",
+        "Fundamentals of Electrical Engineering, Rajendra Prasad, PHI publishers, 2014, 3rd edition.",
+        "R. L. Boylestad & Louis Nashlesky, Electronic Devices & Circuit Theory, Pearson Education, 2021.",
+        "R. P. Jain, Modern Digital Electronics, 4th Edition, Tata Mc Graw Hill, 2009",
+        "R. T. Paynter, Introductory Electronic Devices & Circuits – Conventional Flow Version, Pearson Education,2009."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS1154B",
+      "course_name": "Health and wellness, Yoga and Sports",
+      "semester": "1",
+      "category": "Basic Science",
+      "credits": 0.5,
+      "prerequisites": "-",
+      "course_outcomes": [
+        "Understand the importance of yoga and sports for Physical fitness and sound health",
+        "Demonstrate an understanding of health-related fitness components",
+        "Compare and contrast various activities that help enhance their health.",
+        "Assess current personal fitness levels.",
+        "Develop Positive Personality"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Health and Fitness",
+        "topics": "Concept of health and fitness, Nutrition and Balanced diet, basic concept of immunity, Relationship between diet and fitness, Globalization and its impact on health, Body Mass Index (BMI)."
+      },
+      {
+        "unit_number": "2",
+        "title": "Yoga",
+        "topics": "Concept of yoga, need for and importance of yoga, origin and history of yoga in Indian context, classification of yoga, Physiological effects of Asanas- Pranayama and meditation, stress management and yoga, Mental health and yoga practice."
+      },
+      {
+        "unit_number": "3",
+        "title": "Sports and Fitness",
+        "topics": "Concept of Sports and fitness, importance, fitness components, history of sports, Ancient and Modern Olympics, Asian games and Commonwealth games."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "Gordon Edlin, Eric Golanty. Health and Wellness, 14th Edn. Jones & Bartlett Learning, 2022",
+        "T.K.V.Desikachar. The Heart of Yoga: Developing a Personal Practice",
+        "Archie J.Bahm. Yoga Sutras of Patanjali, Jain Publishing Company, 1993",
+        "Wiseman, John Lofty, SAS Survival Handbook: The Ultimate Guide to Surviving Anywhere Third Edition, William Morrow Paperbacks, 2014",
+        "The Sports Rules Book/ Human Kinetics with Thomas Hanlon. -- 3rd ed. Human Kinetics, Inc.2014"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23MC1106",
+      "course_name": "Induction Program",
+      "semester": "1",
+      "category": "Mandatory Course",
+      "credits": 0,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course is not provided in the supplied document."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS2101",
+      "course_name": "Differential Equations & Vector Calculus",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "23BS1101 LinearAlgebra & Calculus",
+      "course_outcomes": [
+        "Solve first order linear differential equations",
+        "Solve higher order linear differential equations with constant coefficients",
+        "Solve Partial differential equations",
+        "Evaluate the work done against field, circulation and flux using vector calculus"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Differential equations of first order and first degree",
+        "topics": "Linear differential equations – Bernoulli’s equations- Exact equations and equations reducible to exact form, Applications: Newton’s Law of cooling – Law of natural growth and decay- Electrical circuits."
+      },
+      {
+        "unit_number": "2",
+        "title": "Linear differential equations of higher order (Constant Coefficients)",
+        "topics": "Definitions,homogenous and non-homogenous, complimentary function, general solution, particular integral, Wronskian, Method of variation of parameters, Simultaneous linear equations, Applications to L-CR Circuit problems and Simple Harmonic motion."
+      },
+      {
+        "unit_number": "3",
+        "title": "Partial Differential Equations",
+        "topics": "Introduction and formation of Partial Differential Equations by elimination of arbitrary constants and arbitrary functions, solutions of first order linear equations using Lagrange’s method, Homogeneous Linear Partial differential equations with constant coefficients."
+      },
+      {
+        "unit_number": "4",
+        "title": "Vector Calculus",
+        "topics": "Scalar and vector point functions, vector operator Del, Del applies to scalar point functions- Gradient, Directional derivative, del applied to vector point functions-Divergence and Curl, vector identities. Line integral-circulation-work done, surface integral-flux, Green’s theorem in the plane (without proof), Stoke’s theorem (without proof), volume integral, Divergence theorem (without proof) and related problems."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Higher Engineering Mathematics, B. S. Grewal, Khanna Publishers, 2017, 44th Edition"
+      ],
+      "reference_books": [
+        "Advanced Engineering Mathematics, Erwin Kreyszig, John Wiley & Sons, 2018, 10th Edition.",
+        "Thomas Calculus, George B. Thomas, Maurice D. Weir and Joel Hass, Pearson Publishers, 2018, 14th Edition.",
+        "Advanced Engineering Mathematics, R. K. Jain and S. R. K. Iyengar, Alpha Science International Ltd., 2021 5th Edition(9th reprint).",
+        "Advanced Modern Engineering Mathematics, Glyn James, Pearson publishers, 2018, 5th Edition.",
+        "Advanced Engineering Mathematics, Micheael Greenberg, Pearson publishers, 9th Edition.",
+        "Higher Engineering Mathematics, H. K Das, Er. Rajnish Verma, S. Chand Publications,2014, 3rd Edition (Reprint 2021)."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS2102",
+      "course_name": "Engineering Physics",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Elaborate different types of lasers, optical fibers and their applications.",
+        "Familiarize with the basics of crystals and their structures.",
+        "Summarize various types of polarization of dielectrics and classify the magnetic materials.",
+        "Explain the basic concepts of Quantum Mechanics and types of semiconductors using Hall Effect."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Lasers and Fiber Optics",
+        "topics": "Lasers: Introduction, Characteristics, Basic Principles, Requirements, Einstein’s coefficients, types of lasers (solid-state, gas, semiconductor), applications. Fibre Optics: Introduction, Fundamentals, Propagation of light, Types, Numerical aperture, Fiber optics in communication."
+      },
+      {
+        "unit_number": "2",
+        "title": "Crystallography and X-ray diffraction",
+        "topics": "Crystallography: Space lattice, Basis, Unit Cell, lattice parameters, Bravais Lattices, crystal systems, coordination number, packing fraction (SC, BCC, FCC), Miller indices. X-ray diffraction: Bragg’s law, X-ray Diffractometer, crystal structure determination."
+      },
+      {
+        "unit_number": "3",
+        "title": "Dielectric and Magnetic Materials",
+        "topics": "Dielectric Materials: Introduction, Dielectric polarization, polarizability, Susceptibility, Dielectric constant, Types of polarizations, Lorentz internal field, Clausius- Mossotti equation. Magnetic Materials: Introduction, Magnetic dipole moment, Magnetization, susceptibility, permeability, Classification of magnetic materials, Domain concept, Hysteresis."
+      },
+      {
+        "unit_number": "4",
+        "title": "Quantum Mechanics and Semiconductors",
+        "topics": "Quantum Mechanics: Dual nature of light, Matter waves, Debroglie’s hypothesis, Heisenberg’s Uncertainty Principle, Schrodinger’s wave equations, Particle in a one-dimensional infinite potential well. Semiconductors: Formation of energy bands, Intrinsic and Extrinsic semiconductors, Fermi level, Drift and diffusion currents, Einstein’s equation, Hall effect, Photodiode, LED, Solar cell."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "A Text book of Engineering Physics, M. N. Avadhanulu, P.G.Kshirsagar & TVS Arun Murthy, S. Chand Publications, 11th Edition 2019.",
+        "Engineering Physics - D.K.Bhattacharya and Poonam Tandon, Oxford press (2015)"
+      ],
+      "reference_books": [
+        "Engineering Physics - B.K. Pandey and S. Chaturvedi, Cengage Learning 2021.",
+        "Engineering Physics - Shatendra Sharma, Jyotsna Sharma, Pearson Education, 2018.",
+        "Engineering Physics - Sanjay D. Jain, D. Sahasrabudhe and Girish, University Press. 2010",
+        "Engineering Physics - M.R. Srinivasan, New Age international publishers (2009)."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES2103A",
+      "course_name": "Basic Civil and Mechanical Engineering",
+      "semester": "2",
+      "category": "Engineering Science",
+      "credits": 3,
+      "prerequisites": "10 + 2",
+      "course_outcomes": [
+        "Understand various Civil Engineering sub-divisions thereby appreciate their role in ensuring a better society and understand the basic building components along with attaining knowledge of Civil Engineering Materials and prefabricated technology.",
+        "Know the basic concepts, uses and classification of surveying and realize the importance of Transportation in the nation's economy and the engineering measures related to Transportation and understand the importance of Water Storage and Conveyance Structures so that the social responsibilities of water conservation will be appreciated",
+        "Understand the scope of Mechanical Engineering in different sectors and industries and know about different manufacturing processes.",
+        "Explain the basics of thermal engineering, Power plants , power transmission and robotics."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Basics of Civil Engineering",
+        "topics": "Role of Civil Engineers in Society- Various Disciplines of Civil Engineering - Building Construction and Planning - Construction Materials-Cement - Aggregate - Bricks- Cement concrete- Steel-Introduction to Prefabricated Construction Techniques"
+      },
+      {
+        "unit_number": "2",
+        "title": "Surveying, Transportation, Water Resources and Environmental Engineering",
+        "topics": "Surveying and Transportation Engineering: Objectives and Principles of Surveying, Classification, Importance of Transportation, Basics components of Road-Classification of Highways. Water Resources and Environmental Engineering: Introduction, Sources of water- Quality of water- Specifications- Simple introduction to Dams and Reservoirs."
+      },
+      {
+        "unit_number": "3",
+        "title": "Introduction to Mechanical Engineering",
+        "topics": "Role of Mechanical Engineering in Industries and Society - Engineering Materials - Metals-Ferrous and Non-ferrous, Ceramics, Composites, Smart materials. Manufacturing Processes: Principles of Casting, joining processes, Machining, Introduction to CNC machines, 3D printing, and Smart manufacturing."
+      },
+      {
+        "unit_number": "4",
+        "title": "Thermal Engineering and Mechanical Power Transmission",
+        "topics": "Thermal Engineering: IC engines, 2-Stroke and 4-Stroke engines, SI/CI Engines, Otto cycle,Diesel cycle,Components of Electric and Hybrid Vehicles., Refrigeration and air conditioning Working principle of Boilers: classification of Boilers Power plants – Working principle of Steam, Nuclear power plants. Mechanical Power Transmission - Belt and Gear Drives, Introduction to Robotics"
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Basic Civil Engineering, M.S.Palanisamy, , Tata Mcgraw Hill publications (India) Pvt. Ltd. Fourth Edition.",
+        "Introduction to Civil Engineering, S.S. Bhavikatti, New Age International Publishers. 2022. First Edition.",
+        "Basic Civil Engineering, Satheesh Gopi, Pearson Publications, 2009, First Edition.",
+        "Internal Combustion Engines by V.Ganesan, By Tata McGraw Hill publications (India) Pvt. Ltd.",
+        "A text book of Theory of Machines by S.S. Rattan, Tata McGraw Hill Publications, (India) Pvt. Ltd.",
+        "An introduction to Mechanical Engg by Jonathan Wicker and Kemper Lewis, Cengage learning India Pvt. Ltd."
+      ],
+      "reference_books": [
+        "Surveying, Vol- I and Vol-II, S.K. Duggal, Tata McGraw Hill Publishers 2019. Fifth Edition.",
+        "Hydrology and Water Resources Engineering, Santosh Kumar Garg, Khanna Publishers, Delhi. 2016",
+        "Irrigation Engineering and Hydraulic Structures - Santosh Kumar Garg, Khanna Publishers, Delhi 2023. 38th Edition.",
+        "Highway Engineering, S.K.Khanna, C.E.G. Justo and Veeraraghavan, Nemchand and Brothers Publications 2019. 10th Edition.",
+        "Indian Standard DRINKING WATER — SPECIFICATION IS 10500-2012",
+        "Advances in Civil Engineering (Volume - 5), S. Sathish, AkiNik Publications,2021",
+        "G. Shanmugam and M.S.Palanisamy, Basic Civil and the Mechanical Engineering, Tata McGraw Hill publications (India) Pvt. Ltd.",
+        "Thermal Engineering by Mahesh M Rathore Tata McGraw Hill publications (India) Pvt. Ltd.",
+        "3D printing & Additive Manufacturing Technology- L. Jyothish Kumar, Pulak M Pandey, Springer publications",
+        "Appuu Kuttan KK, Robotics, I.K. International Publishing House Pvt. Ltd. Volume-I"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23PC2104B",
+      "course_name": "Engineering Mechanics",
+      "semester": "2",
+      "category": "Professional Core",
+      "credits": 3,
+      "prerequisites": "Basic Mathematics, Physics at (10 + 2) level",
+      "course_outcomes": [
+        "Analyze coplanar concurrent , parallel forces and evaluate centroid for plane figures",
+        "Analyze coplanar general case forces and evaluate moment of inertia for plane figures",
+        "Analyze rectilinear and curvilinear motion of particles",
+        "Evaluate the moment of inertia of material bodies and analyze the fixed axis rotation of rigid bodies."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Equilibrium of Concurrent and Parallel Forces",
+        "topics": "Composition and resolution of forces, Free body diagram, Equilibrium of concurrent forces in a plane. Types of parallel forces, Resultant, Couple, Resolution of Force into force and a couple. Centroids of standard and composite figures."
+      },
+      {
+        "unit_number": "2",
+        "title": "Friction and General Force Systems",
+        "topics": "Introduction, limiting friction, Coulomb’s laws of dry friction, coefficient of friction, Cone of static friction. Equilibrium of forces in plane-Analysis of plane trusses: Method of joints. Area Moments of Inertia: Definition, Polar Moment of Inertia, Transfer Theorem, Moments of Inertia of Composite Figures."
+      },
+      {
+        "unit_number": "3",
+        "title": "Kinematics and Kinetics of Rectilinear and Curvilinear Motion",
+        "topics": "Kinematics of Rectilinear motion: Displacement, Velocity and acceleration, Motion of Uniform and Variable acceleration. Kinetics of Rectilinear motion: D’Alembert’s Principle. Kinematics of Curvilinear motion: Rectangular components of velocity and acceleration, Normal and tangential acceleration, Motion of projectiles. Kinetics of Curvilinear motion: D’Alembert’s Principle."
+      },
+      {
+        "unit_number": "4",
+        "title": "Mass Moment of Inertia and Rigid Body Motion",
+        "topics": "Mass Moment of Inertia: Moment of Inertia of Masses, Transfer Formula, Mass moment of inertia of slender rod, Circular disc, Cone, Solid cylinder & Sphere. Rigid body Motion: Kinematics of rotation, Kinetics of a rigid body in rotation of about a fixed axis. Kinematics of Rigid body: Plane motion: Method of Instantaneous center of rotation."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Engineering Mechanics by S. Timoshenko & D. H. Young, 4th Edition, 2007, McGraw Hill International Edition.",
+        "Engineering Mechanics Statics and dynamics by A. K. Tayal, 13th Edition, 2006, Umesh Publication, Delhi",
+        "A Textbook of Engineering Mechanics, S.S Bhavikatti. New age international publications 2018"
+      ],
+      "reference_books": [
+        "Engineering Mechanics, P.C.Dumir- S.Sengupta and Srinivas V Veeravalli , University press. 2020. First Edition.",
+        "Engineering Mechanics, Statics and Dynamics, I.H. Shames., PHI, 2002. 4th Edition.",
+        "Engineering Mechanics, Volume-I: Statics, Volume-II: Dynamics, J. L. Meriam and L. G. Kraige., John Wiley, 2008. 6th Edition"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23HS2105",
+      "course_name": "Communicative English",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 2,
+      "prerequisites": "Basic understanding of the language skills viz Listening, Speaking, Reading and Writing, including Sentence construction abilities",
+      "course_outcomes": [
+        "Understand the context, topic, and pieces of specific information from social or Transactional dialogues",
+        "Apply grammatical structures to formulate sentences and correct word forms.",
+        "Analyze discourse markers to speak clearly on a specific topic in informal discussions.",
+        "Evaluate reading texts / listening to write summaries based on global comprehension and create a coherent paragraph, essay and résumé"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Human Values",
+        "topics": "Lesson: HUMAN VALUES: Gift of Magi (Short Story). Listening, Speaking, Reading, Writing, Grammar, and Vocabulary skills."
+      },
+      {
+        "unit_number": "2",
+        "title": "Nature",
+        "topics": "Lesson: NATURE: The Brook by Alfred Tennyson (Poem). Listening, Speaking, Reading, Writing, Grammar, and Vocabulary skills."
+      },
+      {
+        "unit_number": "3",
+        "title": "Biography",
+        "topics": "Lesson: BIOGRAPHY: Elon Musk. Listening, Speaking, Reading, Writing, Grammar, and Vocabulary skills."
+      },
+      {
+        "unit_number": "4",
+        "title": "Inspiration",
+        "topics": "Lesson: INSPIRATION: The Toys of Peace by Saki. Listening, Speaking, Reading, Writing, Grammar, and Vocabulary skills."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Pathfinder: Communicative English for Undergraduate Students, 1st Edition, Orient Black Swan, 2023",
+        "Empowering with Language by Cengage Publications, 2023",
+        "English: Language, Context and Culture, 1st Edition, Orient Black Swan, 2023"
+      ],
+      "reference_books": [
+        "Dubey, Sham Ji & Co. English for Engineers, Vikas Publishers, 2020",
+        "Bailey, Stephen. Academic writing: A Handbook for International Students. Routledge, 2014.",
+        "Murphy, Raymond. English Grammar in Use, Fourth Edition, Cambridge University Press, 2019.",
+        "Lewis, Norman. Word Power Made Easy- The Complete Handbook for Building a Superior Vocabulary. Anchor, 2014."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS2151",
+      "course_name": "Engineering Physics Lab",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Test optical components using principles of interference and diffraction of light",
+        "Use spectrometer, travelling microscope and function generator in various experiments",
+        "Determine the V-I characteristics of photo cells and appreciate the accuracy in measurements"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "Determination of radius of curvature of a given Plano-convex lens by Newton’s rings.",
+          "Study the variation of B versus H by magnetizing the magnetic material (B-H curve).",
+          "Determination of wavelength of Laser light using diffraction grating.",
+          "Estimation of stopping potential and work function of a photo material using photoelectric effect.",
+          "Magnetic field along the axis of a current carrying circular coil by Stewart Gee’s Method.",
+          "Determination of Hall voltage and Hall coefficient of a given semiconductor using Hall Effect.",
+          "Determination of Acceleration due to Gravity and radius of Gyration by using a compound pendulum.",
+          "Sonometer: Verification of laws of stretched string.",
+          "Determination of Dielectric constant of different solid materials.",
+          "Determination of Numerical Aperture of a given optical fiber.",
+          "Determination of Frequency of electrically maintained tuning fork by Melde’s experiment.",
+          "Determination of Rigidity Modulus of the material of the given wire using Torsional pendulum."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Madhusudhan Rao, “Engineering Physics Lab Manual”, Ist ed., Scitech Publications, 2015",
+        "Ramarao Sri, Choudary Nityanand and Prasad Daruka, ”Lab Manual of Engineering Physics”., Vth ed., Excell Books, 2010"
+      ],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23PC2152E",
+      "course_name": "Engineering Mechanics Lab (ME)",
+      "semester": "2",
+      "category": "Professional Core",
+      "credits": 1.5,
+      "prerequisites": "10 + 2 level Physics",
+      "course_outcomes": [
+        "Evaluate the coefficient of friction between two different surfaces and between the inclined plane and the roller.",
+        "Verify Law of Polygon of forces and Law of Moment using force polygon and bell crank lever.",
+        "Determine the Centre of gravity and Moment of Inertia of different configurations.",
+        "Verify the equilibrium conditions of a rigid body under the action of different force systems."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "Verification of Law of Parallelogram of Forces.",
+          "Verification of Law of Triangle of Forces.",
+          "Verification of the Law of polygon for coplanar-concurrent forces.",
+          "Determination of coefficient of Static and Rolling Frictions",
+          "Determination of Centre of Gravity of different shaped Plane Lamina.",
+          "Verification of the conditions of equilibrium of a rigid body.",
+          "Study of the systems of pulleys and draw the free body diagram.",
+          "Determine the acceleration due to gravity using a compound pendulum.",
+          "Determine the Moment of Inertia of the compound pendulum.",
+          "Determine the Moment of Inertia of a Flywheel.",
+          "Verification of Law of Moment using Rotation Disc Apparatus and Bell Crank Lever."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "S. Timoshenko, D. H. Young, J.V. Rao, S. Pati., Engineering Mechanics, 5th Edition, McGraw Hill Education.",
+        "Hibbeler R.C., Engineering Mechanics: Statics and Dynamics, 14th Edition, Pearson Education, Inc., New Delhi, 2022"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23HS2153",
+      "course_name": "Communicative English Lab",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 1,
+      "prerequisites": "Basic understanding of the language skills",
+      "course_outcomes": [
+        "Understand the different aspects of the English language proficiency with emphasis on LSRW skills.",
+        "Apply communication skills through various language learning activities.",
+        "Analyze the English speech sounds, stress, rhythm, intonation and syllable division for better listening and speaking comprehension.",
+        "Evaluate and exhibit professionalism in participating in debates and group discussions."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Topics",
+        "topics": [
+          "Vowels and Consonants",
+          "Neutralizaton/Accent Rules",
+          "Communication Skills & JAM",
+          "Role Play or Conversational Practice",
+          "E-mail Writing",
+          "Resume Writing, Cover Letter, SOP",
+          "Group Discussions-methods & practice",
+          "Debates – Methods & Practice",
+          "PPT Presentations/Poster Presentations",
+          "Interview Skills"
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES2154",
+      "course_name": "Engineering Workshop",
+      "semester": "2",
+      "category": "Engineering Science",
+      "credits": 1.5,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand the basic joints using wood and familiarize with various fundamental aspects of house wiring, fitting and foundry.",
+        "Prepare basic models using sheet metal and practice joining of metals using various types of welding.",
+        "Familiarize with various advanced manufacturing processes such as injection moulding and 3D printing.",
+        "Understand the preparation of PCB and simple IOT applications using Arduino"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Trades",
+        "topics": "Demonstration: Safety practices. Wood Working: Half–Lap joint, Bridle joint. Sheet Metal Working: Tapered tray, Conical funnel. Fitting: V-fit, Semi-circular fit, Bicycle tire puncture. Electrical Wiring: Parallel and series, Two-way switch, Godown lighting, Tube light. Foundry Trade: Preparation of Green Sandmoulds. Welding Shop: Arc Welding and Gas welding. Advanced manufacturing processes: injection moulding and 3D printing. Electronic Circuits: preparation of simple electronic circuit (PCB). Basic IOT: Measure Temperature & Humidity, Measure Distance."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Basic Workshop Technology: Manufacturing Process, Felix W.; Independently Published,2019.",
+        "Workshop Processes, Practices and Materials; Bruce J. Black, Routledge publishers, 5th Edn. 2015.",
+        "A Course in Workshop Technology Vol I. & II, B.S. Raghuwanshi, DhanpathRai& Co., 2015 & 2017."
+      ],
+      "reference_books": [
+        "Elements of Workshop Technology, Vol. I by S. K. Hajra Choudhury & Others, Media Promoters and Publishers, Mumbai. 2007, 14th edition.",
+        "Workshop Practice by H. S. Bawa, Tata-McGraw Hill, 2004.",
+        "Wiring Estimating, Costing and Contracting; Soni P.M. &Upadhyay P.A.; AtulPrakashan, 2021-22."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES2155",
+      "course_name": "IT Work shop",
+      "semester": "2",
+      "category": "Engineering Science",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Perform Hardware troubleshooting.",
+        "Understand Hardware components and inter dependencies.",
+        "Safeguard computer systems from viruses/worms.",
+        "Document/ Presentation preparation.",
+        "Perform calculations using spreadsheets."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Tasks",
+        "topics": "PC Hardware & Software Installation: Identify peripherals, Disassemble and assemble PC, Install MS windows, Linux, and BOSS. Internet & World Wide Web: Configure TCP/IP, Web Browsers, Surfing, Search Engines, Cyber Hygiene. LaTeX and WORD: Word Orientation, Create project certificate, project abstract, Newsletter. EXCEL: Excel Orientation, Creating a Scheduler, Calculating GPA, LOOKUP/VLOOKUP. POWER POINT: Basic utilities, Interactive presentations, Master Layouts. AI TOOLS – ChatGPT: Prompt Engineering, Creative Writing, Language Translation."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "Comdex Information Technology course tool kit, Vikas Gupta, WILEY Dream tech, 2003",
+        "The Complete Computer upgrade and repair book, Cheryl A Schmidt, WILEY Dream tech,2013, 3rd edition",
+        "Introduction to Information Technology, ITL Education Solutions limited, Pearson Education, 2012, 2nd edition"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS2156",
+      "course_name": "NSS/NCC/Community Service",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 0.5,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand the importance of discipline, character and service motto.",
+        "Solve some societal issues by applying acquired knowledge, facts, and techniques.",
+        "Explore human relationships by analyzing social problems.",
+        "Determine to extend their help for the fellow beings and downtrodden people.",
+        "Develop leadership skills and civic responsibilities."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Orientation",
+        "topics": "General Orientation on NSS/NCC/ Scouts & Guides/Community Service activities, career guidance."
+      },
+      {
+        "unit_number": "2",
+        "title": "Nature & Care Activities",
+        "topics": "Best out of waste competition, Poster and signs making competition, Recycling and environmental pollution article writing competition, Organising Zero-waste day, Digital Environmental awareness activity, Virtual demonstration of eco-friendly approaches, Write a summary on any book related to environmental issues."
+      },
+      {
+        "unit_number": "3",
+        "title": "Community Service Activities",
+        "topics": "Conducting One Day Special Camp in a village, awareness programs on Health-related issues, consumer Awareness, Women Empowerment Programmes."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "Nirmalya Kumar Sinha & Surajit Majumder, A Text Book of National Service Scheme Vol;.I, Vidya Kutir Publication, 2021 ( ISBN 978-81-952368-8-6)",
+        "Red Book - National Cadet Corps – Standing Instructions Vol I & II, Directorate General of NCC, Ministry of Defence, New Delhi",
+        "Davis M. L. and Cornwell D. A., “Introduction to Environmental Engineering”, McGraw Hill, New York 4/e 2008",
+        "Masters G. M., Joseph K. and Nagendran R. “Introduction to Environmental Engineering and Science”, Pearson Education, New Delhi. 2/e 2007",
+        "Ram Ahuja. Social Problems in India, Rawat Publications, New Delhi."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS3101C",
+      "course_name": "Complex Analysis and Numerical Methods",
+      "semester": "3",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "23BS1101 Linear Algebra & Calculus, 23BS2101 Differential Equations & Vector Calculus",
+      "course_outcomes": [
+        "Determine analytic, non-analytic functions and evaluate complex integrals",
+        "Analyze Taylor, Laurent series and apply residue theorem for computing real definite integrals",
+        "Find solutions for algebraic, transcendental equations and estimate functions using polynomial interpolation",
+        "Solve initial value problems numerically"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Complex Analysis",
+        "topics": "Introduction, Continuity, Cauchy-Riemann equations. Analytic functions, Harmonic functions, Orthogonal systems, Applications to flow problems, Complex integration, Cauchy's integral theorem, Cauchy's integral formula."
+      },
+      {
+        "unit_number": "2",
+        "title": "Series and Residues",
+        "topics": "Taylor's series, Laurent's series, Zeros and Singularities of an analytic function, Residue theorem, Calculation of Residues, Evaluation of real definite integrals:(i) Integration around the unit circle (ii) Integration around a small semi-circle, Bilinear transformation."
+      },
+      {
+        "unit_number": "3",
+        "title": "Numerical Methods & Interpolation",
+        "topics": "Solution of Algebraic and Transcendental Equations with Newton - Raphson method,  Interpolation Introduction, Finite Differences-Forward, Backward and Central differences, Symbolic Relations, Newton‟s interpolation formulae-forward and backward differences, Central difference interpolation formulae-Gauss‟s, Stirling‟s, Bessel‟s formulae, Interpolation with unequal intervals - Lagrange‟s and Newton‟s divided difference formulae."
+      },
+      {
+        "unit_number": "4",
+        "title": "Numerical Differentiation and Integration",
+        "topics": "Numerical Differentiation: First and second order derivatives using Newton's forward and backward difference formulae, Numerical integration with Trapezoidal rule and Simpsons 1/3 Rule, Numerical Solutions of Differential Equations-Taylor's series method, Euler's method, Modified Euler‟s method and Runge - Kutta method of 4th order."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "B.S.Grewal, “Higher Engineering Mathematics”, 44th Ed., Khanna   Publishers, 2019"
+      ],
+      "reference_books": [
+        "Erwin Kreyzig, “Advanced Engineering Mathematics”, 10th Ed., John Wiley    & Sons, 2015.",
+        "R.K.Jain, S.R.K.Iyengar, “Advanced Engineering Mathematics”, 5th Ed., Narosa Publishers, 2016.",
+        "N.P.Bali, Manish Goyal, “A Textbook of Engineering Mathematics”, 9th Ed., Lakshmi Publications (P) Limited, 2016.",
+        "H. K. Das, Er. Rajnish Verma, “Higher Engineering Mathematics”, 3rd Revised Ed., S.Chand & Co., 2014.",
+        "S. S. Sastry, “Introductory Methods of Numerical Analysis”, 5th Ed.,  PHI Learning, 2012."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23HS3102",
+      "course_name": "Universal Human Values – Understanding Harmony",
+      "semester": "3",
+      "category": "Humanities and Social Sciences",
+      "credits": 3,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand and aware of themselves and their surroundings (family, society and nature).",
+        "Handle problems with sustainable solutions, while keeping human relationships and human nature in mind",
+        "Exhibit critical ability and become sensitive to their commitment towards their understanding of human values, human relationship and human society",
+        "Apply what they have learnt to their own self in different day-to-day settings in real life"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Course Introduction and Basic Human Aspirations",
+        "topics": "Purpose and motivation for the course, recapitulation from UHV-I, Self-exploration, ‘Natural acceptance’ and experiential validation. Continuous Happiness and Prosperity. Right understanding, Relationship and Physical Facility."
+      },
+      {
+        "unit_number": "2",
+        "title": "Understanding Harmony in the Human Being – Harmony in Myself",
+        "topics": "Understanding human being as a co-existence of the sentient ‘I’ and the material ‘Body’. Understanding the needs of Self (‘I’) and ‘Body’. Understanding the harmony of I with the Body: Sanyam and Health; Correct appraisal of physical needs, Meaning of prosperity in detail, Programs to ensure sanyam and health."
+      },
+      {
+        "unit_number": "3",
+        "title": "Understanding Harmony in the Family and Society – Harmony in Human-Human Relationship",
+        "topics": "Understanding values in human-human relationship; Meaning of justice (nine universal values in relationships) and program for its fulfillment to ensure mutual happiness; Trust and respect as the foundational values of relationship. Understanding the harmony in the society; Resolution, Prosperity, fearlessness (trust) and co-existence as comprehensive human goals, Visualizing a universal harmonious order in society–Undivided society, Universal order– From family to world family."
+      },
+      {
+        "unit_number": "4",
+        "title": "Understanding Harmony in Nature & Existence – Whole existence as Coexistence and Implications",
+        "topics": "Understanding the harmony in the nature, Interconnectedness and mutual fulfillment among the four orders of nature. Understanding existence as co-existence of mutually interacting units in all-pervasive space. Natural acceptance of human values, Definitiveness of ethical human conduct, Basis for humanistic education, humanistic constitution and humanistic universal order, Competence in professional ethics, Case studies of typical holistic technologies, management models and production systems, Strategy for transition from the present state to universal human order."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "R. R. Gaur, R. Sangal and G. P. Bagaria, “Human Values and Professional Ethics”, Excel Books Private Limited, New Delhi (2010)."
+      ],
+      "reference_books": [
+        "A. Nagaraj, Jeevan Vidya Prakashan, Amarkantak, “Raman Jeevan Vidya: Ek Parichaya (1999).",
+        "A. N. Tripathi, “Human Values”, New Age International Publishers, New Delhi (2004).",
+        "Annie Leonard, “The Story of Stuff: The Impact of Overconsumption on the Planet, our Communities, and our Health and how we can make it better”,Free Press, New York (2010)."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES3103F",
+      "course_name": "Analog Electronic Circuits",
+      "semester": "3",
+      "category": "Engineering Science",
+      "credits": 2,
+      "prerequisites": "Basic Electronics, Network Theory",
+      "course_outcomes": [
+        "Analyze various stability biasing techniques in BJT and FET",
+        "Analyze amplifier circuits at low frequencies",
+        "Design different oscillator circuits",
+        "Analyze various power amplifier circuits with respect to efficiency",
+        "Develop analog electronic circuits using modern tools"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Transistor & FET Biasing",
+        "topics": "Introduction, Operating point, Biasing circuits - Fixed bias, Collector to base bias, Self bias; Stability factors, Bias compensation circuits; Thermal runaway and thermal stability, JFET biasing circuits - Fixed bias, Voltage divider bias."
+      },
+      {
+        "unit_number": "2",
+        "title": "Transistor Amplifiers at Low frequencies",
+        "topics": "BJT Amplifiers: Hybrid parameter model of transistor, Analysis of transistor amplifier using h parameter model, Simplified CE hybrid model, Simplified calculations for CC & CB configurations, Cascaded stage (CE-CE), Cascode (CE-CB), Darlington Pair(CC-CC). FET Amplifiers: FET small signal model, Analysis of FET amplifiers at low frequencies - CS/CD/CG configurations."
+      },
+      {
+        "unit_number": "3",
+        "title": "Feedback Amplifiers and Oscillators",
+        "topics": "Feedback concepts, General characteristics of Negative feedback Amplifiers, Input resistance & output resistance, Method of analysis of feedback amplifiers - Voltage series, Current series, Voltage shunt, Current shunt feedback amplifiers. Oscillators: Classification, Sinusoidal oscillators, Barkhausen criteria, RC phase shift oscillator using BJT, Wein bridge oscillator, LC oscillators- Hartley and Colpitts Oscillator."
+      },
+      {
+        "unit_number": "4",
+        "title": "Power Amplifiers",
+        "topics": "Classification of Power amplifiers, Class A series fed and Transformer Coupled, Second Harmonic distortion, Class B Transformer coupled Push-Pull and Complementary Symmetry Push-Pull, Cross over distortion."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Jacob Millman and Christos C Halkias, “Integrated Electronics: Analog and Digital Circuits and Systems”, 12thed, TMH, 1991.",
+        "G.K.Mithal, “Electronic Devices and circuits”, 23rded, Khanna Publishers 2010."
+      ],
+      "reference_books": [
+        "A.P.Godse and U.A.Bakshi “Electronic Circuit Analysis”, 1sted, fourth reprint, Technical Publications,2010.",
+        "Robert Boylestad and Louis Nashelsky, “Electronic Devices and Circuit Theory”, 6thed, PHI 2000."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23EI3304",
+      "course_name": "Digital Circuits and Systems",
+      "semester": "3",
+      "category": "Professional Core",
+      "credits": 3,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Analyze digital electronic circuits using analytical tools",
+        "Design digital electronic circuits with and without memory elements",
+        "Select suitable memories and logic families for digital system design",
+        "Use the spice software to design the digital electronic circuits"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Digital Fundamentals",
+        "topics": "1’s and 2’s complements, Minterms and Maxterms, Canonical forms, Standard forms, Simplification of Boolean functions using algebraic techniques, Karnaugh map minimization and Quine-McCluskey method of minimization."
+      },
+      {
+        "unit_number": "2",
+        "title": "Combinational Logic Design",
+        "topics": "Parallel adder, Carry Look-ahead adder, Half - Subtractor, Full - Subtractor, BCD to 7 segment decoder, Design of a Binary to Gray and Gray to Binary code converters. Combinational Logic Design Using MSI Circuits: Multiplexer, Demultiplexers / Decoders, Encoders, Priority encoder."
+      },
+      {
+        "unit_number": "3",
+        "title": "Sequential Logic Design",
+        "topics": "Flip-Flops: Clocked S-R, J-K, Master slave J-K, D, T flip-flop, Excitation table of a flip-flop, Flip-Flop conversions. Shift register, Bi-directional shift register, Applications of shift registers: Ring counter, Twisted ring counter, Sequence generator. Asynchronous counters – Up/Down counters, Modulus of the counter, Design of synchronous counters."
+      },
+      {
+        "unit_number": "4",
+        "title": "Digital Integrated Circuits and Memory Devices",
+        "topics": "Digital Integrated Circuits: Characteristics of Digital ICs, Logic Families: MOS and CMOS logic families. Memory Devices: Functional block diagram and operation - ROM, PROM, EPROM, EEPROM, Flash memory, RAM: Static and dynamic RAM, ROM as a PLD, PAL and PLA Programming."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "R P Jain “Modern Digital Electronics”, 4th Ed., TMH"
+      ],
+      "reference_books": [
+        "M. Morris Mano, “Digital Logic and Computer Design”, PHI,2003",
+        "A. Anand Kumar, “Fundamentals of Digital Circuits”, PHI, 2006"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23EI3305",
+      "course_name": "Sensors and Transducers",
+      "semester": "3",
+      "category": "Professional Core",
+      "credits": 3,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Analyze various performance characteristics of instrument and the quality of measurement.",
+        "Identify the type of transducer based on transduction principles",
+        "Select a relevant transducer for measurement of various physical parameters",
+        "Apply the concepts of signal conditioning circuit for various transducers"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Instrument Characteristics and Measurement Errors",
+        "topics": "Block diagram of generalized instrument system, Static characteristics - Desirable & Undesirable characteristics; Dynamic characteristics - Transfer function, Dynamic response of Zero order, First order and Second order instruments to step input. Measurement Errors and Statistical Analysis: Definition of parameters, Combination of limiting error, Statistical treatment, Curve fitting methods"
+      },
+      {
+        "unit_number": "2",
+        "title": "Variable Resistance Transducers",
+        "topics": "Classification of transducers, Characteristics of transducers. Principle of operation, Construction details, Characteristics and applications of Resistance potentiometers, Strain gauge, Resistance thermometer, Thermistors, Hot-wire anemometer, Resistive hygrometer and Signal conditioning of resistive transducers"
+      },
+      {
+        "unit_number": "3",
+        "title": "Reactance Transducers",
+        "topics": "Variable Inductance Transducers: Principle of operation, Construction, Characteristics and applications of LVDT - RVDT, Variable reluctance accelerometer, Signal conditioning of inductive transducers. Capacitive Transducers – Principle of operation, Construction, Characteristics and applications of Variable air gap, Variable distance, Variable permittivity capacitive transducer, Frequency response, Signal conditioning of capacitive transducers"
+      },
+      {
+        "unit_number": "4",
+        "title": "Special Sensors",
+        "topics": "Introduction, Smart sensors, Micro Sensors, IR radiation Sensors, Ultrasonic Sensors, Fiber optic sensors, Colour sensor, Proximity sensors, Chemical sensor, IC sensor, Bio Sensors."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "A.K.Sawhney & Puneet Sawhney,“A Course In Electrical And Electronic Measurements And Instrumentation”, 19th Ed., Dhanapat Rai & Co., 2015",
+        "D.V.S.Murty, “Transducers & Instrumentation”, 2nd Ed., PHI, 2013"
+      ],
+      "reference_books": [
+        "A.K.Ghosh, “Introduction to Measurements & Instrumentation”,3rd Ed., PHI, 2009",
+        "Raman Pallas & John G.Webster, “Sensors & Signal Conditioning”, 2nd Ed., J. Wiley,2012"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23TP3106",
+      "course_name": "Logic and Reasoning",
+      "semester": "3",
+      "category": "Soft Skills - 1",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Think reason logically in any critical situation",
+        "Analyze given information to find correct solution",
+        "To reduce the mistakes in day to day activities in practical life",
+        "Develop time management skills by approaching different shortcut methods",
+        "Use mathematical based reasoning to make decisions",
+        "Apply logical thinking to solve problems and puzzles in qualifying exams for companies and in other competitive exams"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Analytical Reasoning",
+        "topics": "Series Completion, Coding-Decoding, Blood Relation, Puzzles test, Direction sense test"
+      },
+      {
+        "unit_number": "2",
+        "title": "Logical Reasoning",
+        "topics": "Logical Venn diagrams, Number test, Ranking test, Mathematical operations, Arithmetical Reasoning, Syllogism"
+      },
+      {
+        "unit_number": "3",
+        "title": "Abstract Reasoning",
+        "topics": "Binary Logic, Inserting missing character, Data sufficiency, Analogy, Classification"
+      },
+      {
+        "unit_number": "4",
+        "title": "Non-Verbal Reasoning",
+        "topics": "Water images, Mirror images, Paper folding, Paper cutting, Embedded Figures, Dot situation, Cubes & Dice"
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "S. Aggarwal, “Verbal and Non-Verbal reasoning”, S Chand Publication, 2017"
+      ],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23MC3107",
+      "course_name": "Environmental Science",
+      "semester": "3",
+      "category": "Audit Course",
+      "credits": 0,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Identify various factors causing degradation of natural resource and control measures",
+        "Identify various ecosystem and need for biodiversity",
+        "Realize and explore the problems related to environmental pollution and its management",
+        "Apply the information and technology to analyse social issues, use acts associated with environment"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Environmental Studies and Natural Resources",
+        "topics": "Definition, scope and importance, Need for public awareness. Natural Resources: Renewable and Non-renewable Resources (Forest, Water, Mineral, Food, Energy, Land) - Use, over-exploitation, and conservation."
+      },
+      {
+        "unit_number": "2",
+        "title": "Ecosystems and Biodiversity",
+        "topics": "Ecosystems: Concept, structure, and function. Energy flow, ecological succession, food chains, food webs. Types of ecosystems. Biodiversity and Its Conservation: Genetic, species, and ecosystem diversity. Value, threats, and conservation of biodiversity."
+      },
+      {
+        "unit_number": "3",
+        "title": "Environmental Pollution and Disaster Management",
+        "topics": "Definition, Causes, effects and control measures of Air, Water, Soil, Marine, Noise, Thermal pollution, and Nuclear hazards. Solid waste management. Disaster management: Floods, earthquake, cyclone and landslides."
+      },
+      {
+        "unit_number": "4",
+        "title": "Social Issues and the Environment",
+        "topics": "Sustainable development, Water conservation, Environmental ethics. Climate change, global warming, acid rain, ozone layer depletion. Environment Protection Act. Human Population and the Environment. Field Work/ Case Studies."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "“Grants Commission”, New Delhi, Bharati Vidyapeeth Institute of Environment Education and Research"
+      ],
+      "reference_books": [
+        "AnjaneyuluY. “Introduction to Environmental Sciences”, B S Publications PVT Ltd, Hyderabad",
+        "Anjireddy.M “Environmental Science & Technology”, BS Publications PVT Ltd, Hyderabad.",
+        "Benny Joseph, “Environmental Studies”, The Tata McGraw- Hill publishing company limited, New Delhi, 2005."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23EI3651",
+      "course_name": "Numerical Computing using MATLAB",
+      "semester": "3",
+      "category": "Skill Enhancement",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Develop a program using MATLAB",
+        "Develop a solution using MATLAB for linear algebra",
+        "Develop a solution using MATLAB for curve fitting and interpolation",
+        "Develop a solution using MATLAB for differential equations"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Topics",
+        "topics": "Introduction to MATLAB, Error estimation and methods of roots finding, Order of convergence, Solving System of Linear Algebraic equations, Curve fitting and Interpolation, Numerical differentiation, Numerical Integration, Numerical solution to ordinary differential equations (ODE's)."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Gerald & Wheatley, “Applied Numerical Analysis”, Pearson- 7th Edition, 2003.",
+        "R.S. Gupta “Elements of Numerical Analysis”, second edition, Cambridge university press, 2015"
+      ],
+      "reference_books": [
+        "Mathew & Fink, “Numerical Methods Using MATLAB”, Pearson, 1998.",
+        "Rudra Pratap, “Getting started with MATLAB: A quick introduction for scientist & engineers”, Oxford, 2010."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES3152",
+      "course_name": "Electronic Circuits Lab",
+      "semester": "3",
+      "category": "Engineering Science",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Design various analog electronic circuits",
+        "Analyze the outputs and intercept the data generated by electronic circuits, such as waveforms and characteristics of devices.",
+        "Conduct experiments as an individual or team using discrete components and using spice software such as NI Multisim",
+        "Prepare an effective report based on experiments."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "Characteristics of transistor in common emitter configuration.",
+          "Design of transistor self-bias circuit.",
+          "Drain and transfer characteristics of junction field effect transistor.",
+          "Design of unbiased clampers.",
+          "Design of clippers.",
+          "Characteristics of Uni Junction Transistor.",
+          "Characteristics of SCR Characteristics.",
+          "Frequency response of CE amplifier.",
+          "Frequency response of CS Amplifier.",
+          "Design of Hartley Oscillator.",
+          "Design of Wein Bridge oscillator.",
+          "CRO Operation and its Measurements"
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23EI3353",
+      "course_name": "Digital System Design Lab",
+      "semester": "3",
+      "category": "Professional Core",
+      "credits": 1.5,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Construct scalar and wide combinatorial circuits using HDL and FPGA",
+        "Construct the sequential circuits using HDL and FPGA",
+        "Analyze outputs and interpret the data for a given problem",
+        "Conduct experiments as an individual or team by using modern tools",
+        "Prepare an effective report based on experiments."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "Modeling Concepts- Write models to read switches and push buttons, and output on LEDs and 7-segment displays",
+          "Numbering Systems Create a 4-bit ripple carry adder using dataflow modeling.",
+          "Multi-Output Circuits-Design and implement a popular IC, 74138, functionality using dataflow modeling and the decoder.",
+          "Design an 8-to-3 priority encoder.",
+          "Design a 2-bit comparator that compares two 2-bit numbers.",
+          "Implement 2-bit by 2-bit multiplier using a ROM.",
+          "Tasks, Functions, and Testbench- Develop tasks, functions, and a test bench to test and validate a design.",
+          "Modeling Latches and Flip-Flops.",
+          "Modeling Registers- Model a 4-bit register with synchronous reset, set, and loadsignals.",
+          "Modeling Counters",
+          "Behavioral Modeling and Timing Constraints",
+          "Architectural Wizard and IP Catalog- Use tools to configure clocking resources, counters, and memories.",
+          "Counters, Timers, and Real-Time Clock",
+          "Finite State Machines- Model Mealy FSMs, Model Moore FSMs.",
+          "Sequential System Design using Algorithmic State Machine (ASM) Charts."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "M. Rafiquzzaman, Steven A. McNinch, “Digital Logic: With an Introduction to Verilog and FPGA-Based Design”, 1st Ed., Wiley, 2019.",
+        "Cem Unsalan, Bora Tar, “Digital System Design with FPGA: Implementation Using Verilog and VHDL”, 1st Ed., McGraw Hill Professional, 2017.",
+        "Frank Bruno, “FPGA Programming for Beginners: Bring your ideas to life by creating hardware designs and electronic circuits with SystemVerilog”, Packt Publishing Ltd., 2021"
+      ],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23EI3354",
+      "course_name": "Transducers Lab",
+      "semester": "3",
+      "category": "Professional Core",
+      "credits": 1.5,
+      "prerequisites": "--",
+      "course_outcomes": [
+        "Use transducers for measurement of various parameters",
+        "Analyze the characteristics of various transducers",
+        "Conduct experiments as an individual or team.",
+        "Write an effective report based on experiments."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "Characteristics of Resistance Temperature Detector (RTD)",
+          "Temperature measurement using Thermocouple",
+          "Characteristics of Light Dependent Resistor (LDR) and phototransistor",
+          "Measurement of magnetic flux density using Hall effect transducer",
+          "Speed measurement using magnetic pick-up and photoelectric pick-up",
+          "Flow measurement using Ultrasonic flow transmitter",
+          "Calibration of pressure gauges using dead weight tester.",
+          "Displacement measurement using Linear Variable Differential Transformer (LVDT)",
+          "Pressure measurement using strain gauge",
+          "Interfacing a Passive Infrared (PIR) sensor with Arduino for motion detection",
+          "Interfacing an inductive proximity sensor with Arduino for object detection",
+          "Interfacing a soil moisture sensor with Arduino"
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "A.K.Ghosh, “Introduction to Measurements & Instrumentation”, 3rd Ed., PHI, 2009.",
+        "A.K.Sawhney & Puneet Sawhney, “A Course in Mechanical Measurements & Instrumentation”, 7th Ed., Dhanapat Rai & Co., 2012"
+      ],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23HS4101",
+      "course_name": "Engineering Economics and Management",
+      "semester": "4",
+      "category": "Humanities and Social Sciences",
+      "credits": 2,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand various forms of organizations and principles of management.",
+        "Understand the various aspects of business economics.",
+        "Perceive the knowledge on Human resources and Marketing functions.",
+        "Evaluate various alternatives economically."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Forms of Business Organization and Management",
+        "topics": "Salient features of sole proprietorship, Partnership, Joint stock company, Co-operative society and public sector. Introduction to management, Functions of management, Principles of scientific management, Modern principles of management."
+      },
+      {
+        "unit_number": "2",
+        "title": "Introduction to Economics",
+        "topics": "Basic economic concepts, Utility analysis, Demand Analysis, Supply Analysis."
+      },
+      {
+        "unit_number": "3",
+        "title": "Human Resource and Marketing Management",
+        "topics": "Meaning and difference between personnel management and human resource management, Functions of human resource management. Concept of selling and marketing, Functions of marketing, Product life cycle, Advertising, Sales promotion, Distribution Channels, Marketing Research, Break-Even analysis"
+      },
+      {
+        "unit_number": "4",
+        "title": "Economic Alternatives and Financial Management",
+        "topics": "Methods of evaluating Alternatives (Present worth, Future worth, Annual equivalent method). Functions of financial management, Time value of money, Simple and Compound Interest. Depreciation: Causes, common methods (Straight line, Declining balance, Sum of year‟s digits method)."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "M.Mahajan, “Industrial Engineering and Production Management”, 2nd Ed., DhanpatRaiPublications",
+        "MartandTelsang” Industrial & Business Management” S.Chand publications"
+      ],
+      "reference_books": [
+        "R.Paneerselvam “Production and Operations Management” PHI",
+        "Philip Kotler & Gary Armstrong “Principles of Marketing”, Pearson Prentice Hall,NewDelhi,2012",
+        "IM Pandey, “Financial Management”, 11th Ed., Vikas Publications",
+        "B.B.Mahapatro, “Human Resource Management”,New Age International"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES4102C",
+      "course_name": "Linear Integrated Circuits and Applications",
+      "semester": "4",
+      "category": "Engineering Science",
+      "credits": 2,
+      "prerequisites": "Electronic Devices and Circuits, Network Theory",
+      "course_outcomes": [
+        "Understand the characteristics of 741IC.",
+        "Apply the concepts of 741IC to implement various linear and non-linear applications.",
+        "Design different IC circuits using 741,555 and 723 ICs.",
+        "Illustrate the operation of Special purpose ICs and their applications."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Operational Amplifier and Linear Applications",
+        "topics": "Integrated circuits, Block diagram representation of Op amp, Ideal Op amp, 741 Op-amp features and specifications, Op-amp characteristics - DC and AC Characteristics, Frequency Response, Slew Rate. Linear applications of Op-Amp - Inverting amplifier, Non-inverting amplifier, Voltage follower, Differential amplifier, Summing amplifier, Instrumentation amplifier, Integrator, Voltage to current converter and current to voltage converter."
+      },
+      {
+        "unit_number": "2",
+        "title": "Active Filters and Non-linear Applications",
+        "topics": "Active LP and HP filters, Sallen key LP and HP filters, Band pass filters, Band stop filters. Non-linear applications of Op-Amp: Precision diode, Applications - Precision full wave rectifier, Clippers and Peak Detector; Sample and hold circuit. Comparators and Waveform Generators: Basic comparator, Applications – Zero crossing detector, Window detector, Voltage limiters; Schmitt trigger, Waveform generators - Square wave generator, Triangular wave generator."
+      },
+      {
+        "unit_number": "3",
+        "title": "Analog to Digital and Digital to Analog Converters",
+        "topics": "Introduction, Basic DAC techniques - Weighted resistor DAC, R-2R ladder D/A converter; A/D conversion - Parallel comparator type ADC, Successive approximation ADC and Dual slope ADC;DAC and ADC specifications"
+      },
+      {
+        "unit_number": "4",
+        "title": "Special Purpose ICs and Applications",
+        "topics": "555 Timer - 555 as Monostable and Astable operation, Applications, Schmitt trigger;IC 566 Voltage controlled oscillator; Phase locked loops - Operating principle,565 Monolithic PLL, 565 PLL Applications."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "D. Roy Choudhry and Shail B. Jain, \"Linear Integrated Circuits\"- (4/e), New Age International Pvt. Ltd, 2011.",
+        "Rama Kant A. Gayakwad, “Op-Amps and Linear Integrated Circuits”, 4th Ed,PHI, 2012."
+      ],
+      "reference_books": [
+        "S. Franco, “Design with Operational Amplifiers and Analog Integrated Circuits”, TMH, 2016.",
+        "R. F. Coughlin & F. F. Driscoll, “Operational Amplifiers and Linear Integrated Circuits”, 6thEd,PHI, 2012.",
+        "Jacob, “Applications and Design with Analog Integrated Circuits”, 2nd Ed., PHI 1996",
+        "Sanjay Sharma, “Op-Amps and Linear Integrated circuits”,1st Ed, Katson educational series,2008.",
+        "S.Salivahanan & V.S. KanchanaBhaskaran, Linear Integrated Circuits, TMH, 2nd edition, 2015."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23EI4303",
+      "course_name": "Control Systems",
+      "semester": "4",
+      "category": "Professional Core",
+      "credits": 3,
+      "prerequisites": "Laplace transforms and integral calculus, Network theory",
+      "course_outcomes": [
+        "Define and explain the concepts of control systems.",
+        "Model the transfer functions of physical systems using block diagram and signal flow graph approaches",
+        "Analyze the responses and stability of control systems using time and frequency domain approaches",
+        "Analyze the stability of the given control system using modern tools."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction and Mathematical Models",
+        "topics": "Control system terminology, Open loop and closed loop control systems, Effect of feedback on overall gain, Stability, Sensitivity and external noise. Mathematical Models of Physical Systems: Formulation of differential equations for electrical, mechanical and electromechanical systems, Poles, Zeros, Characteristic equation, Block diagram representation of control systems, Signal flow graphs and Mason‟s gain formula."
+      },
+      {
+        "unit_number": "2",
+        "title": "Time Domain Analysis",
+        "topics": "Standard test signals, Time response of first-order system to standard test signals, Step response of second order systems, Time domain specifications, Steady state error and static and dynamic error constants, Proportional, Integral and derivative control actions"
+      },
+      {
+        "unit_number": "3",
+        "title": "Stability Analysis in Complex Plane",
+        "topics": "Stability definitions, Stability study based on poles of closed loop transfer function, Absolute and relative stability, Routh–Hurwitz criterion. Root Locus Technique: The root locus concept, Magnitude and angle conditions, Properties and construction of the root loci, Effect of adding poles and zeros to root locus"
+      },
+      {
+        "unit_number": "4",
+        "title": "Frequency Domain Analysis",
+        "topics": "Frequency domain specifications, Correlation between time and frequency response, Bode plot, Determination of phase margin and gain margin, Stability analysis from Bode plots, Polar plots, Nyquist stability criterion, Nyquist Plot."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "A.Anand Kumar, “Control Systems”, 2nd Ed., PHI, 2014",
+        "I J Nagrath& M Gopal, “Control Systems Engineering”, 5th Ed., New Age International, 2008"
+      ],
+      "reference_books": [
+        "Katsuhiko Ogata, “Modern Control Engineering”, 4th Ed., Pearson Education, 2003",
+        "A.NagoorKani, “Control Systems”, 2nd Ed., RBA Publications, 2006"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23EI4304",
+      "course_name": "Industrial Instrumentation",
+      "semester": "4",
+      "category": "Professional Core",
+      "credits": 3,
+      "prerequisites": "Sensors and Transducers",
+      "course_outcomes": [
+        "Explain the basic concepts of industrial process variables",
+        "Apply the concepts of industrial process variables to solve the engineering problems",
+        "Identify suitable transducer for measurement of industrial process variables",
+        "Analyze the performance of various measurement techniques in industrial process variables"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Temperature Measurement",
+        "topics": "Introduction, Classification of temperature sensors, Bimetals & Liquid-in-Glass thermometers, RTD, Thermistor, Thermocouples, IC sensors, Radiation pyrometers, Fiber-optic sensors, Quartz thermometer, Ultrasonic thermometer."
+      },
+      {
+        "unit_number": "2",
+        "title": "Pressure Measurement",
+        "topics": "Introduction, pressure standards, Manometers; Force summing devices – Diaphragms, Bellows, Bourdon tubes; Secondary transducers – Resistive, Inductive, Capacitive, Piezoelectric and Hall Effect; Low pressure measurement - Mcleod, Knudsen, Pirani & Ionization gauges; Calibration of pressure gauges using dead weight tester."
+      },
+      {
+        "unit_number": "3",
+        "title": "Flow Measurement",
+        "topics": "Introduction, Head type flow meters - Orifice plate, Venturi tube and Pitot tube; Variable area type flow meters – Rotameter; Velocity measurement type flow meters - Electromagentic, Turbine, Ultrasonic flow meters, Anemometers; Mass flow measurement type – Coriolis and Thermal mass flow meters; Positive displacement flow meters - Nutating disc and lobed impeller; Open channel flow meters- Weirs, Flumes."
+      },
+      {
+        "unit_number": "4",
+        "title": "Level, Humidity, Density & Viscosity Measurement",
+        "topics": "Level Measurement: Introduction, Mechanical level indicators, Optical level sensors, Electrical type, Acoustic Level Sensors, Radiative methods. Humidity, Density & Viscosity Measurement: Introduction, Hygrometers, Moisture Analyzer, Densitometers, Viscometers."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "A.K.Ghosh, “Introduction to Measurements & Instrumentation”, IIIrd ed, PHI, 2009.",
+        "A.K.Sawhney & Puneet Sawhney,“A Course in Mechnanical Measuremnets & Instrumentation”, XIIth ed, Dhanapat Rai & Co., 2012."
+      ],
+      "reference_books": [
+        "Ernest O Doebelin/Dhanesh, N Manik, “Measurement systems”, VIth ed,Tata Mc Grawhill.",
+        "C.S.Rangan, G.R.Sarma & V.S.V.Mani “Instrumentation Devices & Systems”, IInd ed, TMH, 2011."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23EI4305",
+      "course_name": "Electrical and Electronic Measurements",
+      "semester": "4",
+      "category": "Professional Core",
+      "credits": 3,
+      "prerequisites": "Circuit analysis",
+      "course_outcomes": [
+        "Apply suitable Null or Deflection type technique to measure prescribed electrical parameter.",
+        "Select a suitable digital instrument to measure physical and electrical parameters.",
+        "Compare the operation of various oscilloscopes and probes.",
+        "Explain the principles of various signal generators and wave analyzers."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Electromechanical Indicating Instruments and Electrical Measurements",
+        "topics": "Suspension type galvanometer, Permanent magnet moving coil mechanism. DC ammeters, DC voltmeters, Series and Shunt type ohmmeter, Calibration of dc instruments, Alternating current indicating instruments - Electrodynamometer, Thermo Instruments, Electrodynamometers in power measurements, Watt hour meter, Power factor meters."
+      },
+      {
+        "unit_number": "2",
+        "title": "Bridges and Electronic Instruments",
+        "topics": "Wheatstone bridge, Kelvin bridge, Maxwell bridge, Hay bridge, Schering bridge, Wien bridge, Wagner ground connection. Electronic Instruments: AC Voltmeter using rectifiers, True RMS voltmeter, Digital voltmeters, Q Meter, Analog pH meter."
+      },
+      {
+        "unit_number": "3",
+        "title": "Oscilloscopes",
+        "topics": "Block diagram of oscilloscope, Cathode Ray Tube, Vertical amplifier, Horizontal deflecting system, Delay line in triggered sweep, Dual beam CRO, Dual trace oscilloscope, Sampling oscilloscope, Digital storage oscilloscope, Probes for CRO."
+      },
+      {
+        "unit_number": "4",
+        "title": "Signal Generators and Wave Analyzers",
+        "topics": "Basic standard sine wave generator, Standard signal generator, Function generator, Laboratory square wave and pulse generator. Wave Analyzers: Basic wave analyzer, Frequency selective wave analyzer, Heterodyne wave analyzer, Harmonic distortion analyzers, Spectrum analyzer. Frequency Counters And Time-Interval Measurements."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "W D Cooper & A D Helfrick, “Electronic Instrumentation and Measurement Techniques”, PHI, 1998 (Unit-I)",
+        "H.S.Kalsi, “Electronic Instrumentation”, 2ndEd., TMH. (Units-II, III and IV)"
+      ],
+      "reference_books": [
+        "A.K. Sawhney, “A Course in Electrical and Electronic Measurements and Instrumentation”,Dhanpat Rai & Co",
+        "Oliver & Cage, “Electronic Measurements and Instrumentation”, Mc Graw Hill, 1975"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23TP4106",
+      "course_name": "English for Professionals",
+      "semester": "4",
+      "category": "Soft Skills - 2",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Present themselves effectively in the professional world by shedding off their inhibitions about communicating in English",
+        "Introduce themselves as well as others appropriately",
+        "Use vocabulary to form sentences and narrate stories by using creative thinking skills",
+        "Involve in practical activity-oriented sessions and respond positively by developing their analytical thinking",
+        "Learn about various expressions to be used in different situations"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Conversational Skills",
+        "topics": "Beginners, Functional, Situational conversations. Practicing on functional conversations"
+      },
+      {
+        "unit_number": "2",
+        "title": "Language Usage and Grammar",
+        "topics": "Errors in usage of parts of speech with a thrust on verbs, adjectives and conjunctions, idioms/phrases. Introducing basic grammar. Practicing on functional conversations"
+      },
+      {
+        "unit_number": "3",
+        "title": "Social and Professional Etiquette",
+        "topics": "Introducing self & Others. Structures and forming sentences. Telephonic etiquette, Social etiquette and table manners. Practicing on functional conversations"
+      },
+      {
+        "unit_number": "4",
+        "title": "Public Speaking and Test Preparation",
+        "topics": "Direct, Indirect/Reporting speech. Public speaking basics. Versant test preparation. Practicing on situational conversations"
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Swaroopa, Polineni, “Practicing on Situational Conversations - Strengthen Your Communication Skills”, 1st Ed., Maruthi Publications, 2013.",
+        "Mamta Bhatnagar & Nitin Bhatnagar, “Communicative English”, 1st Ed., Pearson India, 2010."
+      ],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23EI4651",
+      "course_name": "Virtual Instrumentation Lab",
+      "semester": "4",
+      "category": "Skill Enhancement course",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand the graphical programming terminology and able to create a virtual instrument for simple problems",
+        "Able to use the various looping constructs, arrays, matrices and clusters",
+        "Able to use various data plotting techniques and structures",
+        "Able to use the data acquisition device to acquire the measurement data from real world into PC"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": "Introduction to Virtual Instrumentation and LabVIEW, Programs on controls and indicators, arithmetic operations, Boolean operations, sub VI’s, repetition and loops, arrays, matrices, clusters, data plotting, structures, formula nodes and math script nodes, strings, file I/O, Temperature acquisition using 3-wire RTD, data logging, Programs using NI myDAQ."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Jovitha Jerome, “Virtual Instrumentation using LabVIEW”, 1st Ed., PHI, 2013."
+      ],
+      "reference_books": [
+        "Sanjay Gupta, Joseph John, “Virtual Instrumentation using LabVIEW”, 1st Ed., TataMcGraw-Hill, 2005",
+        "Gary Johnson, Richard Jennings, “LabVIEW Graphical Programming”, Tata McGraw-Hill, 2006"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES4152",
+      "course_name": "Design Thinking & Innovation",
+      "semester": "4",
+      "category": "Engineering Science",
+      "credits": 2,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Describe the fundamental concepts of Design Thinking and Innovation.",
+        "Apply the design thinking techniques for solving problems in various sectors.",
+        "Analyze the concepts of design thinking to work in a multidisciplinary environment.",
+        "Evaluate the value of creativity with design thinking concepts."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction to Design Thinking",
+        "topics": "Introduction to elements and principles of Design, basics of design-dot, line, shape, form as fundamental design components. Principles of design. Introduction to design thinking, history of Design Thinking, New materials in Industry."
+      },
+      {
+        "unit_number": "2",
+        "title": "Design Thinking Process",
+        "topics": "Design thinking process (empathize, analyze, idea & prototype), implementing the process in driving inventions, design thinking in social innovations. Tools of design thinking - person, costumer, journey map, brainstorming, product development"
+      },
+      {
+        "unit_number": "3",
+        "title": "Innovation",
+        "topics": "Art of innovation, Difference between innovation and creativity, role of creativity and innovation in organizations. Creativity to Innovation. Teams for innovation, Measuring the impact and value of creativity."
+      },
+      {
+        "unit_number": "4",
+        "title": "Product Design and Business Processes",
+        "topics": "Problem formation, introduction to product design, Product strategies, Product value, Product planning, product specifications. Innovation towards product design Case studies. Design Thinking applied in Business & Strategic Innovation, Design Thinking principles that redefine business – Business challenges. Design thinking to meet corporate needs. Design thinking for Startups. Defining and testing Business Models and Business Cases. Developing & testing prototypes."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23EI4353",
+      "course_name": "Linear Integrated Circuits Lab",
+      "semester": "4",
+      "category": "Professional Core",
+      "credits": 1.5,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Design linear applications of op-amp circuits,",
+        "Design non-linear applications of op-amp circuits,",
+        "Design applications of 555 timer and IC voltage regulators",
+        "Conduct the experiment as well as analyze the outputs for given specifications as an individual or a team.",
+        "Prepare an effective report based on experimental results."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "Basic applications of 741IC –Inverting amplifier, Non Inverting amplifier and summing amplifier.",
+          "Design of Instrumentation Amplifier using 741IC",
+          "Design of Integrator using 741IC",
+          "Precision Full wave rectifiers using Op-Amp 741IC",
+          "Basic applications of comparator using 741IC",
+          "Waveform generation using 741IC (square, triangular)",
+          "Design of Wein bridge Oscillator using 741IC",
+          "Design of First order Active Low pass and high pass filter using 741IC",
+          "Design of IC 555 Timer Astable circuit",
+          "Design of Schmitt trigger using IC 555 Timer",
+          "Design of a voltage Regulator using IC 723",
+          "D/A Converters using 741IC 4 bit R-2R ladder circuit."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23EI4354",
+      "course_name": "Control Systems Lab",
+      "semester": "4",
+      "category": "Professional Core",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Apply control system techniques/approaches to solve problems",
+        "Analyze the responses and stability of the given control system",
+        "Conduct the experiments as individual or team",
+        "Make an effective report based on experiments"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "Determination of transfer functions of first order systems.",
+          "Time response P, PI and PID controllers of second order systems.",
+          "Characteristics of synchro transmitter and receiver.",
+          "DC motor position control using PI controller",
+          "Characteristics of Magnetic Amplifier",
+          "Using MATLAB/SIMULINK for control systems",
+          "Block diagram reduction techniques for determination of transfer function.",
+          "Simulation of standard test signals.",
+          "Determination of step, impulse and ramp responses for first and second order systems.",
+          "Root locus plot for a given transfer function.",
+          "Stability studies using Bode and Nyquist plots."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "A.Ananda Kumar, “Control Systems”, PHI Learning, 2nd Ed.",
+        "I.J.Nagrath & M.Gopal, “Control systems Engineering”, New Age publisher, 5th Ed"
+      ],
+      "reference_books": [
+        "B.C.Kuo, “Automatic Control Systems”, 7th Ed., PHI."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23EI4355",
+      "course_name": "Measurements Lab",
+      "semester": "4",
+      "category": "Professional Core",
+      "credits": 1.5,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Apply the basic measurement techniques to measure the parameters such as resistance, capacitance, inductance, etc",
+        "Analyze the outputs and integrate the data generated from the bridge measurements",
+        "Conduct the experiments as individual or team",
+        "Make an effective report based on experiments"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "DC meters using D’Arsonval galvanometer and their range extension.",
+          "AC meters using D’Arsonval galvanometer and their range extension.",
+          "Measurement of voltage, frequency, phase angle and phase shift using a CRO.",
+          "Simulation of CRO, Function generator using Analog discovery kit.",
+          "Measurement of resistance of small resistors using Kelvin double bridge.",
+          "Measurement of inductance using Maxwell bridge.",
+          "Measurement of capacitance using Shearing bridge.",
+          "Simulation of Spectrum analyzer using Analog discovery kit.",
+          "Measurement of resistance, inductance and capacitance using a LCR meter.",
+          "Measurement of amplitude and frequency of different types of waveforms using function generator.",
+          "Measurement of amplitudes of different types of waveforms using True RMS voltmeter.",
+          "Measurement of inductance of high Q coils using Hay bridge.",
+          "Measurement of frequency using a Wien bridge.",
+          "Calibration of voltmeter using potentiometer.",
+          "Calibration of ammeter using potentiometer"
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  }
+]

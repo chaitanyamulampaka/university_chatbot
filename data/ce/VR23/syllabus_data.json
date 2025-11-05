@@ -1,0 +1,2471 @@
+[
+  {
+    "metadata": {
+      "course_code": "23BS1101",
+      "course_name": "Linear Algebra & Calculus",
+      "semester": "1",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "10+2 level Mathematics",
+      "course_outcomes": [
+        "Solve the system of homogeneous and non-homogeneous linear equations",
+        "Examine the nature of a quadratic form by transforming into a canonical form",
+        "Determine maxima and minima of multivariable functions",
+        "Evaluate areas and volumes using double, triple integrals"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Matrices",
+        "topics": "Rank of a matrix by Echelon form, Normal form, Cauchy–Binet formulae (without proof), Inverse of Non- singular matrices by Gauss-Jordan method, System of linear equations: Solving system of Homogeneous and Non-Homogeneous equations by Gauss elimination method, Jacobi and Gauss-Seidel Iteration Methods."
+      },
+      {
+        "unit_number": "2",
+        "title": "Eigenvalues, Eigenvectors and Orthogonal Transformation",
+        "topics": "Eigenvalues, Eigenvectors and their properties, Diagonalization of a matrix, Cayley-Hamilton Theorem (without proof), Finding inverse and power of a matrix by Cayley-Hamilton Theorem, Quadratic forms and Nature of the Quadratic forms, Reduction of Quadratic form to Canonical forms by Orthogonal Transformation."
+      },
+      {
+        "unit_number": "3",
+        "title": "Differential Calculus",
+        "topics": "Mean Value Theorems: Rolle’s theorem, Lagrange’s mean value theorem with their geometrical interpretation, Cauchy’s mean value theorem, Taylor’s and Maclaurin’s theorems with remainders (without proof), Problems and applications on the above theorems. Functions of Several Variables: Continuity and Differentiability, Partial derivatives, Total derivatives, Chain rule, Directional derivative, Taylor’s and Maclaurin’s series expansion of functions of two variables, Jacobians, Functional dependence, Maxima and Minima of functions of two variables, Method of Lagrange multipliers."
+      },
+      {
+        "unit_number": "4",
+        "title": "Multiple Integrals (Multivariable Calculus)",
+        "topics": "Double integrals,Triple integrals, Change of order of integration, Change of variables to polar, cylindrical and spherical coordinates, Finding areas (by double integrals) and volumes (by double integrals and triple integrals)."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Higher Engineering Mathematics, B. S. Grewal, Khanna Publishers, 2017, 44th Edition"
+      ],
+      "reference_books": [
+        "Advanced Engineering Mathematics, Erwin Kreyszig, John Wiley & Sons, 2018, 10th Edition",
+        "Thomas Calculus, George B. Thomas, Maurice D. Weir and Joel Hass, Pearson Publishers, 2018, 14th Edition",
+        "Advanced Engineering Mathematics, R. K. Jain and S. R. K. Iyengar, Alpha Science International Ltd., 2021 5th Edition(9th reprint)",
+        "Advanced Modern Engineering Mathematics, Glyn James, Pearson publishers, 2018, 5th Edition",
+        "Advanced Engineering Mathematics, Micheael Greenberg, , Pearson publishers, 9th Edition",
+        "Higher Engineering Mathematics, H. K Das, Er. Rajnish Verma, S. Chand Publications,2014, 3rd Edition (Reprint 2021)"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS1102A",
+      "course_name": "Engineering Chemistry",
+      "semester": "1",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "10 + 2 level Chemistry",
+      "course_outcomes": [
+        "Analyse various water treatment methods and boiler troubles.",
+        "Apply the knowledge of basic electrochemistry principles for electrochemical energy systems and corrosion.",
+        "Compare mechanistic aspects of polymerisation, and different polymers and conventional fuels for their effective utilisation.",
+        "Evaluate various modern engineering materials for their applications in engineering and other fields."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Water Technology",
+        "topics": "Domestic water treatment – sedimentation, coagulation, disinfection by chlorination – breakpoint chlorination, desalination of brackish water – electrodialysis and reverse osmosis (RO). Industrial water: Hardness of water, Estimation of hardness by EDTA Method, Boiler troubles – scales, caustic embrittlement, Industrial water treatment – Ion-exchange method."
+      },
+      {
+        "unit_number": "2",
+        "title": "Electrochemistry and Corrosion",
+        "topics": "Electrodes, electrochemical cell, Nernst equation, cell potential calculations, Primary cells – zinc-air battery, Secondary cells –lithium ion batteries; Fuel cells – hydrogen-oxygen fuel cell. Corrosion: Introduction, electrochemical corrosion, factors affecting corrosion, cathodic protection, copper electroplating and electroless plating."
+      },
+      {
+        "unit_number": "3",
+        "title": "Polymer and Fuel Chemistry",
+        "topics": "Polymer Chemistry: Introduction, functionality of monomers, mechanism of chain growth, step growth polymerization, thermoplastics and thermosetting plastics: Preparation, properties and applications of PVC, polystyrene, Nylon 6,6 and Bakelite. Elastomers – Buna S and Buna N. Fuel Chemistry: Fuels- classification, calorific value, analysis of coal (proximate and ultimate analysis), refining of petroleum, knocking, octane and cetane number, alternative fuels –biomass, biogas, biodiesel."
+      },
+      {
+        "unit_number": "4",
+        "title": "Modern Engineering Materials",
+        "topics": "Composites: classification – particle, fibre and layered reinforced composites, properties and engineering applications. Lubricants: classification, mechanisms, properties of lubricating oils. Building materials: Portland cement, constituents, setting and hardening of cement, refractories – classification and properties. Nanomaterials: classification, properties and applications."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Engineering Chemistry, Jain and Jain, 17th Edition, DhanpatRai, 2018.",
+        "Engineering Chemistry, PrasanthaRath& S. ArunaKumari, Cengage Publishers, 2023."
+      ],
+      "reference_books": [
+        "Peter Atkins, Julio de Paula and James Keeler, Atkins’ Physical Chemistry, 10/e, Oxford University Press, 2010.",
+        "H.F.W. Taylor, Cement Chemistry, 2/e, Thomas Telford Publications, 1997.",
+        "Textbook of polymer Science,Fred W.BillmayerJr, 3rd Edition."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1103B",
+      "course_name": "Basic Electrical and Electronics Engineering",
+      "semester": "1",
+      "category": "Engineering Science",
+      "credits": 3,
+      "prerequisites": "Basic Electrical and Electronics Engineering",
+      "course_outcomes": [
+        "Apply different techniques to solve DC circuits.",
+        "Understand the magnetic circuit concepts.",
+        "Analyze the steady-state response, series, parallel AC circuits, mesh & nodal analysis, and resonance.",
+        "Apply network theorems for AC & DC circuits.",
+        "Demonstrate the working principles of basic Electronic devices, circuits and instrumentation System .",
+        "Implementation of simple Combinational and Sequential circuits using Logic gates."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "DC & AC Circuits",
+        "topics": "DC Circuits: Electrical circuit elements (R, L and C), Ohm’s Law, KCL & KVL, series, parallel, series-parallel circuits, Super Position theorem. AC Circuits: A.C. Fundamentals, relationship with phasor diagrams in R, L, and C circuits, Concept of Impedance, Active power, reactive power and apparent power, Concept of power factor. Equipment Safety Measures: Fuse and Miniature circuit breaker (MCB). Personal safety measures: Electric Shock, Earthing."
+      },
+      {
+        "unit_number": "2",
+        "title": "Machines and Measuring Instruments",
+        "topics": "Machines: Construction, principle and operation of DC Motor, DC Generator, Single Phase Transformer, Three Phase Induction Motor and Alternator. Measuring Instruments: Construction and working principle of Voltage, Current, temperature sensors, multimeter. Electricity bill calculation."
+      },
+      {
+        "unit_number": "3",
+        "title": "Semiconductor Devices",
+        "topics": "Characteristics of PN Junction Diode, Zener Diode. Bipolar Junction Transistor, CB, CE, CC Configurations and Characteristics, Small Signal CE Amplifier. Rectifiers and power supplies: full wave bridge rectifier, capacitor filter, zener voltage regulator. Amplifiers: Block diagram of Public Address system. Electronic Instrumentation."
+      },
+      {
+        "unit_number": "4",
+        "title": "Digital Electronics",
+        "topics": "Overview of Number Systems, Logic gates including Universal Gates, BCD codes, Excess-3 code, Gray code, Hamming code. Boolean Algebra, Truth Tables. Simple combinational circuits–Half and Full Adders. Introduction to Flip flops, Registers and counters."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Basic Electrical Engineering, D. P. Kothari and I. J. Nagrath, Mc Graw Hill, 2019, Fourth Edition",
+        "Principles of Power Systems, V.K. Mehtha, S.Chand Technical Publishers, 2020",
+        "Basic Electrical Engineering, T. K. Nagsarkar and M. S. Sukhija, Oxford University Press, 2017",
+        "Basic Electrical and Electronics Engineering, S. K. Bhatacharya, Person Publications, 2018, Second Edition.",
+        "R. L. Boylestad & Louis Nashlesky, Electronic Devices & Circuit Theory, Pearson Education, 2021.",
+        "P. Jain, Modern Digital Electronics, 4th Edition, Tata Mc Graw Hill, 2009."
+      ],
+      "reference_books": [
+        "R. S. Sedha, A Textbook of Electronic Devices and Circuits, S. Chand & Co, 2010.",
+        "Santiram Kal, Basic Electronics- Devices, Circuits and IT Fundamentals, Prentice Hall, India, 2002.",
+        "R. T. Paynter, Introductory Electronic Devices & Circuits – Conventional Flow Version, Pearson Education, 2009."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1104",
+      "course_name": "Introduction to Programming",
+      "semester": "1",
+      "category": "Engineering Science",
+      "credits": 3,
+      "prerequisites": "--",
+      "course_outcomes": [
+        "To introduce students to the fundamentals of computer programming.",
+        "To provide hands-on experience with coding and debugging on control structures and arrays.",
+        "To foster logical thinking and problem-solving skills on strings and ponters.",
+        "To familiarize students with programming concepts such as functions, structures and files."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction to Programming and Problem Solving",
+        "topics": "History of Computers, Basic organization of a computer, Introduction to Programming Languages, Basics of a Computer Program- Algorithms, flowcharts, pseudo code. Introduction to Compilation and Execution, Primitive Data Types, Variables, and Constants, Basic Input and Output, Operations, Type Conversion, and Casting. Problem solving techniques: Algorithmic approach, characteristics of algorithm, Problem solving strategies: Top-down approach, Bottom-up approach, Time and space complexities of algorithms."
+      },
+      {
+        "unit_number": "2",
+        "title": "Control Structures and Arrays",
+        "topics": "Simple sequential programs Conditional Statements (if, if-else, switch), Loops (for, while, do- while) Break and Continue, Arrays indexing, memory model, programs with array of integers, two dimensional arrays"
+      },
+      {
+        "unit_number": "3",
+        "title": "Strings and pointers",
+        "topics": "Introduction to Strings. Pointers, dereferencing and address operators, pointer and address arithmetic, array manipulation using pointers."
+      },
+      {
+        "unit_number": "4",
+        "title": "Functions, User Defined Data types and File Handling",
+        "topics": "Introduction to Functions, Function Declaration and Definition, Function call Return Types and Arguments, modifying parameters inside functions using pointers, arrays as parameters. Scope and Lifetime of Variables, User-defined data types-Structures and Unions, Basics of File Handling"
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "\"The C Programming Language\", Brian W. Kernighan and Dennis M. Ritchie, Prentice- Hall, 1988.",
+        "Schaum’s Outline of Programming with C, Byron S Gottfried, McGraw-Hill Education, 1996"
+      ],
+      "reference_books": [
+        "Computing fundamentals and C Programming, Balagurusamy, E., McGraw-Hill Education, 2008.",
+        "Programming in C, Rema Theraja, Oxford, 2016, 2nd edition",
+        "C Programming,A Problem Solving Approach,Forouzan,Gilberg,Prasad, CENGAGE, 3rd edition."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1105",
+      "course_name": "Engineering Graphics",
+      "semester": "1",
+      "category": "Engineering Science",
+      "credits": 3,
+      "prerequisites": "NIL",
+      "course_outcomes": [
+        "Understand the principles of engineering drawing, including engineering curves and scales.",
+        "Draw and interpret orthographic projections of points, lines and planes in front, top and side views.",
+        "Understand and draw projection of solids in various positions in first quadrant and Explain principles behind development of surfaces.",
+        "Explain principles behind the Sections of solids, Prepare isometric views and conversion of simple solids."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction to Drawing, Curves, and Scales",
+        "topics": "Introduction: Lines, Lettering and Dimensioning, Geometrical Constructions of regular polygons by general methods. Curves: Construction of ellipse, parabola and hyperbola by general method and Involutes. Draw normal and tangent to Curves. Scales: Plain scales and diagonal scales."
+      },
+      {
+        "unit_number": "2",
+        "title": "Orthographic Projections",
+        "topics": "Reference plane, Projections of a point in first quadrant. Projections of Straight Lines parallel to both planes, perpendicular to one plane and parallel to other, inclined to one plane and parallel to the other. Projections of Straight Line Inclined to both the reference planes. Projections of Planes: Regular planes perpendicular to both reference planes, parallel to one and inclined to the other; plane inclined to both the reference planes."
+      },
+      {
+        "unit_number": "3",
+        "title": "Projections of Solids and Development of Surfaces",
+        "topics": "Projections of solids(Prisms and Pyramids only) in simple positions. Development of Surfaces: Methods of Development: Parallel line development and radial line development. Development of a cube, prism, cylinder, pyramid and cone. Computer graphics: Creating 2D & 3D drawings of objects using Auto CAD (Not for end examination)."
+      },
+      {
+        "unit_number": "4",
+        "title": "Sections of Solids, Isometric Views, and Conversion of Views",
+        "topics": "Sections of Solids: Section planes perpendicular to VP and inclined to HP only, Sectional views. Isometric Views: Draw an Isometric views of Simple solids. Conversion of Views: Conversion of isometric views to orthographic views of Simple solids."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "N. D. Bhatt, Engineering Drawing, Charotar Publishing House, 2016."
+      ],
+      "reference_books": [
+        "Engineering Drawing, Basant Agrawal and C M Agrawal,Tata McGraw Hill, 2009.",
+        "Engineering Drawing, K.L. Narayana and P. Kannaiah, Tata McGraw Hill, 2013.",
+        "Engineering Drawing, M.B.Shah and B.C. Rana, Pearson Education Inc,2009.",
+        "Engineering Drawing with an Introduction to Auto CAD, Dhananjay Jolhe , Tata McGraw Hill, 2017."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS1151A",
+      "course_name": "Engineering Chemistry Lab",
+      "semester": "1",
+      "category": "Basic Science",
+      "credits": 1,
+      "prerequisites": "Knowledge of chemistry practicals at Intermediate level",
+      "course_outcomes": [
+        "Analyze water samples and various commercial samples of acids, cement, coal, lubricants, etc. for their purity and quality.",
+        "Analyze samples of water and cement through various instrumental methods like colorimetry, and pH metry.",
+        "Apply standard procedures for preparation of nanomaterials, polymers and blueprinting, as well as study the adsorption process."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "Determination of hardness of a groundwater sample",
+          "Determination of strength of an acid in Lead-acid battery",
+          "Determination of calcium in Portland cement",
+          "Determination of strength of a base using pH metric titration",
+          "Determination of percentage of iron in cement sample by colorimetry",
+          "Chemistry of blueprinting",
+          "Preparation of a polymer – Urea-formaldehyde resin",
+          "Preparation of nanomaterials by precipitation method",
+          "Adsorption of acetic acid by charcoal",
+          "Determination of percentage moisture content in a coal sample",
+          "Determination of viscosity of lubricating oil by Redwood viscometer",
+          "Determination of calorific value of gases by Junker’s gas calorimeter"
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "“Vogel’s quantitative chemical analysis”, 6th Edition, by J. Mendham, R.C. Denney, J.D. Barnes and B. Sivasankar, Pearson Publications."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1152",
+      "course_name": "Computer Programming Lab",
+      "semester": "1",
+      "category": "Engineering Science",
+      "credits": 1.5,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Read, understand, and trace the execution of programs written in C language.",
+        "Select the right control structure for solving the problem.",
+        "Develop C programs which utilize memory efficiently using programming constructs like pointers.",
+        "Develop, Debug and Execute programs to demonstrate the applications of arrays, functions, basic concepts of pointers in C."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": "Familiarization with programming environment, Converting algorithms/flow charts into C Source code, Simple computational problems using arithmetic expressions, Problems involving if-then-else structures, Iterative problems, 1D Array manipulation, Matrix problems, String operations, Bubble sort, Pointers and structures, memory dereference, Bitfields, linked lists, Simple functions using call by value, Recursive functions, Call by reference, File operations."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Ajay Mittal, Programming in C: A practical approach, Pearson.",
+        "Byron Gottfried, Schaum's Outline of Programming with C, McGraw Hill"
+      ],
+      "reference_books": [
+        "Brian W. Kernighan and Dennis M. Ritchie, The C Programming Language, Prentice- Hall of India",
+        "C Programming, A Problem-Solving Approach, Forouzan, Gilberg, Prasad, CENGAGE"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES1153",
+      "course_name": "Basic Electrical and Electronics Workshop",
+      "semester": "1",
+      "category": "Engineering Science",
+      "credits": 1.5,
+      "prerequisites": "Engineering Physics",
+      "course_outcomes": [
+        "Measure voltage, current and power in an electrical circuit",
+        "Measure of Resistance using Wheat stone bridge.",
+        "Discover critical field resistance and critical speed of DC shunt generators",
+        "Investigate the effect of reactive power and power factor in electrical loads",
+        "Identify & testing of various electronic components.",
+        "Understand the usage of electronic measuring instruments.",
+        "Plot and discuss the characteristics of various electron devices.",
+        "Explain the operation of a digital circuit."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": "Part A: Electrical Lab - Verification of KCL and KVL, Superposition theorem, Measurement of Resistance using Wheat stone bridge, Magnetization Characteristics of DC shunt Generator, Measurement of Power and Power factor, Measurement of Earth Resistance using Megger, Calculation of Electrical Energy. Part B: Electronics Lab - V-I characteristics of PN Junction & Zener Diode, Implementation of rectifiers, Input & Output characteristics of BJT, Frequency response of CE amplifier, Simulation of RC coupled amplifier, Verification of Truth Table of Logic gates, Verification of Truth Tables of flip flops."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "Basic Electrical Engineering, D. C. Kulshreshtha, Tata McGraw Hill, 2019, 1st edition",
+        "Power System Engineering, P.V. Gupta, M.L. Soni, U.S. Bhatnagar and A. Chakrabarti, Dhanpat Rai & Co, 2013",
+        "Fundamentals of Electrical Engineering, Rajendra Prasad, PHI publishers, 2014, 3rd edition.",
+        "R. L. Boylestad & Louis Nashlesky, Electronic Devices & Circuit Theory, Pearson Education, 2021.",
+        "R. P. Jain, Modern Digital Electronics, 4th Edition, Tata Mc Graw Hill, 2009",
+        "R. T. Paynter, Introductory Electronic Devices & Circuits – Conventional Flow Version, Pearson Education,2009."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS1154B",
+      "course_name": "Health and wellness, Yoga and Sports",
+      "semester": "1",
+      "category": "Basic Science",
+      "credits": 0.5,
+      "prerequisites": "-",
+      "course_outcomes": [
+        "Understand the importance of yoga and sports for Physical fitness and sound health",
+        "Demonstrate an understanding of health-related fitness components",
+        "Compare and contrast various activities that help enhance their health.",
+        "Assess current personal fitness levels.",
+        "Develop Positive Personality"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Health and Fitness",
+        "topics": "Concept of health and fitness, Nutrition and Balanced diet, basic concept of immunity, Relationship between diet and fitness, Globalization and its impact on health, Body Mass Index (BMI)."
+      },
+      {
+        "unit_number": "2",
+        "title": "Yoga",
+        "topics": "Concept of yoga, need for and importance of yoga, origin and history of yoga in Indian context, classification of yoga, Physiological effects of Asanas- Pranayama and meditation, stress management and yoga, Mental health and yoga practice."
+      },
+      {
+        "unit_number": "3",
+        "title": "Sports and Fitness",
+        "topics": "Concept of Sports and fitness, importance, fitness components, history of sports, Ancient and Modern Olympics, Asian games and Commonwealth games."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "Gordon Edlin, Eric Golanty. Health and Wellness, 14th Edn. Jones & Bartlett Learning, 2022",
+        "T.K.V.Desikachar. The Heart of Yoga: Developing a Personal Practice",
+        "Archie J.Bahm. Yoga Sutras of Patanjali, Jain Publishing Company, 1993",
+        "Wiseman, John Lofty, SAS Survival Handbook: The Ultimate Guide to Surviving Anywhere Third Edition, William Morrow Paperbacks, 2014",
+        "The Sports Rules Book/ Human Kinetics with Thomas Hanlon. -- 3rd ed. Human Kinetics, Inc.2014"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23MC1106",
+      "course_name": "Induction Program",
+      "semester": "1",
+      "category": "Mandatory Course",
+      "credits": 0,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Syllabus Not Available",
+        "topics": "A detailed syllabus for this course is not provided in the supplied document."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS2101",
+      "course_name": "Differential Equations & Vector Calculus",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "23BS1101 LinearAlgebra & Calculus",
+      "course_outcomes": [
+        "Solve first order linear differential equations",
+        "Solve higher order linear differential equations with constant coefficients",
+        "Solve Partial differential equations",
+        "Evaluate the work done against field, circulation and flux using vector calculus"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Differential equations of first order and first degree",
+        "topics": "Linear differential equations – Bernoulli’s equations- Exact equations and equations reducible to exact form, Applications: Newton’s Law of cooling – Law of natural growth and decay- Electrical circuits."
+      },
+      {
+        "unit_number": "2",
+        "title": "Linear differential equations of higher order (Constant Coefficients)",
+        "topics": "Definitions,homogenous and non-homogenous, complimentary function, general solution, particular integral, Wronskian, Method of variation of parameters, Simultaneous linear equations, Applications to L-CR Circuit problems and Simple Harmonic motion."
+      },
+      {
+        "unit_number": "3",
+        "title": "Partial Differential Equations",
+        "topics": "Introduction and formation of Partial Differential Equations by elimination of arbitrary constants and arbitrary functions, solutions of first order linear equations using Lagrange’s method, Homogeneous Linear Partial differential equations with constant coefficients."
+      },
+      {
+        "unit_number": "4",
+        "title": "Vector Calculus",
+        "topics": "Scalar and vector point functions, vector operator Del, Del applies to scalar point functions- Gradient, Directional derivative, del applied to vector point functions-Divergence and Curl, vector identities. Line integral-circulation-work done, surface integral-flux, Green’s theorem in the plane (without proof), Stoke’s theorem (without proof), volume integral, Divergence theorem (without proof) and related problems."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Higher Engineering Mathematics, B. S. Grewal, Khanna Publishers, 2017, 44th Edition"
+      ],
+      "reference_books": [
+        "Advanced Engineering Mathematics, Erwin Kreyszig, John Wiley & Sons, 2018, 10th Edition.",
+        "Thomas Calculus, George B. Thomas, Maurice D. Weir and Joel Hass, Pearson Publishers, 2018, 14th Edition.",
+        "Advanced Engineering Mathematics, R. K. Jain and S. R. K. Iyengar, Alpha Science International Ltd., 2021 5th Edition(9th reprint).",
+        "Advanced Modern Engineering Mathematics, Glyn James, Pearson publishers, 2018, 5th Edition.",
+        "Advanced Engineering Mathematics, Micheael Greenberg, Pearson publishers, 9th Edition.",
+        "Higher Engineering Mathematics, H. K Das, Er. Rajnish Verma, S. Chand Publications,2014, 3rd Edition (Reprint 2021)."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS2102",
+      "course_name": "Engineering Physics",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Elaborate different types of lasers, optical fibers and their applications.",
+        "Familiarize with the basics of crystals and their structures.",
+        "Summarize various types of polarization of dielectrics and classify the magnetic materials.",
+        "Explain the basic concepts of Quantum Mechanics and types of semiconductors using Hall Effect."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Lasers and Fiber Optics",
+        "topics": "Lasers: Introduction, Characteristics, Basic Principles, Requirements, Einstein’s coefficients, types of lasers (solid-state, gas, semiconductor), applications. Fibre Optics: Introduction, Fundamentals, Propagation of light, Types, Numerical aperture, Fiber optics in communication."
+      },
+      {
+        "unit_number": "2",
+        "title": "Crystallography and X-ray diffraction",
+        "topics": "Crystallography: Space lattice, Basis, Unit Cell, lattice parameters, Bravais Lattices, crystal systems, coordination number, packing fraction (SC, BCC, FCC), Miller indices. X-ray diffraction: Bragg’s law, X-ray Diffractometer, crystal structure determination."
+      },
+      {
+        "unit_number": "3",
+        "title": "Dielectric and Magnetic Materials",
+        "topics": "Dielectric Materials: Introduction, Dielectric polarization, polarizability, Susceptibility, Dielectric constant, Types of polarizations, Lorentz internal field, Clausius- Mossotti equation. Magnetic Materials: Introduction, Magnetic dipole moment, Magnetization, susceptibility, permeability, Classification of magnetic materials, Domain concept, Hysteresis."
+      },
+      {
+        "unit_number": "4",
+        "title": "Quantum Mechanics and Semiconductors",
+        "topics": "Quantum Mechanics: Dual nature of light, Matter waves, Debroglie’s hypothesis, Heisenberg’s Uncertainty Principle, Schrodinger’s wave equations, Particle in a one-dimensional infinite potential well. Semiconductors: Formation of energy bands, Intrinsic and Extrinsic semiconductors, Fermi level, Drift and diffusion currents, Einstein’s equation, Hall effect, Photodiode, LED, Solar cell."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "A Text book of Engineering Physics, M. N. Avadhanulu, P.G.Kshirsagar & TVS Arun Murthy, S. Chand Publications, 11th Edition 2019.",
+        "Engineering Physics - D.K.Bhattacharya and Poonam Tandon, Oxford press (2015)"
+      ],
+      "reference_books": [
+        "Engineering Physics - B.K. Pandey and S. Chaturvedi, Cengage Learning 2021.",
+        "Engineering Physics - Shatendra Sharma, Jyotsna Sharma, Pearson Education, 2018.",
+        "Engineering Physics - Sanjay D. Jain, D. Sahasrabudhe and Girish, University Press. 2010",
+        "Engineering Physics - M.R. Srinivasan, New Age international publishers (2009)."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES2103A",
+      "course_name": "Basic Civil and Mechanical Engineering",
+      "semester": "2",
+      "category": "Engineering Science",
+      "credits": 3,
+      "prerequisites": "10 + 2",
+      "course_outcomes": [
+        "Understand various Civil Engineering sub-divisions thereby appreciate their role in ensuring a better society and understand the basic building components along with attaining knowledge of Civil Engineering Materials and prefabricated technology.",
+        "Know the basic concepts, uses and classification of surveying and realize the importance of Transportation in the nation's economy and the engineering measures related to Transportation and understand the importance of Water Storage and Conveyance Structures so that the social responsibilities of water conservation will be appreciated",
+        "Understand the scope of Mechanical Engineering in different sectors and industries and know about different manufacturing processes.",
+        "Explain the basics of thermal engineering, Power plants , power transmission and robotics."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Basics of Civil Engineering",
+        "topics": "Role of Civil Engineers in Society- Various Disciplines of Civil Engineering - Building Construction and Planning - Construction Materials-Cement - Aggregate - Bricks- Cement concrete- Steel-Introduction to Prefabricated Construction Techniques"
+      },
+      {
+        "unit_number": "2",
+        "title": "Surveying, Transportation, Water Resources and Environmental Engineering",
+        "topics": "Surveying and Transportation Engineering: Objectives and Principles of Surveying, Classification, Importance of Transportation, Basics components of Road-Classification of Highways. Water Resources and Environmental Engineering: Introduction, Sources of water- Quality of water- Specifications- Simple introduction to Dams and Reservoirs."
+      },
+      {
+        "unit_number": "3",
+        "title": "Introduction to Mechanical Engineering",
+        "topics": "Role of Mechanical Engineering in Industries and Society - Engineering Materials - Metals-Ferrous and Non-ferrous, Ceramics, Composites, Smart materials. Manufacturing Processes: Principles of Casting, joining processes, Machining, Introduction to CNC machines, 3D printing, and Smart manufacturing."
+      },
+      {
+        "unit_number": "4",
+        "title": "Thermal Engineering and Mechanical Power Transmission",
+        "topics": "Thermal Engineering: IC engines, 2-Stroke and 4-Stroke engines, SI/CI Engines, Otto cycle,Diesel cycle,Components of Electric and Hybrid Vehicles., Refrigeration and air conditioning Working principle of Boilers: classification of Boilers Power plants – Working principle of Steam, Nuclear power plants. Mechanical Power Transmission - Belt and Gear Drives, Introduction to Robotics"
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Basic Civil Engineering, M.S.Palanisamy, , Tata Mcgraw Hill publications (India) Pvt. Ltd. Fourth Edition.",
+        "Introduction to Civil Engineering, S.S. Bhavikatti, New Age International Publishers. 2022. First Edition.",
+        "Basic Civil Engineering, Satheesh Gopi, Pearson Publications, 2009, First Edition.",
+        "Internal Combustion Engines by V.Ganesan, By Tata McGraw Hill publications (India) Pvt. Ltd.",
+        "A text book of Theory of Machines by S.S. Rattan, Tata McGraw Hill Publications, (India) Pvt. Ltd.",
+        "An introduction to Mechanical Engg by Jonathan Wicker and Kemper Lewis, Cengage learning India Pvt. Ltd."
+      ],
+      "reference_books": [
+        "Surveying, Vol- I and Vol-II, S.K. Duggal, Tata McGraw Hill Publishers 2019. Fifth Edition.",
+        "Hydrology and Water Resources Engineering, Santosh Kumar Garg, Khanna Publishers, Delhi. 2016",
+        "Irrigation Engineering and Hydraulic Structures - Santosh Kumar Garg, Khanna Publishers, Delhi 2023. 38th Edition.",
+        "Highway Engineering, S.K.Khanna, C.E.G. Justo and Veeraraghavan, Nemchand and Brothers Publications 2019. 10th Edition.",
+        "Indian Standard DRINKING WATER — SPECIFICATION IS 10500-2012",
+        "Advances in Civil Engineering (Volume - 5), S. Sathish, AkiNik Publications,2021",
+        "G. Shanmugam and M.S.Palanisamy, Basic Civil and the Mechanical Engineering, Tata McGraw Hill publications (India) Pvt. Ltd.",
+        "Thermal Engineering by Mahesh M Rathore Tata McGraw Hill publications (India) Pvt. Ltd.",
+        "3D printing & Additive Manufacturing Technology- L. Jyothish Kumar, Pulak M Pandey, Springer publications",
+        "Appuu Kuttan KK, Robotics, I.K. International Publishing House Pvt. Ltd. Volume-I"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23PC2104B",
+      "course_name": "Engineering Mechanics",
+      "semester": "2",
+      "category": "Professional Core",
+      "credits": 3,
+      "prerequisites": "Basic Mathematics, Physics at (10 + 2) level",
+      "course_outcomes": [
+        "Analyze coplanar concurrent , parallel forces and evaluate centroid for plane figures",
+        "Analyze coplanar general case forces and evaluate moment of inertia for plane figures",
+        "Analyze rectilinear and curvilinear motion of particles",
+        "Evaluate the moment of inertia of material bodies and analyze the fixed axis rotation of rigid bodies."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Equilibrium of Concurrent and Parallel Forces",
+        "topics": "Composition and resolution of forces, Free body diagram, Equilibrium of concurrent forces in a plane. Types of parallel forces, Resultant, Couple, Resolution of Force into force and a couple. Centroids of standard and composite figures."
+      },
+      {
+        "unit_number": "2",
+        "title": "Friction and General Force Systems",
+        "topics": "Introduction, limiting friction, Coulomb’s laws of dry friction, coefficient of friction, Cone of static friction. Equilibrium of forces in plane-Analysis of plane trusses: Method of joints. Area Moments of Inertia: Definition, Polar Moment of Inertia, Transfer Theorem, Moments of Inertia of Composite Figures."
+      },
+      {
+        "unit_number": "3",
+        "title": "Kinematics and Kinetics of Rectilinear and Curvilinear Motion",
+        "topics": "Kinematics of Rectilinear motion: Displacement, Velocity and acceleration, Motion of Uniform and Variable acceleration. Kinetics of Rectilinear motion: D’Alembert’s Principle. Kinematics of Curvilinear motion: Rectangular components of velocity and acceleration, Normal and tangential acceleration, Motion of projectiles. Kinetics of Curvilinear motion: D’Alembert’s Principle."
+      },
+      {
+        "unit_number": "4",
+        "title": "Mass Moment of Inertia and Rigid Body Motion",
+        "topics": "Mass Moment of Inertia: Moment of Inertia of Masses, Transfer Formula, Mass moment of inertia of slender rod, Circular disc, Cone, Solid cylinder & Sphere. Rigid body Motion: Kinematics of rotation, Kinetics of a rigid body in rotation of about a fixed axis. Kinematics of Rigid body: Plane motion: Method of Instantaneous center of rotation."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Engineering Mechanics by S. Timoshenko & D. H. Young, 4th Edition, 2007, McGraw Hill International Edition.",
+        "Engineering Mechanics Statics and dynamics by A. K. Tayal, 13th Edition, 2006, Umesh Publication, Delhi",
+        "A Textbook of Engineering Mechanics, S.S Bhavikatti. New age international publications 2018"
+      ],
+      "reference_books": [
+        "Engineering Mechanics, P.C.Dumir- S.Sengupta and Srinivas V Veeravalli , University press. 2020. First Edition.",
+        "Engineering Mechanics, Statics and Dynamics, I.H. Shames., PHI, 2002. 4th Edition.",
+        "Engineering Mechanics, Volume-I: Statics, Volume-II: Dynamics, J. L. Meriam and L. G. Kraige., John Wiley, 2008. 6th Edition"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23HS2105",
+      "course_name": "Communicative English",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 2,
+      "prerequisites": "Basic understanding of the language skills viz Listening, Speaking, Reading and Writing, including Sentence construction abilities",
+      "course_outcomes": [
+        "Understand the context, topic, and pieces of specific information from social or Transactional dialogues",
+        "Apply grammatical structures to formulate sentences and correct word forms.",
+        "Analyze discourse markers to speak clearly on a specific topic in informal discussions.",
+        "Evaluate reading texts / listening to write summaries based on global comprehension and create a coherent paragraph, essay and résumé"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Human Values",
+        "topics": "Lesson: HUMAN VALUES: Gift of Magi (Short Story). Listening, Speaking, Reading, Writing, Grammar, and Vocabulary skills."
+      },
+      {
+        "unit_number": "2",
+        "title": "Nature",
+        "topics": "Lesson: NATURE: The Brook by Alfred Tennyson (Poem). Listening, Speaking, Reading, Writing, Grammar, and Vocabulary skills."
+      },
+      {
+        "unit_number": "3",
+        "title": "Biography",
+        "topics": "Lesson: BIOGRAPHY: Elon Musk. Listening, Speaking, Reading, Writing, Grammar, and Vocabulary skills."
+      },
+      {
+        "unit_number": "4",
+        "title": "Inspiration",
+        "topics": "Lesson: INSPIRATION: The Toys of Peace by Saki. Listening, Speaking, Reading, Writing, Grammar, and Vocabulary skills."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Pathfinder: Communicative English for Undergraduate Students, 1st Edition, Orient Black Swan, 2023",
+        "Empowering with Language by Cengage Publications, 2023",
+        "English: Language, Context and Culture, 1st Edition, Orient Black Swan, 2023"
+      ],
+      "reference_books": [
+        "Dubey, Sham Ji & Co. English for Engineers, Vikas Publishers, 2020",
+        "Bailey, Stephen. Academic writing: A Handbook for International Students. Routledge, 2014.",
+        "Murphy, Raymond. English Grammar in Use, Fourth Edition, Cambridge University Press, 2019.",
+        "Lewis, Norman. Word Power Made Easy- The Complete Handbook for Building a Superior Vocabulary. Anchor, 2014."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS2151",
+      "course_name": "Engineering Physics Lab",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Test optical components using principles of interference and diffraction of light",
+        "Use spectrometer, travelling microscope and function generator in various experiments",
+        "Determine the V-I characteristics of photo cells and appreciate the accuracy in measurements"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "Determination of radius of curvature of a given Plano-convex lens by Newton’s rings.",
+          "Study the variation of B versus H by magnetizing the magnetic material (B-H curve).",
+          "Determination of wavelength of Laser light using diffraction grating.",
+          "Estimation of stopping potential and work function of a photo material using photoelectric effect.",
+          "Magnetic field along the axis of a current carrying circular coil by Stewart Gee’s Method.",
+          "Determination of Hall voltage and Hall coefficient of a given semiconductor using Hall Effect.",
+          "Determination of Acceleration due to Gravity and radius of Gyration by using a compound pendulum.",
+          "Sonometer: Verification of laws of stretched string.",
+          "Determination of Dielectric constant of different solid materials.",
+          "Determination of Numerical Aperture of a given optical fiber.",
+          "Determination of Frequency of electrically maintained tuning fork by Melde’s experiment.",
+          "Determination of Rigidity Modulus of the material of the given wire using Torsional pendulum."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Madhusudhan Rao, “Engineering Physics Lab Manual”, Ist ed., Scitech Publications, 2015",
+        "Ramarao Sri, Choudary Nityanand and Prasad Daruka, ”Lab Manual of Engineering Physics”., Vth ed., Excell Books, 2010"
+      ],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23PC2152E",
+      "course_name": "Engineering Mechanics Lab (ME)",
+      "semester": "2",
+      "category": "Professional Core",
+      "credits": 1.5,
+      "prerequisites": "10 + 2 level Physics",
+      "course_outcomes": [
+        "Evaluate the coefficient of friction between two different surfaces and between the inclined plane and the roller.",
+        "Verify Law of Polygon of forces and Law of Moment using force polygon and bell crank lever.",
+        "Determine the Centre of gravity and Moment of Inertia of different configurations.",
+        "Verify the equilibrium conditions of a rigid body under the action of different force systems."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "Verification of Law of Parallelogram of Forces.",
+          "Verification of Law of Triangle of Forces.",
+          "Verification of the Law of polygon for coplanar-concurrent forces.",
+          "Determination of coefficient of Static and Rolling Frictions",
+          "Determination of Centre of Gravity of different shaped Plane Lamina.",
+          "Verification of the conditions of equilibrium of a rigid body.",
+          "Study of the systems of pulleys and draw the free body diagram.",
+          "Determine the acceleration due to gravity using a compound pendulum.",
+          "Determine the Moment of Inertia of the compound pendulum.",
+          "Determine the Moment of Inertia of a Flywheel.",
+          "Verification of Law of Moment using Rotation Disc Apparatus and Bell Crank Lever."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "S. Timoshenko, D. H. Young, J.V. Rao, S. Pati., Engineering Mechanics, 5th Edition, McGraw Hill Education.",
+        "Hibbeler R.C., Engineering Mechanics: Statics and Dynamics, 14th Edition, Pearson Education, Inc., New Delhi, 2022"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23HS2153",
+      "course_name": "Communicative English Lab",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 1,
+      "prerequisites": "Basic understanding of the language skills",
+      "course_outcomes": [
+        "Understand the different aspects of the English language proficiency with emphasis on LSRW skills.",
+        "Apply communication skills through various language learning activities.",
+        "Analyze the English speech sounds, stress, rhythm, intonation and syllable division for better listening and speaking comprehension.",
+        "Evaluate and exhibit professionalism in participating in debates and group discussions."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Topics",
+        "topics": [
+          "Vowels and Consonants",
+          "Neutralizaton/Accent Rules",
+          "Communication Skills & JAM",
+          "Role Play or Conversational Practice",
+          "E-mail Writing",
+          "Resume Writing, Cover Letter, SOP",
+          "Group Discussions-methods & practice",
+          "Debates – Methods & Practice",
+          "PPT Presentations/Poster Presentations",
+          "Interview Skills"
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES2154",
+      "course_name": "Engineering Workshop",
+      "semester": "2",
+      "category": "Engineering Science",
+      "credits": 1.5,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand the basic joints using wood and familiarize with various fundamental aspects of house wiring, fitting and foundry.",
+        "Prepare basic models using sheet metal and practice joining of metals using various types of welding.",
+        "Familiarize with various advanced manufacturing processes such as injection moulding and 3D printing.",
+        "Understand the preparation of PCB and simple IOT applications using Arduino"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Trades",
+        "topics": "Demonstration: Safety practices. Wood Working: Half–Lap joint, Bridle joint. Sheet Metal Working: Tapered tray, Conical funnel. Fitting: V-fit, Semi-circular fit, Bicycle tire puncture. Electrical Wiring: Parallel and series, Two-way switch, Godown lighting, Tube light. Foundry Trade: Preparation of Green Sandmoulds. Welding Shop: Arc Welding and Gas welding. Advanced manufacturing processes: injection moulding and 3D printing. Electronic Circuits: preparation of simple electronic circuit (PCB). Basic IOT: Measure Temperature & Humidity, Measure Distance."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Basic Workshop Technology: Manufacturing Process, Felix W.; Independently Published,2019.",
+        "Workshop Processes, Practices and Materials; Bruce J. Black, Routledge publishers, 5th Edn. 2015.",
+        "A Course in Workshop Technology Vol I. & II, B.S. Raghuwanshi, DhanpathRai& Co., 2015 & 2017."
+      ],
+      "reference_books": [
+        "Elements of Workshop Technology, Vol. I by S. K. Hajra Choudhury & Others, Media Promoters and Publishers, Mumbai. 2007, 14th edition.",
+        "Workshop Practice by H. S. Bawa, Tata-McGraw Hill, 2004.",
+        "Wiring Estimating, Costing and Contracting; Soni P.M. &Upadhyay P.A.; AtulPrakashan, 2021-22."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES2155",
+      "course_name": "IT Work shop",
+      "semester": "2",
+      "category": "Engineering Science",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Perform Hardware troubleshooting.",
+        "Understand Hardware components and inter dependencies.",
+        "Safeguard computer systems from viruses/worms.",
+        "Document/ Presentation preparation.",
+        "Perform calculations using spreadsheets."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Tasks",
+        "topics": "PC Hardware & Software Installation: Identify peripherals, Disassemble and assemble PC, Install MS windows, Linux, and BOSS. Internet & World Wide Web: Configure TCP/IP, Web Browsers, Surfing, Search Engines, Cyber Hygiene. LaTeX and WORD: Word Orientation, Create project certificate, project abstract, Newsletter. EXCEL: Excel Orientation, Creating a Scheduler, Calculating GPA, LOOKUP/VLOOKUP. POWER POINT: Basic utilities, Interactive presentations, Master Layouts. AI TOOLS – ChatGPT: Prompt Engineering, Creative Writing, Language Translation."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "Comdex Information Technology course tool kit, Vikas Gupta, WILEY Dream tech, 2003",
+        "The Complete Computer upgrade and repair book, Cheryl A Schmidt, WILEY Dream tech,2013, 3rd edition",
+        "Introduction to Information Technology, ITL Education Solutions limited, Pearson Education, 2012, 2nd edition"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS2156",
+      "course_name": "NSS/NCC/Community Service",
+      "semester": "2",
+      "category": "Basic Science",
+      "credits": 0.5,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand the importance of discipline, character and service motto.",
+        "Solve some societal issues by applying acquired knowledge, facts, and techniques.",
+        "Explore human relationships by analyzing social problems.",
+        "Determine to extend their help for the fellow beings and downtrodden people.",
+        "Develop leadership skills and civic responsibilities."
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Orientation",
+        "topics": "General Orientation on NSS/NCC/ Scouts & Guides/Community Service activities, career guidance."
+      },
+      {
+        "unit_number": "2",
+        "title": "Nature & Care Activities",
+        "topics": "Best out of waste competition, Poster and signs making competition, Recycling and environmental pollution article writing competition, Organising Zero-waste day, Digital Environmental awareness activity, Virtual demonstration of eco-friendly approaches, Write a summary on any book related to environmental issues."
+      },
+      {
+        "unit_number": "3",
+        "title": "Community Service Activities",
+        "topics": "Conducting One Day Special Camp in a village, awareness programs on Health-related issues, consumer Awareness, Women Empowerment Programmes."
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [
+        "Nirmalya Kumar Sinha & Surajit Majumder, A Text Book of National Service Scheme Vol;.I, Vidya Kutir Publication, 2021 ( ISBN 978-81-952368-8-6)",
+        "Red Book - National Cadet Corps – Standing Instructions Vol I & II, Directorate General of NCC, Ministry of Defence, New Delhi",
+        "Davis M. L. and Cornwell D. A., “Introduction to Environmental Engineering”, McGraw Hill, New York 4/e 2008",
+        "Masters G. M., Joseph K. and Nagendran R. “Introduction to Environmental Engineering and Science”, Pearson Education, New Delhi. 2/e 2007",
+        "Ram Ahuja. Social Problems in India, Rawat Publications, New Delhi."
+      ]
+    }
+  },
+
+  {
+    "metadata": {
+      "course_code": "23BS3101A",
+      "course_name": "Mechanics of Solids",
+      "semester": "3",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "Engineering Mechanics",
+      "course_outcomes": [
+        "Understand the concepts of stresses, strains and principles stresses and strains",
+        "Determine the shear forces and bending moments",
+        "Determine the bending stresses and deflection at any point subjected to loads",
+        "Determine the shear stress in beams, torsion in shafts, strain energy",
+        "Determine the compound stresses and behavior of columns"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Stresses and Strains & Shear Force and Bending Moment",
+        "topics": "Stress and strain - Hooke‘s law -tension -compression and shear-Lateral strain, Poisson‘s ratio and volumetric strain – Elastic moduli and the relationship between them – Bars of varying section –composite bars – Temperature stresses- Simple problems. Concept of Principal Stresses and Strains. Shear Force and Bending Moment diagrams of statically determinate beams."
+      },
+      {
+        "unit_number": "2",
+        "title": "Flexural Stresses & Slope and Deflection",
+        "topics": "Theory of simple bending – Assumptions – Derivation of bending equation - Neutral axis –Determination of bending stresses – Section modulus of across various beam sections. Relationship between moment; slope and deflection; Macaulay‘s method; Moment area method; Use of these methods to calculate slope and deflection for determinant beams- Simple problems;Castigliano‘s theorem."
+      },
+      {
+        "unit_number": "3",
+        "title": "Shear Stresses and Torsion & Strain Energy",
+        "topics": "Derivation of formula of shear stress– Shear stress distribution across various beam sections - Derivation of torsion equation and its assumptions; Applications of the equation of the hollow and solid circular shafts; Torsional rigidity; Simple problems. Introduction; Derivation of expressions for elastic strain energy in uni -axial stress; elastic strain energy in pure bending; elastic strain energy for shearing stresses; elastic strain energy of a bar in pure torsion."
+      },
+      {
+        "unit_number": "4",
+        "title": "Compound Stresses & Columns",
+        "topics": "Introduction; Principle of superposition and its limitation; Stress distribution on various cross sections of members due to eccentric loads; Middle third rule; Core or Kernel of a section. Introduction, Stability of equilibrium; The Euler‘s formula for columns with different end restraints; Limitations of the Euler‘s formulas; Generalized Euler buckling – load formulas;"
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Er.R.K.Rajput, ―Strength of Materials(Mechanics of solids)‖, S.Chand& Company Ltd, New Delhi.",
+        "S.Ramamrutham& R Narayan, ―Strength of Materials‖, DhanpatRai Publishing Co.(P) Ltd, New Delhi."
+      ],
+      "reference_books": [
+        "S SBhavikatti, ―Structural Analysis‖, V K Publishers.",
+        "S P Timoshenki& D H Young, ―Theory of structures‖.",
+        "E P Popov, ―Mechanics of materials‖, Prentice-hall of India Pvt. Ltd., New Delhi."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23HS3102",
+      "course_name": "Universal Human Values 2: Understanding Harmony",
+      "semester": "3",
+      "category": "Humanities and Social Sciences",
+      "credits": 3,
+      "prerequisites": "Universal Human Values 1 desirable.",
+      "course_outcomes": [
+        "understand and aware of themselves and their surroundings(family, society and nature)",
+        "handle problems with sustainable solutions, while keeping human relationships and human nature in mind",
+        "exhibit critical ability and become sensitive to their commitment towards their understanding of human values, human relationship and human society",
+        "apply what they have learnt to their own self in different day-to-day settings in real life"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Course Introduction, Need, Basic Guidelines, Content and Process for Value Education",
+        "topics": "Purpose and motivation for the course, recapitulation from UHV-I, Self-exploration, ‗Natural acceptance‘ and experiential validation. Continuous Happiness and Prosperity. Right understanding, Relationship and Physical Facility. Understanding Happiness and Prosperity correctly. Method to fulfill human aspirations: understanding and living in harmony at various levels."
+      },
+      {
+        "unit_number": "2",
+        "title": "Understanding Harmony in the Human Being – Harmony in Myself",
+        "topics": "Understanding human being as a co-existence of the sentient ‗I‘ and the material ‗Body‘. Understanding the needs of Self (‗I‘) and ‗Body‘. Understanding the Body as an instrument of ‗I‘. Understanding the characteristics and activities of ‗I‘ and harmony in ‗I‘. Understanding the harmony of I with the Body: Sanyam and Health; correct appraisal of Physical needs, meaning of Prosperity in detail, Programs to ensure Sanyam and Health."
+      },
+      {
+        "unit_number": "3",
+        "title": "Understanding Harmony in the Family and Society – Harmony in Human-Human Relationship",
+        "topics": "Understanding values in human-human relationship; meaning of Justice (nine universal values) and program for its fulfillment; Trust and Respect as the foundational values. Understanding the harmony in the society; Resolution, Prosperity, fearlessness (trust) and co-existence as comprehensive Human Goals, Visualizing a universal harmonious order in society–Undivided Society, Universal Order–from family to world family."
+      },
+      {
+        "unit_number": "4",
+        "title": "Understanding Harmony in Nature & Existence and Implications on Professional Ethics",
+        "topics": "Understanding the harmony in the Nature, Interconnectedness and mutual fulfillment among the four orders of Nature. Understanding Existence as Co-existence. Holistic perception of harmony. Natural acceptance of human values, Definitiveness of ethical human conduct. Competence in professional ethics. Case studies of typical holistic technologies, management models and production systems. Strategy for transition to Universal Human Order."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Human values and professional ethics, R. R. Gaur, R. Sangal and G. P. Bagaria, Excel Books Private Limited, New Delhi (2010)."
+      ],
+      "reference_books": [
+        "JeevanVidya: EkParichaya, A. Nagaraj, JeevanVidyaPrakashan, Amarkantak (1999).",
+        "Human Values, A. N. Tripathi, New Age International Publishers, New Delhi (2004).",
+        "The Story of Stuff: The impact of overconsumption on the planet, our communities, and our health and how we can make it better, Annie Leonard, Free Press, New York (2010).",
+        "The story of my experiments with truth: Mahatma Gandhi Autobiography, Mohandas Karamchand Gandhi, B. N. Publishing (2008).",
+        "Small is beautiful: A study of economics as if people mattered, E. F. Schumacher, Vintage Books, London (1993).",
+        "Slow is beautiful: New Visions of Community, Cecile Andrews, New Society Publishers, Canada (2006).",
+        "Economy of Permanence, J. C. Kumarappa, Sarva-Seva-SanghPrakashan, Varanasi (2017).",
+        "Bharat Mein Angreji Raj, PanditSunderlal, PrabhathPrakashan, Delhi (2018).",
+        "Rediscovering India, Dharampal, Society for Integrated Development of Himilayas (2003).",
+        "Hind Swaraj or Indian Home Rule, M. K. Gandhi, Navajivan Publishing House, Ahmedabad (1909).",
+        "India Wins Freedom: The Complete Version, MaulanaAbulKalam Azad, Orient Blackswan(1988).",
+        "The Life of Vivekananda and the Universal gospel, Romain Rolland, AdvaithaAshrama, India (2010).",
+        "Mahatma Gandhi: The Man who become one with the Universal Being, Romain Rolland, Srishti Publishers & Distributors, New Delhi (2002)."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES3103A",
+      "course_name": "Engineering Geology",
+      "semester": "3",
+      "category": "Engineering Science",
+      "credits": 2,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "analyze and classify various minerals and rocks on the basis of their engineering properties",
+        "apply quantitative skills and frame work for solving basic engineering geology problems related to geological features and geological hazards",
+        "understand the importance of geo physical methods making engineering decisions specially site selection of engineering projects",
+        "evaluate geological problems for a meaningful solution in the context of major civil engineering projects and their environmental impact"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Geological Materials",
+        "topics": "Scope of geological studies in Civil engineering projects. Mineralogy: Mineral Identification by Physical properties of rock forming minerals (Quartz, Feldspar, Mica, Carbonate Groups). Petrology: Rock cycle, formation, classification and textures of Igneous, Sedimentary, and Metamorphic rocks. Lab exercises include identifying common minerals and rocks."
+      },
+      {
+        "unit_number": "2",
+        "title": "Earth Process",
+        "topics": "Weathering and its importance. Earthquakes: causes, effects, magnitude, intensity scales, seismic zones of India. Landslides: classification and preventive measures. Structural geology: Stress-strain behavior, strike and dip, Folds, Faults, and Joints and their effects on construction. Lab exercise includes identification of structural features on models."
+      },
+      {
+        "unit_number": "3",
+        "title": "Geological and Geophysical Investigation Methods",
+        "topics": "Maps and their interpretation: Topographic and Geological maps. Lab exercise involves practicing map cross-sections. Geophysical Methods: Principles of Electrical Resistivity and Seismic refraction methods and their interpretation. Lab exercise on Electrical Resistivity survey."
+      },
+      {
+        "unit_number": "4",
+        "title": "Geological Investigations for Major Projects",
+        "topics": "Dams: Types, purpose, and geological investigation methods. Reservoirs: Failure, suitable rocks, induced seismicity. Tunnels: Site selection and investigation methods. Environmental Geology: Impact of mining construction materials, impact of environment on dams and reservoirs."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "F.G. Bell, Fundamental of Engineering Geology, BS Publications PVT Ltd, Hyderabad.",
+        "Parbin Singh, \" Engineering and General Geology \", Katson Publication House, 1987.",
+        "Principals of Engineering Geology by K.V.G.K. Gokhale – B.S publications",
+        "Engineering Geology by N.Chennkesavulu, Mc-Millan, India Ltd. 2005.",
+        "Environmental Geology by K.S Valdia, TaTaMcGraHill, NewDelhi"
+      ],
+      "reference_books": [
+        "Krynine and Judd, \" Engineering Geology and Geo techniques \" McGraw Hill Book Company, 1990.",
+        "Legeet, \" Geology and Engineering \", McGraw Hill Book Company, 1998.",
+        "Blyth, \" Geology for Engineers \", ELBS, 1995.",
+        "GoodmanR.F-Introduction to rockmechanics, JohnWiley, Chichestor",
+        "S.K Duggal et.al Engineering Geology –McGraw Hill Education, 2002.",
+        "E.A Keller-Environmental Geology- Prientice Hall .N.Jercy"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE3304",
+      "course_name": "Surveying and Geomatics",
+      "semester": "3",
+      "category": "Program Core",
+      "credits": 4,
+      "prerequisites": "Basic Mathematics",
+      "course_outcomes": [
+        "Understand the basic principles of surveying and measure linear distances and areas using chain and compass surveying",
+        "Understand and apply the concept of levelling to determine the elevations and contours",
+        "Understand the principles of theodolite survey and measure horizontal and vertical angles using theodolite survey",
+        "Evaluate areas and volumes of various sections",
+        "Understand various modern field equipments"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Basics of Surveying and Chain Surveying",
+        "topics": "Surveying definition, classification, principles, scales, errors. Chain surveying principles, instruments, methods for chaining on flat and sloping ground, and corrections. Lab tests include area determination and measuring distance with obstacles."
+      },
+      {
+        "unit_number": "2",
+        "title": "Levelling and Contouring",
+        "topics": "Definitions, benchmarks, methods of levelling, auto level, levelling staff, booking methods (Height of Instrument, rise and fall). Profile leveling and cross sectioning. Contouring, contour interval, characteristics, methods, interpolation, and uses. Lab tests include differential leveling, plotting sections, and preparing contour maps."
+      },
+      {
+        "unit_number": "3",
+        "title": "Theodolite Surveying and Circular Curves",
+        "topics": "Parts of a vernier theodolite, definitions, adjustments, measurement of horizontal and vertical angles, and errors. Circular curves definitions, designation, elements, and setting out. Lab tests include measuring horizontal and vertical angles."
+      },
+      {
+        "unit_number": "4",
+        "title": "Areas & Volumes and Modern Field Survey Systems",
+        "topics": "Area calculation for irregular boundaries, coordinates method, planimeter. Volume calculation using Trapezoidal and Prismoidal formulas, and reservoir capacity. Introduction to EDM, Total Station, and GPS. Lab tests include traverse and area computation with a prismatic compass."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Surveying, Volume-1 by K. R. Arora; Standard Book House.",
+        "Advanced Surveying by SatheeshGopi, R. Sathikumar, N. Madhu; Pearson Education"
+      ],
+      "reference_books": [
+        "Surveying, Volime-1 by B.C.Punmia; McGraw Hill Education (India) Private Limited"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE3305",
+      "course_name": "Fluid Mechanics",
+      "semester": "3",
+      "category": "Programme Core",
+      "credits": 3,
+      "prerequisites": "Mathematics, Engineering Physics, Engineering Mechanics",
+      "course_outcomes": [
+        "Evaluate the pressure of the flowing fluid",
+        "Understand the kinematic and dynamic behavior of flow",
+        "Apply the principles to measure the flow of fluid through pipes and Orifices",
+        "Analyze the flow through pipes"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Properties of Fluid and Fluid Statics",
+        "topics": "Properties of Fluid, Units, Fluid Continuum, Newtonian and Non-Newtonian fluids, Vapour pressure. Variation of static pressure, Pascal‘s Law, Atmospheric, Absolute and gauge pressure, Hydrostatic pressure on horizontal, vertical and inclined plane surfaces."
+      },
+      {
+        "unit_number": "2",
+        "title": "Kinematics and Dynamics of Fluid Flow",
+        "topics": "Methods of describing fluid motion, Classification of flow, Stream line, Path line, Streak line, Continuity equation, Velocity potential and stream function. Euler‘s equation of motion, Bernoulli‘sequation, Momentum principle, Application of Momentum equation, Force exerted on a pipe bend."
+      },
+      {
+        "unit_number": "3",
+        "title": "Measurement of Flow",
+        "topics": "Measurement of flow through Pipes using devices like Venturi meter and orifice meter. Measurement of velocity by Pitot tube. Flow through orifices, determination of coefficients, flow through small and large rectangular orifices."
+      },
+      {
+        "unit_number": "4",
+        "title": "Analysis of Flow Through Pipes and Laminar Flow",
+        "topics": "Energy losses in pipelines, Darcy–Weishbach equation, Minor losses, Pipes in series and parallel. Relation between shear and Pressure Gradients in Laminar Flow, Reynold‘s experiment, Critical velocity, Steady laminar flow through a circular pipe – Hagen Poiseuille‘s Law, Laminar Flow between Parallel Plates."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "P.N. Modi& S.N. Seth, ―Hydraulics & Fluid Mechanics‖, 18th ed., Standard Book House, New Delhi, 2015.",
+        "A.K. Jain, ―Fluid Mechanics‖, 11th ed., Khanna Publishers, New Delhi, 2014."
+      ],
+      "reference_books": [
+        "R. K. Bansal, ―Fluid Mechanics and Hydraulic Machines‖, 9thet.,Laxmi Publications; New Delhi, 2015.",
+        "Rajput R.K., ―Fluid Mechanics and Hydraulic Machines‖, 3rd ed., S.Chand and Company Ltd., New Delhi, 2014.",
+        "K. Subramanya, ―Theory and Applications of Fluid Mechanics‖, 3rd ed., Tata McGraw Hill Publishing Company, New Delhi, 2013."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23TP3106",
+      "course_name": "Logic and Reasoning",
+      "semester": "3",
+      "category": "Soft Skills-1",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Think reason logically in any critical situation",
+        "Analyze given information to find correct solution",
+        "To reduce the mistakes in day to day activities in practical life",
+        "Develop time management skills by approaching different shortcut methods",
+        "Use mathematical based reasoning to make decisions",
+        "Apply logical thinking to solve problems and puzzles in qualifying exams for companies and in other competitive exams"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Unit I Topics",
+        "topics": "Series Completion, Coding-Decoding, Blood Relation, Puzzles test."
+      },
+      {
+        "unit_number": "2",
+        "title": "Unit II Topics",
+        "topics": "Direction sense test, Logical Venn diagrams, Number test, ranking test, Mathematical operations."
+      },
+      {
+        "unit_number": "3",
+        "title": "Unit III Topics",
+        "topics": "Arithmetical Reasoning, Inserting missing character, Syllogism, Binary logic, Data sufficiency."
+      },
+      {
+        "unit_number": "4",
+        "title": "Unit IV Topics",
+        "topics": "Water images, Mirror images, Paper folding, Paper cutting, Embedded Figures, Dot situation, Cubes & Dice."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "R. S. Aggarwal, ― Verbal and non-verbal reasoning‖, Revised Edition, S Chand publication, 2017 ISBN:81-219-0551-6,",
+        "Reasoning Guru Verbal & Non-Verbal Reasoning by Vikramjeeth, Multilingual Edition-2023. ISBN :978-9358706000"
+      ],
+      "reference_books": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23MC3107B",
+      "course_name": "Environmental Science",
+      "semester": "3",
+      "category": "Audit Course",
+      "credits": 0,
+      "prerequisites": "Consciousness of Environment to make it a better place to live.",
+      "course_outcomes": [
+        "identify various factors causing degradation of natural resource, (remember, understand, apply)",
+        "identify various ecosystem and need for biodiversity(apply)",
+        "realize and explore the problems related to environmental pollution and its management(analyze, evaluate)",
+        "apply the information and technology to analyze social issues, use acts associated with environment (create)"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "The Multidisciplinary Nature of Environmental Studies and Natural Resources",
+        "topics": "Definition, scope, importance, and need for public awareness. Renewable and non-renewable resources including Forest, Water, Mineral, Food, Energy, and Land resources, and associated problems like deforestation, over-exploitation, and conservation."
+      },
+      {
+        "unit_number": "2",
+        "title": "Ecosystems and Biodiversity",
+        "topics": "Concept, structure, and function of ecosystems including producers, consumers, decomposers, energy flow, and ecological succession. Types of ecosystems. Biodiversity: genetic, species and ecosystem diversity, value of biodiversity, India as a mega-diversity nation, hotspots, threats, and conservation methods."
+      },
+      {
+        "unit_number": "3",
+        "title": "Environmental Pollution and Solid Waste Management",
+        "topics": "Causes, effects, and control measures for Air, Water, Soil, Marine, Noise, Thermal pollution and Nuclear hazards. Solid Waste Management: causes, effects, and control measures. Role of an individual in pollution prevention. Disaster Management: Floods, earthquake, cyclone and landslides."
+      },
+      {
+        "unit_number": "4",
+        "title": "Social Issues and the Environment",
+        "topics": "Sustainable development, urban energy problems, water conservation, and environmental ethics including climate change and global warming. Environmental Protection Acts. Public awareness topics like Population growth, Human rights, and the role of IT in environment and human health."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Erach Bharucha. 2004, Environmental Studies for undergraduate courses, University Grants Commission, New Delhi, Bharati Vidyapeeth Institute of Environment Education and Research."
+      ],
+      "reference_books": [
+        "AnjaneyuluY. Introduction to Environmental sciences, B S Publications PVT Ltd, Hyderabad",
+        "Anjireddy.M Environmental science & Technology, BS Publications PVT Ltd, Hyderabad.",
+        "Benny Joseph, 2005, Environmental Studies, The Tata McGraw- Hill publishing company limited, New Delhi.",
+        "Principles of Environmental Science. &Engg. P.Venu Gopala Rao, 2006, Prentice-Hall of India Pvt. Ltd., New Delhi.",
+        "Ecological and Environmental Studies – Santosh Kumar Garg, Rajeswari Garg (or) Rajani Garg, 2006, Khanna Publishers, New Delhi.",
+        "Essentials of Environmental Studies, Kurian Joseph & R Nagendran, Pearson Education publishers, 2005.",
+        "A.K Dee – Environmental Chemistry, New Age India Publications.",
+        "BharuchaErach- Biodiversity of India, Mapin Publishing Pvt.Ltd.."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE3308",
+      "course_name": "Concrete Technology",
+      "semester": "3",
+      "category": "Programme Core",
+      "credits": 3,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand the manufacturing process of cement, types of cements and chemical composition of cement",
+        "Apply properties of the constituent materials in concrete",
+        "Analyze and Compare the Properties of fresh and hardened concrete",
+        "Understand effects of various chemical actions on concrete",
+        "Evaluate various special concretes and concreting methods based on the scenario",
+        "Evaluate an appropriate concrete mix deign using Indian Standard"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Cement and Aggregates",
+        "topics": "Chemical Composition, manufacturing process, hydration, and types of cement. Storage and field tests. Lab tests: Fineness, consistency, setting time, specific gravity, compressive strength. Aggregates: Classification, properties, grading, and IS requirements. Lab tests: Sieve analysis, specific gravity, bulk density, bulking of sand."
+      },
+      {
+        "unit_number": "2",
+        "title": "Water, Mortar, Admixtures, and Fresh Concrete",
+        "topics": "Water quality and IS requirements. Mortar classification, properties, and selection. Admixtures: Air–entraining agents, plasticizers, accelerators, retarders. Concrete definition, proportioning, water-cement ratio, and properties of Fresh Concrete (Workability, Segregation, Bleeding). Lab tests: slump cone, compaction factor."
+      },
+      {
+        "unit_number": "3",
+        "title": "Manufacture of Concrete and Hardened Concrete",
+        "topics": "Batching, mixing, transporting, placing, compaction, and curing. Hardened Concrete properties: Gel/space ratio, strength gain, maturity concept, elastic properties, creep, and shrinkage. Lab tests: Compressive strength, flexural strength, split tensile test, and introduction to Non-Destructive Tests."
+      },
+      {
+        "unit_number": "4",
+        "title": "Durability, Special Concretes, and Mix Design",
+        "topics": "Durability issues: Permeability, sulphate attack, corrosion of reinforcement, and sustainability. Special Concretes: Light weight, high strength, polymer, fiber reinforced, shotcrete, ferro cement, vacuum, self-compacting, and self-healing concrete. Concrete Mix Design using Indian standard method (IS10262-2019)."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Concrete Technology by M. S. Shetty; S. Chand & Company (Pvt.) Ltd., New Delhi.",
+        "Properties of Concrete by A. M. Neville; Published by Dorling Kindersley (India) Pvt. Ltd. Licensees of Pearson Education in south Asia, New Delhi."
+      ],
+      "reference_books": [
+        "Concrete Technology by A.R.Santhakumar; Oxford University press,New Delhi..",
+        "Concrete Technology by M. L. Gambhir; Tata McGraw – Hill Publishing Company Ltd., New Delhi."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE3651",
+      "course_name": "Computer Aided Civil Engineering Drawing",
+      "semester": "3",
+      "category": "Skill Enhancement Course",
+      "credits": 1,
+      "prerequisites": "Engineering Graphics",
+      "course_outcomes": [
+        "apply the knowledgeofVariousmeasurementsand dimensionsofa building components",
+        "understandprinciplesofplanning,principlesofarchitectureandbuildin g Bye-laws",
+        "apply the principles of planning to secure building plansasper Building bye-laws",
+        "analyze the requirements of user to draw the plan, elevation, sectional view of the building as per principlesof planningand NBC"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "PART-A",
+        "title": "Introduction and Manual Drawing",
+        "topics": "Theory on principles of planning & architecture, Building bye-laws, conventional signs, plan, elevation, section, and standard dimensions. Manual drawing practice of signs, doors, windows, and wall sections. Design and drawing of a single bedroom residential building (load-bearing structure)."
+      },
+      {
+        "unit_number": "PART-B",
+        "title": "AutoCAD Drawing",
+        "topics": "Introduction to AutoCAD commands. Preparation of approval drawings (Plan, Elevation, Section) for: Single-storied residential double bedroom building (Load bearing structure), Dog-legged Staircase, RCC Two-storied framed structure building with staircase, and a single-storied Rural hospital/school building plan."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Buildingplanning,designingandschedulingbyGurucharanSingh andJagdishSingh.–StandardPublishers-Delhi.",
+        "BuildingDrawingbyM.G. Shah, C.M. Kale andS.Y.Patki; TataMcGrawHillPublishingCo.Ltd., New Delhi."
+      ],
+      "reference_books": [
+        "National Building Code, Bureau of Indian Standards, New Delhi, 2005.",
+        "Planning & Designing Buildings by Yashwant S. Sane; Allies Book Stall, Pune",
+        "Residential Interior Design: A Guide To Planning Spaces 3rd Edition by Maureen Mitton (Author), Courtney Nystuen (Author)"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23HS4101",
+      "course_name": "Engineering Economics and Management",
+      "semester": "4",
+      "category": "Management Course",
+      "credits": 2,
+      "prerequisites": "NIL",
+      "course_outcomes": [
+        "understand the principles of economics, income and goods and service tax",
+        "apply the concepts of management and demand forecasting",
+        "evaluate time value of money and various forms of decision making",
+        "apply the concept of financial importance in projects and budgeting process"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Economics and Managerial Economics",
+        "topics": "Introduction to Engineering Economics, Theory of Demand, Elasticity of Demand, Supply and Law of Supply. Introduction to Managerial Economics, Money, National Income, and Goods and Services Tax."
+      },
+      {
+        "unit_number": "2",
+        "title": "Concepts in Management & Demand Forecasting",
+        "topics": "Characteristics, Scope, Functions, and Levels of Management. Human Resource Management, Planning, Recruitment, and Selection. Introduction to Demand forecasting, methods, and Break-Even Analysis."
+      },
+      {
+        "unit_number": "3",
+        "title": "Time Value of Money and Decision Making",
+        "topics": "Simple and Compound Interest, Present Worth, Future Worth, and Annual Cash Flow Analysis. Rate of Return Analysis. Decision-Making Environments, Decision Tree Analysis, and Multiple Criteria Decision Making."
+      },
+      {
+        "unit_number": "4",
+        "title": "Financial Statements and Capital Budgeting",
+        "topics": "Financial Analysis, Trading Account, Profit and Loss Account, and Balance Sheet. Sources of Capital Funds, Capital Asset Pricing Model, and Capital Allocation."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Pravin Kumar, ―Engineering Economy and Management‖, 1st ed., Willey India, New Delhi, 2012.",
+        "R. Pannerselvam, ―Engineering Economics‖, 13th ed., PHI Learning Pvt. Ltd., New Delhi, 2012.",
+        "M. Mahajan, ―Industrial Engineering and Production Management‖ 2nd ed., Dhanpat Rai Publications."
+      ],
+      "reference_books": [
+        "Philip Kotler & Gary Armstrong ―Principles of Marketing‖, Pearson Prentice Hall, New Delhi,2012 Edition.",
+        "IM Pandey, ―Financial Management‖ 11th ed., Vikas Publications.",
+        "B.B Mahapatro, ―Human Resource Management‖, New Age International publishers, 2011."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23BS4102A",
+      "course_name": "Probability and Statistics for Engineers",
+      "semester": "4",
+      "category": "Basic Science",
+      "credits": 3,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "find probabilities using axioms and understand random variables",
+        "estimate Probability density functions",
+        "apply random phenomena of sample to estimate errors",
+        "analyze correlation, regression and quality improvement , control charts"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Probability and Probability Distributions",
+        "topics": "Sample Space, events, axioms of probability, conditional probability, Bayes‘ theorem. Discrete Random Variable, Expectation, Variance, Standard deviation, Binomial distribution, and Poisson distribution."
+      },
+      {
+        "unit_number": "2",
+        "title": "Probability Densities",
+        "topics": "Continuous Random Variable, Expectation, Variance, Standard deviation, Normal distribution, and Normal approximation to the Binomial distribution. Other densities include Uniform, Log normal, Gamma, Beta, and Weibull distributions."
+      },
+      {
+        "unit_number": "3",
+        "title": "Sampling Distributions and Estimation of Mean",
+        "topics": "Populations and Samples, Sampling distribution of the mean (SD known and unknown), and Sampling distribution of the variance. Point Estimation, Maximum error of estimate, and Interval Estimation."
+      },
+      {
+        "unit_number": "4",
+        "title": "Regression, Correlation, and Quality Improvement",
+        "topics": "Types of Correlation, Karl Pearson‘s coefficient, Rank Correlation, and Regression analysis. Quality Control, Control Charts for Measurements, and Control Charts for Attributes."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Probability and Statistics for Engineers ,Eighth edition by Richard A. Johnson Prentice Hall of India.",
+        "Probability and statistics by K.Murugesan, P.Guruswamy, AnuRadha Publications."
+      ],
+      "reference_books": [
+        "Probability & Statistics for Engineers & Scientist by R.E. Walpole, R.H.Myers&S.L.Myers, Sixth Edition, Prentice Hall of India / Pearson Education.",
+        "Probability and Statistics, Purna Chandra Biswal, Pearson Education Prentice Hall of India 2007.",
+        "Probability and Statistics by T.K.V.Iyengar, B.Krishna Gandhi, S.Ranganatham, M.V.S.S.N.PrasadS.Chand."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE4303",
+      "course_name": "Structural Analysis",
+      "semester": "4",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "Mechanics of Solids 20BS3101A",
+      "course_outcomes": [
+        "understand, draw and interpret influence line diagrams",
+        "apply energy methods for analysis of indeterminate beams and frames",
+        "analyze statically indeterminate structures using force and displacement methods",
+        "evaluate multistory frames for vertical and horizontal loads by approximate methods"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Influence Lines for Statically Determinate Structures",
+        "topics": "Influence lines for beam reaction, shearing forces, and bending moment using equilibrium principles. Calculation of maximum bending moment for rolling loads. Application of Muller Breslau Principle."
+      },
+      {
+        "unit_number": "2",
+        "title": "Analysis of Indeterminate Structures Using Energy Methods",
+        "topics": "Application of the Strain Energy Method for the analysis of continuous beams (up to two spans) and rigid frames (up to the first degree of redundancy)."
+      },
+      {
+        "unit_number": "3",
+        "title": "Analysis of Indeterminate Structures: Force and Displacement Methods",
+        "topics": "Force Method: Analysis of propped cantilevers by consistent deformation method and fixed beams. Displacement Methods: Application of the slope deflection method and moment distribution method for continuous beams (two spans) and portal frames without side sway."
+      },
+      {
+        "unit_number": "4",
+        "title": "Approximate Methods of Analysis for Multistory Frames",
+        "topics": "Kani's Method for continuous beams and portal frames without side sway. Analysis of lateral loads on multistory frames using the Portal method and Cantilever method."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Analysis of structures by Volume I –17 thEdition by Vazirani&Ratwani; & Volume –II 16 th Edition by Vazirani&Ratwani, Khanna Publications; Delhi,2015.",
+        "Structural Analysis by S.S. Bhavikatti, Volume-I and II, 4 thEdition, Vikas Publishing house PVT Ltd,2014."
+      ],
+      "reference_books": [
+        "Structural analysis by Hibbeler, 6 thEdition, Pearson India Education Services PvtLtd.2015",
+        "Structural Analysis by R.Vaidyanathan Volume-I and II, 3 rdEdition, Laxmi Publications (P) Ltd,2012.",
+        "Theory of structures by S. Ramamrutham, 9 thEdition, DhanapatRai Publications,2014.",
+        "Basic Structural Engineering by C.S Reddy, Tata McGraw Hill, ThirdEdition.",
+        "Theory of structuresVol–IbyG.S. Panditand S.P. Gupta and R.Gupta by Tata McGraw Hill Ltd., New Delhi."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE4304",
+      "course_name": "Geotechnical Engineering",
+      "semester": "4",
+      "category": "Program Core",
+      "credits": 4,
+      "prerequisites": "Not specified",
+      "course_outcomes": [
+        "Understand the origin of soil and basic inter-relationships of soil components",
+        "Determine the index properties of soil and classify the soil based on the index properties",
+        "Understand the Soil-Water Interactions",
+        "Understand and determine compressibility and shear strength characteristics of soils"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction, Basic Definitions, Index Properties and Soil Classification",
+        "topics": "Scope of Geotechnical Engineering, origin and formation of soils. Phase diagrams, volumetric and weight relationships. Index Properties: Particle Size Distribution, Plasticity, Consistency Limits. Unified and Indian standard soil classification systems. Experiments: water content, specific gravity, grain size analysis, liquid and plastic limits, in-situ density."
+      },
+      {
+        "unit_number": "2",
+        "title": "Soil Moisture, Permeability, and Effective Stress",
+        "topics": "Flow of water in soils, Darcy‘s law and its validity. Determination of coefficient of permeability. Seepage velocity and factors affecting permeability. Effective stress principle and its application under different loading conditions. Experiments: Constant head and Variable head permeability tests."
+      },
+      {
+        "unit_number": "3",
+        "title": "Seepage and Compaction of Soils",
+        "topics": "Quick sand conditions, characteristics and uses of flow nets. Seepage through earth dams. Compaction: Standard and modified proctor tests, factors affecting compaction, and field compaction control. Experiments: Standard proctor compaction test."
+      },
+      {
+        "unit_number": "4",
+        "title": "Consolidation and Shear Strength of Soils",
+        "topics": "Consolidation: Initial and secondary consolidation, Terazaghi's theory, consolidation test, and determination of coefficient of consolidation. Shear Strength: Mohr-coulomb theory, laboratory shear strength tests under different drainage conditions. Experiments: Direct shear test, Unconfined compression test, Vane shear test."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Soil Mechanics and Foundation Engineering by K.R. Arora; Standard Publishers & Distributors, NaiSarak, New Delhi.",
+        "Basic and Applied Soil Mechanics by GopalRanjan and A.S.R. Rao; New Age International Ltd., New Delhi."
+      ],
+      "reference_books": [
+        "Geotechnical Engineering by C. Venkata Ramaiah; published by New Age International Ltd., New Delhi.",
+        "Geotechnical Engineering by V. N. S. Murthy; Marcel Dekker Inc., New York.",
+        "Soil Mechanics and Foundation Engineering by B. C. Punmia; Laxmi Publications, Delhi.",
+        "Relevant Indian Standard Code Books – IS2720 series; SP 36-part 1."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE4305",
+      "course_name": "Hydraulics & Hydraulic Machines",
+      "semester": "4",
+      "category": "Programme Core",
+      "credits": 4,
+      "prerequisites": "20CE 3304 – Fluid Mechanics",
+      "course_outcomes": [
+        "evaluate the most economical dimensions of different channel sections",
+        "evaluate the flow through pipes and open channel",
+        "evaluate an equation for a phenomenon using dimensional analysis",
+        "analyze the performance of various Hydraulic machines"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Open Channel Flow: Uniform and Non-Uniform Flow",
+        "topics": "Classification of flows and channels. Equations by Chezy, Manning, Bazin, Kutter. Hydraulically efficient channel sections. Concept of specific energy and critical flow. Laboratory tests: Determine Chezy‘s and Manning‘s coefficients, Reynolds's Number, and flow-rate using a V Notch."
+      },
+      {
+        "unit_number": "2",
+        "title": "Gradually Varied Flow and Rapidly Varied Flow",
+        "topics": "Dynamic equation, types of surface profiles, and computation of surface profiles. Hydraulic jump, its elements, types, and applications. Laboratory tests: Validate Bernoulli‘s principle, determine coefficient of discharge for Venturimeter/Orificemeter, and workout flow rate using Orifice/Mouthpiece."
+      },
+      {
+        "unit_number": "3",
+        "title": "Dimensional Analysis and Impact of Jets",
+        "topics": "Dimensional homogeneity, Rayleigh‘s method, Buckingham – Pi theorem, and similarities. Force exerted by fluid jet on stationary and moving plates. Angular momentum principle. Laboratory tests: Measurement of force due to impact of jet and determination of minor/major head losses in pipes."
+      },
+      {
+        "unit_number": "4",
+        "title": "Hydraulic Turbines and Centrifugal Pumps",
+        "topics": "Classification of turbines (Impulse, Reaction). Pelton, Francis and Kaplan turbines. Draft tube theory and cavitation. Centrifugal Pumps: Types, working principle, manometric head, losses, efficiencies, and specific speed. Laboratory tests: Performance studies on centrifugal pump, reciprocating pump, and Francis turbine."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "P.N. Modi& S.N. Seth, ―Hydraulics & Fluid Mechanics‖, 18th ed., Standard Book House, New Delhi, 2015.",
+        "A.K. Jain, ―Fluid Mechanics‖, 11th ed., Khanna Publishers, New Delhi, 2014."
+      ],
+      "reference_books": [
+        "Jagadhishlal, ―Hydraulic Machines‖,9th ed., Metropoliton Company, New Delhi, 2012.",
+        "R. K. Bansal, ―Fluid Mechanics and Hydraulic Machines‖, 9th ed., Laxmi Publications; New Delhi, 2015.",
+        "Rajput R.K., ―Fluid Mechanics and Hydraulic Machines‖, 3rd ed., S.Chand and Company Ltd., New Delhi, 2014.",
+        "K. Subramanya, ―Flow in Open Channels‖ – 3rd ed., Tata McGraw Hill Publishing Company, New Delhi, 2013."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23TP4106",
+      "course_name": "English for Professionals",
+      "semester": "4",
+      "category": "Skill Enhancement",
+      "credits": 1,
+      "prerequisites": "Basic understanding of the language skills viz Listening, Speaking, Reading and Writing.",
+      "course_outcomes": [
+        "Understand how to listen, reflect, and speak while communicating with others",
+        "Recall the fundamentals of language in terms of grammar and vocabulary in communication",
+        "Apply English language skills in various speaking contexts to present ideas with clarity and accuracy",
+        "Analyze the different parts in Versant Test and answer them"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Course Content",
+        "topics": "Includes Conversation Starters, Functional Conversations, Grammar (Verbs, Tenses, Sentence Structures), Just A Minute (JAM), Vocabulary (Idioms, Phrases), Elocution, Extempore, Debate, Versant Test overview, and Story Telling techniques."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "English for Professionals Lab Manual"
+      ],
+      "reference_books": [
+        "Wren & Martin. English Grammar and Composition. S.Chand & Company, 2023.",
+        "Dale Carnegie. The Quick and Easy way to Effective Speaking. Rupa Publications, 2016.",
+        "Richard A. Spears. McGraw-Hill‘s Dictionary of American Idioms and Phrasal Verbs. McGraw Hill, 2005.",
+        "Kamalesh Sadanand. A Spoken English. VOL 1&2, Orient BlackSwan, Second Edition, 2014."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23MC4107A",
+      "course_name": "Building Materials and Construction",
+      "semester": "4",
+      "category": "Mandatory Course",
+      "credits": 0,
+      "prerequisites": "---",
+      "course_outcomes": [
+        "Understand physical properties, manufacturing processes and benefits of building materials that are used in structural and non-structural components",
+        "Understand application of protective materials for structural members",
+        "Distinguish different types of constructional procedures for different components of a building",
+        "Apply the knowledge of different support systems for construction and repairs"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Stones, Bricks, and Steel",
+        "topics": "Qualities, quarrying, and common types of building stones. Composition, manufacturing, qualities, tests, and classification of bricks. Manufacturing, uses, and market forms of steel."
+      },
+      {
+        "unit_number": "2",
+        "title": "Timber, Paints, Varnishes and Distempers",
+        "topics": "Structure, qualities, decay, preservation, and seasoning of timber. General principles of Painting, Varnishing, Distempering, Wall paper, White washing, Colour washing, and Emulsion Paints."
+      },
+      {
+        "unit_number": "3",
+        "title": "Masonry, Walls, and Lintels",
+        "topics": "Brick Masonry terms and types of bonds (Stretcher, header, English, Flemish). Stone Masonry terms and classification. Classification of walls and Lintels (timber, stone, brick, steel, reinforced concrete)."
+      },
+      {
+        "unit_number": "4",
+        "title": "Damp Proofing, Floors, Roofs, and Support Systems",
+        "topics": "Causes and methods of damp proofing. Types of flooring materials. Types of roofs and roof covering materials, including trusses. Introduction to Scaffolding, Shoring, Underpinning, and Formwork."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Engineering Materials by S. C. Rangwala; Charotar Publishing House.",
+        "Building construction by B. C. Punmia -Laxmi Publications, New Delhi."
+      ],
+      "reference_books": [
+        "Building construction and construction materials by G.S.Birdie and T.D.Ahuja, Dhanpathrai publishing company, New Delhi."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE4651",
+      "course_name": "Autodesk Revit and Excel for Engineers",
+      "semester": "4",
+      "category": "Skill Enhancement Course",
+      "credits": 1,
+      "prerequisites": "---",
+      "course_outcomes": [
+        "analyze 3D Structural elements using Autodesk Revit and develop drawings with the necessary details for construction",
+        "apply spreadsheet techniques to solve different engineering problems"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "PART-A",
+        "title": "Autodesk Revit Structures",
+        "topics": "Design and drawing of 3D structural elements. Working with grids, levels, columns, beams, walls, floors, and foundations. Creating views and annotations. Converting AutoCAD 2D drawings to 3D models. Modeling steel truss frames. Creating sheets, managing materials, cost analysis, and sun path analysis."
+      },
+      {
+        "unit_number": "PART-B",
+        "title": "Excel for Engineers",
+        "topics": "Using Excel to solve real-world civil engineering problems. Gaining knowledge in Excel and Visual Basics for applications. Creating spreadsheets for structural design problems. Utilizing Excel for optimization and uncertainty analysis. Introducing user forms and controls."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Auto desk Rivet structures manual.",
+        "Exploring Autodesk Revit 2020 for structures,10thedition,byProf. Sham Tickoo, Purdue University Northwest, USA",
+        "MS Excel user manual."
+      ],
+      "reference_books": [
+        "Autodesk Revit 2021 Structure Fundamentals by By ASCENT publications Published August 10, 2020, ISBN: 978-1-63057-358-4 | ISBN 10: 1630573582"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23ES4152",
+      "course_name": "Design Thinking and Innovation",
+      "semester": "4",
+      "category": "Engineering Science",
+      "credits": 1.5,
+      "prerequisites": "---",
+      "course_outcomes": [
+        "analyze complex civil engineering problems innovatively with the use of different construction materials and structural elements",
+        "apply various power tools for construction"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Course Content",
+        "topics": "Introduction to Design Thinking process models. Empathize phase using various tools. Prototyping and testing methods. Product innovation and case studies. Hands-on activities include using digital distance measuring devices, wall scanners, inspection cameras, jigsaws, concrete grinders, painting, flooring installation, plumbing design, formwork selection, masonry, and material estimation."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Building construction by B. C. Punmia -Laxmi Publications, New Delhi",
+        "Design thinking for strategic Innovation, IdrisMootee, 2013, John Wiley & Sons",
+        "Design thinking – The guidebook – Facilitated by the Royal Civil Service Commission, Bhutan"
+      ],
+      "reference_books": [
+        "Design Methods: A Structured Approach for Driving Innovation in Your Organization, Vijay Kumar, First Edition, 2012, Wiley",
+        "Human-Centered Design Toolkit: An Open-Source Toolkit to Inspire New Solutions in the Developing World, IDEO, Second Edition, 2011, IDEO."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE4353",
+      "course_name": "Strength of Materials Lab",
+      "semester": "4",
+      "category": "Programme core lab",
+      "credits": 1,
+      "prerequisites": "---",
+      "course_outcomes": [
+        "understand the properties of wood, steel and other building materials as per IS code provisions",
+        "analyse the behaviour in stress-strain, deflection, flexure/bending and torsion, of building components"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": [
+          "Study the stress-strain characteristics of mild steel/tor steel.",
+          "Determine the ultimate shear strength of mild steel rod.",
+          "Find the Brinnel's and Rockwell‘s hardness number of a given material.",
+          "Find the Young's modulus by conducting bending test on simply supported, cantilever, and propped cantilever beams.",
+          "Find the impact resistance by conducting Charpy and IZOD tests.",
+          "Find the modulus of rigidity by conducting torsion test on solid circular shaft.",
+          "Determine the modulus of rigidity of a spring material.",
+          "Determine the ductility of steel wire.",
+          "Tests on timber.",
+          "Strain gauge application and evaluation of stress.",
+          "Continuous beam – deflection test",
+          "Torsion Test on Beams",
+          "Deflection Test on Beams and Maxwell‘s Reciprocal law verification."
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Strength of Materials by S Ramamrutham& R Narayan; DhanpatRai Publishing Co.(P) Ltd, New Delhi."
+      ],
+      "reference_books": [
+        "Material science and metallurgy for engineers by V D Kodgire and S V Kodgire, Everest publishing house, Pune."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE5301",
+      "course_name": "Water Resources Engineering",
+      "semester": "5",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "--",
+      "course_outcomes": [
+        "Understand irrigation methods, crop water requirements, and water assessment",
+        "Understand hydrologic processes, runoff, unit hydrographs, and well irrigation",
+        "Design irrigation channels, analyze waterlogging, and apply canal lining",
+        "Evaluate reservoir capacity and summarize various types of hydraulic structures"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Irrigation and Water Requirement of Crops",
+        "topics": "Definition, necessity, benefits, and ill-effects of irrigation. Methods of applying water to crops, including various flooding methods, furrow, sprinkler, and drip irrigation. Concepts of saturation capacity, field capacity, wilting point, duty, delta, and base period. Factors affecting duty and methods for its improvement. Assessment of irrigation water."
+      },
+      {
+        "unit_number": "2",
+        "title": "Hydrology and Well Irrigation",
+        "topics": "Introduction to Engineering Hydrology, the hydrologic cycle, precipitation types, and computation of average rainfall. Runoff, factors affecting it, and its computation. Understanding hydrographs and unit hydrographs, including their application and limitations. Concepts of aquifers, aquicludes, aquifuge, and water table. Dupit’s theory for confined and unconfined aquifers and various well tests."
+      },
+      {
+        "unit_number": "3",
+        "title": "Irrigation Channels and Waterlogging",
+        "topics": "Classification and alignment of canals. Silt theories by Kennedy and Lacey, including methods for channel design using these theories and their comparisons. Waterlogging causes, effects, and remedial measures. Types of canal lining and design of lined canals."
+      },
+      {
+        "unit_number": "4",
+        "title": "Dams and Reservoir Planning",
+        "topics": "Classification of dams including gravity, arch, buttress, steel, timber, earth, and rock fill dams. Factors for selecting a dam site. Reservoir planning, site selection, storage zones, capacity, and yield. Use of mass inflow and demand curves to calculate reservoir capacity and safe yield, and understanding the life of a reservoir."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "B.C. Punmia, Pande B.B. Lal, Ashok Kumar Jain, Arun Kumar Jain – Irrigation and Water Power Engineering, Laxmi Publications, 2016",
+        "S.K. Garg – Irrigation Engineering and Hydraulic Structures, Khanna Publishers, 2019",
+        "K. Subramanya – Engineering Hydrology, Tata McGraw-Hill, 2013",
+        "Jain, Reddy, & Sharma – Water Resources Engineering, New Age International, 2017"
+      ],
+      "reference_books": [
+        "Linsley, R.K., Franzini, J.B., Freyberg, D.L. & Tchobanoglous, G. – Water Resources Engineering, McGraw-Hill, 1992",
+        "David Keith Todd & Larry W. Mays – Groundwater Hydrology, Wiley India, 2004",
+        "S.K. Garg – Hydrology and Water Resources Engineering, Khanna Publishers, 2019"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE5302",
+      "course_name": "Environmental Engineering",
+      "semester": "5",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "23BS1102A – Engineering Chemistry, 23MC3107B – Environmental studies",
+      "course_outcomes": [
+        "evaluate the source of water for water supply scheme with reference to quantity and quality of water",
+        "apply and design the treatment units for purification of water and to understand the components of distribution systems and its analysis",
+        "understand the methods of collection, conveyance, quality and estimate the quantity of sewage",
+        "apply appropriate treatment and disposal methods of sewage"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction and Quantity & Quality of Water",
+        "topics": "Objectives of water supply systems, per capita consumption, design period, types of demands, and population prediction. Impurities in water, routine physical, chemical, and bacteriological tests, drinking water standards, and water-borne diseases. Lab tests include determination of pH, total solids, and alkalinity."
+      },
+      {
+        "unit_number": "2",
+        "title": "Purification and Distribution of Water",
+        "topics": "Methods of water purification including plain sedimentation, coagulation, and filtration (slow sand and rapid sand filters). Disinfection methods like chlorination and miscellaneous treatments for hardness and de-fluoridation. Water distribution systems, layouts, reservoirs, and analysis methods. Basics of plumbing including pipes, fittings, and traps. Lab tests include determination of acidity, turbidity, and optimum coagulant dose."
+      },
+      {
+        "unit_number": "3",
+        "title": "Sanitary Engineering and Primary Sewage Treatment",
+        "topics": "Introduction to sanitation, sewerage systems, and estimation of sanitary and storm water sewage quantities. Characteristics of sewage (physical, chemical, biological), decomposition cycles, BOD, and COD. Primary treatment units like screens, grit chambers, skimming tanks, sedimentation tanks, and septic tanks. Lab tests include determination of hardness, chloride, and sulphate content."
+      },
+      {
+        "unit_number": "4",
+        "title": "Secondary Treatment and Disposal of Sewage",
+        "topics": "Secondary treatment methods including trickling filters and the activated sludge process, covering principles, operation, and common issues like sludge bulking. Methods of sewage disposal such as disposal by dilution, self-purification process in rivers, oxygen sag, and disposal by irrigation. Lab tests include determination of dissolved oxygen (DO), biochemical oxygen demand (BOD), and chemical oxygen demand (COD)."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Duggal K.N., ―Elements of public health engineering‖, S. Chand & Company Ltd., New Delhi, 2014.",
+        "Birdie G.S. and Birdie J. S., ―Water Supply and Sanitary Engineering‖, 9th ed., Dhanpat Rai Publishing Company, New Delhi, 2015."
+      ],
+      "reference_books": [
+        "Garg S. K., ―Environmental Engineering Vol. I& II- Water supply engineering‖, Khanna Publishers, New Delhi, 2017.",
+        "Gurucharan Singh, ―Water Supply and Sanitary Engineering‖, Standard Publishers Distributors, Delhi, 2009.",
+        "CPHEEO and Ministry of Urban Development, ―Manual on Water Supply & Treatment‖, Govt. of India, New Delhi,2005."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE5303",
+      "course_name": "Design of Concrete Structures",
+      "semester": "5",
+      "category": "Program Core",
+      "credits": 3,
+      "prerequisites": "23CE3308 Concrete Technology",
+      "course_outcomes": [
+        "analyse for a section for R.C. beams",
+        "evaluate a section for R.C. flanged beam & R.C slabs",
+        "analyse for a safe section for R.C columns",
+        "evaluate a section for Footings"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "General Concepts and Design of Beams",
+        "topics": "Introduction to loading standards (IS 875), material properties, and design methods (Working Stress and Limit State Method). Concepts of characteristic load, design values, partial safety factors, and factored loads. Design of singly and doubly reinforced rectangular beams for flexure and shear, including checks for development length, deflection, and cracking as per IS456-2000."
+      },
+      {
+        "unit_number": "2",
+        "title": "Design of Flanged Beams and Slabs",
+        "topics": "Analysis and design of singly reinforced T-beams. Design of one-way and two-way slabs, including choosing slab thickness. The curriculum covers simply supported one-way slabs and both restrained and unrestrained two-way slabs according to IS456-2000 provisions."
+      },
+      {
+        "unit_number": "3",
+        "title": "Design of Columns",
+        "topics": "Classification of short and long columns and estimation of effective length. Code requirements regarding slenderness limits, minimum eccentricity, and reinforcement. Design of short columns under axial compression with lateral ties. Design of short columns subjected to combined axial load and uniaxial moment."
+      },
+      {
+        "unit_number": "4",
+        "title": "Design of Footings",
+        "topics": "Classification of shallow and deep foundations. General aspects of footings. Design and detailing of isolated column footings as per IS456-2000."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Shah H.J., ―Reinforced Concrete Vol-1‖, 11th ed., Charotar Publication House , Gujarat , 2016.",
+        "Jain A.K, ―Reinforced Concrete (Limit State Design)‖, 7th ed Nem Chand & Bros., Roorkee Uttarakhand, 2012."
+      ],
+      "reference_books": [
+        "Varghese P.C, ―Limit state designed of reinforced concrete‖, 2nd et. Printice Hall of India; New Delhi, 2004.",
+        "ArtherH.Nilson, ―Design of concrete structures‖, 1st ed., Tata McGraw-Hill Publishing Co. Ltd, New Delhi, 2017.",
+        "IS 456-2000 PLAIN AND REINFORCED CONCRETE CODE OF PRACTICE"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE5404",
+      "course_name": "Programme Elective – I",
+      "semester": "5",
+      "category": "PE – I",
+      "credits": 3,
+      "prerequisites": "Varies by elective",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Elective Options",
+        "topics": "A. Advanced Structural Analysis, B. Town Planning and Architecture, C. Air Pollution and Control, D. Environmental Geo-technology."
+      }
+    ],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE5205",
+      "course_name": "Open Elective – I",
+      "semester": "5",
+      "category": "OE – I",
+      "credits": 3,
+      "prerequisites": "Varies by elective",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Elective Options",
+        "topics": "A. Geospatial Technologies, B. Building Services Engineering."
+      }
+    ],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE5351",
+      "course_name": "Computer Applications in Civil Engineering Lab - I",
+      "semester": "5",
+      "category": "PC",
+      "credits": 1.5,
+      "prerequisites": "Computer Aided Civil Engineering Drawing",
+      "course_outcomes": [
+        "determine the cross-sectional, reinforcement requirements and create structural drawings for various elements using AutoCAD",
+        "apply Microsoft Excel to develop spread sheets/Mat Lab to solve design problems"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "PART-A",
+        "title": "AUTOCAD Design and Drawing",
+        "topics": "Detailed study of architectural and structural drawings. Drawing reinforcement details for continuous roof/floor systems, dog-legged staircases, one-way and two-way slabs, beam-column joints, and isolated/combined footings."
+      },
+      {
+        "unit_number": "PART-B",
+        "title": "PROGRAMMING",
+        "topics": "Writing and executing programs using Microsoft Excel for the design of singly reinforced beams, doubly reinforced beams, and rectangular R.C.C columns for axial load by LSM."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Venugopal. K, ―Engineering Drawing and Graphics and AUTOCAD‖, 1sted., New Age International Publishers, 2001.",
+        "Anand R. K.―Computer Application in Civil Engineering‖, 1sted.,Vayu education of India, New Delhi, 2013.",
+        "Dr. Ritu Agarwal & Khushbu Naruka Dr. Hari Singh Parihar, ―Computer Application in Civil Engineering ‖, 1st ed., Neelkanth Publishers, 2012."
+      ],
+      "reference_books": [
+        "Jeyapoovan. T, ―Engineering Graphics using AUTOCAD‖, 1sted.,Vikas Publishing House Pvt. Ltd., 2000."
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE5352",
+      "course_name": "Advanced Surveying Lab",
+      "semester": "5",
+      "category": "PC",
+      "credits": 1.5,
+      "prerequisites": "23CE3304 Surveying & Geomatics",
+      "course_outcomes": [
+        "Apply the surveying principles for setting boundaries, computing area and elevation using a total station",
+        "Apply setting out for buildings and curves using various instruments",
+        "Evaluate the contours for any given area",
+        "Apply advanced instruments for surveying"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": "Measure land boundaries and area with a Total Station. Set out a building using chain/tape and a total station. Set out a simple circular curve using various methods (chain/tape, theodolite, total station). Determine remote object elevation. Plot a contour map using a total station. Determine area and set out a building using DGPS. Includes a demonstration of Unmanned Aerial Vehicles (UAV)."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Duggal S K, ―Surveying Volume-1‖, 2nd ed., Tata Mc Graw Hill Publishing Company Limited, New Delhi, 2004.",
+        "Dr. Arora K R, ― Surveying Volume-2‖, 15th ed., Standard Book House, New Delhi, 2018"
+      ],
+      "reference_books": [
+        "Satheesh Gopi, Sathi Kumar R, Madhu N, ―Advanced Surveying‖, 2nd ed., Pearson, 2017"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE5653",
+      "course_name": "Building Information Modeling (BIM)",
+      "semester": "5",
+      "category": "SEC",
+      "credits": 1,
+      "prerequisites": "23CE4651 - Autodesk, Rivet and Excel for Engineers",
+      "course_outcomes": [
+        "apply their knowledge to model the structure with Architectural, Structural and MEP components",
+        "apply the software commands to create industry standard architectural drawings"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "Lab",
+        "title": "List of Experiments",
+        "topics": "Modeling of Architectural, Structural, and MEP components using Revit. Generating walkthroughs. Detailing and creating drawings as per IS Code. Extracting Bill of Materials and Bill of Quantities from the model. Preparing a construction schedule linked to the model. Performing architectural rendering, interference checking, and energy consumption modeling."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Auto desk Rivet structures manual.",
+        "Exploring Autodesk Revit 2020 for structures, 10th edition, by Prof. Sham Tickoo, Purdue University Northwest, USA.",
+        "Commercial Design using Autodesk Revit Architecture 2015, Daniel John Stine, SDC Publications ISBN #: 978-1-58503-512-0"
+      ],
+      "reference_books": [
+        "Autodesk Revit 2021 Structure Fundamentals by By ASCENT publications Published August 10, 2020, ISBN: 978-1-63057-358-4 | ISBN 10: 1630573582"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "23CE5554",
+      "course_name": "EPICS / Community Service Internship",
+      "semester": "5",
+      "category": "EPICS",
+      "credits": 2,
+      "prerequisites": "Completion of Semester 4",
+      "course_outcomes": [
+        "Evaluate the societal problem from the villages or towns or local communities with well defined objectives",
+        "Analyze and solve the problems by applying modern tools and materials for appropriate solution",
+        "Apply team work ,communication and presentations kills",
+        "Evaluate the context of the problem and prepare a technical report as per the specified guidelines"
+      ]
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Project Content",
+        "topics": "Students will identify problems in local communities, study relevant literature, and propose viable solutions. This work is conducted during the summer vacation after the IV semester and is submitted at the end of the V semester. The focus is on real-world problems that may lead to innovative model building."
+      }
+    ],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23TP5106",
+      "course_name": "Personality Development",
+      "semester": "5",
+      "category": "SS – 3",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23MC5107B",
+      "course_name": "Humanities Elective",
+      "semester": "5",
+      "category": "AC",
+      "credits": 0,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE6301",
+      "course_name": "Design of Steel Structures",
+      "semester": "6",
+      "category": "PC",
+      "credits": 4,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE6302",
+      "course_name": "Transportation Engineering",
+      "semester": "6",
+      "category": "PC",
+      "credits": 3,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE6303",
+      "course_name": "Foundation Engineering",
+      "semester": "6",
+      "category": "PC",
+      "credits": 3,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE6404",
+      "course_name": "Programme Elective – II",
+      "semester": "6",
+      "category": "PE – II",
+      "credits": 3,
+      "prerequisites": "Varies by elective",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Elective Options",
+        "topics": "A. Advanced Design of Concrete Structures, B. Advanced Environmental Engineering, C. Railway and Tunnel Engineering, D. Plumbing-Water and Sanitation."
+      }
+    ],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE6405",
+      "course_name": "Programme Elective – III",
+      "semester": "6",
+      "category": "PE – III",
+      "credits": 3,
+      "prerequisites": "Varies by elective",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Elective Options",
+        "topics": "A. Design of Prestressed Concrete, B. Solid Waste Management, C. Ground Improvement Techniques, D. Airport and Harbour Planning."
+      }
+    ],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE6206",
+      "course_name": "Open Elective – II (NPTEL)",
+      "semester": "6",
+      "category": "OE – II",
+      "credits": 3,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "MOOCS",
+        "topics": "This is a self-learning course where students may opt for a course from any MOOCS platform and must submit the certificate before the last instruction day."
+      }
+    ],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE6351",
+      "course_name": "Computer Applications in Civil Engineering Lab-II",
+      "semester": "6",
+      "category": "PC",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE6352",
+      "course_name": "Transportation Engineering Lab.",
+      "semester": "6",
+      "category": "PC",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23HS6153",
+      "course_name": "Advanced Communication Skills Lab",
+      "semester": "6",
+      "category": "HSS",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23TP6107",
+      "course_name": "Quantitative Aptitude",
+      "semester": "6",
+      "category": "SS – 4",
+      "credits": 1,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23MC6108B",
+      "course_name": "Technical Paper Writing & IPR",
+      "semester": "6",
+      "category": "AC",
+      "credits": 0,
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE7301",
+      "course_name": "Estimation, Specifications and Contracts",
+      "semester": "7",
+      "category": "Program Core",
+      "credits": 4,
+      "L-T-P": "3-0-2",
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE7302",
+      "course_name": "Irrigation Structures",
+      "semester": "7",
+      "category": "Program Core",
+      "credits": 3,
+      "L-T-P": "3-0-0",
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE7403",
+      "course_name": "Program Elective-5",
+      "semester": "7",
+      "category": "Program Elective",
+      "credits": 3,
+      "L-T-P": "3-0-0",
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE7205",
+      "course_name": "Open Elective/ Job Oriented Elective-3",
+      "semester": "7",
+      "category": "Open Elective",
+      "credits": 3,
+      "L-T-P": "3-0-0",
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "Elective Options",
+        "topics": "A) Green Buildings and Sustainability, B) Advanced Construction Materials, C) Quality Control and Quality Assurance"
+      }
+    ],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE7206",
+      "course_name": "Open Elective/ Job Oriented Elective-4",
+      "semester": "7",
+      "category": "Open Elective",
+      "credits": 3,
+      "L-T-P": "3-0-0",
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "NPTEL/ SELF LEARNING",
+        "topics": "Students may opt for a course from any MOOCS platform and must submit the certificate before the last instruction day of the VII Semester."
+      }
+    ],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE7607",
+      "course_name": "Advanced Skill Course: Computer Aided Construction Management",
+      "semester": "7",
+      "category": "Advanced Skill Course",
+      "credits": 3,
+      "L-T-P": "2-0-2",
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE7551",
+      "course_name": "Mini Project-II",
+      "semester": "7",
+      "category": "Internship/Project",
+      "credits": 1.5,
+      "L-T-P": "0-0-3",
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE7552",
+      "course_name": "Industrial/Research Internship",
+      "semester": "7",
+      "category": "Internship/Project",
+      "credits": 1.5,
+      "L-T-P": "0-0-3",
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23MC7108B",
+      "course_name": "Constitution of India",
+      "semester": "7",
+      "category": "Audit Course",
+      "credits": 0,
+      "L-T-P": "2-0-0",
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "23CE8551",
+      "course_name": "Major Project and Internships (6 Months)",
+      "semester": "8",
+      "category": "Internship/Project",
+      "credits": 12,
+      "L-T-P": "0-0-24",
+      "prerequisites": "Not specified",
+      "course_outcomes": []
+    },
+    "syllabus": [],
+    "books": {}
+  }
+]
+
+

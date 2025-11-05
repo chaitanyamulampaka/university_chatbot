@@ -1,0 +1,448 @@
+[
+  {
+    "metadata": {
+      "course_code": "24MA202",
+      "course_name": "Complex Variables & Transform Techniques",
+      "semester": "3",
+      "category": "Basic Science",
+      "credits": 4,
+      "L-T-P": "4-0-0",
+      "course_type": "Theory",
+      "prerequisites": "Not specified"
+    },
+    "course_outcomes": [
+      "Employ methods to construct analytic functions.",
+      "Determine the series expansions of complex variable function and evaluate contour integration.",
+      "Apply Laplace transform techniques to convolute functions.",
+      "Use Fourier series and Fourier transforms to solve periodic and non-periodic functions.",
+      "Find line and parabola of best fit, correlation coefficient and regression lines."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Analytic Functions",
+        "topics": "Limit of a complex function, Derivative of f(z), Cauchy-Riemann equations in Cartesian and Polar coordinates, Analytic functions, Harmonic functions, Orthogonal systems."
+      },
+      {
+        "unit_number": "2",
+        "title": "Complex Integration",
+        "topics": "Complex integration, Line Integral, Series of complex terms: Taylor and Laurent Series (without proofs), Zeros and Singularities of analytic function, Residues, Calculation of residues, Residue theorem, Bilinear transformation."
+      },
+      {
+        "unit_number": "3",
+        "title": "Laplace Transforms",
+        "topics": "Introduction, Definition, Condition for existence, Transform of elementary functions, Properties of Laplace transforms, Transforms of periodic functions, integrals, multiplication by tn and division by t, Evaluation of integrals by Laplace transforms, Inverse transforms, Method of partial fractions, Convolution theorem."
+      },
+      {
+        "unit_number": "4",
+        "title": "Fourier Series and Transforms",
+        "topics": "Fourier Series: Euler's Formulae, Conditions for a Fourier Expansion, Functions having point of discontinuity, Change of interval, Even and Odd functions. Fourier transforms: Fourier Integral Theorem (without proof & No problems), Fourier sine and cosine integrals (without proof & No problems), Fourier Transforms, Fourier sine and cosine transforms."
+      },
+      {
+        "unit_number": "5",
+        "title": "Statistics",
+        "topics": "Curve fitting, Method of least squares, working procedure to fit straight line and parabola, Correlation, Coefficient of correlation, Lines of Regression."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "B.S.Grewal, \"Higher Engineering Mathematics\", 44th Ed., Khanna Publishers, 2019"
+      ],
+      "reference_books": [
+        "Erwin Kreyzig, \"Advanced Engineering Mathematics\", 10th Ed., John Wiley & Sons, 2015.",
+        "R.K.Jain, S.R.K.Iyengar, \"Advanced Engineering Mathematics\", 5th Ed., Narosa Publishers, 2016.",
+        "Ramana B V, \"Higher Engineering Mathematics\", 1 Ed., Tata MC Graw Hill."
+      ],
+      "web_resources": [
+        "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/pages/lecture-notes/",
+        "https://archive.nptel.ac.in/courses/111/103/1111103070/",
+        "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/pages/unit-iii-fourier-series-and-laplace-transform/laplace-transform-basics/",
+        "https://archive.nptel.ac.in/courses/111/106/111106111/"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24EI201",
+      "course_name": "Electronics Devices & Circuits",
+      "semester": "3",
+      "category": "Engineering Science",
+      "credits": 3,
+      "L-T-P": "3-0-0",
+      "course_type": "Theory",
+      "prerequisites": "Engineering Physics"
+    },
+    "course_outcomes": [
+      "Analyze the operation and V-I characteristics of semiconductor diodes.",
+      "Design diode circuits for various applications.",
+      "Analyze the operation and characteristics of transistors.",
+      "Analyze the operation and V-I characteristics of optoelectronic devices.",
+      "Use the SPICE simulator to implement an electronic circuit using various semiconductor devices."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Semiconductor Diodes",
+        "topics": "Review of Semiconductors, p-n Junction as a Diode, The Volt-Ampere Characteristics, Temperature dependence of P-N Characteristics, Diode Resistance, Space Charge or Transition Capacitance, Diffusion capacitances. Breakdown mechanisms, Zener diode."
+      },
+      {
+        "unit_number": "2",
+        "title": "Diode Applications",
+        "topics": "Diode approximations, Clippers, Clampers. Diode as a rectifier, Half wave, Full wave - Centre-tapped, Bridge rectifiers without filter and with filters - Inductor filter, Capacitor filter, L section, Zener voltage regulator."
+      },
+      {
+        "unit_number": "3",
+        "title": "Bipolar Junction Transistor",
+        "topics": "The Junction Transistor, Transistor Current components, Characteristics of Common Base, Common Emitter and Common Collector Configuration, Relation between α, β, and γ, Transistor as a Switch, Transistor as an amplifier, Operating Point, Factors affecting the operating point."
+      },
+      {
+        "unit_number": "4",
+        "title": "Field Effect Transistors",
+        "topics": "Introduction to FET, Construction and Characteristics of JFETs, Drain and Transfer Characteristics of JFET, FET parameters, FET as an amplifier, JFET biasing circuits. Depletion-type MOSFET and Enhancement-type MOSFET, Drain and Transfer Characteristics of MOSFET."
+      },
+      {
+        "unit_number": "5",
+        "title": "Special Semiconductor Devices",
+        "topics": "Tunnel diode, Varactor Diode, PIN Diode, IMPATT diode, Solar Cell, LED, LCD, Photodiode, Phototransistor, UJT, SCR."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Jacob Millman, Christos C Halkias & Satyabrata JIT, \"Millman's Electronic Devices and Circuits\", 4th Ed., TMH, 2015.",
+        "Ryder, John Douglas \"Electronic Fundamental and Applications\", 5th Ed., PHI."
+      ],
+      "reference_books": [
+        "GK Mithal,\" Electronic Devices and Circuits\", 23rd ED., Khanna Publishers",
+        "Robert L Boylested and Louis Nashelsky, \"Electronic Devices and Circuit Theory\", 10th Ed., Pearson India, 2009",
+        "David A Bell., \"Electronic Devices and Circuits\", 5th Ed., Oxford University Press, 2008"
+      ],
+      "web_resources": [
+        "http://www.nptelvideos.in/2012/12/basic-electronics-drchitralekha-mahanta.html",
+        "http://nptel.ac.in/courses/117103063/",
+        "http://nptel.ac.in/courses/117106033/",
+        "http://nptel.ac.in/courses/117102061/"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24EI202",
+      "course_name": "Electrical & Electronic Measurements",
+      "semester": "3",
+      "category": "Professional Core",
+      "credits": 3,
+      "L-T-P": "3-0-0",
+      "course_type": "Theory",
+      "prerequisites": "Circuit analysis"
+    },
+    "course_outcomes": [
+      "Design and calibrate electronic measurement Systems for the measurement of AC & DC voltage, current and power.",
+      "Analyze the bridge circuits to measure the unknown values of R, L and C.",
+      "Compare the operation of various oscilloscopes and probes.",
+      "Explain the principles of various signal generators and wave analyzers.",
+      "Study of electronic counters, digital systems and digital display devices."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Electromechanical Indicating Instruments",
+        "topics": "Suspension galvanometer, Torque and deflection, PMMC mechanism. DC ammeters, Ayrton shunt, DC voltmeters, Voltmeter sensitivity, Loading effect. AC indicating instruments: Electrodynamometer, Rectifier type instruments, Watt hour meter, Power factor meters."
+      },
+      {
+        "unit_number": "2",
+        "title": "Bridges and Electronic Instruments",
+        "topics": "Bridges: Wheatstone's, Kelvin's double, Maxwell's, Hay's, Schering, Wien's bridge, Wagner's ground connection. Electronic Instruments: AC Voltmeter using rectifiers, True RMS voltmeter, Digital voltmeters (Ramp, Staircase, Successive approximation, Dual slope), Q Meter."
+      },
+      {
+        "unit_number": "3",
+        "title": "Oscilloscopes",
+        "topics": "Block diagram of oscilloscope, Vertical amplifier, Horizontal deflecting system, Delay line, Dual beam CRO, Dual trace oscilloscope, Sampling oscilloscope. Probes for CRO: Direct, Passive voltage, Active probes, Attenuators."
+      },
+      {
+        "unit_number": "4",
+        "title": "Signal Generators and Wave Analyzers",
+        "topics": "Signal Generators: Basic standard sine wave generator, Standard signal generator, Function generator, Laboratory square wave and pulse generator. Wave Analyzers: Basic wave analyzer, Frequency selective wave analyzer, Heterodyne wave analyzer, Harmonic Distortion Analyzer, Basic Spectrum analyzer."
+      },
+      {
+        "unit_number": "5",
+        "title": "Frequency Counters and Digital Displays",
+        "topics": "Digital frequency meter principle and circuit, Digital measurement of time. Electronic Counter modes: Totalizing, Frequency, Ratio, Period, Time interval. Digital Display Devices: 7-segment, Dot Matrix, LED and LCD."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "WD Cooper & A D Helfrick, \"Electronic Instrumentation and Measurement Techniques\", PHI, 1998",
+        "H.S.Kalsi, \"Electronic Instrumentation\", 2nd Ed., TMH."
+      ],
+      "reference_books": [
+        "A.K. Sawhney, \"A Course in Electrical and Electronic Measurements and Instrumentation\", Dhanpat Rai & Co",
+        "Oliver & Cage, \"Electronic Measurements and Instrumentation\", Mc Graw Hill, 1975"
+      ],
+      "web_resources": [
+        "https://www.youtube.com/watch?v=3eYmFjHnQjY&list=PLbRMhDVUMngcoKrA4sH-zvbNVSE6IpEio"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24EI203",
+      "course_name": "Digital Electronics",
+      "semester": "3",
+      "category": "Professional Core",
+      "credits": 4,
+      "L-T-P": "3-0-2",
+      "course_type": "Theory",
+      "prerequisites": "Not specified"
+    },
+    "course_outcomes": [
+      "Demonstrate proficiency in codes and number system converting circuits.",
+      "Select suitable logic families and minimization methods for digital system design.",
+      "Design and Analyze Combinational and Sequential logic circuits.",
+      "Use the spice software to design the digital electronic circuits."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Number Systems and Boolean Algebra",
+        "topics": "Number systems representation, Conversion of bases, Binary Arithmetic, Representation of Negative numbers, Codes (Binary, BCD, Excess 3, Gray). Boolean Algebra: Basic Theorems and properties, Boolean Functions, Canonical and standard forms. Digital Logic Gates."
+      },
+      {
+        "unit_number": "2",
+        "title": "Logic Families and Gate Level Minimization",
+        "topics": "Logic Families: Characteristics of Digital ICs, TTL, ECL, CMOS Logic. Gate Level Minimization: The K-Map Method (4-variable maps), Don't Care conditions, NAND and NOR implementation, Quine-McCluskey method."
+      },
+      {
+        "unit_number": "3",
+        "title": "Combinational Logic Design",
+        "topics": "Combinational circuits, Adders & Subtractors, Magnitude comparator, Binary to Gray and Gray to Binary code converters, Multiplexers, De-Multiplexers, Decoders, BCD to 7 Segment decoder, Encoders, Priority encoder."
+      },
+      {
+        "unit_number": "4",
+        "title": "Flip-Flops and Shift Registers",
+        "topics": "Clocked S-R flip-flop, J-K flip-flop, Master-slave J-K flip-flop, D & T flip-flops, Excitation tables, Flip-Flop conversions. Shift Registers: Types, Bi-directional, Universal Shift Register. Applications: Ring counter, Twisted ring counter."
+      },
+      {
+        "unit_number": "5",
+        "title": "Counters and Memory Devices",
+        "topics": "Asynchronous counters Up/Down counters, Design of Synchronous counters. Finite State Machines: Mealy, Moore. Memory Devices: ROM, PROM, EPROM, EEPROM, Flash memory, RAM (Static and dynamic), PAL, PLA."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "M. Morris Mano, \"Digital Logic and Computer Design\", PHI, 2003",
+        "R P Jain \"Modern Digital Electronics\", 4th Ed., TMH"
+      ],
+      "reference_books": [
+        "A. Anand Kumar, \"Fundamentals of Digital Circuits\", PHI, 2006",
+        "Thomas L. Floyd \"Digital Fundamentals\", 11th Ed., Pearson Education, 2015"
+      ],
+      "web_resources": [
+        "https://nptel.ac.in/courses/117/106/117106086/"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24EI204",
+      "course_name": "Sensors and Transducers",
+      "semester": "3",
+      "category": "Professional Core",
+      "credits": 3,
+      "L-T-P": "3-0-0",
+      "course_type": "Theory",
+      "prerequisites": "Not specified"
+    },
+    "course_outcomes": [
+      "Analyze various performance characteristics of instrument and the quality of measurement.",
+      "Apply various types of resistive and reactance variation sensors in real time applications.",
+      "Interpret the design aspects of signal conditioning circuits for resistive and reactance variation sensors.",
+      "Comprehend the principles of piezoelectric and optical transducers.",
+      "Illustrate the operation of miscellaneous transducers."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Instrument Characteristics",
+        "topics": "Block diagram of generalized instrument system. Static and Dynamic characteristics. Errors in Measurement, Limiting errors, and Statistical analysis of measurement data."
+      },
+      {
+        "unit_number": "2",
+        "title": "Variable Resistance Transducers",
+        "topics": "Classification and Characteristics of transducers. Principle of operation, construction, and characteristics of Resistance potentiometers, Strain gauge, Resistance thermometer, Thermistors, Resistive hygrometer. Signal conditioning of resistive transducers."
+      },
+      {
+        "unit_number": "3",
+        "title": "Inductance and Capacitive Transducers",
+        "topics": "Inductance Transducers: Principle of Variable reluctance sensors, Eddy current sensors, LVDTs, Magneto elastic sensors, Signal conditioning. Capacitive Transducers: Principle using change in area of plates, distance between plates, and change of dielectric constant."
+      },
+      {
+        "unit_number": "4",
+        "title": "Piezoelectric and Optical Transducers",
+        "topics": "Piezoelectric Sensors: Principle of operation, expression for output, piezoelectric materials, equivalent circuit, loading effects. Optical Transducers: Principle of operation of Photo-emissive cells, Semi-conductor Photoelectric transducers."
+      },
+      {
+        "unit_number": "5",
+        "title": "Miscellaneous Sensors",
+        "topics": "Digital sensor, IR radiation Sensors, Ultrasonic Sensors, Fiber optic sensors, Smart sensors, Colour sensor, Bio Sensors."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Sawhney A. K., and Sawhney, Puneet, A Course in Electrical and Electronic Measurements and Instrumentation, 2016, 19th Ed., Dhanpat Rai & Company",
+        "D. Patranabis, Sensors and Transducers, 2nd Ed., Prentice Hall of India, 2011."
+      ],
+      "reference_books": [
+        "Doebelin, E. O., and Manik, D. N., Measurement systems: application and design, 2020, 7th Ed., McGraw Hill Education",
+        "Murty, D. V. S, Transducers and Instrumentation, 2nd Ed., PHI Learning Pvt.Ltd, 2012",
+        "Dr. D.S. Kumar, \"Mechanical Measurements & Control\", 3rd Ed., Metropolitan Book Co. Pvt. Ltd. 2015"
+      ],
+      "web_resources": [
+        "https://nptel.ac.in/courses/108/108/108108147"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24EI281",
+      "course_name": "Measurements Lab",
+      "semester": "3",
+      "category": "Professional Core Lab",
+      "credits": 1.5,
+      "L-T-P": "0-0-3",
+      "course_type": "Lab",
+      "prerequisites": "Not specified"
+    },
+    "course_outcomes": [
+      "Apply the basic measurement techniques to measure the parameters such as resistance, capacitance, inductance.",
+      "Analyze the outputs and interpreted the data generated from the bridge measurements.",
+      "Conduct experiments as individual or team by using different types of bridges.",
+      "Make an effective report based on experiments."
+    ],
+    "syllabus": {
+      "list_of_experiments": [
+        "DC meters and their range extension.",
+        "AC meters and their range extension.",
+        "Measurement of voltage, frequency and phase angle using a CRO.",
+        "Measurement of resistance of small resistors using Kelvin double bridge.",
+        "Measurement of inductance using Maxwell bridge.",
+        "Measurement of capacitance using Shearing bridge.",
+        "Measurement of resistance, inductance and capacitance using a LCR meter.",
+        "Measurement of amplitude and frequency of different types of waveforms using function generator.",
+        "Measurement of inductance of high Q coils using Hay bridge.",
+        "Measurement of frequency using a Wien bridge.",
+        "Calibration of voltmeter using potentiometer.",
+        "Simulation of CRO, Function generator using Analog discovery kit."
+      ]
+    },
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "24EI282",
+      "course_name": "Electronic Devices & Circuits Lab",
+      "semester": "3",
+      "category": "Engineering Science Lab",
+      "credits": 1.5,
+      "L-T-P": "0-0-3",
+      "course_type": "Lab",
+      "prerequisites": "Not specified"
+    },
+    "course_outcomes": [
+      "Analyze the operation of diodes, by evaluating their I-V characteristics and circuit configurations.",
+      "Analyze the operation of transistors by evaluating their I-V characteristics and circuit configurations.",
+      "Design basic diode circuits related to various applications using PSPICE tools.",
+      "Analyze the working of BJT, FET and its application as an amplifier virtually (using NI Multisim) and infer their salient parameters."
+    ],
+    "syllabus": {
+      "list_of_experiments": [
+        {
+          "module": "A",
+          "title": "Electronic Devices Module",
+          "experiments": [
+            "Characteristics of PN junction diode",
+            "Characteristics of Zener diode",
+            "Characteristics of a transistor in common emitter configuration",
+            "Drain and transfer characteristics of the junction field effect transistor",
+            "Characteristics of a Uni Junction Transistor",
+            "Analyze the effects of operation point location on amplifier response"
+          ]
+        },
+        {
+          "module": "B",
+          "title": "P-Spice Module",
+          "experiments": [
+            "Design of unbiased clampers.",
+            "Design voltage regulator using Zener.",
+            "Analyze the performance of full-wave rectifier operation with and without a filter.",
+            "Frequency response of CE amplifier.",
+            "Frequency response of CS Amplifier.",
+            "Design of UJT Relaxation Oscillator"
+          ]
+        }
+      ]
+    },
+    "books": {}
+  },
+  {
+    "metadata": {
+      "course_code": "24UC201",
+      "course_name": "Universal Human Values-II",
+      "semester": "3",
+      "category": "Mandatory Course",
+      "credits": 3,
+      "L-T-P": "2-1-0",
+      "course_type": "Theory",
+      "prerequisites": "Not specified"
+    },
+    "course_outcomes": [
+      "Apply the right understanding of the concepts of value education and basic human aspirations through self-exploration for the fulfillment of human aspirations.",
+      "Analyse various aspects of the human being as the combination of Self and Body for attaining harmony at the level of human being (individual).",
+      "Apply the knowledge of nine universal values in human-human relationship for harmony at the level of family, and appreciate all the essential factors that help in attaining harmony at the level of society.",
+      "Differentiate the characteristics and activities of various orders of Nature and study the mutual fulfillment among them, and also identify the existence as co-existence at all levels.",
+      "Present sustainable solutions to various challenges in society and Nature, and identify that the solutions are practicable."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Course Introduction, Need, Basic Guidelines, Content and Process for Value Education",
+        "topics": "Purpose and motivation, self-exploration, 'Natural acceptance' and experimental validation. Continuous happiness and prosperity. Right understanding, relationship and physical facility for fulfillment of aspirations."
+      },
+      {
+        "unit_number": "2",
+        "title": "Understanding Harmony in the Human Being - Harmony in Myself",
+        "topics": "Understanding human being as a co-existence of the sentient 'I' and the material 'Body'. Understanding the needs of Self ('I') and 'Body'. Understanding the harmony of I with the Body: Sanyam and Health; meaning of Prosperity."
+      },
+      {
+        "unit_number": "3",
+        "title": "Understanding Harmony in the Family and Society - Harmony in Human-Human Relationship",
+        "topics": "Understanding values in human-human relationship; meaning of Justice (nine universal values). Trust and Respect as foundational values. Harmony in society; Resolution, Prosperity, fearlessness (trust) and co-existence as comprehensive Human Goals."
+      },
+      {
+        "unit_number": "4",
+        "title": "Understanding Harmony in Nature & Existence - Whole existence as Coexistence",
+        "topics": "Understanding the harmony in Nature, Inter-connectedness and mutual fulfillment among the four orders of Nature, recyclability and self-regulation. Understanding Existence as Co-existence of mutually interacting units in all-pervasive space."
+      },
+      {
+        "unit_number": "5",
+        "title": "Implications of the above Holistic Understanding of Harmony on Professional Ethics",
+        "topics": "Natural acceptance of human values, Definitiveness of ethical human conduct. Competence in professional ethics: ability to utilize professional competence for augmenting universal human order and identify people-friendly and eco-friendly production systems."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Gaur, R.R., Sangal, R, & Bagaria, G.P. \"A Foundation Course in Human Values and Professional Ethics\", Excel Books Private Limited, New Delhi, 2010.",
+        "Gaur, R.R., Sangal, R, & Bagaria, G.P. \"A Foundation Course in Human Values and Professional Ethics\", Excel Books Private Limited, New Delhi, 2019"
+      ],
+      "reference_books": [
+        "Jeevan Vidya: Ek Parichaya, A. Nagaraj, Jeevan Vidya Prakashan, Amarkantak 1999",
+        "Human Values, A. N. Tripathi, New Age International Publishers, New Delhi, 2004",
+        "The Story of Stuff: The impact of overconsumption on the planet, our communities, and our health and how we can make it better, Annie Leonard, Free Press, New York 2010"
+      ],
+      "web_resources": [
+        "https://dokumen.pub/a-foundation-course-in-human-values-and-professional-ethics-firstnbsped-9788174467812.html",
+        "https://www.youtube.com/channel/UCo8MpJB_aaVwB4LWLAx6AhQ",
+        "https://fdp-si.aicte-india.org/download.php#1"
+      ]
+    }
+  }
+]

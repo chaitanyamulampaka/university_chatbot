@@ -1,0 +1,482 @@
+[
+  {
+    "metadata": {
+      "course_code": "24MA201",
+      "course_name": "Probability and Statistics for Engineers",
+      "semester": "3",
+      "category": "Basic Science (BS)",
+      "credits": 4,
+      "L-T-P": "4-0-0",
+      "course_type": "Theory",
+      "prerequisites": "Not specified"
+    },
+    "course_description": "This course covers foundational concepts of probability and statistics, including conditional probability, various distributions (Binomial, Poisson, Normal), sampling, estimation, hypothesis testing, and regression analysis for engineering applications.",
+    "course_outcomes": [
+      "Apply Bayes' theorem to calculate conditional probabilities and use discrete random variables to determine probability distributions like Binomial and Poisson for decision-making.",
+      "Apply continuous random variables to the normal distribution, approximate the binomial distribution using the normal distribution, and utilize other probability densities.",
+      "Apply sampling distribution to statistical parameter mean of σ known and unknown cases and sampling distribution of variance.",
+      "Implement point and interval estimation methods and testing the hypotheses concerning the one and two means.",
+      "Apply control chart limits to analyze statistical control and utilize the regression analysis and assessing correlation between the variables."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Probability Distributions",
+        "topics": "Probability: Conditional probability, Multiplication rule of probability, Bayes' theorem. Probability Distributions: Discrete Random Variable, Binomial distribution, Poisson approximation to the Binomial distribution, Poisson Process."
+      },
+      {
+        "unit_number": "2",
+        "title": "Probability Densities",
+        "topics": "Continuous Random Variable, Normal distribution, Normal approximation to the Binomial distribution. Other probability densities: Uniform distribution, Log normal distribution, Gamma distribution, Beta distribution, Weibull distribution."
+      },
+      {
+        "unit_number": "3",
+        "title": "Sampling Distributions",
+        "topics": "Introduction, Populations and Samples, Sampling distribution of mean (σ known), Sampling distribution of mean (σ unknown), Sampling distribution of the variance."
+      },
+      {
+        "unit_number": "4",
+        "title": "Inferences concerning mean",
+        "topics": "Point Estimation, Interval Estimation, Test of Hypothesis, Hypothesis Concerning one mean, Relation between Tests and Confidence intervals, Comparisons two treatments (large and small samples)."
+      },
+      {
+        "unit_number": "5",
+        "title": "Regression Analysis and Quality Improvement",
+        "topics": "Regression Analysis: The method of least squares, Multiple Regression, Correlation. The Statistical Content of Quality Improvement Programs: Quality Control, Control Charts for Measurements, Control Charts for Attributes."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Probability and Statistics for Engineers, Eighth edition by Richard A. Johnson Prentice Hall of India."
+      ],
+      "reference_books": [
+        "Probability & Statistics for Engineers & Scientists by R.E. Walpole, R.H.Myers & S.L.Myers, Sixth Edition, Prentice Hall of India / Pearson Education.",
+        "Probability and Statistics by Purna Chandra Biswal, Pearson Education Prentice Hall of India 2007.",
+        "Probability and Statistics by T.K.V.Iyengar, B.Krishna Gandhi, S.Ranganatham, M.V.S.S.N.Prasad, S.Chand."
+      ],
+      "web_resources": [
+        "probweb.berkeley.edu/teaching.html",
+        "statsci.org/teaching.html",
+        "video lectures.nptel.iitm.ac.in"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24EE211",
+      "course_name": "Electrical and Electronics Engineering",
+      "semester": "3",
+      "category": "Engineering Science (ES)",
+      "credits": 3,
+      "L-T-P": "3-0-0",
+      "course_type": "Theory",
+      "prerequisites": "Engineering mathematics, Engineering physics"
+    },
+    "course_description": "This course provides fundamental knowledge of electrical engineering, covering DC/AC circuits, DC and AC machines like motors and transformers, and foundational electronics including semiconductor diodes and bipolar junction transistors.",
+    "course_outcomes": [
+      "Apply mesh and node analysis to DC and AC circuits, and calculate RMS and average values for AC wave forms.",
+      "Understand the working principles and characteristics of DC generator and motor.",
+      "Understand the working principles and characteristics of three phase induction motor and transformer.",
+      "Understand the working principles and characteristics of PN junction diode, Zener diode and rectifier circuits.",
+      "Understand the CB CC CE configurations of transistors."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "DC and AC circuits",
+        "topics": "DC circuits: basic circuit components, Ohm's law, Kirchhoff's laws, ideal and practical sources, mesh and nodal analysis. AC circuits: Generation of AC voltages, waveforms, definitions, RMS and average values, form factor and peak factor."
+      },
+      {
+        "unit_number": "2",
+        "title": "DC Machines",
+        "topics": "Introduction, construction of dc machines, types, armature windings, operation as a generator and motor, generation of dc voltage, torque production, and speed control of dc motors."
+      },
+      {
+        "unit_number": "3",
+        "title": "AC Machines",
+        "topics": "Induction Motors: constructional features, principle of operation, slip and rotor frequency, equivalent circuit. Transformers: constructional features, principle of operation, EMF equation, equivalent circuit, auto transformer."
+      },
+      {
+        "unit_number": "4",
+        "title": "Semiconductor diode and its characteristics",
+        "topics": "Conductors, semiconductors, insulators, P-N junction (diode), operation of P-N junction diode (forward and reverse bias), V-I characteristics, Zener diode, Zener diode as a voltage regulator, half wave, full wave, bridge rectifiers and its ripple factor calculations."
+      },
+      {
+        "unit_number": "5",
+        "title": "Bipolar junction transistor (BJT) characteristics",
+        "topics": "Transistor operation, types of transistors (NPN & PNP), regions of operation, transistor as an amplifier and switch, common base (CB), common emitter (CE), common collector (CC) configurations, and their comparison."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "I.J.Nagrath and Kothari \"Theory and problems of Basic Electrical Engineering\", Prentice-Hall of India Pvt. Ltd.",
+        "Dr. K. Uma Rao, Dr. A. Jayalakshmi, \"Basic Electric Engineering\", Pearson Publications.",
+        "T.K. Nagasarkar and M.S. Sukhja,: Basic Electric Engineering:, oxford University press.",
+        "R. L. Boylestad& Louis Nashlesky, Electronic Devices & Circuit Theory, Pearson Education, 2021."
+      ],
+      "reference_books": [
+        "Ashfaq Husain, Haroon Ashfaq, \" Fundamentals of Electrical Engineering\", 4th edition, Dhanpat Rai & Co, 2014.",
+        "I.J.Nagrath and Kothari, \"Theory and problems of Basic Electrical Engineering\", 2nd edition, Prentice-Hall of India Pvt.Ltd., 2016.",
+        "R. S. Sedha, A Textbook of Electronic Devices and Circuits, S. Chand & Co, 2010.",
+        "Santiram Kal, Basic Electronics- Devices, Circuits and IT Fundamentals, Prentice Hall, India, 2002."
+      ],
+      "web_resources": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24ME201",
+      "course_name": "Mechanics of Materials",
+      "semester": "3",
+      "category": "Program Core (PC)",
+      "credits": 3,
+      "L-T-P": "3-0-0",
+      "course_type": "Theory",
+      "prerequisites": "Engineering Mechanics"
+    },
+    "course_description": "This course focuses on the behavior of solid objects subjected to stresses and strains. Topics include tension, compression, shear, bending, torsion, beam deflections, and the analysis of columns and pressure vessels.",
+    "course_outcomes": [
+      "Estimate the stresses and strains in structural members subjected to axial loading.",
+      "Inspect Shear force and Bending moment diagrams for determinate beams which are subjecting to transverse loading.",
+      "Analyze the members subjected to bending and torsion.",
+      "Examine the deflections of determinate beams and safe load on columns.",
+      "Solve plane stress problems and calculate the stresses in thin cylindrical and spherical vessels."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Tension, compression and shear",
+        "topics": "Concepts of Normal Stress and Strain, Stress-Strain Diagrams, Elasticity and Plasticity, Hooke's Law, Poisson's Ratio, Shear Stress and Strain, Allowable Stresses and Loads. Numerical problems on change in length of axially loaded members and tapered bars."
+      },
+      {
+        "unit_number": "2",
+        "title": "Statically determinate beams",
+        "topics": "Types of Beams, Loads and Reactions, Shear Force and Bending Moments, Relationships between Load, Shear Force and Bending Moment, Shear Force and Bending Moment Diagrams."
+      },
+      {
+        "unit_number": "3",
+        "title": "Bending and Torsion",
+        "topics": "Bending stresses: Pure bending, Bending stress Equation, Design of beams for bending stresses. Torsion: torsional deformations of a circular bar, linearly elastic materials, transmission of power by circular shafts."
+      },
+      {
+        "unit_number": "4",
+        "title": "Beam deflections and columns",
+        "topics": "Deflections of statically determinate beams: Differential Equations of the Deflection Curve, Deflections by Integration of the Bending Moment Equation, Macaulay's Method. Columns: Buckling and Stability, Columns with Pinned ends and other support conditions, Limitations of Euler's Formula, Rankine's Formula."
+      },
+      {
+        "unit_number": "5",
+        "title": "Principal Stresses and Pressure Vessels",
+        "topics": "Analysis of plane stress: Principal Stresses and Maximum Shear Stress, Mohr’s Circle for Plane Stress. Stresses in thin cylindrical and spherical pressure vessels subjected to internal pressure and the effect on their dimensions."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "James M. Gere and Barry J.Goodno, \"Mechanics of Materials\", Eighth edition, CENGAGE Learning, 2013",
+        "Egor Paul Popov, \"Mechanics of Materials\", Second edition, Pearson Education, 2015"
+      ],
+      "reference_books": [
+        "R.K.Bansal, \"Strength of Materials \"Sixth edition, Laxmi Publishers, 2017",
+        "Dr. Sadhu Singh, \"Strength of Materials\", Ninth edition, Khanna Publishers, 2007.",
+        "R.K. Rajput,\" Strength of Materials \", First Edition, S.Chand& Company, 2006.",
+        "S.S.Rattan, \"Strength of Materials\", Third Edition, Tata McGraw Hill Education Private Limited, 2017."
+      ],
+      "web_resources": [
+        "http://nptel.ac.in/courses/112106141/",
+        "http://nptel.ac.in/courses/112107146/",
+        "http://nptel.ac.in/courses/112107147"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24ME202",
+      "course_name": "Engineering Thermodynamics",
+      "semester": "3",
+      "category": "Program Core (PC)",
+      "credits": 3,
+      "L-T-P": "3-0-0",
+      "course_type": "Theory",
+      "prerequisites": "Not specified"
+    },
+    "course_description": "This course covers the fundamental principles of thermodynamics, including the Zeroth, First, and Second laws. It explores concepts of work, heat, entropy, and applies them to non-flow/flow systems, pure substances, and various power cycles (Rankine, Otto, Diesel).",
+    "course_outcomes": [
+      "Illustrate the basic concepts of thermodynamics and can distinguish work and heat forms of energy.",
+      "Apply first of law of thermodynamics to flow and non-flow processes and thermodynamic systems.",
+      "Apply the second law of thermodynamics to systems and understand the concept of entropy, exergy and irreversibility.",
+      "Evaluate the properties of steam and steam thermal power plants analysis.",
+      "Able to find properties of gas mixtures and can analyse air cycles."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Fundamental Concepts, Definitions, Work and Heat",
+        "topics": "Thermodynamic system, properties, state, equilibrium, Quasistatic Process, Zeroth law of thermodynamics. Ideal gas equation, Work transfer, pdV-work, heat transfer, path and point functions."
+      },
+      {
+        "unit_number": "2",
+        "title": "First Law for Non-Flow and Flow Systems",
+        "topics": "Joule's Experiment, First law of thermodynamics for a system undergoing a cycle and for a change in state, internal energy and enthalpy. Control mass and control volume, first law for a control volume, steady flow energy equation and applications."
+      },
+      {
+        "unit_number": "3",
+        "title": "Second Law of Thermodynamics and Entropy",
+        "topics": "Cyclic heat engines, Refrigerators, Heat pumps, Kevin-Plank and Clausius statements, Carnot cycle and theorem, thermodynamic temperature scale. Concept of Exergy and irreversibility. Clausius Theorem, property of entropy, T-ds relations."
+      },
+      {
+        "unit_number": "4",
+        "title": "Pure Substances and Vapour Power Cycles",
+        "topics": "P-v, P-T, T-s, and h-s diagrams for a pure substance, Triple point, Critical point, Dryness fraction, Steam tables, and Mollier chart. Vapour Power Cycles: Ideal Rankine cycle, Actual Rankine cycle, Reheat Cycle, Regenerative cycle."
+      },
+      {
+        "unit_number": "5",
+        "title": "Properties of Gas Mixtures and Air Power Cycles",
+        "topics": "Properties of mixture of gases: Dalton's law of Partial Pressures, Internal Energy, enthalpy, specific heats, and Entropy of gas mixtures. Air Power Cycles: Otto cycle, Diesel cycle, Dual cycle."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "P. K. Nag, \"Engineering Thermodynamics\" 6thedition, Tata Mc Graw Hill Education Private Limited, 2017.",
+        "Yunus A. Cengel M. and Michael A. Boles, \"Thermodynamics - An Engineering Approach\", 8th edition, McGrawHill Education (India) Private Limited, 2014."
+      ],
+      "reference_books": [
+        "G.J.Van Wylen & Sonntag, \"Fundamentals of Classical Thermodynamics\", 4th Edition, Wiley publication 2005."
+      ],
+      "web_resources": [
+        "www.learnthermo.com/tutorials.php",
+        "www.khanacademy.org/science/physics/thermodynamics",
+        "www.courseera.org/learn/thermodynamics-intro",
+        "www.edx.org/course/thermodynamics-iitbombayx-me209-1x-1",
+        "http://nptel.ac.in/courses/112106141",
+        "http://nptel.ac.in/courses/112108148"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24ME203",
+      "course_name": "Kinematics of Machines",
+      "semester": "3",
+      "category": "Program Core (PC)",
+      "credits": 3,
+      "L-T-P": "3-0-0",
+      "course_type": "Theory",
+      "prerequisites": "Engineering Graphics, Engineering Mechanics"
+    },
+    "course_description": "This course deals with the study of the relative motion between various parts of a machine. It covers the analysis of mechanisms, velocity and acceleration of links, design of cam profiles, kinematic synthesis, and the study of gears and gear trains.",
+    "course_outcomes": [
+      "Analyze different mechanisms used in machines and everyday life.",
+      "Evaluate velocity and acceleration of various links in a Mechanism.",
+      "Develop cam profiles for different followers.",
+      "Apply the analytical techniques for Synthesis of Mechanisms.",
+      "Determine parameters of gears and gear trains."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Introduction",
+        "topics": "Mechanisms and machines, Rigid and resistant bodies, Link, Kinematic pair, Types of joints, Constrained motions, Degrees of Freedom, Classifications of Kinematic pairs, kinematic-chain, Linkage, mechanism and structure, Classification of mechanisms, Inversions of Mechanism: Four - Link (bar) chain, Single Slider - Crank Chain, Double – Slider Crank Chain."
+      },
+      {
+        "unit_number": "2",
+        "title": "Velocity and Acceleration Analysis",
+        "topics": "Absolute and Relative Motion, Vectors, Motion of a Link, Velocity and Acceleration analysis for simple mechanisms. Instantaneous center, Kennedy's theorem, Locating I-Centers, Angular velocity by I-Centre Method for simple mechanisms (Four bar and single slider)."
+      },
+      {
+        "unit_number": "3",
+        "title": "Cams",
+        "topics": "Introduction, Types of cams, Types of Followers, Definitions, Graphical synthesis of cam profile limited to reciprocating & radial follower (Knife Edge, Roller and flat faced Followers)."
+      },
+      {
+        "unit_number": "4",
+        "title": "Kinematic Synthesis",
+        "topics": "Stages of synthesis: type, number and dimensional synthesis. Tasks of dimensional synthesis, Concepts of function generation, Rigid body guidance and path generation, Freudenstein’s equation for function generation using three precision points for four bar mechanism."
+      },
+      {
+        "unit_number": "5",
+        "title": "Gears and Gear Trains",
+        "topics": "Classification of Gears, Terminology, Law of Gearing, Cycloidal and Involute Profiles, Interference in Involute Gears. Gear Trains: simple, Compound, Reverted, and Planetary or Epicyclic Gear Train analysis (Tabular method only)."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "S.S.Rattan, Theory of Machines, 4th Edition, 2014, TMH.",
+        "Robert L Norton. \"Kinematics & Dynamics of Machinery\", 2017. Mc Graw Hill Education"
+      ],
+      "reference_books": [
+        "R S Khurmi, Theory of Machines. 14th Edition, S.Chand & Company Ltd. Eurasia Publishing House",
+        "Ghosh and Mallik, Theory of Mechanisms and Machines, 3rd Edition, 2006 East West Press",
+        "Dr. R. K. Bansal & Dr. J. S. Brar, Theory of Machines 4th Edition, 2009, Lakshmi publications"
+      ],
+      "web_resources": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24ME281",
+      "course_name": "Solid Modelling Lab",
+      "semester": "3",
+      "category": "Program Core (PC)",
+      "credits": 1.5,
+      "L-T-P": "0-0-3",
+      "course_type": "Lab",
+      "prerequisites": "Not specified"
+    },
+    "course_description": "This lab provides hands-on experience with 3D CAD software. Students will learn to construct 2D sketches, develop 3D part models of machine components, create assemblies, and export models to various file formats.",
+    "course_outcomes": [
+      "Construct 2D sketches in a modelling software.",
+      "Develop part models of machine components.",
+      "Combine part models of machine components for assembly.",
+      "Translate geometric models to other file formats."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "N/A",
+        "title": "List of Experiments",
+        "topics": [
+          "Part drawing & Assembly of Screw jack",
+          "Part drawing & Assembly of Stuffing Box",
+          "Part drawing of Marine engine connecting rod end",
+          "Part drawing & Assembly of Single tool post",
+          "Part drawing & Assembly of Socket and spigot joint",
+          "Part drawing & Assembly of Foot-step bearing",
+          "Develop various types of GI pipe fittings",
+          "Develop double strap diamond butt joint"
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Pro/Engineer Wildfire 5.0 by Roger Toogood, Jack Zecher, SDC Publications.",
+        "Machine Drawing by K.L Narayana, P.Kannaiah, K.Venkata Reddy, Publisher: New Age International"
+      ],
+      "reference_books": [
+        "Parametric Modeling with Pro/ENGINEER Wildfire 5.0",
+        "Parametric Modeling with Creo Parametric 1.0"
+      ],
+      "web_resources": [
+        "http://www.proetutorials.com/",
+        "http://learningexchange.ptc.com/tutorials/by_sub_product/ptc-creo-elements-pro-pro-engineer/sub_product_id:1",
+        "https://catiatutor.com/",
+        "www.v5train.com"
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24EE285",
+      "course_name": "Electrical and Electronics Engineering Lab",
+      "semester": "3",
+      "category": "Engineering Science (ES)",
+      "credits": 1.5,
+      "L-T-P": "0-0-3",
+      "course_type": "Lab",
+      "prerequisites": "Not specified"
+    },
+    "course_description": "This lab provides practical experience in both electrical and electronics engineering. The electrical part involves verifying circuit laws and testing DC/AC machines. The electronics part focuses on obtaining the characteristics of diodes and transistors. Note: A minimum of 5 experiments must be conducted from each part.",
+    "course_outcomes": [],
+    "syllabus": [
+      {
+        "unit_number": "A",
+        "title": "Electrical Engineering",
+        "topics": [
+          "Verification of KCL and KVL",
+          "Determination of parameters of choke coil",
+          "Open circuit characteristics of a separately excited DC generator",
+          "Brake test on DC shunt motor",
+          "Brake test on three phase induction motor",
+          "OC and SC test of the transformer"
+        ]
+      },
+      {
+        "unit_number": "B",
+        "title": "Electronics Engineering",
+        "topics": [
+          "Obtain the V-I characteristics of PN junction diode",
+          "Obtain the V-I characteristics of Zener diode",
+          "Verify the output waveforms of the rectifier and calculate the ripple factor.",
+          "Obtain the input and output characteristics of a transistor in CB configuration",
+          "Obtain the input and output characteristics of a transistor in CE configuration",
+          "Obtain the input and output characteristics of a transistor in CC configuration"
+        ]
+      }
+    ],
+    "books": {
+      "textbooks": [],
+      "reference_books": [],
+      "web_resources": []
+    }
+  },
+  {
+    "metadata": {
+      "course_code": "24UC201",
+      "course_name": "Universal Human Values-II: Understanding Harmony",
+      "semester": "3",
+      "category": "Mandatory Course (MC)",
+      "credits": 3,
+      "L-T-P": "2-1-0",
+      "course_type": "Theory",
+      "prerequisites": "UHV-I (in Student Induction Program)"
+    },
+    "course_description": "This course facilitates a holistic understanding of harmony at various levels: in the self, family, society, and nature. It encourages self-exploration to understand human values and their implications for professional ethics, aiming for a transition to a Universal Human Order.",
+    "course_outcomes": [
+      "Apply the right understanding of the concepts of value education and basic human aspirations through self-exploration for the fulfillment of human aspirations.",
+      "Analyse various aspects of the human being as the combination of Self and Body for attaining harmony at the level of human being (individual).",
+      "Apply the knowledge of nine universal values in human-human relationship for harmony at the level of family, and appreciate all the essential factors that help in attaining harmony at the level of society.",
+      "Differentiate the characteristics and activities of various orders of Nature and study the mutual fulfillment among them, and also identify the existence as co-existence at all levels.",
+      "Present sustainable solutions to various challenges in society and Nature, and identify that the solutions are practicable."
+    ],
+    "syllabus": [
+      {
+        "unit_number": "1",
+        "title": "Course introduction, need, basic guidelines, content and process for value education",
+        "topics": "Purpose and motivation, recapitulation from UHV-I, Self-exploration, 'Natural acceptance' and experimental validation. Continuous happiness and prosperity. Right understanding, relationship, and physical facility."
+      },
+      {
+        "unit_number": "2",
+        "title": "Understanding Harmony in the Human Being - Harmony in Myself",
+        "topics": "Human being as a co-existence of 'I' and 'Body'. Needs of Self and Body. Body as an instrument of 'I'. Harmony of I with the Body: Sanyam and Health, meaning of Prosperity."
+      },
+      {
+        "unit_number": "3",
+        "title": "Understanding Harmony in the Family and Society - Harmony in Human-Human Relationship",
+        "topics": "Values in human-human relationship; Justice (nine universal values). Trust and Respect as foundational values. Harmony in society; Resolution, Prosperity, fearlessness (trust) and co-existence as Human Goals."
+      },
+      {
+        "unit_number": "4",
+        "title": "Understanding Harmony in Nature & Existence - Whole existence as Coexistence",
+        "topics": "Inter-connectedness and mutual fulfillment among the four orders of Nature, recyclability and self-regulation in nature. Understanding Existence as Co-existence of mutually interacting units in all-pervasive space."
+      },
+      {
+        "unit_number": "5",
+        "title": "Implications of the above Holistic Understanding of Harmony on Professional Ethics",
+        "topics": "Natural acceptance of human values, Definitiveness of ethical human conduct. Competence in professional ethics, designing people-friendly and eco-friendly systems. Case studies of holistic technologies, management models and production systems. Strategy for transition to Universal Human Order."
+      }
+    ],
+    "books": {
+      "textbooks": [
+        "Gaur, R.R., Sangal, R, & Bagaria, G.P. (2010). A Foundation Course in Human Values and Professional Ethics, Excel Books Private Limited, New Delhi.",
+        "Gaur, R.R., Asthana, R, & Bagaria, G.P. (2019) A Foundation Course in Human Values and Professional Ethics (2nd revised edition). Excel Books Private Limited, New Delhi."
+      ],
+      "reference_books": [
+        "Jeevan Vidya: Ek Parichaya, A. Nagaraj, Jeevan Vidya Prakashan, Amarkantak (1999).",
+        "Human Values, A. N. Tripathi, New Age International Publishers, New Delhi (2004).",
+        "The Story of Stuff: The impact of overconsumption on the planet, our communities, and our health and how we can make it better, Annie Leonard, Free Press, New York (2010).",
+        "The story of my experiments with truth: Mahatma Gandhi Autobiography, Mohandas Karamchand Gandhi, B. N. Publishing (2008).",
+        "Small is beautiful: A study of economics as if people mattered, E. F. Schumacher, Vintage Books, London (1993).",
+        "Slow is beautiful: New Visions of Community, Cecile Andrews, New Society Publishers, Canada (2006).",
+        "Economy of Permanence, J. C. Kumarappa, Sarva-Seva-Sangh Prakashan, Varanasi (2017).",
+        "Bharat Mein Angreji Raj, Pandit Sunderlal, Prabhath Prakashan, Delhi (2018).",
+        "Rediscovering India, Dharampal, Society for Integrated Development of Himilayas (2003).",
+        "Hind Swaraj or Indian Home Rule, M. K. Gandhi, Navajivan Publishing House, Ahmedabad (1909).",
+        "India Wins Freedom: The Complete Version, Maulana Abul Kalam Azad, Orient Blackswan (1988).",
+        "The Life of Vivekananda and the Universal gospel, Romain Rolland, Advaitha Ashrama, India (2010).",
+        "Mahatma Gandhi: The Man who become one with the Universal Being, Romain Rolland, Srishti Publishers & Distributors, New Delhi (2002)."
+      ],
+      "web_resources": [
+        "https://dokumen.pub/a-foundation-course-in-human-values-and-professional-ethics-firstnbsped-9788174467812.html",
+        "https://www.youtube.com/channel/UCo8MpJB_aaVwB4LWLAx6AhQ",
+        "https://fdp-si.aicte-india.org/download.php#1"
+      ]
+    }
+  }
+]
