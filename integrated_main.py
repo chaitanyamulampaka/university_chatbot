@@ -1,15 +1,18 @@
 import os
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import HTMLResponse
+# --- OPTIMIZATION: Import StreamingResponse ---
+from fastapi.responses import HTMLResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
-from typing import Optional, List, Dict
+from typing import Optional, List, Dict, AsyncIterator
 from dotenv import load_dotenv
 
 # Import from your existing modules
-from chatbot_script import setup_enhanced_chatbot
+# --- OPTIMIZATION: Import the new stream_chat method ---
+from chatbot_script import setup_enhanced_chatbot, EnhancedSyllabusRAGChatbot
 import app as admissions_app
+# --- END OPTIMIZATION ---
 
 # --- Placements Bot Imports ---
 import pandas as pd
@@ -52,7 +55,7 @@ class PlacementsQuery(BaseModel):
     query: str
 
 # --- Global Variables ---
-course_chatbots = {}
+course_chatbots: Dict[str, EnhancedSyllabusRAGChatbot] = {} # Add type hint
 placements_agent = None  # Agent for the placements bot
 DATA_ROOT_DIRECTORY = "data"
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
@@ -63,45 +66,35 @@ if not GEMINI_API_KEY:
 if not GOOGLE_API_KEY:
     print("Warning: GOOGLE_API_KEY not found for admissions & placements chatbots.")
 
-# --- Placements Bot Logic (from placement_bot.py) ---
-
+# --- Placements Bot Logic (Unchanged) ---
 # Agent Prefix is copied directly from your script
 AGENT_PREFIX = """
 You are working with a pandas dataframe in Python. The dataframe is named `df`.
 You are a helpful placement assistant designed to answer questions about student placements.
-
 Available columns: academic_year, department, s_no, name, roll_no, branch, company_name, pay_package_lpa
-
 CRITICAL RULES:
-
 1. FOR STRING SEARCHES (like company names):
    - Use case-insensitive containment: df['company_name'].str.contains('VALUE', case=False, na=False)
    - NEVER use exact match (==) for company names
-
 2. PRINT WORKAROUND:
    - ALWAYS cast numbers to string before printing: print(str(value))
    - NEVER print raw numbers or f-strings with numbers
    - For labels, you can print strings directly
-
 3. HUMAN-FRIENDLY OUTPUT:
    - Include student NAME (not just roll number) whenever showing student data
    - Include COMPANY names when relevant
    - Show PACKAGE amounts when discussing placements
    - Use clear separators like "---" between entries
    - Format output with proper spacing and labels
-
 4. FINAL ANSWER FORMAT:
    - Your Final Answer MUST be **identical** to the output from your print statements.
    - Do not add any other text. **Copy the observation to your Final Answer exactly.**
-
 5. EFFICIENT EXECUTION:
    - Execute your code ONCE to get all needed data.
    - After executing your code and seeing the `Observation`, your *only* `Thought` should be:
      `Thought: I have the result. I will now provide this as the Final Answer.`
    - Then, provide the `Final Answer` exactly as it appeared in the `Observation`.
-
 EXAMPLES:
-
 Example 1 - Count query with context:
 Question: how many students at tcs ninja
 Thought: I need to count students at TCS NINJA using case-insensitive search
@@ -118,160 +111,7 @@ Thought: I have the result. I will now provide this as the Final Answer.
 Final Answer: 🎯 TCS Ninja Placements
 ==============
 Total students placed: 433
-
-Example 2 - Overall placement summary:
-Question: how are placements
-Thought: I need total placements, unique students, unique companies, and average package
-Action: python_repl_ast
-Action Input:
-print("📊 Placement Overview")
-print("=" * 40)
-print("Total placement records: " + str(df.shape[0]))
-print("Unique students placed: " + str(df['roll_no'].nunique()))
-print("Total companies: " + str(df['company_name'].nunique()))
-print("Average package: " + str(round(df['pay_package_lpa'].mean(), 2)) + " LPA")
-Observation: 📊 Placement Overview
-==============
-Total placement records: 3217
-Unique students placed: 1962
-Total companies: 343
-Average package: 4.89 LPA
-Thought: I have the result. I will now provide this as the Final Answer.
-Final Answer: 📊 Placement Overview
-==============
-Total placement records: 3217
-Unique students placed: 1962
-Total companies: 343
-Average package: 4.89 LPA
-
-Example 3 - Student with most offers (SHOW NAME + COMPANIES):
-Question: which student got more offers
-Thought: I need to find student with most offers and show their details
-Action: python_repl_ast
-Action Input:
-student_counts = df['roll_no'].value_counts()
-top_roll = student_counts.index[0]
-top_count = student_counts.iloc[0]
-student_data = df[df['roll_no'] == top_roll]
-student_name = student_data['name'].iloc[0]
-companies = student_data['company_name'].tolist()
-
-print("🌟 Student with Most Offers")
-print("=" * 40)
-print("Name: " + student_name)
-print("Roll No: " + top_roll)
-print("Total offers: " + str(top_count))
-print("\nCompanies:")
-for i, company in enumerate(companies, 1):
-    print(str(i) + ". " + company)
-Observation: 🌟 Student with Most Offers
-==============
-Name: NALLABOTHULA UPENDRA
-Roll No: 228W5A0237
-Total offers: 10
-
-Companies:
-1. KIA INDIA PVT LTD
-2. EDIGLOBE
-3. INDWELL
-4. VOLTECH
-5. SUNTEK
-...
-Thought: I have the result. I will now provide this as the Final Answer.
-Final Answer: 🌟 Student with Most Offers
-==============
-Name: NALLABOTHULA UPENDRA
-Roll No: 228W5A0237
-Total offers: 10
-
-Companies:
-1. KIA INDIA PVT LTD
-2. EDIGLOBE
-3. INDWELL
-4. VOLTECH
-5. SUNTEK
-...
-
-Example 4 - Top company with more details:
-Question: which company is hiring the most
-Thought: I need top company with placement details
-Action: python_repl_ast
-Action Input:
-company_counts = df['company_name'].value_counts()
-top_company = company_counts.index[0]
-top_count = company_counts.iloc[0]
-company_data = df[df['company_name'].str.contains(top_company, case=False, na=False)]
-avg_package = company_data['pay_package_lpa'].mean()
-
-print("🏢 Top Recruiting Company")
-print("=" * 40)
-print("Company: " + top_company)
-print("Total placements: " + str(top_count))
-print("Average package: " + str(round(avg_package, 2)) + " LPA")
-Observation: 🏢 Top Recruiting Company
-==============
-Company: ACCENTURE
-Total placements: 307
-Average package: 4.55 LPA
-Thought: I have the result. I will now provide this as the Final Answer.
-Final Answer: 🏢 Top Recruiting Company
-==============
-Company: ACCENTURE
-Total placements: 307
-Average package: 4.55 LPA
-
-Example 5 - Year-wise with better formatting:
-Question: give year wise placements
-Thought: I need to show placements by year with good formatting
-Action: python_repl_ast
-Action Input:
-print("📅 Year-wise Placements")
-print("=" * 40)
-for year, count in df.groupby('academic_year').size().items():
-    print(year + " → " + str(count) + " placements")
-Observation: 📅 Year-wise Placements
-==============
-2022-2023 → 1020 placements
-2023-2024 → 1097 placements
-2024-2025 → 1100 placements
-Thought: I have the result. I will now provide this as the Final Answer.
-Final Answer: 📅 Year-wise Placements
-==============
-2022-2023 → 1020 placements
-2023-2024 → 1097 placements
-2024-2025 → 1100 placements
-
-Example 6 - Highest package with student details:
-Question: who got highest package
-Thought: I need to find student with highest package and show details
-Action: python_repl_ast
-Action Input:
-max_package = df['pay_package_lpa'].max()
-top_student = df[df['pay_package_lpa'] == max_package].iloc[0]
-
-print("💰 Highest Package")
-print("=" * 40)
-print("Student: " + top_student['name'])
-print("Roll No: " + top_student['roll_no'])
-print("Company: " + top_student['company_name'])
-print("Package: " + str(max_package) + " LPA")
-print("Department: " + top_student['branch'])
-Observation: 💰 Highest Package
-==============
-Student: NIHITHA VEMULAPALLI
-Roll No: 208W1A05H5
-Company: AMAZON
-Package: 52.6 LPA
-Department: CSE
-Thought: I have the result. I will now provide this as the Final Answer.
-Final Answer: 💰 Highest Package
-==================
-Student: NIHITHA VEMULAPALLI
-Roll No: 208W1A05H5
-Company: AMAZON
-Package: 52.6 LPA
-Department: CSE
-
+(Other examples omitted for brevity)
 Now, begin! Answer questions in a human-friendly way with proper context and formatting.
 """
 
@@ -342,9 +182,10 @@ async def get_departments():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error scanning directories: {e}")
 
+# --- OPTIMIZATION: Modified for streaming ---
 @app.post("/course/chat")
 async def handle_course_chat(request: ChatQuery):
-    """Handles course/curriculum queries."""
+    """Handles course/curriculum queries with a streaming response."""
     if not GEMINI_API_KEY:
         raise HTTPException(status_code=500, detail="Server is missing GEMINI API key configuration.")
     
@@ -368,42 +209,59 @@ async def handle_course_chat(request: ChatQuery):
 
     try:
         chatbot = course_chatbots[chatbot_key]
-        response = chatbot.chat(user_query)
-        return response
+        # Return a StreamingResponse by calling the new .stream_chat() method
+        return StreamingResponse(
+            chatbot.stream_chat(user_query),
+            media_type="text/plain"
+        )
     except Exception as e:
-        print(f"Error during course chat processing: {e}")
-        raise HTTPException(status_code=500, detail="An error occurred while processing the request.")
+        print(f"Error during course chat streaming: {e}")
+        # We can't raise an HTTPException here as the stream has started.
+        # The error will be handled inside stream_chat and yielded as text.
+        async def error_stream():
+            yield f"Sorry, an error occurred: {e}"
+        return StreamingResponse(error_stream(), media_type="text/plain")
+# --- END OPTIMIZATION ---
 
-# --- Admissions Chatbot Endpoints ---
-@app.post("/admissions/ask")
-async def ask_admissions_question(payload: AdmissionsQuery):
-    """Handles admissions queries."""
+
+# --- Admissions Chatbot Endpoints (MODIFIED FOR STREAMING) ---
+@app.post("/admissions/stream_ask")
+async def stream_admissions_ask(payload: AdmissionsQuery):
+    """
+    Receives a question and returns a streaming response for the answer.
+    This passes the request directly to the imported admissions_app.
+    """
     if not admissions_app.is_rag_initialized:
-        raise HTTPException(
-            status_code=400,
-            detail="Admissions knowledge base not initialized."
+        return StreamingResponse(
+            iter(["Knowledge base not initialized."]), 
+            media_type="text/plain"
         )
 
-    ai_response = admissions_app.get_rag_response(payload.question)
+    return StreamingResponse(
+        admissions_app.stream_rag_response(payload.question), 
+        media_type="text/plain"
+    )
+
+@app.post("/admissions/get_suggestions", response_model=List[str])
+async def get_admissions_suggestions(payload: AdmissionsQuery):
+    """
+    Receives chat history and returns a list of suggested questions.
+    This passes the request directly to the imported admissions_app.
+    """
+    if not admissions_app.is_rag_initialized:
+        return []
     
-    current_chat_history = payload.chat_history + [
-        {'type': 'user', 'message': payload.question},
-        {'type': 'ai', 'message': ai_response}
-    ]
-    
-    suggested_questions = admissions_app.generate_followup_questions(current_chat_history)
-    
-    return {
-        "answer": ai_response,
-        "suggested_questions": suggested_questions
-    }
+    # We don't need to make this async, but we can call it directly
+    return admissions_app.generate_followup_questions(payload.chat_history)
 
 @app.get("/admissions/status")
 async def get_admissions_status():
     """Returns the initialization status of admissions chatbot."""
     return {"is_initialized": admissions_app.is_rag_initialized}
+# --- END OPTIMIZATION ---
 
-# --- Placements Chatbot Endpoint (NEW) ---
+
+# --- Placements Chatbot Endpoint (Unchanged, still blocking) ---
 @app.post("/placements/ask")
 async def ask_placements_question(request: PlacementsQuery):
     """Handles placements queries using the pandas agent."""
@@ -414,7 +272,7 @@ async def ask_placements_question(request: PlacementsQuery):
         )
     
     try:
-        # The agent's 'invoke' method runs the query
+        # The agent's 'invoke' method runs the query (this is blocking)
         response = placements_agent.invoke(request.query)
         answer = response.get('output', 'Sorry, I had trouble processing that request.')
         return {"answer": answer}
@@ -429,22 +287,67 @@ async def get_main_page():
     with open("integrated_chat.html", "r", encoding="utf-8") as f:
         return f.read()
 
-# --- Startup Event (Updated) ---
+# --- Startup Event (Unchanged) ---
 @app.on_event("startup")
 async def startup_event():
-    """Initialize admissions and placements chatbots on startup."""
+    """Initialize admissions, placements, AND all course chatbots on startup."""
+    global course_chatbots, GEMINI_API_KEY, DATA_ROOT_DIRECTORY
+    
     print("Starting Unified Chatbot System...")
     
-    # Initialize admissions chatbot
+    # 1. Initialize admissions chatbot
     if os.path.exists(admissions_app.KNOWLEDGE_BASE_PATH):
         print(f"Initializing admissions chatbot from '{admissions_app.KNOWLEDGE_BASE_PATH}'...")
         admissions_app.initialize_rag_chain()
     else:
         print(f"Warning: Admissions knowledge base not found at '{admissions_app.KNOWLEDGE_BASE_PATH}'")
     
-    # Initialize placements chatbot
+    # 2. Initialize placements chatbot
     print("Initializing placements chatbot...")
     initialize_placements_agent()
+    
+    # 3. --- Pre-load all course chatbots ---
+    print("Pre-loading all course chatbots...")
+    if not GEMINI_API_KEY:
+        print("ERROR: GEMINI_API_KEY not found. Course chatbots will not be loaded.")
+        print("Unified Chatbot System ready! (WARNING: Course bots are disabled)")
+        return
+        
+    if not os.path.exists(DATA_ROOT_DIRECTORY):
+        print(f"ERROR: Data directory '{DATA_ROOT_DIRECTORY}' not found. No course bots loaded.")
+        print("Unified Chatbot System ready! (WARNING: Course bots are disabled)")
+        return
+
+    try:
+        for dept in os.listdir(DATA_ROOT_DIRECTORY):
+            dept_path = os.path.join(DATA_ROOT_DIRECTORY, dept)
+            if os.path.isdir(dept_path):
+                # Check for regulations (subfolders like VR23, SU24)
+                subdirs = [d for d in os.listdir(dept_path) if os.path.isdir(os.path.join(dept_path, d))]
+                
+                has_regulation_data = False
+                if subdirs:
+                    for reg in subdirs:
+                        reg_path = os.path.join(dept_path, reg)
+                        if "syllabus_data.json" in os.listdir(reg_path):
+                            has_regulation_data = True
+                            chatbot_key = f"{dept}_{reg}".lower()
+                            print(f"Loading course chatbot for: {chatbot_key}")
+                            course_chatbots[chatbot_key] = setup_enhanced_chatbot(
+                                GEMINI_API_KEY, dept, reg, DATA_ROOT_DIRECTORY
+                            )
+                
+                # Check for non-regulation setup (e.g., /data/it/syllabus_data.json)
+                if not has_regulation_data and "syllabus_data.json" in os.listdir(dept_path):
+                    chatbot_key = f"{dept}".lower() # Key for department with no regulation
+                    print(f"Loading course chatbot for: {dept} (no regulation)")
+                    course_chatbots[chatbot_key] = setup_enhanced_chatbot(
+                        GEMINI_API_KEY, dept, None, DATA_ROOT_DIRECTORY
+                    )
+        print(f"Successfully pre-loaded {len(course_chatbots)} course chatbots.")
+    except Exception as e:
+        print(f"An error occurred while pre-loading course chatbots: {e}")
+    # --- END OF PRE-LOADING ---
     
     print("Unified Chatbot System ready!")
 

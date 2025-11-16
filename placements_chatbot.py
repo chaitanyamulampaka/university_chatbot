@@ -2,16 +2,21 @@ import pandas as pd
 import os
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
 from langchain_google_genai import ChatGoogleGenerativeAI
+from dotenv import load_dotenv
 
-# --- Set Your API Key ---
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDg6DDwnsgxJVrZKdm7AWfUtmHyTHWsiE8"
+# --- Load Environment Variables ---
+load_dotenv()
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-if "YOUR_API_KEY_HERE" in os.environ["GOOGLE_API_KEY"]:
+if not GOOGLE_API_KEY:
     print("="*50)
-    print("ERROR: Please replace 'YOUR_API_KEY_HERE' with your actual Google API key.")
-    print("Get one from https://aistudio.google.com/")
+    print("ERROR: GOOGLE_API_KEY not found in .env file.")
+    print("Please set your GOOGLE_API_KEY in the .env file.")
     print("="*50)
     exit()
+
+# Set the API key for the LLM
+os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 
 # --- Load and Prepare the Data ---
 try:
@@ -282,19 +287,20 @@ print("Simple Placements Chatbot (Pandas Agent)")
 print("Type 'exit' to quit.")
 print("="*50)
 
-while True:
-    user_question = input("\nAsk your question: ")
-    if user_question.lower() == "exit":
-        print("Goodbye!")
-        break
-        
-    try:
-        response = agent.invoke(user_question)
-        answer = response['output']
-        
-        print("\nFinal Answer:")
-        print(answer)
+if __name__ == "__main__":
+    while True:
+        user_question = input("\nAsk your question: ")
+        if user_question.lower() == "exit":
+            print("Goodbye!")
+            break
+            
+        try:
+            response = agent.invoke(user_question)
+            answer = response['output']
+            
+            print("\nFinal Answer:")
+            print(answer)
 
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        print("Please try rephrasing your question.")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            print("Please try rephrasing your question.")

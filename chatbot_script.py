@@ -10,13 +10,18 @@ for vector storage.
 import json
 import re
 import os
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, AsyncIterator
 
-import google.generativeai as genai
+# --- OPTIMIZATION: Use LangChain's wrapper for streaming ---
+# import google.generativeai as genai # Original
+from langchain_google_genai import ChatGoogleGenerativeAI # New
+# --- END OPTIMIZATION ---
+
 from sentence_transformers import SentenceTransformer
 import chromadb
 from dotenv import load_dotenv
 import warnings
+import asyncio # For running the test query
 
 # Load environment variables from a .env file
 load_dotenv()
@@ -32,7 +37,7 @@ class EnhancedSyllabusRAGChatbot:
     retrieving relevant context, and generating responses using a generative AI model.
     """
 
-    def __init__(self, gemini_api_key: str, model_name: str = "gemini-2.5-flash"):
+    def __init__(self, gemini_api_key: str, model_name: str = "gemini-2.5-flash-preview-05-20"):
         """
         Initializes the chatbot components.
 
@@ -40,8 +45,19 @@ class EnhancedSyllabusRAGChatbot:
             gemini_api_key (str): The API key for the Google Gemini model.
             model_name (str): The name of the Gemini model to use.
         """
-        genai.configure(api_key=gemini_api_key)
-        self.model = genai.GenerativeModel(model_name)
+        # --- OPTIMIZATION: Use LangChain's wrapper ---
+        # genai.configure(api_key=gemini_api_key) # Original
+        # self.model = genai.GenerativeModel(model_name) # Original
+        
+        # New: Use ChatGoogleGenerativeAI for .astream() capability
+        self.model = ChatGoogleGenerativeAI(
+            model=model_name, 
+            google_api_key=gemini_api_key, 
+            temperature=0.7,
+            convert_system_message_to_human=True # Helps with some prompt structures
+        )
+        # --- END OPTIMIZATION ---
+
         self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
         self.client = chromadb.PersistentClient(path="./chroma_db_by_dept")
         self.collection = None
@@ -56,10 +72,7 @@ class EnhancedSyllabusRAGChatbot:
     def load_data(self, syllabus_data_path: str, optimization_path: str):
         """
         Loads and processes syllabus and optimization data from JSON files.
-
-        Args:
-            syllabus_data_path (str): Path to the main syllabus data file.
-            optimization_path (str): Path to the RAG optimization data file (e.g., FAQs).
+        (This function is unchanged)
         """
         with open(syllabus_data_path, 'r', encoding='utf-8') as f:
             restructured_data = json.load(f)
@@ -137,23 +150,34 @@ class EnhancedSyllabusRAGChatbot:
 
     def create_enhanced_vector_store(self, collection_name: str):
         """
-        Creates a fresh ChromaDB vector store for the loaded data.
-        It will delete any existing collection with the same name to ensure
-        data is always up-to-date on server restart.
-
-        Args:
-            collection_name (str): The unique name for the ChromaDB collection.
+        Loads an existing ChromaDB vector store or creates a new one if it doesn't exist.
         """
         try:
-            print(f"Checking for and deleting existing collection '{collection_name}' to refresh data.")
-            self.client.delete_collection(name=collection_name)
+            # --- OPTIMIZATION: Try to GET the collection first ---
+            print(f"Loading existing collection '{collection_name}'...")
+            self.collection = self.client.get_collection(name=collection_name)
+            print(f"Collection '{collection_name}' loaded successfully from disk.")
+            return # The collection already exists, so we are done.
+
         except Exception as e:
-            print(f"Info: Could not delete collection '{collection_name}' (it may not exist yet).")
+            # This exception is expected if the collection doesn't exist yet.
+            print(f"Info: Collection '{collection_name}' not found. Will create a new one.")
         
-        self.collection = self.client.create_collection(
-            name=collection_name,
-            metadata={"hnsw:space": "cosine"}
-        )
+        # --- If loading failed, CREATE the collection (this runs only once) ---
+        try:
+            self.collection = self.client.create_collection(
+                name=collection_name,
+                metadata={"hnsw:space": "cosine"}
+            )
+        except Exception as e:
+            print(f"Error creating collection: {e}")
+            # As a fallback, try to get it again in case of a race condition
+            self.collection = self.client.get_collection(name=collection_name)
+            if self.collection:
+                print("Collection was created by another process, loaded successfully.")
+                return
+            else:
+                raise e # Raise the original error if it's still not found
 
         documents, metadatas, ids = [], [], []
 
@@ -186,20 +210,15 @@ class EnhancedSyllabusRAGChatbot:
             batch_docs = documents[i:i + batch_size]
             batch_meta = metadatas[i:i + batch_size]
             batch_ids = ids[i:i + batch_size]
+            # Note: This is the slow part that will now only run once
             embeddings = self.embedding_model.encode(batch_docs).tolist()
             self.collection.add(embeddings=embeddings, documents=batch_docs, metadatas=batch_meta, ids=batch_ids)
-        print(f"Successfully created and populated vector store '{collection_name}' with {len(documents)} documents.")
-
+        print(f"Successfully created and populated new vector store '{collection_name}' with {len(documents)} documents.")
 
     def enhance_query(self, query: str) -> str:
         """
         Enhances the user query with related terms for better retrieval.
-
-        Args:
-            query (str): The original user query.
-
-        Returns:
-            str: The enhanced query.
+        (This function is unchanged)
         """
         enhanced_terms = []
         query_lower = query.lower()
@@ -226,13 +245,7 @@ class EnhancedSyllabusRAGChatbot:
     def retrieve_context(self, query: str, n_results: int = 8) -> List[Dict]:
         """
         Retrieves relevant context documents from the vector store.
-
-        Args:
-            query (str): The user's query.
-            n_results (int): The number of context documents to retrieve.
-
-        Returns:
-            List[Dict]: A list of retrieved documents with metadata and distance scores.
+        (This function is unchanged)
         """
         if not self.collection:
             raise ValueError("Vector store not initialized.")
@@ -246,16 +259,9 @@ class EnhancedSyllabusRAGChatbot:
         return [{'content': doc, 'metadata': meta, 'distance': dist}
                 for doc, meta, dist in zip(results['documents'][0], results['metadatas'][0], results['distances'][0])]
 
-    def generate_enhanced_response(self, query: str, context_docs: List[Dict]) -> str:
+    def _build_prompt(self, query: str, context_docs: List[Dict]) -> str:
         """
-        Generates a final response using the Gemini model based on the retrieved context.
-
-        Args:
-            query (str): The user's query.
-            context_docs (List[Dict]): The context documents retrieved from the vector store.
-
-        Returns:
-            str: The generated answer.
+        Internal helper to build the prompt string.
         """
         context_parts = [
             f"Context Snippet (Source: {doc['metadata'].get('source', 'unknown')}, Course: {doc['metadata'].get('course_code', 'N/A')}):\n{doc['content']}"
@@ -277,7 +283,7 @@ class EnhancedSyllabusRAGChatbot:
         1. Synthesize a coherent, friendly answer from the provided context. Do not just list the raw snippets.
         2. If the context contains a list of courses, present them clearly in a list format.
         3. If specific details like textbooks, prerequisites, or outcomes are available in the context, integrate them naturally into your response.
-        4. If the information to answer the question is NOT in the context, you MUST explicitly state that you cannot find the information in the provided documents.
+        4. If the information to answer the question is NOT in the provided context, you MUST explicitly state that you cannot find the information in the provided documents.
         5. Be direct and clear in your response.
 
         Answer:"""
@@ -301,19 +307,58 @@ class EnhancedSyllabusRAGChatbot:
             4. If the syllabus unit information is not available in the context, explicitly state that.
 
             Answer:"""
+        return prompt
+
+    def generate_enhanced_response(self, query: str, context_docs: List[Dict]) -> str:
+        """
+        Generates a final, BLOCKING response.
+        (This is the original function, modified to use .invoke())
+        """
+        prompt = self._build_prompt(query, context_docs)
 
         try:
-            response = self.model.generate_content(prompt)
-            return response.text
+            # --- OPTIMIZATION: Use .invoke() for blocking call ---
+            # response = self.model.generate_content(prompt) # Original
+            # return response.text # Original
+            response = self.model.invoke(prompt)
+            return response.content
+            # --- END OPTIMIZATION ---
         except Exception as e:
             error_message = str(e)
             if "API key not valid" in error_message:
                 return "Sorry, there is an issue with the server's API key configuration. Please contact the administrator."
             return f"Sorry, I encountered an error generating the response: {error_message}"
 
-    def chat(self, query: str, n_context: int = 10) -> Dict[str, Any]:
+    # --- OPTIMIZATION: New async generator for streaming ---
+    async def stream_chat(self, query: str, n_context: int = 10) -> AsyncIterator[str]:
         """
-        Orchestrates the chat process from query to response.
+        Orchestrates the chat process as an asynchronous stream.
+        """
+        try:
+            # 1. Retrieve context (this is fast, synchronous is fine)
+            context_docs = self.retrieve_context(query, n_context)
+            
+            # 2. Build the prompt
+            prompt = self._build_prompt(query, context_docs)
+
+            # 3. Stream the response
+            async for chunk in self.model.astream(prompt):
+                yield chunk.content
+                
+        except Exception as e:
+            error_message = str(e)
+            print(f"Error in stream_chat: {error_message}")
+            if "API key not valid" in error_message:
+                yield "Sorry, there is an issue with the server's API key configuration."
+            else:
+                yield f"Sorry, I encountered an error: {error_message}"
+    # --- END OPTIMIZATION ---
+
+
+    def chat_blocking(self, query: str, n_context: int = 10) -> Dict[str, Any]:
+        """
+        Orchestrates the chat process from query to response in a BLOCKING way.
+        (This is the original 'chat' method, renamed)
         """
         context_docs = self.retrieve_context(query, n_context)
         response = self.generate_enhanced_response(query, context_docs)
@@ -331,6 +376,7 @@ class EnhancedSyllabusRAGChatbot:
 def setup_enhanced_chatbot(gemini_api_key: str, department: str, regulation: Optional[str] = None, data_root: str = "data"):
     """
     Factory function to initialize and set up a chatbot instance.
+    (This function is unchanged)
     """
     if not gemini_api_key:
         raise ValueError("Gemini API key is required.")
@@ -353,10 +399,13 @@ def setup_enhanced_chatbot(gemini_api_key: str, department: str, regulation: Opt
     chatbot.create_enhanced_vector_store(collection_name=collection_name)
     return chatbot
 
-def run_test_query(chatbot: EnhancedSyllabusRAGChatbot, query: str):
-    """Helper function to run a single test query and print the result."""
+def run_test_query_blocking(chatbot: EnhancedSyllabusRAGChatbot, query: str):
+    """
+    Helper function to run a single test query (blocking) and print the result.
+    (Renamed from run_test_query)
+    """
     print(f"\n[Query]: {query}")
-    response = chatbot.chat(query)
+    response = chatbot.chat_blocking(query) # Calls the blocking method
     print(f"[Response]: {response['answer']}")
     print(f"  (Context Docs Used: {response['context_used']}, Relevant Courses: {len(response['relevant_courses'])})")
 
@@ -371,11 +420,11 @@ def main():
     try:
         print("\n--- Testing CE - VR23 Regulation ---")
         ce_vr23_chatbot = setup_enhanced_chatbot(API_KEY, 'ce', regulation='vr23')
-        run_test_query(ce_vr23_chatbot, "What are the outcomes for 23BS1101?")
+        run_test_query_blocking(ce_vr23_chatbot, "What are the outcomes for 23BS1101?") # Updated call
 
         print("\n--- Testing CE - SU24 Regulation ---")
         ce_su24_chatbot = setup_enhanced_chatbot(API_KEY, 'ce', regulation='su24')
-        run_test_query(ce_su24_chatbot, "what are the subjects in sem 3")
+        run_test_query_blocking(ce_su24_chatbot, "what are the subjects in sem 3") # Updated call
 
     except FileNotFoundError as e:
         print(f"\nERROR during setup: {e}")
@@ -384,4 +433,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

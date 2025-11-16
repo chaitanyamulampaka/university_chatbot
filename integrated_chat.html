@@ -14,7 +14,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        /* --- CSS Variables for Theming --- */
+        /* --- CSS (Identical to previous version, unchanged) --- */
         :root {
             /* Light Theme (Default) */
             --bg-gradient: linear-gradient(to bottom right, #fdf6f8, #f8f8f8);
@@ -141,12 +141,11 @@
             transition: background-color 0.3s;
         }
         
-        /* --- MODIFIED STYLES --- */
         .selector-header {
             background: linear-gradient(to bottom, var(--header-gradient-start), var(--header-gradient-end));
             color: white;
             padding: 25px;
-            height: 210px; /* Reduced from 230px */
+            height: 210px;
             clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
         }
         .selector-header-content {
@@ -160,22 +159,21 @@
         }
         .theme-toggle:hover { background-color: rgba(255, 255, 255, 0.3); }
 
-        .selector-greeting { color: white; font-size: 1.5rem; font-weight: 700; margin-top: 15px;  } /* Reduced font and margin */
-        .selector-body { flex-grow: 1; padding: 0 25px; margin-top: -70px; position: relative; z-index: 10; } /* Reduced from -80px */
-        .selector-card { background: var(--card-bg); border-radius: 20px; padding: 20px; box-shadow: 0 10px 30px var(--shadow-color); transition: background-color 0.3s; height: 100%; overflow-y: auto; } /* Reduced padding */
-        .category-selector h3 { font-size: 1rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 20px; text-align: center;} /* Reduced margin */
+        .selector-greeting { color: white; font-size: 1.5rem; font-weight: 700; margin-top: 15px;  }
+        .selector-body { flex-grow: 1; padding: 0 25px; margin-top: -70px; position: relative; z-index: 10; }
+        .selector-card { background: var(--card-bg); border-radius: 20px; padding: 20px; box-shadow: 0 10px 30px var(--shadow-color); transition: background-color 0.3s; height: 100%; overflow-y: auto; }
+        .category-selector h3 { font-size: 1rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 20px; text-align: center;}
         .category-item {
-            display: flex; align-items: center; padding: 12px; border-radius: 15px; margin-bottom: 12px; /* Reduced padding and margin */
+            display: flex; align-items: center; padding: 12px; border-radius: 15px; margin-bottom: 12px;
             border: 1px solid transparent; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
         }
         .category-item:hover { transform: translateY(-3px); box-shadow: 0 4px 15px var(--shadow-color); }
         .category-item .icon {
-            font-size: 1.3rem; width: 45px; height: 45px; display: flex; justify-content: center; /* Reduced size */
+            font-size: 1.3rem; width: 45px; height: 45px; display: flex; justify-content: center;
             align-items: center; border-radius: 12px; margin-right: 15px; flex-shrink: 0; color: white;
         }
-        .category-item .text h4 { font-size: 1.0rem; font-weight: 600; margin-bottom: 2px; color: var(--text-primary); } /* Reduced font */
-        .category-item .text p { font-size: 0.8rem; color: var(--text-secondary); } /* Reduced font */
-        /* --- END OF MODIFIED STYLES --- */
+        .category-item .text h4 { font-size: 1.0rem; font-weight: 600; margin-bottom: 2px; color: var(--text-primary); }
+        .category-item .text p { font-size: 0.8rem; color: var(--text-secondary); }
 
         .category-item--admission { background-color: var(--admission-bg); border-color: var(--admission-border); }
         .category-item--admission .icon { background-color: var(--admission-icon); }
@@ -194,7 +192,7 @@
             display: flex; flex-direction: column; transition: background-color 0.3s;
         }
         .chat-view-header {
-            color: white; padding: 25px; height: 180px; flex-shrink: 0;
+            color: white; padding: 25px; height: 150px; flex-shrink: 0;
             border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
             transition: none;
         }
@@ -238,7 +236,7 @@
         .message-content {
             background: var(--card-bg); padding: 12px 15px; border-radius: 15px;
             box-shadow: 0 2px 8px var(--shadow-color); word-wrap: break-word;
-            white-space: pre-wrap; /* Added for placements bot */
+            white-space: pre-wrap;
         }
         .message.bot-message .message-content { border-top-left-radius: 5px; }
         .message.user-message .message-content { border-top-right-radius: 5px; background-color: var(--user-message-bg); color: white; }
@@ -246,6 +244,8 @@
         .message.user-message .message-content p { color: white; }
         .message-content .sender-name { font-weight: 600; margin-bottom: 4px; font-size: 0.9rem; }
         .message-content a { font-weight: 600; text-decoration: underline; }
+
+    
 
         #admissions-suggestion-buttons {
             display: flex;
@@ -265,6 +265,7 @@
             flex-shrink: 0;
             white-space: nowrap;
         }
+        
         #admissions-suggestion-buttons button:hover { transform: scale(1.02); filter: brightness(95%); }
         
         .chat-view-footer {
@@ -277,6 +278,7 @@
             border-radius: 22px; font-family: 'Poppins', sans-serif; font-size: 0.95rem;
             color: var(--text-primary); outline: none;
         }
+        
         .send-button {
             width: 45px; height: 45px; border-radius: 50%; border: none; color: white;
             font-size: 1.1rem; cursor: pointer; transition: background-color 0.3s, transform 0.2s;
@@ -360,7 +362,7 @@
         .typing-indicator {
             display: flex;
             align-items: center;
-            padding: 8px 0;
+            padding: 0px 0;
         }
         .typing-indicator span {
             height: 8px;
@@ -383,11 +385,13 @@
             object-fit: cover;
             border-radius: 35%;
         }
+        
 
     </style>
 </head>
 <body class="light-theme">
 
+    <!-- HTML for all 4 interfaces (Unchanged) -->
     <div class="selector-container">
         <header class="selector-header">
             <div class="selector-header-content">
@@ -521,105 +525,130 @@
         </footer>
     </div>
 
+    <div id="placements-interface" class="chat-view-container hidden">
+        <header class="chat-view-header">
+            <div class="chat-view-header-content">
+                <div class="chat-view-title-section">
+                    <div class="back-button" onclick="resetMode()"><i class="fa-solid fa-arrow-left"></i></div>
+                    <h2>Placements</h2>
+                </div>
+                <div class="theme-toggle" id="placements-theme-toggle">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </div>
+            <div class="chat-view-greeting">
+                <p>Welcome!</p>
+                <p>Ask about companies, packages, etc.</p>
+            </div>
+        </header>
+        <main class="chat-view-body" id="placements-chat-container"></main>
+        <footer class="chat-view-footer">
+            <input type="text" id="placements-input" placeholder="Type your question...">
+            <button class="send-button" id="placements-send-btn">
+                <span id="placements-send-text"><i class="fa-solid fa-paper-plane"></i></span>
+                <svg id="placements-spinner" class="animate-spin-fast h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+            </button>
+        </footer>
+    </div>
     
-
-
     <script>
-        /**
-         * FINAL, ROBUST FUNCTION: Converts simple Markdown to HTML.
-         */
-        function markdownToHtml(text) {
-            let processedText = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-            processedText = processedText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-
-            const lines = processedText.split('\n');
-            let html = '';
-            let inList = false;
-
-            for (const line of lines) {
-                if (line.trim().startsWith('* ')) {
-                    if (!inList) {
-                        html += '<ul>';
-                        inList = true;
-                    }
-                    html += `<li>${line.trim().substring(2)}</li>`;
-                } else {
-                    if (inList) {
-                        html += '</ul>';
-                        inList = false;
-                    }
-                    if (line.trim().length > 0) {
-                        html += `<p>${line}</p>`;
-                    }
+    /**
+     * Converts simple Markdown to HTML.
+     */
+    function markdownToHtml(text) {
+        let processedText = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        processedText = processedText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        processedText = processedText.replace(/_(.*?)_/g, '<em>$1</em>');
+        const lines = processedText.split('\n');
+        let html = '';
+        let inList = false;
+        for (const line of lines) {
+            const trimmedLine = line.trim();
+            if (trimmedLine.startsWith('* ') || trimmedLine.startsWith('- ')) {
+                if (!inList) {
+                    html += '<ul>';
+                    inList = true;
                 }
-            }
-            if (inList) {
-                html += '</ul>';
-            }
-            return html;
-        }
-
-        // --- Utility Functions ---
-        function updateHeaderScrollState(bodyEl) {
-            if (!bodyEl) return;
-            const header = bodyEl.previousElementSibling;
-            if (header && header.classList.contains('chat-view-header')) {
-                const isOverflowing = bodyEl.scrollHeight > bodyEl.clientHeight;
-                
-                if (isOverflowing) {
-                    header.classList.add('can-scroll');
-                    const shouldBeScrolled = bodyEl.scrollTop > 10;
-                    
-                    if (shouldBeScrolled && !header.classList.contains('scrolled')) {
-                        header.classList.add('scrolled');
-                    } else if (!shouldBeScrolled && header.classList.contains('scrolled')) {
-                        header.classList.remove('scrolled');
-                    }
-                } else {
-                    header.classList.remove('can-scroll', 'scrolled');
+                html += `<li>${trimmedLine.substring(2)}</li>`;
+            } else {
+                if (inList) {
+                    html += '</ul>';
+                    inList = false;
+                }
+                if (trimmedLine.length > 0) {
+                    html += `<p>${trimmedLine}</p>`;
+                } else if (!inList) {
+                    // Don't add <br> if we are in the middle of list processing
                 }
             }
         }
+        if (inList) {
+            html += '</ul>';
+        }
+        html = html.replace(/<p><\/p>/g, '');
+        return html;
+    }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            // --- Unified Theme Toggling Logic ---
-            const themeToggles = document.querySelectorAll('.theme-toggle');
-            const body = document.body;
+    /**
+     * Handles header scroll state.
+     */
+    function updateHeaderScrollState(bodyEl) {
+        if (!bodyEl) return;
+        const header = bodyEl.previousElementSibling;
+        if (header && header.classList.contains('chat-view-header')) {
+            const isOverflowing = bodyEl.scrollHeight > bodyEl.clientHeight;
+            if (isOverflowing) {
+                header.classList.add('can-scroll');
+                const shouldBeScrolled = bodyEl.scrollTop > 10;
+                if (shouldBeScrolled && !header.classList.contains('scrolled')) {
+                    header.classList.add('scrolled');
+                } else if (!shouldBeScrolled && header.classList.contains('scrolled')) {
+                    header.classList.remove('scrolled');
+                }
+            } else {
+                header.classList.remove('can-scroll', 'scrolled');
+            }
+        }
+    }
 
-            const setTheme = (theme) => {
-                body.className = theme;
-                themeToggles.forEach(toggle => {
-                    const icon = toggle.querySelector('i');
-                    icon.className = theme === 'dark-theme' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
-                });
-            };
-
-            const savedTheme = 'light-theme';
-            setTheme(savedTheme);
-
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- Unified Theme Toggling Logic ---
+        const themeToggles = document.querySelectorAll('.theme-toggle');
+        const body = document.body;
+        const setTheme = (theme) => {
+            body.className = theme;
             themeToggles.forEach(toggle => {
-                toggle.addEventListener('click', () => {
-                    const newTheme = body.classList.contains('light-theme') ? 'dark-theme' : 'light-theme';
-                    setTheme(newTheme);
-                });
+                const icon = toggle.querySelector('i');
+                icon.className = theme === 'dark-theme' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
             });
-            
-            // --- Header Scroll Effect for all chat UIs ---
-            document.querySelectorAll('.chat-view-body').forEach(bodyEl => {
-                let scrollTimeout;
-                bodyEl.addEventListener('scroll', () => {
-                    if (scrollTimeout) clearTimeout(scrollTimeout);
-                    scrollTimeout = setTimeout(() => {
-                        updateHeaderScrollState(bodyEl);
-                    }, 50);
-                }, { passive: true });
+        };
+        const savedTheme = 'light-theme';
+        setTheme(savedTheme);
+        themeToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const newTheme = body.classList.contains('light-theme') ? 'dark-theme' : 'light-theme';
+                setTheme(newTheme);
             });
-            
-            // Initial welcome messages for all 4 bots
-            appendAdmissionsMessage('bot', "Hello! I'm here to help with your admission questions. What information are you looking for today?");
-            appendNavigationMessage('bot', "Hello! How can I help you navigate the university website? Ask for pages like 'admissions', 'library', or 'CSE department'.");
-            appendPlacementsMessage('bot', "Hello! I can answer questions about company placements, packages, and statistics. Ask me something like 'how many students at TCS?' or 'who got the highest package?'.");
         });
+        
+        // --- Header Scroll Effect ---
+        document.querySelectorAll('.chat-view-body').forEach(bodyEl => {
+            let scrollTimeout;
+            bodyEl.addEventListener('scroll', () => {
+                if (scrollTimeout) clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                    updateHeaderScrollState(bodyEl);
+                }, 50);
+            }, { passive: true });
+        });
+        
+        // --- Initial welcome messages ---
+        appendAdmissionsMessage('bot', "Hello! I'm here to help with your admission questions. What information are you looking for today?", null, true);
+        appendNavigationMessage('bot', "Hello! How can I help you navigate the university website? Ask for pages like 'admissions', 'library', or 'CSE department'.");
+        appendPlacementsMessage('bot', "Hello! I can answer questions about company placements, packages, and statistics. Ask me something like 'how many students at TCS?' or 'who got the highest package?'.");
 
         // --- Core Chat Logic ---
         const API_BASE_URL = 'http://127.0.0.1:8000';
@@ -628,7 +657,7 @@
         let admissionsChatHistory = [];
         let courseState = { department: null, regulation: null, isSelectionComplete: false, awaitingInput: null };
 
-        // --- Restored Website Navigation Data ---
+        // --- Restored Website Navigation Data (Unchanged) ---
         const siddharthaData = {
           "website": "https://siddhartha.edu.in",
           "categories": [
@@ -637,19 +666,19 @@
             { "category": "Academics", "urls": [ { "name": "Academic Programs", "url": "https://siddhartha.edu.in/academic-programs/", "description": "List of all academic programs offered", "keywords": ["programs", "courses", "degrees", "academic programs"] }, { "name": "Ph.D. Programmes", "url": "https://siddhartha.edu.in/phd-programmes/", "description": "Doctoral research programs information", "keywords": ["phd", "doctorate", "research programs", "doctoral"] }, { "name": "Curriculum and Syllabus", "url": "https://siddhartha.edu.in/curriculum-and-syllabus/", "description": "Course curriculum and syllabus details", "keywords": ["curriculum", "syllabus", "course content", "subjects"] }, { "name": "Academic Calendar", "url": "https://siddhartha.edu.in/academic-calendar/", "description": "Academic year calendar and important dates", "keywords": ["calendar", "academic calendar", "dates", "schedule"] } ] },
             { "category": "Departments", "urls": [ { "name": "Civil Engineering", "url": "https://siddhartha.edu.in/departments/ce/", "description": "Department of Civil Engineering", "keywords": ["civil", "civil engineering", "ce department"] }, { "name": "Computer Science & Engineering", "url": "https://siddhartha.edu.in/departments/cse/", "description": "Department of Computer Science & Engineering", "keywords": ["cse", "computer science", "cs", "computer engineering"] }, { "name": "Electronics & Communication Engineering", "url": "https://siddhartha.edu.in/departments/ece/", "description": "Department of Electronics & Communication Engineering", "keywords": ["ece", "electronics", "communication", "ece department"] }, { "name": "Electrical and Electronics Engineering", "url": "https://siddhartha.edu.in/departments/eee/", "description": "Department of Electrical and Electronics Engineering", "keywords": ["eee", "electrical", "electrical engineering"] }, { "name": "Electronics and Instrumentation Engineering", "url": "https://siddhartha.edu.in/departments/eie/", "description": "Department of Electronics and Instrumentation Engineering", "keywords": ["eie", "instrumentation", "electronics instrumentation"] }, { "name": "Information Technology", "url": "https://siddhartha.edu.in/departments/it/", "description": "Department of Information Technology", "keywords": ["it", "information technology", "it department"] }, { "name": "Mechanical Engineering", "url": "https://siddhartha.edu.in/departments/me/", "description": "Department of Mechanical Engineering", "keywords": ["mechanical", "mechanical engineering", "me department"] } ] },
             { "category": "Admissions", "urls": [ { "name": "Admissions", "url": "https://siddhartha.edu.in/admissions/", "description": "Admission information and procedures", "keywords": ["admissions", "admission", "apply", "enrollment"] }, { "name": "SEEE Results", "url": "https://results.siddhartha.edu.in/", "description": "Siddhartha Engineering Entrance Examination Results", "keywords": ["seee", "entrance exam", "results", "exam results"] } ] },
-            { "category": "Placements", "urls": [ { "name": "Placements", "url": "https://siddhartha.edu.in/placements/", "description": "Career services and placement information", "keywords": ["placements", "jobs", "career", "recruitment", "companies"] }, { "name": "Placement Statistics", "url": "https://siddhartha.edu.in/placement-statistics/", "description": "Placement statistics and records", "keywords": ["placement stats", "statistics", "placement records"] } ] },
+            { "category": "Placements", "urls": [ { "name": "Placements", "url": "https://siddhartha.edu.in/placements/", "description": "Career services and placement information", "keywords": ["placements", "jobs", "career", "recruitment", "companies"] }, { "name": "Placement Statistics", "url": "httpss://siddhartha.edu.in/placement-statistics/", "description": "Placement statistics and records", "keywords": ["placement stats", "statistics", "placement records"] } ] },
             { "category": "Research", "urls": [ { "name": "Research", "url": "https://siddhartha.edu.in/research/", "description": "Research and development activities", "keywords": ["research", "r&d", "research projects", "innovation"] } ] },
             { "category": "Student Life", "urls": [ { "name": "Sports", "url": "https://siddhartha.edu.in/sports/", "description": "Sports activities and facilities", "keywords": ["sports", "athletics", "games", "physical education"] }, { "name": "NCC", "url": "https://siddhartha.edu.in/ncc/", "description": "National Cadet Corps information", "keywords": ["ncc", "national cadet corps", "cadets"] }, { "name": "NSS", "url": "https://siddhartha.edu.in/nss/", "description": "Information about the National Service Scheme activities", "keywords": ["nss", "national service scheme", "social service"] }, { "name": "Student Grievance Redressal Committee", "url": "https://siddhartha.edu.in/student-grievance-redressal-committee/", "description": "Committee for student grievances", "keywords": ["grievance", "complaints", "student committee"] }, { "name": "Internal Complaint Committee", "url": "https://siddhartha.edu.in/internal-complaint-committee/", "description": "Internal complaints committee information", "keywords": ["icc", "complaints", "internal committee"] }, { "name": "Anti-Ragging Committee", "url": "https://siddhartha.edu.in/anti-ragging-committee/", "description": "Information about the anti-ragging committee and policies", "keywords": ["anti-ragging", "ragging", "discipline", "committee"] }, { "name": "Gallery", "url": "https://siddhartha.edu.in/gallery/", "description": "Photo and video gallery of college events and campus life", "keywords": ["gallery", "photos", "videos", "campus life"] }, { "name": "Hostels", "url": "https://siddhartha.edu.in/hostels/", "description": "Information about student hostel facilities", "keywords": ["hostel", "accommodation", "residence", "student housing"] } ] },
             { "category": "Alumni", "urls": [ { "name": "Alumni", "url": "https://siddhartha.edu.in/alumni/", "description": "Alumni network and information", "keywords": ["alumni", "graduates", "alumni network"] }, { "name": "Alumni 2024", "url": "https://siddhartha.edu.in/alumni2024/", "description": "2024 Alumni batch information", "keywords": ["alumni 2024", "2024 batch", "recent alumni"] } ] },
             { "category": "Resources", "urls": [ { "name": "SAHE LMS", "url": "https://siddhartha.edu.in/lms/", "description": "Learning Management System", "keywords": ["lms", "learning", "online learning", "portal"] }, { "name": "Library", "url": "https://siddhartha.edu.in/library/", "description": "Library resources and services", "keywords": ["library", "books", "digital library", "resources"] } ] },
             { "category": "Contact & Information", "urls": [ { "name": "Contact Us", "url": "https://siddhartha.edu.in/contact-us/", "description": "Contact information and location details", "keywords": ["contact", "contact us", "address", "phone", "email"] }, { "name": "Public Self Disclosure", "url": "https://siddhartha.edu.in/public-self-disclosure/", "description": "Public disclosure information", "keywords": ["disclosure", "public information", "transparency"] }, { "name": "Press Coverage", "url": "https://siddhartha.edu.in/press-coverage/", "description": "Media coverage and press releases", "keywords": ["press", "media", "news", "press releases"] } ] },
-            { "category": "Events", "urls": [ { "name": "Events", "url": "https://siddhartha.edu.in/events/", "description": "Upcoming events and activities", "keywords": ["events", "activities", "workshops", "seminars"] } ] },
+            { "category": "Events", "urls": [ { "name": "Events", "url": "httpss://siddhartha.edu.in/events/", "description": "Upcoming events and activities", "keywords": ["events", "activities", "workshops", "seminars"] } ] },
             { "category": "Policies & Documents", "urls": [ { "name": "Document Retention Policy", "url": "https://siddhartha.edu.in/document-retention-policy/", "description": "Document retention and management policy", "keywords": ["document policy", "retention", "policy"] }, { "name": "Scale of Punishment for Malpractice", "url": "https://siddhartha.edu.in/scale-of-punishment/", "description": "Disciplinary rules and punishments", "keywords": ["punishment", "discipline", "malpractice", "rules"] } ] },
             { "category": "Department Categories", "urls": [ { "name": "CE Department Category", "url": "https://siddhartha.edu.in/category/ce-dept/", "description": "Civil Engineering department blog posts and updates", "keywords": ["civil engineering posts", "ce updates", "department news"] } ] }
           ]
         };
 
-
+        // --- selectMode and resetMode ---
         function selectMode(mode) {
             currentMode = mode;
             document.querySelector('.selector-container').classList.add('hidden');
@@ -672,6 +701,7 @@
                 initializePlacements();
             }
         }
+        window.selectMode = selectMode;
 
         function resetMode() {
             currentMode = null;
@@ -684,7 +714,7 @@
             admissionsChatHistory = [];
             document.getElementById('admissions-chat-container').innerHTML = '';
             document.getElementById('admissions-suggestions').innerHTML = '';
-            appendAdmissionsMessage('bot', "Hello! I'm here to help with your admission questions. What information are you looking for today?");
+            appendAdmissionsMessage('bot', "Hello! I'm here to help with your admission questions. What information are you looking for today?", null, true);
             
             document.getElementById('course-chat-container').innerHTML = '';
 
@@ -694,8 +724,10 @@
             document.getElementById('placements-chat-container').innerHTML = '';
             appendPlacementsMessage('bot', "Hello! I can answer questions about company placements, packages, and statistics. Ask me something like 'how many students at TCS?' or 'who got the highest package?'.");
         }
+        window.resetMode = resetMode;
 
-        // --- Admissions Functions (Unchanged) ---
+
+        // --- Admissions Functions (Streaming) ---
         async function initializeAdmissions() {
             try {
                 const response = await fetch(`${API_BASE_URL}/admissions/status`);
@@ -735,42 +767,25 @@
             });
         }
         
-        function showAdmissionsTypingIndicator() {
-            const container = document.getElementById('admissions-chat-container');
-            if (document.getElementById('admissions-typing-indicator')) return;
-            const messageDiv = document.createElement('div');
-            messageDiv.id = 'admissions-typing-indicator';
-            messageDiv.classList.add('message', 'bot-message');
-            const icon = document.createElement('div');
-            icon.classList.add('icon');
-            icon.innerHTML = '<i class="fa-solid fa-graduation-cap"></i>';
-            const bubble = document.createElement('div');
-            bubble.classList.add('message-content');
-            bubble.innerHTML = `<div class="typing-indicator"><span></span><span></span><span></span></div>`;
-            messageDiv.appendChild(icon);
-            messageDiv.appendChild(bubble);
-            container.appendChild(messageDiv);
-            container.scrollTop = container.scrollHeight;
-        }
-
-        function hideAdmissionsTypingIndicator() {
-            const indicator = document.getElementById('admissions-typing-indicator');
-            if (indicator) indicator.remove();
-        }
-
-        function appendAdmissionsMessage(sender, text) {
+        function appendAdmissionsMessage(sender, text, contentId = null, loadSuggestions = false) {
             const container = document.getElementById('admissions-chat-container');
             const messageDiv = document.createElement('div');
             const bubble = document.createElement('div');
             messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'bot-message');
             bubble.classList.add('message-content');
             
+            const targetId = contentId || `bot-content-${Date.now()}`;
+            
             if (sender === 'user') {
                 const cleanText = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
                 bubble.innerHTML = `<p>${cleanText}</p>`;
             } else {
-                const formattedText = markdownToHtml(text);
-                bubble.innerHTML = `<p class="sender-name">Admissions Bot</p>${formattedText}`;
+                const isTypingIndicator = text.includes('<div class="typing-indicator">');
+                const formattedText = isTypingIndicator ? text : markdownToHtml(text);
+                bubble.innerHTML = `
+                    <p class="sender-name">Admissions Bot</p>
+                    <div class="bot-message-text" id="${targetId}">${formattedText}</div>
+                `;
                 const icon = document.createElement('div');
                 icon.classList.add('icon');
                 icon.innerHTML = '<i class="fa-solid fa-graduation-cap"></i>';
@@ -780,9 +795,13 @@
             messageDiv.appendChild(bubble);
             container.appendChild(messageDiv);
             container.scrollTop = container.scrollHeight;
+            
+            if (loadSuggestions) {
+                loadDefaultSuggestions();
+            }
+            return targetId;
         }
         
-
         function toggleAdmissionsLoading(isLoading) {
             const sendBtn = document.getElementById('admissions-send-btn');
             const sendText = document.getElementById('admissions-send-text');
@@ -810,31 +829,54 @@
             appendAdmissionsMessage('user', query);
             input.value = '';
             toggleAdmissionsLoading(true);
-            displaySuggestions([]);
-            showAdmissionsTypingIndicator();
+            displaySuggestions([]); 
 
+            const initialBotText = `<div class="typing-indicator"><span></span><span></span><span></span></div>`;
+            const botContentId = appendAdmissionsMessage('bot', initialBotText);
+            const messageContentElement = document.getElementById(botContentId);
+            const container = document.getElementById('admissions-chat-container');
+            let fullResponse = "";
+            
             try {
-                const response = await fetch(`${API_BASE_URL}/admissions/ask`, {
+                const response = await fetch(`${API_BASE_URL}/admissions/stream_ask`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ question: query, chat_history: admissionsChatHistory })
                 });
                 if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-                const data = await response.json();
-                hideAdmissionsTypingIndicator();
-                appendAdmissionsMessage('bot', data.answer);
-                admissionsChatHistory.push({ type: 'user', message: query }, { type: 'ai', message: data.answer });
-                displaySuggestions(data.suggested_questions);
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                while (true) {
+                    const { value, done } = await reader.read();
+                    if (done) break;
+                    const chunk = decoder.decode(value);
+                    fullResponse += chunk;
+                    messageContentElement.innerHTML = markdownToHtml(fullResponse);
+                    container.scrollTop = container.scrollHeight;
+                }
+                admissionsChatHistory.push({ type: 'user', message: query }, { type: 'ai', message: fullResponse });
+                try {
+                    const suggestionsResponse = await fetch(`${API_BASE_URL}/admissions/get_suggestions`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ question: query, chat_history: admissionsChatHistory })
+                    });
+                    if (suggestionsResponse.ok) {
+                        const suggestions = await suggestionsResponse.json();
+                        displaySuggestions(suggestions);
+                    }
+                } catch (suggestionError) {
+                    console.error('Error fetching suggestions:', suggestionError);
+                }
             } catch (error) {
-                console.error('Admissions chat error:', error);
-                hideAdmissionsTypingIndicator();
-                appendAdmissionsMessage('bot', `Sorry, something went wrong. ${error.message}`);
+                console.error('Admissions chat stream error:', error);
+                messageContentElement.innerHTML = markdownToHtml(`Sorry, something went wrong. ${error.message}`);
             } finally {
                 toggleAdmissionsLoading(false);
             }
         }
 
-        // --- Course Functions (Unchanged) ---
+        // --- Course Functions (Streaming) ---
         async function initializeCourse() {
             try {
                 const response = await fetch(`${API_BASE_URL}/course/departments`);
@@ -852,24 +894,21 @@
             const chatContainer = document.getElementById('course-chat-container');
             chatContainer.innerHTML = '';
             document.getElementById('course-quick-replies').innerHTML = '';
-
             courseState = { department: null, regulation: null, isSelectionComplete: false, awaitingInput: null };
-            
             const input = document.getElementById('course-input');
             const sendBtn = document.getElementById('course-send-btn');
             input.disabled = true;
             sendBtn.disabled = true;
             input.placeholder = 'Select options above...';
-
             appendCourseMessage('bot', 'Hello! To get started, please select your department.');
             promptForDepartment();
         }
+        window.startCourseSelection = startCourseSelection;
 
         function promptForDepartment() {
             courseState.awaitingInput = 'department';
             const repliesContainer = document.getElementById('course-quick-replies');
             repliesContainer.innerHTML = '';
-
             const depts = Object.keys(departmentsData).sort();
             depts.forEach(dept => {
                 const btn = document.createElement('button');
@@ -883,7 +922,6 @@
         function handleCourseSelection(value) {
             const repliesContainer = document.getElementById('course-quick-replies');
             repliesContainer.innerHTML = '';
-
             if (courseState.awaitingInput === 'department') {
                 appendCourseMessage('user', value.toUpperCase());
                 courseState.department = value;
@@ -905,7 +943,6 @@
             appendCourseMessage('bot', 'Got it. Now, please select the regulation.');
             const repliesContainer = document.getElementById('course-quick-replies');
             repliesContainer.innerHTML = '';
-
             const regulations = departmentsData[dept].sort();
             regulations.forEach(reg => {
                 const btn = document.createElement('button');
@@ -919,14 +956,12 @@
         function finalizeCourseSelection() {
             courseState.isSelectionComplete = true;
             courseState.awaitingInput = null;
-
             let confirmation = `Great! You've selected ${courseState.department.toUpperCase()}`;
             if (courseState.regulation) {
                 confirmation += ` with regulation ${courseState.regulation.toUpperCase()}`;
             }
             confirmation += '. How can I help you?';
             appendCourseMessage('bot', confirmation);
-
             const input = document.getElementById('course-input');
             const sendBtn = document.getElementById('course-send-btn');
             input.disabled = false;
@@ -935,51 +970,32 @@
             input.focus();
         }
         
-        function showCourseTypingIndicator() {
-            const container = document.getElementById('course-chat-container');
-            if (document.getElementById('course-typing-indicator')) return;
-            const messageDiv = document.createElement('div');
-            messageDiv.id = 'course-typing-indicator';
-            messageDiv.classList.add('message', 'bot-message');
-            const icon = document.createElement('div');
-            icon.classList.add('icon');
-            icon.innerHTML = '<i class="fa-solid fa-book-open"></i>';
-            const bubble = document.createElement('div');
-            bubble.classList.add('message-content');
-            bubble.innerHTML = `<div class="typing-indicator"><span></span><span></span><span></span></div>`;
-            messageDiv.appendChild(icon);
-            messageDiv.appendChild(bubble);
-            container.appendChild(messageDiv);
-            container.scrollTop = container.scrollHeight;
-        }
-
-        function hideCourseTypingIndicator() {
-            const indicator = document.getElementById('course-typing-indicator');
-            if (indicator) indicator.remove();
-        }
-
-        function appendCourseMessage(sender, text) {
+        function appendCourseMessage(sender, text, contentId = null) {
             const container = document.getElementById('course-chat-container');
             const messageDiv = document.createElement('div');
             const bubble = document.createElement('div');
             messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'bot-message');
             bubble.classList.add('message-content');
-            
+            const targetId = contentId || `bot-content-course-${Date.now()}`;
             if (sender === 'user') {
                 const cleanText = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
                 bubble.innerHTML = `<p>${cleanText}</p>`;
             } else {
-                const formattedText = markdownToHtml(text);
-                bubble.innerHTML = `<p class="sender-name">Curriculum Bot</p>${formattedText}`;
+                const isTypingIndicator = text.includes('<div class="typing-indicator">');
+                const formattedText = isTypingIndicator ? text : markdownToHtml(text);
+                bubble.innerHTML = `
+                    <p class="sender-name">Curriculum Bot</p>
+                    <div class="bot-message-text" id="${targetId}">${formattedText}</div>
+                `;
                 const icon = document.createElement('div');
                 icon.classList.add('icon');
                 icon.innerHTML = '<i class="fa-solid fa-book-open"></i>';
                 messageDiv.appendChild(icon);
             }
-            
             messageDiv.appendChild(bubble);
             container.appendChild(messageDiv);
             container.scrollTop = container.scrollHeight;
+            return targetId;
         }
 
         function toggleCourseLoading(isLoading) {
@@ -995,12 +1011,15 @@
             } else {
                 sendText.classList.remove('hidden'); 
                 spinner.classList.add('hidden');
-                sendBtn.disabled = false; 
-                input.disabled = false; 
-                input.focus();
+                if (courseState.isSelectionComplete) {
+                    sendBtn.disabled = false; 
+                    input.disabled = false; 
+                    input.focus();
+                }
             }
         }
 
+        // --- THIS IS THE FUNCTION WITH THE FIX ---
         async function handleCourseSend() {
             const input = document.getElementById('course-input');
             const query = input.value.trim();
@@ -1009,11 +1028,16 @@
                 appendCourseMessage('bot', 'Please finish selecting your department and regulation first.');
                 return;
             }
-
             appendCourseMessage('user', query);
             input.value = '';
             toggleCourseLoading(true);
-            showCourseTypingIndicator();
+
+            // 1. Create an empty message bubble for the bot
+            const initialBotText = `<div class="typing-indicator"><span></span><span></span><span></span></div>`;
+            const botContentId = appendCourseMessage('bot', initialBotText);
+            const messageContentElement = document.getElementById(botContentId);
+            const container = document.getElementById('course-chat-container');
+            let fullResponse = "";
 
             try {
                 const response = await fetch(`${API_BASE_URL}/course/chat`, {
@@ -1025,27 +1049,35 @@
                         regulation: courseState.regulation 
                     })
                 });
-                if (!response.ok) { 
-                    const errorData = await response.json(); 
-                    throw new Error(errorData.detail || `HTTP error! Status: ${response.status}`); 
+                if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`); 
+                
+                // --- THIS IS THE FIX ---
+                // We no longer call response.json().
+                // Instead, we read the stream.
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                while (true) {
+                    const { value, done } = await reader.read();
+                    if (done) break;
+                    const chunk = decoder.decode(value);
+                    fullResponse += chunk;
+                    messageContentElement.innerHTML = markdownToHtml(fullResponse);
+                    container.scrollTop = container.scrollHeight;
                 }
-                const data = await response.json();
-                hideCourseTypingIndicator();
-                appendCourseMessage('bot', data.answer);
+                // --- END OF FIX ---
+
             } catch (error) {
                 console.error('Course chat error:', error);
-                hideCourseTypingIndicator();
-                appendCourseMessage('bot', `Sorry, something went wrong. ${error.message}`);
+                messageContentElement.innerHTML = markdownToHtml(`Sorry, something went wrong. ${error.message}`);
             } finally {
                 toggleCourseLoading(false);
             }
         }
         
-        // --- Restored Navigation Functions ---
+        // --- Navigation Functions (Unchanged) ---
         function initializeNavigation() { 
             document.getElementById('navigation-input').focus(); 
         }
-
         function levenshteinDistance(a, b) {
             if (a.length === 0) return b.length; 
             if (b.length === 0) return a.length;
@@ -1060,7 +1092,6 @@
             }
             return matrix[b.length][a.length];
         }
-
         function findLink(query) {
             const lowerCaseQuery = query.toLowerCase().trim();
             if (!lowerCaseQuery) return null;
@@ -1075,7 +1106,6 @@
             });
             return minScore <= 0.4 ? bestMatch : null;
         }
-
         function showNavigationTypingIndicator() {
             const container = document.getElementById('navigation-chat-container');
             if (document.getElementById('navigation-typing-indicator')) return;
@@ -1093,19 +1123,16 @@
             container.appendChild(messageDiv);
             container.scrollTop = container.scrollHeight;
         }
-
         function hideNavigationTypingIndicator() {
             const indicator = document.getElementById('navigation-typing-indicator');
             if (indicator) indicator.remove();
         }
-
         function appendNavigationMessage(sender, text) {
             const container = document.getElementById('navigation-chat-container');
             const messageDiv = document.createElement('div');
             const bubble = document.createElement('div');
             messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'bot-message');
             bubble.classList.add('message-content');
-            
             if (sender === 'user') {
                 const cleanText = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
                 bubble.innerHTML = `<p>${cleanText}</p>`;
@@ -1120,7 +1147,6 @@
             container.appendChild(messageDiv);
             container.scrollTop = container.scrollHeight;
         }
-
         function handleNavigationSend() {
             const input = document.getElementById('navigation-input');
             const query = input.value.trim(); 
@@ -1129,16 +1155,14 @@
             input.value = '';
             document.getElementById('navigation-suggestions-box').classList.add('hidden');
             showNavigationTypingIndicator();
-
             setTimeout(() => {
                 hideNavigationTypingIndicator();
                 const result = findLink(query);
                 let botResponse = result ? `Sure! Here is the link for "${result.name}": <a href="${result.url}" target="_blank">${result.url}</a>`
-                                       : "I'm sorry, I couldn't find a link for that. Could you please try asking in a different way?";
+                                        : "I'm sorry, I couldn't find a link for that. Could you please try asking in a different way?";
                 appendNavigationMessage('bot', botResponse);
             }, 800);
         }
-
         function showNavigationSuggestions() {
             const input = document.getElementById('navigation-input');
             const suggestionsBox = document.getElementById('navigation-suggestions-box');
@@ -1178,47 +1202,30 @@
         }
 
 
-        // --- New Placements Functions ---
+        // --- Placements Functions (MODIFIED FOR STREAMING) ---
         function initializePlacements() { 
             document.getElementById('placements-input').focus(); 
         }
 
-        function showPlacementsTypingIndicator() {
-            const container = document.getElementById('placements-chat-container');
-            if (document.getElementById('placements-typing-indicator')) return;
-            const messageDiv = document.createElement('div');
-            messageDiv.id = 'placements-typing-indicator';
-            messageDiv.classList.add('message', 'bot-message');
-            const icon = document.createElement('div');
-            icon.classList.add('icon');
-            icon.innerHTML = '<i class="fa-solid fa-briefcase"></i>';
-            const bubble = document.createElement('div');
-            bubble.classList.add('message-content');
-            bubble.innerHTML = `<div class="typing-indicator"><span></span><span></span><span></span></div>`;
-            messageDiv.appendChild(icon);
-            messageDiv.appendChild(bubble);
-            container.appendChild(messageDiv);
-            container.scrollTop = container.scrollHeight;
-        }
-
-        function hidePlacementsTypingIndicator() {
-            const indicator = document.getElementById('placements-typing-indicator');
-            if (indicator) indicator.remove();
-        }
-
-        function appendPlacementsMessage(sender, text) {
+        function appendPlacementsMessage(sender, text, contentId = null) {
+            // --- OPTIMIZATION: Modified to support streaming ---
             const container = document.getElementById('placements-chat-container');
             const messageDiv = document.createElement('div');
             const bubble = document.createElement('div');
             messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'bot-message');
             bubble.classList.add('message-content');
             
-            const formattedText = markdownToHtml(text);
+            const targetId = contentId || `bot-content-placements-${Date.now()}`;
+            const isTypingIndicator = text.includes('<div class="typing-indicator">');
+            const formattedText = isTypingIndicator ? text : markdownToHtml(text);
 
             if (sender === 'user') {
                 bubble.innerHTML = `<p>${formattedText}</p>`;
             } else {
-                bubble.innerHTML = `<p class="sender-name">Placements Bot</p>${formattedText}`;
+                bubble.innerHTML = `
+                    <p class="sender-name">Placements Bot</p>
+                    <div class="bot-message-text" id="${targetId}">${formattedText}</div>
+                `;
                 const icon = document.createElement('div');
                 icon.classList.add('icon');
                 icon.innerHTML = '<i class="fa-solid fa-briefcase"></i>';
@@ -1227,6 +1234,8 @@
             messageDiv.appendChild(bubble);
             container.appendChild(messageDiv);
             container.scrollTop = container.scrollHeight;
+            return targetId;
+            // --- END OPTIMIZATION ---
         }
 
         function togglePlacementsLoading(isLoading) {
@@ -1256,7 +1265,13 @@
             appendPlacementsMessage('user', query);
             input.value = '';
             togglePlacementsLoading(true);
-            showPlacementsTypingIndicator();
+
+            const initialBotText = `<div class="typing-indicator"><span></span><span></span><span></span></div>`;
+            const botContentId = appendPlacementsMessage('bot', initialBotText);
+            const messageContentElement = document.getElementById(botContentId);
+            const container = document.getElementById('placements-chat-container');
+            
+            let fullResponse = "";
 
             try {
                 const response = await fetch(`${API_BASE_URL}/placements/ask`, {
@@ -1265,26 +1280,34 @@
                     body: JSON.stringify({ query })
                 });
                 
-                hidePlacementsTypingIndicator();
                 if (!response.ok) { 
-                    const errorData = await response.json(); 
-                    throw new Error(errorData.detail || `HTTP error! Status: ${response.status}`); 
+                    // Try to get a more detailed error message from the server
+                    const errorData = await response.json().catch(() => null);
+                    const detail = errorData?.detail || `HTTP error! Status: ${response.status}`;
+                    throw new Error(detail); 
                 }
+
+                // --- THIS IS THE FIX ---
+                // The /placements/ask endpoint returns a single JSON object, not a stream.
+                // We must parse it as JSON, then get the 'answer' property.
                 
-                const data = await response.json();
-                appendPlacementsMessage('bot', data.answer);
+                const data = await response.json(); // Get the JSON object
+                const answer = data.answer;         // Extract the answer string
+                
+                messageContentElement.innerHTML = markdownToHtml(answer); // Display the answer
+                container.scrollTop = container.scrollHeight;
+                // --- END OF FIX ---
 
             } catch (error) {
                 console.error('Placements chat error:', error);
-                hidePlacementsTypingIndicator();
-                appendPlacementsMessage('bot', `Sorry, something went wrong. ${error.message}`);
+                messageContentElement.innerHTML = markdownToHtml(`Sorry, something went wrong. ${error.message}`);
             } finally {
                 togglePlacementsLoading(false);
             }
         }
 
 
-        // --- Event Listeners (Updated for 4 Bots) ---
+        // --- Event Listeners (All 4 bots) ---
         document.getElementById('admissions-send-btn').addEventListener('click', handleAdmissionsSend);
         document.getElementById('admissions-input').addEventListener('keypress', (e) => { 
             if (e.key === 'Enter') handleAdmissionsSend(); 
@@ -1313,6 +1336,7 @@
             if (e.key === 'Enter') handlePlacementsSend(); 
         });
 
-    </script>
+    }); // **** END OF DOMContentLoaded WRAPPER ****
+</script>
 </body>
 </html>
