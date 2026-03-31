@@ -7,8 +7,8 @@ services:
     # Build command: Install dependencies and preload the model
     buildCommand: pip install -r requirements.txt && python preload_model.py
     
-    # Start command: Run FastAPI with Uvicorn
-    startCommand: uvicorn app:app --host 0.0.0.0 --port 8000
+    # Start command: Run FastAPI with Uvicorn, binding to Render-provided port
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
     
     # Environment variables (add via Dashboard)
     envVars:
