@@ -130,7 +130,7 @@ def initialize_rag_chain():
     try:
         # --- OPTIMIZATION 1: Use Local Embeddings ---
         print("Initializing local sentence transformer embeddings...")
-        embeddings = SentenceTransformerEmbeddings(model_name='all-MiniLM-L6-v2')
+        embeddings = SentenceTransformerEmbeddings(model_name='paraphrase-MiniLM-L3-v2')
         # --- END OPTIMIZATION ---
         
         vector_store = None
