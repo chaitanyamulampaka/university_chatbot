@@ -1,4 +1,6 @@
 import os
+import sys
+os.environ["HF_HUB_OFFLINE"] = "1"
 import ast
 import json
 from fastapi import FastAPI, Request
@@ -28,6 +30,25 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 if not GOOGLE_API_KEY:
     raise ValueError("GOOGLE_API_KEY not found in environment variables. Please set it in a .env file.")
 
+# --- Test API Key at Startup ---
+def test_api_key():
+    """Test the API key by making a simple call to check for quota/permissions."""
+    try:
+        llm = ChatGoogleGenerativeAI(model="gemini-flash-latest", google_api_key=GOOGLE_API_KEY)
+        # Make a minimal call to test
+        response = llm.invoke("Test")
+        print("API key test successful.")
+        return True
+    except Exception as e:
+        error_str = str(e)
+        if "Quota exceeded" in error_str or "limit: 0" in error_str or "Too Many Requests" in error_str or "RESOURCE_EXHAUSTED" in error_str:
+            print("WARNING: API key has quota/permission issues. Admissions chatbot will NOT be disabled entirely.")
+            print("Error details:", error_str[:200] + "..." if len(error_str) > 200 else error_str)
+            return True # OPTIMIZATION: Return True anyway so we can still use local embeddings
+        else:
+            print("WARNING: Unexpected API key error. Admissions chatbot will be disabled.")
+            print("Error details:", error_str)
+            return False
 
 # --- FastAPI App Setup ---
 app = FastAPI(title="Admissions Chatbot API")
@@ -70,7 +91,7 @@ def generate_followup_questions(chat_history: List[Dict[str, str]]):
     if not last_user_message:
         return get_default_questions()
 
-    relevant_docs = vector_store_retriever.get_relevant_documents(last_user_message)
+    relevant_docs = vector_store_retriever.invoke(last_user_message)
     context = "\n\n".join([doc.page_content for doc in relevant_docs])
 
     prompt_template = f"""
@@ -86,7 +107,7 @@ def generate_followup_questions(chat_history: List[Dict[str, str]]):
     Suggested Questions (Python list of strings):
     """
     try:
-        llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash-preview-05-20", temperature=0.6, google_api_key=GOOGLE_API_KEY)
+        llm = ChatGoogleGenerativeAI(model="gemini-flash-latest", temperature=0.6, google_api_key=GOOGLE_API_KEY)
         response = llm.invoke(prompt_template)
         suggested_questions = ast.literal_eval(response.content)
         if isinstance(suggested_questions, list) and all(isinstance(q, str) for q in suggested_questions):
@@ -145,6 +166,11 @@ def initialize_rag_chain():
         is_rag_initialized = True
         print("RAG chain initialized successfully with local embeddings.")
 
+        # Test API key after vector store is ready
+        if not test_api_key():
+            is_rag_initialized = False
+            print("Admissions chatbot disabled due to API key issues.")
+
     except Exception as e:
         print(f"Error initializing RAG chain: {e}")
         is_rag_initialized = False
@@ -173,7 +199,7 @@ async def stream_rag_response(question: str) -> AsyncIterator[str]:
     Answer:
     """
     prompt = ChatPromptTemplate.from_template(template)
-    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash-preview-05-20", temperature=0.7, google_api_key=GOOGLE_API_KEY)
+    llm = ChatGoogleGenerativeAI(model="gemini-flash-latest", temperature=0.7, google_api_key=GOOGLE_API_KEY)
     
     # Use the standard RAG chain setup
     rag_chain = (
@@ -188,8 +214,16 @@ async def stream_rag_response(question: str) -> AsyncIterator[str]:
         async for chunk in rag_chain.astream(question):
             yield chunk
     except Exception as e:
-        print(f"Error invoking RAG chain stream: {e}")
-        yield f"Sorry, an error occurred: {e}"
+        # Provide a clearer message for common API quota/permission issues
+        error_str = str(e)
+        print(f"Error invoking RAG chain stream: {error_str}")
+        if "Quota exceeded" in error_str or "limit: 0" in error_str or "Too Many Requests" in error_str:
+            yield (
+                "Sorry, the AI service is currently unable to process requests due to API quota/permissions. "
+                "Please check your Google Cloud billing, quota limits, and that your API key has access to the Gemini API."
+            )
+        else:
+            yield f"Sorry, an error occurred: {error_str}"
 # --- END OPTIMIZATION ---
 
 
@@ -204,6 +238,15 @@ async def get_chat_page(request: Request):
         "suggested_questions": initial_questions,
         "is_rag_initialized": is_rag_initialized
     })
+
+@app.get("/health")
+async def health_check():
+    """Health check endpoint for Render deployment."""
+    return {
+        "status": "ok",
+        "rag_initialized": is_rag_initialized,
+        "service": "university-chatbot"
+    }
 
 # --- OPTIMIZATION 2: New /stream_ask endpoint ---
 @app.post("/stream_ask")
@@ -243,5 +286,12 @@ async def startup_event():
     """
     On startup, find the knowledge base file and initialize the RAG chain.
     """
-    print("Application startup...")
+    print("\n" + "="*50)
+    print("🚀 University Chatbot Starting Up")
+    print("="*50)
+    print(f"Environment: {os.getenv('ENVIRONMENT', 'production')}")
+    print(f"Python Version: {sys.version.split()[0]}")
+    print("Initializing RAG chain...")
     initialize_rag_chain()
+    print("✅ Application ready!")
+    print("="*50 + "\n")
