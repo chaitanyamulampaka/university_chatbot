@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  university-bot:
+    build: .
+    container_name: sahe_chatbot
+    ports:
+      - "8000:8000"
+    volumes:
+      # Map your local data folder to the container
+      - ./data:/app/data
+      - ./placements_data.csv:/app/placements_data.csv
+      # Persist the Vector Databases so they aren't rebuilt every restart
+      - chroma_admissions_data:/app/admissions_chroma_db
+      - chroma_course_data:/app/chroma_db_by_dept
+      # Cache HuggingFace models (SentenceTransformers) so they don't redownload
+      - huggingface_cache:/root/.cache/huggingface
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+
+volumes:
+  chroma_admissions_data:
+  chroma_course_data:
+  huggingface_cache:

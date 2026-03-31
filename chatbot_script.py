@@ -10,6 +10,7 @@ for vector storage.
 import json
 import re
 import os
+os.environ["HF_HUB_OFFLINE"] = "1"
 from typing import List, Dict, Any, Optional, AsyncIterator
 
 # --- OPTIMIZATION: Use LangChain's wrapper for streaming ---
@@ -37,7 +38,7 @@ class EnhancedSyllabusRAGChatbot:
     retrieving relevant context, and generating responses using a generative AI model.
     """
 
-    def __init__(self, gemini_api_key: str, model_name: str = "gemini-2.5-flash-preview-05-20"):
+    def __init__(self, gemini_api_key: str, model_name: str = "gemini-flash-latest"):
         """
         Initializes the chatbot components.
 

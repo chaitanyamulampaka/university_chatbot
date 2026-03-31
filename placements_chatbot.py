@@ -52,7 +52,7 @@ except Exception as e:
 
 # --- Initialize the Language Model ---
 try:
-    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", temperature=0)
+    llm = ChatGoogleGenerativeAI(model="gemini-flash-latest", temperature=0)
 except Exception as e:
     print(f"Error initializing LLM: {e}")
     exit()

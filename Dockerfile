@@ -1,35 +1,34 @@
-# Step 1: Start from the Python 3.11 base
-FROM python:3.11-slim
+# Use Python 3.10 slim as the base image (includes SQLite >= 3.35 for ChromaDB)
+FROM python:3.10-slim
+
+# Set the working directory inside the container
 WORKDIR /app
 
-# --- THIS IS THE FIX ---
+# Install system dependencies required for building Python packages
+# build-essential: for compiling some python extensions
+# curl: useful for healthchecks
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
 
-# 1. Install *only* the torch libraries first, forcing pip to
-#    use the CPU-only index.
-RUN pip --timeout=1000 install --no-cache-dir \
-    torch \
-    torchvision \
-    torchaudio \
-    --index-url https://download.pytorch.org/whl/cpu
-
-# 2. Copy the *original* requirements.txt
+# Copy the requirements file first to leverage Docker layer caching
 COPY requirements.txt .
 
-# 3. Now, install all requirements from the default PyPI.
-#    This will install 'sentence-transformers' and all other
-#    packages. Pip will see torch is already installed and skip it.
-RUN pip --timeout=1000 install --no-cache-dir -r requirements.txt
-# --- END OF FIX ---
-
-# Step 4: Copy all your project files
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+COPY preload_model.py .
+# Run it immediately to cache the model inside the image
+RUN python preload_model.py
+# Copy the rest of the application code
 COPY . .
 
-# Step 5: Expose the port
+# Create directories for data persistence if they don't exist
+RUN mkdir -p admissions_chroma_db chroma_db_by_dept data
+
+# Expose port 8000 for FastAPI
 EXPOSE 8000
 
-# Step 6: Declare volumes
-VOLUME /app/chroma_db_by_dept
-VOLUME /app/admissions_chroma_db
-
-# Step 7: Define the command to run your application
-CMD ["uvicorn", "integrated_main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Command to run the application using Uvicorn
+# Cloud Run sets the PORT environment variable, so we must use it.
+CMD ["sh", "-c", "uvicorn integrated_main:app --host 0.0.0.0 --port ${PORT:-8000}"]

@@ -1,4 +1,5 @@
 import os
+os.environ["HF_HUB_OFFLINE"] = "1"
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 # --- OPTIMIZATION: Import StreamingResponse ---
@@ -143,7 +144,7 @@ def initialize_placements_agent():
             print("ERROR: GOOGLE_API_KEY not set. Placements agent will not be initialized.")
             return
 
-        llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", temperature=0, google_api_key=GOOGLE_API_KEY)
+        llm = ChatGoogleGenerativeAI(model="gemini-flash-latest", temperature=0, google_api_key=GOOGLE_API_KEY)
 
         # Create the Pandas DataFrame Agent
         placements_agent = create_pandas_dataframe_agent(
@@ -299,6 +300,8 @@ async def startup_event():
     if os.path.exists(admissions_app.KNOWLEDGE_BASE_PATH):
         print(f"Initializing admissions chatbot from '{admissions_app.KNOWLEDGE_BASE_PATH}'...")
         admissions_app.initialize_rag_chain()
+        if not admissions_app.is_rag_initialized:
+            print("WARNING: Admissions chatbot initialization failed (likely API quota issue).")
     else:
         print(f"Warning: Admissions knowledge base not found at '{admissions_app.KNOWLEDGE_BASE_PATH}'")
     
@@ -347,6 +350,7 @@ async def startup_event():
         print(f"Successfully pre-loaded {len(course_chatbots)} course chatbots.")
     except Exception as e:
         print(f"An error occurred while pre-loading course chatbots: {e}")
+    # --- END OF PRE-LOADING ---
     # --- END OF PRE-LOADING ---
     
     print("Unified Chatbot System ready!")
