@@ -284,14 +284,19 @@ async def get_suggestions(payload: AskRequest):
 @app.on_event("startup")
 async def startup_event():
     """
-    On startup, find the knowledge base file and initialize the RAG chain.
+    On startup, spin off RAG chain initialization in background and return immediately.
+    This prevents Render port scan timeouts when loading embeddings/model takes many seconds.
     """
     print("\n" + "="*50)
     print("🚀 University Chatbot Starting Up")
     print("="*50)
     print(f"Environment: {os.getenv('ENVIRONMENT', 'production')}")
     print(f"Python Version: {sys.version.split()[0]}")
-    print("Initializing RAG chain...")
-    initialize_rag_chain()
-    print("✅ Application ready!")
+    print("Initializing RAG chain in background...")
+
+    # Run heavy initialization asynchronously so the app can bind to port immediately.
+    import threading
+    threading.Thread(target=initialize_rag_chain, daemon=True).start()
+
+    print("✅ Application started; RAG initialization is running in background.")
     print("="*50 + "\n")
