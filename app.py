@@ -5,6 +5,7 @@ import ast
 import json
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
+from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any, AsyncIterator
@@ -254,9 +255,14 @@ async def stream_ask(payload: AskRequest):
     """
     Receives a question and returns a streaming response for the answer.
     """
+    global is_rag_initialized
+    if not is_rag_initialized:
+        print("Initializing RAG on first request...")
+        initialize_rag_chain()
+    
     if not is_rag_initialized:
         return StreamingResponse(
-            iter(["Knowledge base not initialized."]), 
+            iter(["Knowledge base not initialized. Please try again later."]), 
             media_type="text/plain"
         )
 
@@ -273,6 +279,11 @@ async def get_suggestions(payload: AskRequest):
     Receives chat history and returns a list of suggested questions.
     This is called by the frontend *after* the answer stream is complete.
     """
+    global is_rag_initialized
+    if not is_rag_initialized:
+        print("Initializing RAG on first request...")
+        initialize_rag_chain()
+    
     if not is_rag_initialized:
         return []
     
@@ -284,19 +295,14 @@ async def get_suggestions(payload: AskRequest):
 @app.on_event("startup")
 async def startup_event():
     """
-    On startup, spin off RAG chain initialization in background and return immediately.
-    This prevents Render port scan timeouts when loading embeddings/model takes many seconds.
+    On startup, just log and return immediately.
+    RAG initialization will happen lazily on first request.
     """
     print("\n" + "="*50)
     print("🚀 University Chatbot Starting Up")
     print("="*50)
     print(f"Environment: {os.getenv('ENVIRONMENT', 'production')}")
     print(f"Python Version: {sys.version.split()[0]}")
-    print("Initializing RAG chain in background...")
-
-    # Run heavy initialization asynchronously so the app can bind to port immediately.
-    import threading
-    threading.Thread(target=initialize_rag_chain, daemon=True).start()
-
-    print("✅ Application started; RAG initialization is running in background.")
+    print("✅ Application started successfully.")
+    print("RAG will initialize on first request.")
     print("="*50 + "\n")
