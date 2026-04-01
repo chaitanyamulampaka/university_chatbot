@@ -371,7 +371,11 @@ async def ask_placements_question(request: PlacementsQuery):
 @app.get("/", response_class=HTMLResponse)
 async def get_main_page():
     """Serves the integrated chat interface."""
-    with open("integrated_chat.html", "r", encoding="utf-8") as f:
+    import os
+    html_path = os.path.join(os.path.dirname(__file__), "integrated_chat.html")
+    if not os.path.exists(html_path):
+        html_path = "integrated_chat.html"
+    with open(html_path, "r", encoding="utf-8") as f:
         return f.read()
 
 # --- Startup Event removed: Now using lifespan context manager (see above) ---
