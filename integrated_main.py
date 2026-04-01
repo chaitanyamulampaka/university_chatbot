@@ -1,5 +1,6 @@
 import os
 os.environ["HF_HUB_OFFLINE"] = "1"
+import sys
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -24,78 +25,15 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 # Load environment variables
 load_dotenv()
 
-# --- FIXED: Use lifespan instead of deprecated @app.on_event("startup") ---
-# This also fixes the Render health check timeout:
-# We start the server immediately, then initialize everything in the background.
+# --- Lazy startup using lifespan for Render stability ---
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    import asyncio
-
-    async def background_init():
-        print("\n" + "="*50)
-        print("🚀 Unified Chatbot System Starting Up")
-        print("="*50)
-
-        # 1. Admissions RAG
-        if os.path.exists(admissions_app.KNOWLEDGE_BASE_PATH):
-            print("Initializing admissions chatbot...")
-            admissions_app.initialize_rag_chain()
-            if not admissions_app.is_rag_initialized:
-                print("WARNING: Admissions chatbot init failed.")
-        else:
-            print(f"Warning: Admissions knowledge base not found at '{admissions_app.KNOWLEDGE_BASE_PATH}'")
-
-        # 2. Placements agent
-        print("Initializing placements chatbot...")
-        initialize_placements_agent()
-
-        # 3. Pre-load course chatbots
-        print("Pre-loading course chatbots...")
-        if not GEMINI_API_KEY:
-            print("ERROR: GEMINI_API_KEY not found. Course chatbots disabled.")
-            print("✅ Unified Chatbot System ready!")
-            print("="*50 + "\n")
-            return
-        if not os.path.exists(DATA_ROOT_DIRECTORY):
-            print(f"ERROR: Data directory '{DATA_ROOT_DIRECTORY}' not found.")
-            print("✅ Unified Chatbot System ready!")
-            print("="*50 + "\n")
-            return
-
-        try:
-            for dept in os.listdir(DATA_ROOT_DIRECTORY):
-                dept_path = os.path.join(DATA_ROOT_DIRECTORY, dept)
-                if not os.path.isdir(dept_path):
-                    continue
-                subdirs = [d for d in os.listdir(dept_path) if os.path.isdir(os.path.join(dept_path, d))]
-                has_regulation_data = False
-                if subdirs:
-                    for reg in subdirs:
-                        reg_path = os.path.join(dept_path, reg)
-                        if "syllabus_data.json" in os.listdir(reg_path):
-                            has_regulation_data = True
-                            chatbot_key = f"{dept}_{reg}".lower()
-                            print(f"Loading course chatbot: {chatbot_key}")
-                            course_chatbots[chatbot_key] = setup_enhanced_chatbot(
-                                GEMINI_API_KEY, dept, reg, DATA_ROOT_DIRECTORY
-                            )
-                if not has_regulation_data and "syllabus_data.json" in os.listdir(dept_path):
-                    chatbot_key = dept.lower()
-                    print(f"Loading course chatbot: {dept} (no regulation)")
-                    course_chatbots[chatbot_key] = setup_enhanced_chatbot(
-                        GEMINI_API_KEY, dept, None, DATA_ROOT_DIRECTORY
-                    )
-            print(f"Successfully pre-loaded {len(course_chatbots)} course chatbots.")
-        except Exception as e:
-            print(f"Error pre-loading course chatbots: {e}")
-
-        print("✅ Unified Chatbot System ready!")
-        print("="*50 + "\n")
-
-    # Start background init — server is immediately ready for health checks
-    asyncio.create_task(background_init())
+    print("\n" + "="*50)
+    print("🚀 University Chatbot starting (lazy-load mode)")
+    print(f"Python: {sys.version.split()[0]}")
+    print("All components initialize on first request.")
+    print("="*50 + "\n")
     yield
-    # Shutdown logic (if any) goes here
 
 # --- FastAPI App ---
 app = FastAPI(
@@ -283,6 +221,12 @@ async def handle_course_chat(request: ChatQuery):
     chatbot_key = f"{department}_{regulation}" if regulation else department
 
     if chatbot_key not in course_chatbots:
+        # keep only 2 course chatbots in memory to avoid OOM on free tier
+        if len(course_chatbots) >= 2:
+            oldest_key = next(iter(course_chatbots))
+            print(f"Evicting course chatbot '{oldest_key}' to free memory.")
+            del course_chatbots[oldest_key]
+
         try:
             print(f"Loading course chatbot for '{chatbot_key}'...")
             course_chatbots[chatbot_key] = setup_enhanced_chatbot(
@@ -319,13 +263,17 @@ async def stream_admissions_ask(payload: AdmissionsQuery):
     This passes the request directly to the imported admissions_app.
     """
     if not admissions_app.is_rag_initialized:
+        print("Lazy-initializing admissions RAG...")
+        admissions_app.initialize_rag_chain()
+
+    if not admissions_app.is_rag_initialized:
         return StreamingResponse(
-            iter(["Knowledge base not initialized."]), 
+            iter(["Admissions knowledge base failed to initialize. Please try again."]),
             media_type="text/plain"
         )
 
     return StreamingResponse(
-        admissions_app.stream_rag_response(payload.question), 
+        admissions_app.stream_rag_response(payload.question),
         media_type="text/plain"
     )
 
@@ -353,13 +301,16 @@ async def get_admissions_status():
 async def ask_placements_question(request: PlacementsQuery):
     """Handles placements queries using the pandas agent."""
     if not placements_agent:
+        print("Lazy-initializing placements agent...")
+        initialize_placements_agent()
+
+    if not placements_agent:
         raise HTTPException(
-            status_code=503, # Service Unavailable
-            detail="Placements chatbot is not initialized. Check server logs."
+            status_code=503,
+            detail="Placements chatbot failed to initialize. Check server logs."
         )
-    
+
     try:
-        # The agent's 'invoke' method runs the query (this is blocking)
         response = placements_agent.invoke(request.query)
         answer = response.get('output', 'Sorry, I had trouble processing that request.')
         return {"answer": answer}
