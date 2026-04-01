@@ -5,8 +5,6 @@ import ast
 import json
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
-from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
-from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any, AsyncIterator
 from dotenv import load_dotenv
@@ -53,7 +51,6 @@ def test_api_key():
 
 # --- FastAPI App Setup ---
 app = FastAPI(title="Admissions Chatbot API")
-templates = Jinja2Templates(directory="templates")
 
 # --- Global Variables & Constants ---
 KNOWLEDGE_BASE_PATH = 'university_guide.md'
@@ -233,12 +230,33 @@ async def stream_rag_response(question: str) -> AsyncIterator[str]:
 @app.get("/", response_class=HTMLResponse)
 async def get_chat_page(request: Request):
     """Serves the main chat interface."""
-    initial_questions = get_default_questions()
-    return templates.TemplateResponse("chat.html", {
-        "request": request, 
-        "suggested_questions": initial_questions,
-        "is_rag_initialized": is_rag_initialized
-    })
+    rag_status = "Initialized" if is_rag_initialized else "Initializing on first request..."
+    return f"""
+    <html>
+    <head>
+        <title>University Chatbot</title>
+        <style>
+            body {{ font-family: Arial, sans-serif; margin: 40px; }}
+            .status {{ padding: 20px; background: #f0f0f0; border-radius: 5px; }}
+            .links {{ margin-top: 20px; }}
+            a {{ margin-right: 15px; }}
+        </style>
+    </head>
+    <body>
+        <h1>🎓 University Chatbot</h1>
+        <div class="status">
+            <p><strong>Status:</strong> {rag_status}</p>
+        </div>
+        <div class="links">
+            <a href="/docs">📚 API Documentation</a>
+            <a href="/health">💚 Health Check</a>
+        </div>
+        <p style="margin-top: 30px; color: #666;">
+            Use the API endpoints to ask questions about admissions, courses, or placements.
+        </p>
+    </body>
+    </html>
+    """
 
 @app.get("/health")
 async def health_check():
