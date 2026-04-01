@@ -1,5 +1,6 @@
 import os
 os.environ["HF_HUB_OFFLINE"] = "1"
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 # --- OPTIMIZATION: Import StreamingResponse ---
@@ -23,11 +24,85 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 # Load environment variables
 load_dotenv()
 
-# Initialize FastAPI App
+# --- FIXED: Use lifespan instead of deprecated @app.on_event("startup") ---
+# This also fixes the Render health check timeout:
+# We start the server immediately, then initialize everything in the background.
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    import asyncio
+
+    async def background_init():
+        print("\n" + "="*50)
+        print("🚀 Unified Chatbot System Starting Up")
+        print("="*50)
+
+        # 1. Admissions RAG
+        if os.path.exists(admissions_app.KNOWLEDGE_BASE_PATH):
+            print("Initializing admissions chatbot...")
+            admissions_app.initialize_rag_chain()
+            if not admissions_app.is_rag_initialized:
+                print("WARNING: Admissions chatbot init failed.")
+        else:
+            print(f"Warning: Admissions knowledge base not found at '{admissions_app.KNOWLEDGE_BASE_PATH}'")
+
+        # 2. Placements agent
+        print("Initializing placements chatbot...")
+        initialize_placements_agent()
+
+        # 3. Pre-load course chatbots
+        print("Pre-loading course chatbots...")
+        if not GEMINI_API_KEY:
+            print("ERROR: GEMINI_API_KEY not found. Course chatbots disabled.")
+            print("✅ Unified Chatbot System ready!")
+            print("="*50 + "\n")
+            return
+        if not os.path.exists(DATA_ROOT_DIRECTORY):
+            print(f"ERROR: Data directory '{DATA_ROOT_DIRECTORY}' not found.")
+            print("✅ Unified Chatbot System ready!")
+            print("="*50 + "\n")
+            return
+
+        try:
+            for dept in os.listdir(DATA_ROOT_DIRECTORY):
+                dept_path = os.path.join(DATA_ROOT_DIRECTORY, dept)
+                if not os.path.isdir(dept_path):
+                    continue
+                subdirs = [d for d in os.listdir(dept_path) if os.path.isdir(os.path.join(dept_path, d))]
+                has_regulation_data = False
+                if subdirs:
+                    for reg in subdirs:
+                        reg_path = os.path.join(dept_path, reg)
+                        if "syllabus_data.json" in os.listdir(reg_path):
+                            has_regulation_data = True
+                            chatbot_key = f"{dept}_{reg}".lower()
+                            print(f"Loading course chatbot: {chatbot_key}")
+                            course_chatbots[chatbot_key] = setup_enhanced_chatbot(
+                                GEMINI_API_KEY, dept, reg, DATA_ROOT_DIRECTORY
+                            )
+                if not has_regulation_data and "syllabus_data.json" in os.listdir(dept_path):
+                    chatbot_key = dept.lower()
+                    print(f"Loading course chatbot: {dept} (no regulation)")
+                    course_chatbots[chatbot_key] = setup_enhanced_chatbot(
+                        GEMINI_API_KEY, dept, None, DATA_ROOT_DIRECTORY
+                    )
+            print(f"Successfully pre-loaded {len(course_chatbots)} course chatbots.")
+        except Exception as e:
+            print(f"Error pre-loading course chatbots: {e}")
+
+        print("✅ Unified Chatbot System ready!")
+        print("="*50 + "\n")
+
+    # Start background init — server is immediately ready for health checks
+    asyncio.create_task(background_init())
+    yield
+    # Shutdown logic (if any) goes here
+
+# --- FastAPI App ---
 app = FastAPI(
     title="Unified University Chatbot System",
     description="An integrated chatbot for admissions, courses, and placements.",
-    version="3.1.0"
+    version="3.2.0",
+    lifespan=lifespan
 )
 
 # Serve static files (like logo.png)
@@ -41,6 +116,17 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# --- Health Check (responds immediately, even before init completes) ---
+@app.get("/health")
+async def health_check():
+    return {
+        "status": "ok",
+        "admissions_initialized": admissions_app.is_rag_initialized,
+        "placements_initialized": placements_agent is not None,
+        "course_bots_loaded": len(course_chatbots),
+        "service": "university-chatbot"
+    }
 
 # --- Request Models ---
 class ChatQuery(BaseModel):
@@ -288,73 +374,9 @@ async def get_main_page():
     with open("integrated_chat.html", "r", encoding="utf-8") as f:
         return f.read()
 
-# --- Startup Event (Unchanged) ---
-@app.on_event("startup")
-async def startup_event():
-    """Initialize admissions, placements, AND all course chatbots on startup."""
-    global course_chatbots, GEMINI_API_KEY, DATA_ROOT_DIRECTORY
-    
-    print("Starting Unified Chatbot System...")
-    
-    # 1. Initialize admissions chatbot
-    if os.path.exists(admissions_app.KNOWLEDGE_BASE_PATH):
-        print(f"Initializing admissions chatbot from '{admissions_app.KNOWLEDGE_BASE_PATH}'...")
-        admissions_app.initialize_rag_chain()
-        if not admissions_app.is_rag_initialized:
-            print("WARNING: Admissions chatbot initialization failed (likely API quota issue).")
-    else:
-        print(f"Warning: Admissions knowledge base not found at '{admissions_app.KNOWLEDGE_BASE_PATH}'")
-    
-    # 2. Initialize placements chatbot
-    print("Initializing placements chatbot...")
-    initialize_placements_agent()
-    
-    # 3. --- Pre-load all course chatbots ---
-    print("Pre-loading all course chatbots...")
-    if not GEMINI_API_KEY:
-        print("ERROR: GEMINI_API_KEY not found. Course chatbots will not be loaded.")
-        print("Unified Chatbot System ready! (WARNING: Course bots are disabled)")
-        return
-        
-    if not os.path.exists(DATA_ROOT_DIRECTORY):
-        print(f"ERROR: Data directory '{DATA_ROOT_DIRECTORY}' not found. No course bots loaded.")
-        print("Unified Chatbot System ready! (WARNING: Course bots are disabled)")
-        return
-
-    try:
-        for dept in os.listdir(DATA_ROOT_DIRECTORY):
-            dept_path = os.path.join(DATA_ROOT_DIRECTORY, dept)
-            if os.path.isdir(dept_path):
-                # Check for regulations (subfolders like VR23, SU24)
-                subdirs = [d for d in os.listdir(dept_path) if os.path.isdir(os.path.join(dept_path, d))]
-                
-                has_regulation_data = False
-                if subdirs:
-                    for reg in subdirs:
-                        reg_path = os.path.join(dept_path, reg)
-                        if "syllabus_data.json" in os.listdir(reg_path):
-                            has_regulation_data = True
-                            chatbot_key = f"{dept}_{reg}".lower()
-                            print(f"Loading course chatbot for: {chatbot_key}")
-                            course_chatbots[chatbot_key] = setup_enhanced_chatbot(
-                                GEMINI_API_KEY, dept, reg, DATA_ROOT_DIRECTORY
-                            )
-                
-                # Check for non-regulation setup (e.g., /data/it/syllabus_data.json)
-                if not has_regulation_data and "syllabus_data.json" in os.listdir(dept_path):
-                    chatbot_key = f"{dept}".lower() # Key for department with no regulation
-                    print(f"Loading course chatbot for: {dept} (no regulation)")
-                    course_chatbots[chatbot_key] = setup_enhanced_chatbot(
-                        GEMINI_API_KEY, dept, None, DATA_ROOT_DIRECTORY
-                    )
-        print(f"Successfully pre-loaded {len(course_chatbots)} course chatbots.")
-    except Exception as e:
-        print(f"An error occurred while pre-loading course chatbots: {e}")
-    # --- END OF PRE-LOADING ---
-    # --- END OF PRE-LOADING ---
-    
-    print("Unified Chatbot System ready!")
+# --- Startup Event removed: Now using lifespan context manager (see above) ---
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)

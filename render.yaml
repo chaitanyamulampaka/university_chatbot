@@ -2,13 +2,13 @@ services:
   - type: web
     name: university-chatbot
     runtime: python
-    pythonVersion: 3.10
+    pythonVersion: "3.11.9"
     
     # Build command: Install dependencies and preload the model
     buildCommand: pip install -r requirements.txt && python preload_model.py
     
-    # Start command: Run FastAPI with Uvicorn, binding to Render-provided port
-    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    # FIXED: Entry point is integrated_main.py (has all routes), not app.py (admissions module only)
+    startCommand: uvicorn integrated_main:app --host 0.0.0.0 --port $PORT
     
     # Environment variables (add via Dashboard)
     envVars:
@@ -17,8 +17,11 @@ services:
       - key: GOOGLE_API_KEY
         scope: runtime
         sync: false
+      - key: GEMINI_API_KEY
+        scope: runtime
+        sync: false
     
-    # Health check endpoint
+    # Health check endpoint (responds immediately, even during background init)
     healthCheckPath: /health
     
     # Auto-deploy on git push
