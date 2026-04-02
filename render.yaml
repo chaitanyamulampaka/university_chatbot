@@ -8,7 +8,7 @@ services:
     buildCommand: pip install -r requirements.txt && python preload_model.py && python create_admissions_db.py
 
     # Entry point
-    startCommand: uvicorn integrated_main:app --host 0.0.0.0 --port $PORT
+    startCommand: uvicorn integrated_main:app --host 0.0.0.0 --port $PORT --timeout-keep-alive 75
 
     envVars:
       - key: GOOGLE_API_KEY
@@ -17,6 +17,12 @@ services:
       - key: GEMINI_API_KEY
         scope: runtime
         sync: false
+      # Force offline mode so SentenceTransformer uses the pre-cached models
+      # and does NOT try to reach HuggingFace Hub at startup (which caused the
+      # port-binding timeout on Render).
+      - key: HF_HUB_OFFLINE
+        value: "1"
+        scope: runtime
 
     healthCheckPath: /health
     autoDeploy: true

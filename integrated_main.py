@@ -1,30 +1,11 @@
 import os
 import sys
 
-# ── HF offline mode: check multiple possible cache paths ─────────────────────
-_possible_caches = [
-    os.path.expanduser("~/.cache/huggingface/hub"),
-    "/root/.cache/huggingface/hub",
-    "/home/render/.cache/huggingface/hub",
-    os.path.join(os.getcwd(), ".cache/huggingface/hub"),
-]
-print("Checking HF cache paths...")
-_cache_found = False
-for _path in _possible_caches:
-    _exists = os.path.isdir(_path)
-    _nonempty = _exists and bool(os.listdir(_path))
-    print(f"  {_path} -> exists={_exists}, non-empty={_nonempty}")
-    if _nonempty:
-        _cache_found = True
-
-if os.environ.get("HF_HUB_OFFLINE") == "1":
-    print("HF_HUB_OFFLINE already set to 1 by environment")
-elif _cache_found:
-    os.environ["HF_HUB_OFFLINE"] = "1"
-    print("HF cache found - enabling offline mode")
-else:
-    os.environ["HF_HUB_OFFLINE"] = "0"
-    print("No HF cache found - allowing downloads")
+# HF_HUB_OFFLINE is set by Render's environment variables (render.yaml).
+# We do NOT scan the filesystem here — that caused slow startup and port-bind
+# timeouts. If running locally without the env var, downloads are allowed.
+_hf_offline = os.environ.get("HF_HUB_OFFLINE", "0")
+print(f"HF_HUB_OFFLINE = {_hf_offline}")
 
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
