@@ -150,72 +150,18 @@ class EnhancedSyllabusRAGChatbot:
         print(f"Loaded data for {len(self.course_details)} courses and {len(self.faq_data)} FAQ entries.")
 
     def create_enhanced_vector_store(self, collection_name: str):
-        """
-        Loads an existing ChromaDB vector store or creates a new one if it doesn't exist.
-        """
-        try:
-            # --- OPTIMIZATION: Try to GET the collection first ---
-            print(f"Loading existing collection '{collection_name}'...")
-            self.collection = self.client.get_collection(name=collection_name)
-            print(f"Collection '{collection_name}' loaded successfully from disk.")
-            return # The collection already exists, so we are done.
+        print(f"🚀 Loading precomputed collection '{collection_name}'...")
 
-        except Exception as e:
-            # This exception is expected if the collection doesn't exist yet.
-            print(f"Info: Collection '{collection_name}' not found. Will create a new one.")
+        try:
+            self.collection = self.client.get_collection(name=collection_name)
+            print(f"✅ Collection '{collection_name}' loaded successfully")
         
-        # --- If loading failed, CREATE the collection (this runs only once) ---
-        try:
-            self.collection = self.client.create_collection(
-                name=collection_name,
-                metadata={"hnsw:space": "cosine"}
-            )
         except Exception as e:
-            print(f"Error creating collection: {e}")
-            # As a fallback, try to get it again in case of a race condition
-            self.collection = self.client.get_collection(name=collection_name)
-            if self.collection:
-                print("Collection was created by another process, loaded successfully.")
-                return
-            else:
-                raise e # Raise the original error if it's still not found
-
-        documents, metadatas, ids = [], [], []
-
-        # Process syllabus chunks
-        for i, chunk in enumerate(self.chunks_data):
-            documents.append(chunk['content'])
-            metadata_cleaned = {k: str(v) for k, v in chunk['metadata'].items() if v is not None}
-            metadata_cleaned['chunk_type'] = chunk.get('chunk_type', 'unknown')
-            metadata_cleaned['source'] = 'syllabus'
-            metadatas.append(metadata_cleaned)
-            ids.append(f"chunk_{i}")
-
-        # Process semester summary chunks
-        for semester, courses in self.semester_course_map.items():
-            course_list_str = "\n".join([f"- {c['course_code']}: {c['course_name']} ({c['credits']} credits, {c['category']})" for c in courses])
-            semester_content = f"The following courses are offered in Semester {semester}:\n{course_list_str}"
-            documents.append(semester_content)
-            metadatas.append({'semester': semester, 'chunk_type': 'semester_summary', 'source': 'semester_map', 'total_courses': str(len(courses))})
-            ids.append(f"semester_{semester}")
-
-        # Process FAQ chunks
-        for i, faq in enumerate(self.faq_data):
-            documents.append(f"Question: {faq['question']} Answer: {faq['answer']}")
-            metadatas.append({'category': faq.get('category', 'general'), 'chunk_type': 'faq', 'source': 'faq'})
-            ids.append(f"faq_{i}")
-
-        # Add all documents to ChromaDB in batches
-        batch_size = 100
-        for i in range(0, len(documents), batch_size):
-            batch_docs = documents[i:i + batch_size]
-            batch_meta = metadatas[i:i + batch_size]
-            batch_ids = ids[i:i + batch_size]
-            # Note: This is the slow part that will now only run once
-            embeddings = self.embedding_model.encode(batch_docs).tolist()
-            self.collection.add(embeddings=embeddings, documents=batch_docs, metadatas=batch_meta, ids=batch_ids)
-        print(f"Successfully created and populated new vector store '{collection_name}' with {len(documents)} documents.")
-
+            raise Exception(
+                f"❌ Collection '{collection_name}' not found.\n"
+                f"👉 Run create_db.py locally before deployment.\n"
+                f"Error: {e}"
+            )
     def enhance_query(self, query: str) -> str:
         """
         Enhances the user query with related terms for better retrieval.
