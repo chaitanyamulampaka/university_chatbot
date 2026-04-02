@@ -1,14 +1,30 @@
 import os
 import sys
 
-# ── HF offline mode: only force it if the cache actually exists ──────────────
-_hf_cache = os.path.expanduser("~/.cache/huggingface/hub")
-if os.path.isdir(_hf_cache) and os.listdir(_hf_cache):
+# ── HF offline mode: check multiple possible cache paths ─────────────────────
+_possible_caches = [
+    os.path.expanduser("~/.cache/huggingface/hub"),
+    "/root/.cache/huggingface/hub",
+    "/home/render/.cache/huggingface/hub",
+    os.path.join(os.getcwd(), ".cache/huggingface/hub"),
+]
+print("Checking HF cache paths...")
+_cache_found = False
+for _path in _possible_caches:
+    _exists = os.path.isdir(_path)
+    _nonempty = _exists and bool(os.listdir(_path))
+    print(f"  {_path} -> exists={_exists}, non-empty={_nonempty}")
+    if _nonempty:
+        _cache_found = True
+
+if os.environ.get("HF_HUB_OFFLINE") == "1":
+    print("HF_HUB_OFFLINE already set to 1 by environment")
+elif _cache_found:
     os.environ["HF_HUB_OFFLINE"] = "1"
-    print("✅ HF cache found — running in offline mode")
+    print("HF cache found - enabling offline mode")
 else:
     os.environ["HF_HUB_OFFLINE"] = "0"
-    print("⚠️  HF cache empty/missing — allowing downloads (online mode)")
+    print("No HF cache found - allowing downloads")
 
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
@@ -23,25 +39,25 @@ load_dotenv()
 # ── Safe imports with explicit error messages ─────────────────────────────────
 try:
     from chatbot_script import setup_enhanced_chatbot, EnhancedSyllabusRAGChatbot
-    print("✅ chatbot_script imported")
+    print("chatbot_script imported OK")
 except Exception as _e:
-    print(f"❌ FATAL: Failed to import chatbot_script: {_e}")
+    print(f"FATAL: Failed to import chatbot_script: {_e}")
     raise
 
 try:
     import app as admissions_app
-    print("✅ admissions app imported")
+    print("admissions app imported OK")
 except Exception as _e:
-    print(f"❌ FATAL: Failed to import admissions app: {_e}")
+    print(f"FATAL: Failed to import admissions app: {_e}")
     raise
 
 try:
     import pandas as pd
     from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
     from langchain_google_genai import ChatGoogleGenerativeAI
-    print("✅ pandas / langchain imports OK")
+    print("pandas / langchain imports OK")
 except Exception as _e:
-    print(f"❌ FATAL: Failed to import pandas/langchain: {_e}")
+    print(f"FATAL: Failed to import pandas/langchain: {_e}")
     raise
 
 # ── Environment keys ──────────────────────────────────────────────────────────
@@ -49,9 +65,9 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 
 if not GEMINI_API_KEY:
-    print("⚠️  WARNING: GEMINI_API_KEY not set — course chatbot will be disabled")
+    print("WARNING: GEMINI_API_KEY not set")
 if not GOOGLE_API_KEY:
-    print("⚠️  WARNING: GOOGLE_API_KEY not set — admissions & placements will be disabled")
+    print("WARNING: GOOGLE_API_KEY not set")
 
 # ── safe_stream helper ────────────────────────────────────────────────────────
 async def safe_stream(generator):
@@ -80,18 +96,16 @@ async def safe_stream(generator):
 
 # ── Lifespan ──────────────────────────────────────────────────────────────────
 @asynccontextmanager
-async def lifespan(app: FastAPI):
-    print("\n" + "="*50)
-    print("🚀 University Chatbot starting (lazy-load mode)")
+async def lifespan(application: FastAPI):
+    print("="*50)
+    print("University Chatbot starting (lazy-load mode)")
     print(f"Python: {sys.version.split()[0]}")
-    print("All heavy components initialize on first request.")
-    print("="*50 + "\n")
+    print("="*50)
     yield
 
 # ── FastAPI App ───────────────────────────────────────────────────────────────
 app = FastAPI(
     title="Unified University Chatbot System",
-    description="An integrated chatbot for admissions, courses, and placements.",
     version="3.2.0",
     lifespan=lifespan
 )
@@ -122,7 +136,7 @@ course_chatbots: Dict[str, EnhancedSyllabusRAGChatbot] = {}
 placements_agent = None
 DATA_ROOT_DIRECTORY = "data"
 
-# ── Health check (always responds immediately) ────────────────────────────────
+# ── Health check ──────────────────────────────────────────────────────────────
 @app.get("/health")
 async def health_check():
     return {
@@ -139,24 +153,12 @@ You are working with a pandas dataframe in Python. The dataframe is named `df`.
 You are a helpful placement assistant designed to answer questions about student placements.
 Available columns: academic_year, department, s_no, name, roll_no, branch, company_name, pay_package_lpa
 CRITICAL RULES:
-1. FOR STRING SEARCHES (like company names):
-   - Use case-insensitive containment: df['company_name'].str.contains('VALUE', case=False, na=False)
-   - NEVER use exact match (==) for company names
-2. PRINT WORKAROUND:
-   - ALWAYS cast numbers to string before printing: print(str(value))
-   - NEVER print raw numbers or f-strings with numbers
-3. HUMAN-FRIENDLY OUTPUT:
-   - Include student NAME whenever showing student data
-   - Include COMPANY names when relevant
-   - Show PACKAGE amounts when discussing placements
-   - Use clear separators like "---" between entries
-4. FINAL ANSWER FORMAT:
-   - Your Final Answer MUST be identical to the output from your print statements.
-5. EFFICIENT EXECUTION:
-   - Execute your code ONCE to get all needed data.
-   - After executing your code and seeing the Observation, your only Thought should be:
-     Thought: I have the result. I will now provide this as the Final Answer.
-Now, begin! Answer questions in a human-friendly way with proper context and formatting.
+1. Use case-insensitive containment for string searches.
+2. ALWAYS cast numbers to string before printing.
+3. Include student NAME, COMPANY, and PACKAGE in output.
+4. Final Answer MUST match print output exactly.
+5. Execute code ONCE then give Final Answer.
+Now begin!
 """
 
 def initialize_placements_agent():
@@ -173,12 +175,10 @@ def initialize_placements_agent():
             df['company_name'] = df['company_name'].astype(str)
         if 'pay_package_lpa' in df.columns:
             df['pay_package_lpa'] = pd.to_numeric(df['pay_package_lpa'], errors='coerce')
-        print("✅ Placements data loaded")
-
+        print("Placements data loaded")
         if not GOOGLE_API_KEY:
-            print("❌ GOOGLE_API_KEY missing — placements agent disabled")
+            print("GOOGLE_API_KEY missing - placements disabled")
             return
-
         llm = ChatGoogleGenerativeAI(
             model="gemini-flash-lite-latest",
             temperature=0,
@@ -191,12 +191,11 @@ def initialize_placements_agent():
             allow_dangerous_code=True,
             max_iterations=5,
         )
-        print("✅ Placements agent initialized")
-
+        print("Placements agent initialized")
     except FileNotFoundError:
-        print("⚠️  placements_data.csv not found — placements bot disabled")
+        print("placements_data.csv not found - placements disabled")
     except Exception as e:
-        print(f"❌ Placements agent init error: {e}")
+        print(f"Placements agent init error: {e}")
 
 # ── Course chatbot endpoints ──────────────────────────────────────────────────
 @app.get("/course/departments")
@@ -221,33 +220,24 @@ async def get_departments():
 async def handle_course_chat(request: ChatQuery):
     if not GEMINI_API_KEY:
         raise HTTPException(status_code=500, detail="GEMINI_API_KEY not configured.")
-
     department = request.department.lower()
     regulation = request.regulation.lower() if request.regulation else None
     chatbot_key = f"{department}_{regulation}" if regulation else department
-
     if chatbot_key not in course_chatbots:
         if len(course_chatbots) >= 2:
             oldest_key = next(iter(course_chatbots))
-            print(f"Evicting course chatbot '{oldest_key}' to free memory.")
             del course_chatbots[oldest_key]
         try:
-            print(f"Loading course chatbot for '{chatbot_key}'...")
             course_chatbots[chatbot_key] = setup_enhanced_chatbot(
                 GEMINI_API_KEY, department, regulation, DATA_ROOT_DIRECTORY
             )
-            print(f"✅ Course chatbot '{chatbot_key}' loaded")
         except FileNotFoundError as e:
             raise HTTPException(status_code=404, detail=str(e))
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Failed to load course chatbot: {e}")
-
     try:
         chatbot = course_chatbots[chatbot_key]
-        return StreamingResponse(
-            safe_stream(chatbot.stream_chat(request.query)),
-            media_type="text/plain"
-        )
+        return StreamingResponse(safe_stream(chatbot.stream_chat(request.query)), media_type="text/plain")
     except Exception as e:
         async def error_stream(msg):
             yield f"Sorry, an error occurred: {msg}"
@@ -257,18 +247,10 @@ async def handle_course_chat(request: ChatQuery):
 @app.post("/admissions/stream_ask")
 async def stream_admissions_ask(payload: AdmissionsQuery):
     if not admissions_app.is_rag_initialized:
-        print("Lazy-initializing admissions RAG...")
         admissions_app.initialize_rag_chain()
-
     if not admissions_app.is_rag_initialized:
-        return StreamingResponse(
-            iter(["Admissions knowledge base failed to initialize."]),
-            media_type="text/plain"
-        )
-    return StreamingResponse(
-        admissions_app.stream_rag_response(payload.question),
-        media_type="text/plain"
-    )
+        return StreamingResponse(iter(["Admissions knowledge base failed to initialize."]), media_type="text/plain")
+    return StreamingResponse(admissions_app.stream_rag_response(payload.question), media_type="text/plain")
 
 @app.post("/admissions/get_suggestions", response_model=List[str])
 async def get_admissions_suggestions(payload: AdmissionsQuery):
@@ -284,7 +266,6 @@ async def get_admissions_status():
 @app.post("/placements/ask")
 async def ask_placements_question(request: PlacementsQuery):
     if not placements_agent:
-        print("Lazy-initializing placements agent...")
         initialize_placements_agent()
     if not placements_agent:
         raise HTTPException(status_code=503, detail="Placements chatbot failed to initialize.")

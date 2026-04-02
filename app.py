@@ -1,6 +1,6 @@
 import os
 import sys
-os.environ["HF_HUB_OFFLINE"] = "1"
+# HF_HUB_OFFLINE is controlled by integrated_main.py — do not override here
 
 import ast
 from fastapi import FastAPI, Request

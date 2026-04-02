@@ -10,7 +10,7 @@ for vector storage.
 import json
 import re
 import os
-os.environ["HF_HUB_OFFLINE"] = "1"
+# HF_HUB_OFFLINE is controlled by render.yaml / integrated_main.py — do not override here
 from typing import List, Dict, Any, Optional, AsyncIterator
 
 # --- OPTIMIZATION: Use LangChain's wrapper for streaming ---

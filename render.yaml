@@ -3,26 +3,20 @@ services:
     name: university-chatbot
     runtime: python
     pythonVersion: "3.11.9"
-    
-    # Build command: Install dependencies and preload the model
-    buildCommand: pip install -r requirements.txt && python preload_model.py
-    
-    # FIXED: Entry point is integrated_main.py (has all routes), not app.py (admissions module only)
+
+    # Build: install deps, download HF models, create admissions DB
+    buildCommand: pip install -r requirements.txt && python preload_model.py && python create_admissions_db.py
+
+    # Entry point
     startCommand: uvicorn integrated_main:app --host 0.0.0.0 --port $PORT
-    
-    # Environment variables (add via Dashboard)
+
     envVars:
-      - key: HF_HUB_OFFLINE
-        value: "1"
       - key: GOOGLE_API_KEY
         scope: runtime
         sync: false
       - key: GEMINI_API_KEY
         scope: runtime
         sync: false
-    
-    # Health check endpoint (responds immediately, even during background init)
+
     healthCheckPath: /health
-    
-    # Auto-deploy on git push
     autoDeploy: true
