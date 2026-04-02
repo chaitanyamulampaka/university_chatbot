@@ -1,3 +1,36 @@
+async def safe_stream(generator):
+    async for chunk in generator:
+
+        # 🔥 Case 1: dict like {'type': 'text', 'text': '...'}
+        if isinstance(chunk, dict):
+            chunk = chunk.get("text", "")
+
+        # 🔥 Case 2: list of dicts
+        elif isinstance(chunk, list):
+            chunk = " ".join(
+                c.get("text", str(c)) if isinstance(c, dict) else str(c)
+                for c in chunk
+            )
+
+        # 🔥 Case 3: chunk object with .content
+        elif hasattr(chunk, "content"):
+            content = chunk.content
+
+            if isinstance(content, dict):
+                chunk = content.get("text", "")
+            elif isinstance(content, list):
+                chunk = " ".join(
+                    c.get("text", str(c)) if isinstance(c, dict) else str(c)
+                    for c in content
+                )
+            else:
+                chunk = str(content)
+
+        # 🔥 Case 4: None
+        if chunk is None:
+            continue
+
+        yield str(chunk)
 import os
 os.environ["HF_HUB_OFFLINE"] = "1"
 import sys
@@ -42,9 +75,8 @@ app = FastAPI(
     version="3.2.0",
     lifespan=lifespan
 )
+import asyncio
 
-# Serve static files (like logo.png)
-app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Configure CORS
 app.add_middleware(
@@ -168,17 +200,21 @@ def initialize_placements_agent():
             print("ERROR: GOOGLE_API_KEY not set. Placements agent will not be initialized.")
             return
 
-        llm = ChatGoogleGenerativeAI(model="gemini-flash-latest", temperature=0, google_api_key=GOOGLE_API_KEY)
+        llm = ChatGoogleGenerativeAI(
+    model="gemini-flash-lite-latest",
+    temperature=0,
+    google_api_key=GOOGLE_API_KEY
+)
 
         # Create the Pandas DataFrame Agent
         placements_agent = create_pandas_dataframe_agent(
             llm,
             df,
             prefix=AGENT_PREFIX,
-            verbose=True,
+            verbose=False,
             allow_dangerous_code=True,
             max_iterations=5,
-            early_stopping_method="generate"
+            
         )
         print("Placements agent initialized successfully.")
 
@@ -242,16 +278,21 @@ async def handle_course_chat(request: ChatQuery):
         chatbot = course_chatbots[chatbot_key]
         # Return a StreamingResponse by calling the new .stream_chat() method
         return StreamingResponse(
-            chatbot.stream_chat(user_query),
-            media_type="text/plain"
-        )
+        safe_stream(chatbot.stream_chat(user_query)),
+        media_type="text/plain"
+    )
     except Exception as e:
         print(f"Error during course chat streaming: {e}")
-        # We can't raise an HTTPException here as the stream has started.
-        # The error will be handled inside stream_chat and yielded as text.
-        async def error_stream():
-            yield f"Sorry, an error occurred: {e}"
-        return StreamingResponse(error_stream(), media_type="text/plain")
+
+        error_message = str(e)
+
+        async def error_stream(msg):
+            yield f"Sorry, an error occurred: {msg}"
+
+        return StreamingResponse(
+            error_stream(error_message),
+            media_type="text/plain"
+        )
 # --- END OPTIMIZATION ---
 
 

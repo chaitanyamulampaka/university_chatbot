@@ -276,32 +276,43 @@ class EnhancedSyllabusRAGChatbot:
                 return "Sorry, there is an issue with the server's API key configuration. Please contact the administrator."
             return f"Sorry, I encountered an error generating the response: {error_message}"
 
-    # --- OPTIMIZATION: New async generator for streaming ---
-    async def stream_chat(self, query: str, n_context: int = 10) -> AsyncIterator[str]:
-        """
-        Orchestrates the chat process as an asynchronous stream.
-        """
-        try:
-            # 1. Retrieve context (this is fast, synchronous is fine)
-            context_docs = self.retrieve_context(query, n_context)
-            
-            # 2. Build the prompt
-            prompt = self._build_prompt(query, context_docs)
+    
 
-            # 3. Stream the response
-            async for chunk in self.model.astream(prompt):
-                yield chunk.content
-                
-        except Exception as e:
-            error_message = str(e)
-            print(f"Error in stream_chat: {error_message}")
-            if "API key not valid" in error_message:
-                yield "Sorry, there is an issue with the server's API key configuration."
-            else:
-                yield f"Sorry, I encountered an error: {error_message}"
-    # --- END OPTIMIZATION ---
+    async def stream_chat(self, query: str, n_context: int = 10):
+        retries = 3
 
+        for attempt in range(retries):
+            try:
+                context_docs = self.retrieve_context(query, n_context)
+                prompt = self._build_prompt(query, context_docs)
 
+                async for chunk in self.model.astream(prompt):
+                    content = chunk.content
+
+                    if isinstance(content, dict):
+                        content = content.get("text", "")
+                    elif isinstance(content, list):
+                        content = " ".join(
+                            c.get("text", str(c)) if isinstance(c, dict) else str(c)
+                            for c in content
+                        )
+
+                    if content:
+                        yield str(content)
+
+                return
+
+            except Exception as e:
+                error_message = str(e)
+
+                if "503" in error_message or "UNAVAILABLE" in error_message:
+                    await asyncio.sleep(2 * (attempt + 1))
+                    continue
+                else:
+                    yield f"Error: {error_message}"
+                    return
+
+        yield "⚠️ Server is busy. Try again later."
     def chat_blocking(self, query: str, n_context: int = 10) -> Dict[str, Any]:
         """
         Orchestrates the chat process from query to response in a BLOCKING way.

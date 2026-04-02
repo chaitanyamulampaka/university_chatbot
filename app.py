@@ -41,7 +41,6 @@ class AskRequest(BaseModel):
 def get_default_questions():
     return [
         "What courses are offered in Engineering?",
-        "What is the fee for an MBA?",
         "What are the eligibility criteria for B.Tech?",
         "Tell me about the scholarship policy",
         "How do I apply for a Ph.D?"
