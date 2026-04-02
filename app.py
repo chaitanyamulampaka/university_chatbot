@@ -83,10 +83,7 @@ def generate_followup_questions(chat_history):
     except:
         return get_default_questions()
 
-# --- 🔥 MAIN FIX HERE ---
-embedding_model = SentenceTransformerEmbeddings(
-    model_name="paraphrase-MiniLM-L3-v2"
-)
+# --- RAG INIT (lazy — runs on first request, NOT at import time) ---
 def initialize_rag_chain():
     global vector_store_retriever, is_rag_initialized
 
@@ -96,7 +93,10 @@ def initialize_rag_chain():
     try:
         print("🚀 Loading precomputed admissions DB...")
 
-        embeddings = embedding_model
+        # Embedding model initialized HERE (not at module level)
+        embeddings = SentenceTransformerEmbeddings(
+            model_name="paraphrase-MiniLM-L3-v2"
+        )
 
         db_file = os.path.join(ADMISSIONS_DB_DIR, "chroma.sqlite3")
 
@@ -118,6 +118,7 @@ def initialize_rag_chain():
     except Exception as e:
         print(f"❌ RAG init failed: {e}")
         is_rag_initialized = False
+
 # --- STREAM RESPONSE ---
 async def stream_rag_response(question: str) -> AsyncIterator[str]:
     if not is_rag_initialized:
@@ -199,4 +200,4 @@ async def suggestions(payload: AskRequest):
 @app.on_event("startup")
 async def startup():
     print("\n🚀 Admissions Bot Started (FAST MODE)")
-    print("⚡ No embedding recomputation")
+    print("⚡ Lazy-load mode: embeddings initialize on first request")
