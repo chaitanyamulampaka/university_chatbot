@@ -17,20 +17,33 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# ── Safe imports with explicit error messages ─────────────────────────────────
+# ── Safe imports — logged but never fatal so uvicorn always binds ─────────────
+_chatbot_import_error = None
 try:
     from chatbot_script import setup_enhanced_chatbot, EnhancedSyllabusRAGChatbot
     print("chatbot_script imported OK")
 except Exception as _e:
-    print(f"FATAL: Failed to import chatbot_script: {_e}")
-    raise
+    _chatbot_import_error = str(_e)
+    print(f"WARNING: chatbot_script import failed: {_e}")
+    def setup_enhanced_chatbot(*a, **kw):
+        raise RuntimeError(f"Course chatbot unavailable: {_chatbot_import_error}")
+    class EnhancedSyllabusRAGChatbot:
+        pass
 
+_admissions_import_error = None
 try:
     import app as admissions_app
     print("admissions app imported OK")
 except Exception as _e:
-    print(f"FATAL: Failed to import admissions app: {_e}")
-    raise
+    _admissions_import_error = str(_e)
+    print(f"WARNING: admissions app import failed: {_e}")
+    class _AdmissionsStub:
+        is_rag_initialized = False
+        def initialize_rag_chain(self): pass
+        def stream_rag_response(self, q):
+            return (x for x in [f"Admissions unavailable: {_admissions_import_error}"])
+        def generate_followup_questions(self, h): return []
+    admissions_app = _AdmissionsStub()
 
 try:
     import pandas as pd
@@ -38,8 +51,10 @@ try:
     from langchain_google_genai import ChatGoogleGenerativeAI
     print("pandas / langchain imports OK")
 except Exception as _e:
-    print(f"FATAL: Failed to import pandas/langchain: {_e}")
-    raise
+    print(f"WARNING: pandas/langchain import failed: {_e}")
+    pd = None
+    create_pandas_dataframe_agent = None
+    ChatGoogleGenerativeAI = None
 
 # ── Environment keys ──────────────────────────────────────────────────────────
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")

@@ -4,8 +4,8 @@ services:
     runtime: python
     pythonVersion: "3.11.9"
 
-    # Build: install deps, download HF models, create admissions DB
-    buildCommand: pip install -r requirements.txt && python preload_model.py && python create_admissions_db.py
+    # Build: install exact pinned deps (no resolver thrashing), download HF models, create admissions DB
+    buildCommand: pip install --no-deps -r requirements_lock.txt && python preload_model.py && python create_admissions_db.py
 
     # Entry point
     startCommand: uvicorn integrated_main:app --host 0.0.0.0 --port $PORT --timeout-keep-alive 75

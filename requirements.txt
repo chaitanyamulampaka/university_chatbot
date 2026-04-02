@@ -1,9 +1,11 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 fastapi>=0.109.0
 uvicorn[standard]>=0.27.0
 python-multipart>=0.0.6
 jinja2>=3.1.3
 
-# LangChain 0.3.x — fully Pydantic V2 native, no V1 shim
+# LangChain 0.3.x
 langchain>=0.3.0,<0.4.0
 langchain-community>=0.3.0,<0.4.0
 langchain-google-genai>=2.0.0,<3.0.0
@@ -17,10 +19,12 @@ chromadb>=0.5.0
 # Pydantic V2
 pydantic>=2.6.0,<3.0.0
 
-# Google AI
-google-generativeai>=0.7.0
+# NOTE: google-generativeai omitted intentionally — pulled in transitively
+# by langchain-google-genai. Adding it explicitly caused grpcio-status
+# resolver backtracking across 10+ versions during build.
 
-# Embeddings
+# Embeddings — CPU-only torch (~200MB vs 2GB CUDA build)
+torch
 sentence-transformers>=3.0.0
 
 # Utilities
